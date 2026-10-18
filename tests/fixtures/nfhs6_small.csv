@@ -1,0 +1,83 @@
+state,district,category,indicator_no,indicator,nfhs6_value,nfhs5_value,small_sample_flag,boundary_change_single_round
+Haryana,Gurugram,Antenatal Care (for last birth in the 5 years before the survey),31,Mothers whose last birth was protected against neonatal tetanus4 (%),97.0,95.0,False,False
+Haryana,Gurugram,Delivery Care (for births in the 5 years before the survey),35,Institutional births (%),99.5,99.1,False,False
+Haryana,Gurugram,Child Vaccinations and Vitamin A Supplementation,49,Children age 12-23 months who have received 3 doses of pentavalent vaccine (%),90.0,88.0,False,False
+Haryana,Gurugram,Child Feeding Practices and Nutritional Status of Children,61,Children under age 6 months exclusively breastfed10 (%),65.0,60.0,False,False
+Haryana,Gurugram,Child Feeding Practices and Nutritional Status of Children,63,Children under age 6 months exclusively breastfed or breastfeeding and consuming plain water/other milk only10 (%),70.0,64.0,False,False
+Haryana,Gurugram,Nutritional Status of Adults (age 15-49 years),73,Women whose Body Mass Index (BMI) is below normal (BMI <18.5 kg/m2)15 (%),11.0,12.0,False,False
+Haryana,Gurugram,Marriage and Fertility,24,Male sterilization (%),0.5,0.4,False,False
+Haryana,Gurugram,Marriage and Fertility,16,Women age 20-24 years married before age 18 years (%),3.0,4.0,False,False
+Haryana,Hisar,Antenatal Care (for last birth in the 5 years before the survey),31,Mothers whose last birth was protected against neonatal tetanus4 (%),93.0,92.0,True,False
+Haryana,Hisar,Delivery Care (for births in the 5 years before the survey),35,Institutional births (%),97.0,95.5,True,False
+Haryana,Hisar,Child Vaccinations and Vitamin A Supplementation,49,Children age 12-23 months who have received 3 doses of pentavalent vaccine (%),86.0,85.0,True,False
+Haryana,Hisar,Child Feeding Practices and Nutritional Status of Children,61,Children under age 6 months exclusively breastfed10 (%),*,*,True,False
+Haryana,Hisar,Child Feeding Practices and Nutritional Status of Children,63,Children under age 6 months exclusively breastfed or breastfeeding and consuming plain water/other milk only10 (%),(40.2),(38.0),True,False
+Haryana,Hisar,Nutritional Status of Adults (age 15-49 years),73,Women whose Body Mass Index (BMI) is below normal (BMI <18.5 kg/m2)15 (%),13.0,14.0,True,False
+Haryana,Hisar,Marriage and Fertility,24,Male sterilization (%),0.1,0.0,True,False
+Haryana,Hisar,Marriage and Fertility,16,Women age 20-24 years married before age 18 years (%),4.0,5.0,True,False
+Haryana,Charkhi Dadri,Antenatal Care (for last birth in the 5 years before the survey),31,Mothers whose last birth was protected against neonatal tetanus4 (%),91.0,90.0,False,False
+Haryana,Charkhi Dadri,Delivery Care (for births in the 5 years before the survey),35,Institutional births (%),95.0,93.0,False,False
+Haryana,Charkhi Dadri,Child Vaccinations and Vitamin A Supplementation,49,Children age 12-23 months who have received 3 doses of pentavalent vaccine (%),82.0,80.0,False,False
+Haryana,Charkhi Dadri,Child Feeding Practices and Nutritional Status of Children,61,Children under age 6 months exclusively breastfed10 (%),57.0,55.0,False,False
+Haryana,Charkhi Dadri,Child Feeding Practices and Nutritional Status of Children,63,Children under age 6 months exclusively breastfed or breastfeeding and consuming plain water/other milk only10 (%),61.0,59.0,False,False
+Haryana,Charkhi Dadri,Nutritional Status of Adults (age 15-49 years),73,Women whose Body Mass Index (BMI) is below normal (BMI <18.5 kg/m2)15 (%),15.0,16.0,False,False
+Haryana,Charkhi Dadri,Marriage and Fertility,24,Male sterilization (%),0.7,0.6,False,False
+Haryana,Charkhi Dadri,Marriage and Fertility,16,Women age 20-24 years married before age 18 years (%),5.0,6.0,False,False
+Uttar Pradesh,Barabanki,Antenatal Care (for last birth in the 5 years before the survey),31,Mothers whose last birth was protected against neonatal tetanus 4 (%),90.0,88.0,False,False
+Uttar Pradesh,Barabanki,Delivery Care (for births in the 5 years before the survey),35,Institutional births (%),88.0,80.0,False,False
+Uttar Pradesh,Barabanki,Child Vaccinations and Vitamin A Supplementation,49,Children age 12-23 months who have received 3 doses of pentavalent vaccine (%),75.0,70.0,False,False
+Uttar Pradesh,Barabanki,Child Feeding Practices and Nutritional Status of Children,61,Children under age 6 months exclusively breastfed10 (%),55.0,50.0,False,False
+Uttar Pradesh,Barabanki,Child Feeding Practices and Nutritional Status of Children,63,Children under age 6 months exclusively breastfed or breastfeeding and consuming plain water/other milk only10 (%),60.0,54.0,False,False
+Uttar Pradesh,Barabanki,Nutritional Status of Adults (age 15-49 years),73,Women whose Body Mass Index (BMI) is below normal (BMI <18.5 kg/m2)15 (%),20.0,22.0,False,False
+Uttar Pradesh,Barabanki,Marriage and Fertility,24,Male sterilization (%),0.2,0.1,False,False
+Uttar Pradesh,Barabanki,Marriage and Fertility,16,Women age 20-24 years married before age 18 years (%),17.0,20.0,False,False
+Uttar Pradesh,Agra,Antenatal Care (for last birth in the 5 years before the survey),31,Mothers whose last birth was protected against neonatal tetanus 4 (%),91.0,90.0,False,False
+Uttar Pradesh,Agra,Delivery Care (for births in the 5 years before the survey),35,Institutional births (%),90.0,85.0,False,False
+Uttar Pradesh,Agra,Child Vaccinations and Vitamin A Supplementation,49,Children age 12-23 months who have received 3 doses of pentavalent vaccine (%),76.0,72.0,False,False
+Uttar Pradesh,Agra,Child Feeding Practices and Nutritional Status of Children,61,Children under age 6 months exclusively breastfed10 (%),56.0,52.0,False,False
+Uttar Pradesh,Agra,Child Feeding Practices and Nutritional Status of Children,63,Children under age 6 months exclusively breastfed or breastfeeding and consuming plain water/other milk only10 (%),61.0,56.0,False,False
+Uttar Pradesh,Agra,Nutritional Status of Adults (age 15-49 years),73,Women whose Body Mass Index (BMI) is below normal (BMI <18.5 kg/m2)15 (%),19.0,20.0,False,False
+Uttar Pradesh,Agra,Marriage and Fertility,24,Male sterilization (%),0.3,0.2,False,False
+Uttar Pradesh,Agra,Marriage and Fertility,16,Women age 20-24 years married before age 18 years (%),13.0,15.0,False,False
+Uttar Pradesh,Kasganj,Antenatal Care (for last birth in the 5 years before the survey),31,Mothers whose last birth was protected against neonatal tetanus 4 (%),89.0,,False,True
+Uttar Pradesh,Kasganj,Delivery Care (for births in the 5 years before the survey),35,Institutional births (%),86.0,,False,True
+Uttar Pradesh,Kasganj,Child Vaccinations and Vitamin A Supplementation,49,Children age 12-23 months who have received 3 doses of pentavalent vaccine (%),74.0,,False,True
+Uttar Pradesh,Kasganj,Child Feeding Practices and Nutritional Status of Children,61,Children under age 6 months exclusively breastfed10 (%),54.0,,False,True
+Uttar Pradesh,Kasganj,Child Feeding Practices and Nutritional Status of Children,63,Children under age 6 months exclusively breastfed or breastfeeding and consuming plain water/other milk only10 (%),58.0,,False,True
+Uttar Pradesh,Kasganj,Nutritional Status of Adults (age 15-49 years),73,Women whose Body Mass Index (BMI) is below normal (BMI <18.5 kg/m2)15 (%),21.0,,False,True
+Uttar Pradesh,Kasganj,Marriage and Fertility,24,Male sterilization (%),0.2,,False,True
+Uttar Pradesh,Kasganj,Marriage and Fertility,16,Women age 20-24 years married before age 18 years (%),18.0,,False,True
+Jharkhand,Sahibganj,Antenatal Care (for last birth in the 5 years before the survey),31,Mothers whose last birth was protected against neonatal tetanus4 (%),88.0,85.0,False,False
+Jharkhand,Sahibganj,Delivery Care (for births in the 5 years before the survey),35,Institutional births (%),78.0,70.0,False,False
+Jharkhand,Sahibganj,Child Vaccinations and Vitamin A Supplementation,49,Children age 12-23 months who have received 3 doses of pentavalent vaccine (%),70.0,65.0,False,False
+Jharkhand,Sahibganj,Child Feeding Practices and Nutritional Status of Children,61,Children under age 6 months exclusively breastfed10 (%),50.0,45.0,False,False
+Jharkhand,Sahibganj,Child Feeding Practices and Nutritional Status of Children,63,Children under age 6 months exclusively breastfed or breastfeeding and consuming plain water/other,55.0,50.0,False,False
+Jharkhand,Sahibganj,Nutritional Status of Adults (age 15-49 years),73,Women whose Body Mass Index (BMI) is below normal (BMI <18.5 kg/m2)15 (%),27.0,30.0,False,False
+Jharkhand,Sahibganj,Marriage and Fertility,24,Male sterilization (%),0.4,0.3,False,False
+Jharkhand,Sahibganj,Marriage and Fertility,16,Women age 20-24 years married before age 18 years (%),30.0,35.0,False,False
+Jharkhand,Saraikela-Kharsawan,Antenatal Care (for last birth in the 5 years before the survey),31,Mothers whose last birth was protected against neonatal tetanus4 (%),89.0,86.0,False,False
+Jharkhand,Saraikela-Kharsawan,Delivery Care (for births in the 5 years before the survey),35,Institutional births (%),82.0,75.0,False,False
+Jharkhand,Saraikela-Kharsawan,Child Vaccinations and Vitamin A Supplementation,49,Children age 12-23 months who have received 3 doses of pentavalent vaccine (%),72.0,68.0,False,False
+Jharkhand,Saraikela-Kharsawan,Child Feeding Practices and Nutritional Status of Children,61,Children under age 6 months exclusively breastfed10 (%),52.0,48.0,False,False
+Jharkhand,Saraikela-Kharsawan,Child Feeding Practices and Nutritional Status of Children,63,Children under age 6 months exclusively breastfed or breastfeeding and consuming plain water/other,57.0,52.0,False,False
+Jharkhand,Saraikela-Kharsawan,Nutritional Status of Adults (age 15-49 years),73,Women whose Body Mass Index (BMI) is below normal (BMI <18.5 kg/m2)15 (%),25.0,28.0,False,False
+Jharkhand,Saraikela-Kharsawan,Marriage and Fertility,24,Male sterilization (%),0.6,0.5,False,False
+Jharkhand,Saraikela-Kharsawan,Marriage and Fertility,16,Women age 20-24 years married before age 18 years (%),26.0,30.0,False,False
+Chandigarh,Chandigarh,Marriage and Fertility,18,Total fertility rate (children per woman),1.6,1.4,False,False
+Chandigarh,Chandigarh,Antenatal Care (for last birth in the 5 years before the survey),33,Mothers whose last birth was protected against neonatal tetanus 4 (%),94.0,94.0,False,False
+Chandigarh,Chandigarh,Delivery Care (for births in the 5 years before the survey),40,Institutional births (%),98.0,97.0,False,False
+Chandigarh,Chandigarh,Child Vaccinations and Vitamin A Supplementation,51,Children age 12-23 months who have received 3 doses of pentavalent vaccine (%),91.0,90.0,False,False
+Chandigarh,Chandigarh,Child Feeding Practices and Nutritional Status of Children,63,Children under age 6 months exclusively breastfed10 (%),60.0,58.0,False,False
+Chandigarh,Chandigarh,Child Feeding Practices and Nutritional Status of Children,65,Children under age 6 months exclusively breastfed or breastfeeding and consuming plain water/other,62.0,59.0,False,False
+Chandigarh,Chandigarh,Nutritional Status of Adults (age 15-49 years),75,Women whose Body Mass Index (BMI) is below normal (BMI <18.5 kg/m2)15 (%),10.0,11.0,False,False
+Chandigarh,Chandigarh,Nutritional Status of Adults (age 15-49 years),76,Men whose Body Mass Index (BMI) is below normal (BMI <18.5 kg/m2) (%),12.5,13.0,False,False
+Chandigarh,Chandigarh,Marriage and Fertility,26,Male sterilization (%),0.3,0.2,False,False
+Chandigarh,Chandigarh,Marriage and Fertility,17,Women age 20-24 years married before age 18 years (%),2.0,3.0,False,False
+Dadra & Nagar Haveli And Daman & Diu,Dadra & Nagar Haveli And Daman & Diu,Antenatal Care (for last birth in the 5 years before the survey),31,Mothers whose last birth was protected against neonatal tetanus4 (%),50.0,45.0,False,False
+Dadra & Nagar Haveli And Daman & Diu,Dadra & Nagar Haveli And Daman & Diu,Delivery Care (for births in the 5 years before the survey),35,Institutional births (%),50.0,45.0,False,False
+Dadra & Nagar Haveli And Daman & Diu,Dadra & Nagar Haveli And Daman & Diu,Child Vaccinations and Vitamin A Supplementation,49,Children age 12-23 months who have received 3 doses of pentavalent vaccine (%),50.0,45.0,False,False
+Dadra & Nagar Haveli And Daman & Diu,Dadra & Nagar Haveli And Daman & Diu,Child Feeding Practices and Nutritional Status of Children,61,Children under age 6 months exclusively breastfed10 (%),50.0,45.0,False,False
+Dadra & Nagar Haveli And Daman & Diu,Dadra & Nagar Haveli And Daman & Diu,Child Feeding Practices and Nutritional Status of Children,63,Children under age 6 months exclusively breastfed or breastfeeding and consuming plain water/other milk only10 (%),50.0,45.0,False,False
+Dadra & Nagar Haveli And Daman & Diu,Dadra & Nagar Haveli And Daman & Diu,Nutritional Status of Adults (age 15-49 years),73,Women whose Body Mass Index (BMI) is below normal (BMI <18.5 kg/m2)15 (%),50.0,45.0,False,False
+Dadra & Nagar Haveli And Daman & Diu,Dadra & Nagar Haveli And Daman & Diu,Marriage and Fertility,24,Male sterilization (%),50.0,45.0,False,False
+Dadra & Nagar Haveli And Daman & Diu,Dadra & Nagar Haveli And Daman & Diu,Marriage and Fertility,16,Women age 20-24 years married before age 18 years (%),50.0,45.0,False,False
