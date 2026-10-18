@@ -1,0 +1,40 @@
+{
+ "created_utc": "2026-10-18T14:43:39+00:00",
+ "train_hash": "791f980116a74d5a",
+ "config_hash": "fe5b43a3a90972d1",
+ "indicators": [
+  "anc_4plus",
+  "anc_first_trimester",
+  "child_marriage",
+  "csection",
+  "diarrhoea",
+  "early_bf",
+  "fp_modern",
+  "full_vacc",
+  "ifa_100d",
+  "inst_births",
+  "mcv1",
+  "menstrual_hygiene",
+  "pnc_mother",
+  "stunting",
+  "teen_pregnancy",
+  "underweight",
+  "unmet_need",
+  "vitamin_a",
+  "wasting",
+  "water_improved",
+  "women_10yr_school",
+  "women_overweight",
+  "women_thin"
+ ],
+ "n_core_districts": 547,
+ "versions": {
+  "python": "3.11.9",
+  "sklearn": "1.9.1",
+  "lightgbm": "4.7.0",
+  "pandas": "3.0.6",
+  "numpy": "2.4.6"
+ },
+ "trained_on": "NFHS-4 -> NFHS-5 only",
+ "nfhs6_scored": false
+}
