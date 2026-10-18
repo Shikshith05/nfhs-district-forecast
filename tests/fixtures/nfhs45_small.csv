@@ -1,0 +1,66 @@
+State,ST_CEN_CD,District,DISTRICT,DT_CEN_CD,Category,Indicator,NFHS 5,NFHS 4
+Haryana,6,Gurgaon,Gurgaon_1,1,Delivery Care,Institutional births (%),99.1,90.2
+Haryana,6,Gurgaon,Gurgaon_1,1,Maternal and Child Health,Mothers whose last birth was protected against neonatal tetanus (%),95.0,93.0
+Haryana,6,Gurgaon,Gurgaon_1,1,Child Vaccinations and Vitamin A Supplementation,Children age 12-23 months who have received 3 doses of penta or DPT vaccine (%),88.0,70.0
+Haryana,6,Gurgaon,Gurgaon_1,1,Nutritional Status of Women,Women whose Body Mass Index (BMI) is below normal (BMI <18),12.0,15.0
+Haryana,6,Gurgaon,Gurgaon_1,1,Child Feeding Practices and Nutritional Status of Children,Children under age 6 months exclusively breastfed (%),60.0,40.0
+Haryana,6,Gurgaon,Gurgaon_1,1,Current Use of Family Planning Methods,Male sterilization (%),0.4,0.3
+Haryana,6,Gurgaon,Gurgaon_1,1,Population and Household Profile,Deaths in the last 3 years registered with the civil authority (%),90.0,0
+Haryana,6,Gurgaon,Gurgaon_1,1,Marriage and Fertility,Women age 2024 years married before age 18 years (%),4.0,6.0
+Haryana,6,Hisar,Hisar_2,2,Delivery Care,Institutional births (%),95.5,80.0
+Haryana,6,Hisar,Hisar_2,2,Maternal and Child Health,Mothers whose last birth was protected against neonatal tetanus (%),92.0,91.0
+Haryana,6,Hisar,Hisar_2,2,Child Vaccinations and Vitamin A Supplementation,Children age 12-23 months who have received 3 doses of penta or DPT vaccine (%),85.0,66.0
+Haryana,6,Hisar,Hisar_2,2,Nutritional Status of Women,Women whose Body Mass Index (BMI) is below normal (BMI <18),14.0,18.0
+Haryana,6,Hisar,Hisar_2,2,Child Feeding Practices and Nutritional Status of Children,Children under age 6 months exclusively breastfed (%),0,35.0
+Haryana,6,Hisar,Hisar_2,2,Current Use of Family Planning Methods,Male sterilization (%),0.0,0.2
+Haryana,6,Hisar,Hisar_2,2,Population and Household Profile,Deaths in the last 3 years registered with the civil authority (%),85.0,0
+Haryana,6,Hisar,Hisar_2,2,Marriage and Fertility,Women age 2024 years married before age 18 years (%),5.0,8.0
+Haryana,6,Dadri,,,Delivery Care,Institutional births (%),93.0,0
+Haryana,6,Dadri,,,Maternal and Child Health,Mothers whose last birth was protected against neonatal tetanus (%),90.0,0
+Haryana,6,Dadri,,,Child Vaccinations and Vitamin A Supplementation,Children age 12-23 months who have received 3 doses of penta or DPT vaccine (%),80.0,0
+Haryana,6,Dadri,,,Nutritional Status of Women,Women whose Body Mass Index (BMI) is below normal (BMI <18),16.0,0
+Haryana,6,Dadri,,,Child Feeding Practices and Nutritional Status of Children,Children under age 6 months exclusively breastfed (%),55.0,0
+Haryana,6,Dadri,,,Current Use of Family Planning Methods,Male sterilization (%),0.6,0
+Haryana,6,Dadri,,,Population and Household Profile,Deaths in the last 3 years registered with the civil authority (%),80.0,0
+Haryana,6,Dadri,,,Marriage and Fertility,Women age 2024 years married before age 18 years (%),6.0,0
+Uttar Pradesh,9,Bara Banki,Bara Banki_3,3,Delivery Care,Institutional births (%),80.0,60.0
+Uttar Pradesh,9,Bara Banki,Bara Banki_3,3,Maternal and Child Health,Mothers whose last birth was protected against neonatal tetanus (%),88.0,85.0
+Uttar Pradesh,9,Bara Banki,Bara Banki_3,3,Child Vaccinations and Vitamin A Supplementation,Children age 12-23 months who have received 3 doses of penta or DPT vaccine (%),70.0,50.0
+Uttar Pradesh,9,Bara Banki,Bara Banki_3,3,Nutritional Status of Women,Women whose Body Mass Index (BMI) is below normal (BMI <18),22.0,28.0
+Uttar Pradesh,9,Bara Banki,Bara Banki_3,3,Child Feeding Practices and Nutritional Status of Children,Children under age 6 months exclusively breastfed (%),50.0,45.0
+Uttar Pradesh,9,Bara Banki,Bara Banki_3,3,Current Use of Family Planning Methods,Male sterilization (%),0.1,0.5
+Uttar Pradesh,9,Bara Banki,Bara Banki_3,3,Population and Household Profile,Deaths in the last 3 years registered with the civil authority (%),50.0,0
+Uttar Pradesh,9,Bara Banki,Bara Banki_3,3,Marriage and Fertility,Women age 2024 years married before age 18 years (%),20.0,30.0
+Uttar Pradesh,9,Agra,Agra_4,4,Delivery Care,Institutional births (%),85.0,70.0
+Uttar Pradesh,9,Agra,Agra_4,4,Maternal and Child Health,Mothers whose last birth was protected against neonatal tetanus (%),90.0,86.0
+Uttar Pradesh,9,Agra,Agra_4,4,Child Vaccinations and Vitamin A Supplementation,Children age 12-23 months who have received 3 doses of penta or DPT vaccine (%),72.0,55.0
+Uttar Pradesh,9,Agra,Agra_4,4,Nutritional Status of Women,Women whose Body Mass Index (BMI) is below normal (BMI <18),20.0,25.0
+Uttar Pradesh,9,Agra,Agra_4,4,Child Feeding Practices and Nutritional Status of Children,Children under age 6 months exclusively breastfed (%),52.0,47.0
+Uttar Pradesh,9,Agra,Agra_4,4,Current Use of Family Planning Methods,Male sterilization (%),0.2,0.1
+Uttar Pradesh,9,Agra,Agra_4,4,Population and Household Profile,Deaths in the last 3 years registered with the civil authority (%),60.0,0
+Uttar Pradesh,9,Agra,Agra_4,4,Marriage and Fertility,Women age 2024 years married before age 18 years (%),15.0,22.0
+Jharkhand,20,Sahibganj,Sahibganj_7,7,Delivery Care,Institutional births (%),70.0,50.0
+Jharkhand,20,Sahibganj,Sahibganj_7,7,Maternal and Child Health,Mothers whose last birth was protected against neonatal tetanus (%),85.0,80.0
+Jharkhand,20,Sahibganj,Sahibganj_7,7,Child Vaccinations and Vitamin A Supplementation,Children age 12-23 months who have received 3 doses of penta or DPT vaccine (%),65.0,45.0
+Jharkhand,20,Sahibganj,Sahibganj_7,7,Nutritional Status of Women,Women whose Body Mass Index (BMI) is below normal (BMI <18),30.0,35.0
+Jharkhand,20,Sahibganj,Sahibganj_7,7,Child Feeding Practices and Nutritional Status of Children,Children under age 6 months exclusively breastfed (%),45.0,40.0
+Jharkhand,20,Sahibganj,Sahibganj_7,7,Current Use of Family Planning Methods,Male sterilization (%),0.3,0.2
+Jharkhand,20,Sahibganj,Sahibganj_7,7,Population and Household Profile,Deaths in the last 3 years registered with the civil authority (%),40.0,0
+Jharkhand,20,Sahibganj,Sahibganj_7,7,Marriage and Fertility,Women age 2024 years married before age 18 years (%),35.0,45.0
+Jharkhand,20,Sahibganj,Saraikela-kharsawan_24,7,Delivery Care,Institutional births (%),75.0,55.0
+Jharkhand,20,Sahibganj,Saraikela-kharsawan_24,7,Maternal and Child Health,Mothers whose last birth was protected against neonatal tetanus (%),86.0,82.0
+Jharkhand,20,Sahibganj,Saraikela-kharsawan_24,7,Child Vaccinations and Vitamin A Supplementation,Children age 12-23 months who have received 3 doses of penta or DPT vaccine (%),68.0,48.0
+Jharkhand,20,Sahibganj,Saraikela-kharsawan_24,7,Nutritional Status of Women,Women whose Body Mass Index (BMI) is below normal (BMI <18),28.0,33.0
+Jharkhand,20,Sahibganj,Saraikela-kharsawan_24,7,Child Feeding Practices and Nutritional Status of Children,Children under age 6 months exclusively breastfed (%),48.0,42.0
+Jharkhand,20,Sahibganj,Saraikela-kharsawan_24,7,Current Use of Family Planning Methods,Male sterilization (%),0.5,0.4
+Jharkhand,20,Sahibganj,Saraikela-kharsawan_24,7,Population and Household Profile,Deaths in the last 3 years registered with the civil authority (%),45.0,0
+Jharkhand,20,Sahibganj,Saraikela-kharsawan_24,7,Marriage and Fertility,Women age 2024 years married before age 18 years (%),30.0,40.0
+Chandigarh,4,Chandigarh,Chandigarh_1,1,Delivery Care,Institutional births (%),97.0,93.0
+Chandigarh,4,Chandigarh,Chandigarh_1,1,Maternal and Child Health,Mothers whose last birth was protected against neonatal tetanus (%),94.0,92.0
+Chandigarh,4,Chandigarh,Chandigarh_1,1,Child Vaccinations and Vitamin A Supplementation,Children age 12-23 months who have received 3 doses of penta or DPT vaccine (%),90.0,80.0
+Chandigarh,4,Chandigarh,Chandigarh_1,1,Nutritional Status of Women,Women whose Body Mass Index (BMI) is below normal (BMI <18),11.0,13.0
+Chandigarh,4,Chandigarh,Chandigarh_1,1,Child Feeding Practices and Nutritional Status of Children,Children under age 6 months exclusively breastfed (%),58.0,50.0
+Chandigarh,4,Chandigarh,Chandigarh_1,1,Current Use of Family Planning Methods,Male sterilization (%),0.2,0.1
+Chandigarh,4,Chandigarh,Chandigarh_1,1,Population and Household Profile,Deaths in the last 3 years registered with the civil authority (%),95.0,0
+Chandigarh,4,Chandigarh,Chandigarh_1,1,Marriage and Fertility,Women age 2024 years married before age 18 years (%),3.0,4.0
+Uttar Pradesh,9,Agra,Agra_4,4,Delivery Care,Institutional births (%),99.9,70.0

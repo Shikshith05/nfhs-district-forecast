@@ -1,0 +1,188 @@
+# =====================================================================
+# nfhs-district-forecast configuration
+# Paths are relative to the repo root. Every number marked ASSUMPTION is a
+# modelling assumption, not a fact from the data (see DECISIONS.md).
+# =====================================================================
+
+paths:
+  nfhs45_csv: data/raw/nfhs4_5/India.csv
+  nfhs6_csv: data/raw/nfhs6/all_india_nfhs6_district.csv
+  geojson: data/raw/geo/Districts.geojson
+  processed_dir: data/processed
+  outputs_dir: outputs
+  models_dir: outputs/models
+
+random_seed: 2026
+
+# ---------------------------------------------------------------------
+# Cleaning
+# ---------------------------------------------------------------------
+cleaning:
+  # India.csv (NFHS-4/5) has no missing cells: the parser wrote 'na' and
+  # suppressed '*' cells as 0. Rules applied in this order (DECISIONS D08):
+  #  1. a district-round whose values are >= this share zeros is "not available"
+  district_zero_share_missing: 0.80
+  #  2. an indicator-round that is >= this share zeros was "not measured"
+  indicator_zero_share_missing: 0.95
+  #  3. any other 0 is kept as a true zero only if at least this share of the
+  #     indicator-round's non-zero values lie in (0, 1); otherwise -> NaN
+  plausible_zero_min_share_below1: 0.01
+  # Districts/states removed before matching (DECISIONS D05, D06)
+  excluded_states_nfhs6:
+    - "Dadra & Nagar Haveli And Daman & Diu"   # 380 rows, several districts merged under one name
+  excluded_districts_nfhs45:
+    - ["Jammu & Kashmir", "Data Not Available"]  # placeholder row in the source
+
+# ---------------------------------------------------------------------
+# Matching (indicators and districts)
+# ---------------------------------------------------------------------
+matching:
+  indicator_min_score: 90        # rapidfuzz score to accept a fuzzy indicator match
+  indicator_min_prefix_len: 25   # a truncated text must keep >= this many chars to prefix-match
+  # Only indicators whose text matches this regex are split by sex using the
+  # category column (the blood sugar / blood pressure blocks repeat the same
+  # text for women and men). Category is NOT used for anything else because
+  # the NFHS-6 parser carries categories over incorrectly (e.g. 'Men').
+  sex_split_pattern: "blood sugar|blood pressure"
+  district_min_score: 90         # rapidfuzz WRatio to accept a fuzzy district match
+  # A matched district is rejected if fewer than this share of its NFHS-5 values
+  # in the NFHS-6 file agree (within 0.5) with India.csv NFHS-5, computed over
+  # the core indicators that pass indicators.min_audit_agreement (DECISIONS D11).
+  # Catches swapped districts (Maharajganj/Mahoba) and misaligned rows in core
+  # indicators (Chandigarh, Lakshadweep).
+  audit_min_district_agreement: 0.95
+  # Normalised state names: India.csv name -> canonical (NFHS-6) name
+  state_aliases:
+    "andaman and nicobar island": "andaman and nicobar islands"
+  # Normalised district names, per canonical state: NFHS-6 name -> India.csv name.
+  # Renames and spelling variants that fuzzy matching cannot be trusted with.
+  # Each is checked by the NFHS-5 audit (district_name_map.csv, audit columns).
+  district_aliases:
+    "assam": {"marigaon": "morigaon"}
+    "bihar": {"purbi champaran": "purba champaran"}
+    "chhattisgarh": {"kondagaon": "kodagaon", "korea": "koriya"}
+    "gujarat": {"panch mahals": "panchmahal"}
+    "haryana": {"charkhi dadri": "dadri", "gurugram": "gurgaon", "nuh": "mewat"}
+    "jammu and kashmir": {"bandipora": "bandipore", "baramulla": "baramula", "budgam": "badgam",
+                          "poonch": "punch", "shopian": "shupiyan"}
+    "jharkhand": {"koderma": "kodarma", "purbi singhbum": "purbi singhbhum"}
+    "karnataka": {"bagalkote": "bagalkot", "ballari": "bellary", "belagavi": "belgaum",
+                  "bengaluru rural": "bangalore rural", "bengaluru urban": "bangalore",
+                  "chikkamagaluru": "chikmagalur", "kalaburagi": "gulbarga", "mysuru": "mysore",
+                  "shivamogga": "shimoga", "tumakuru": "tumkur", "vijayapura": "bijapur"}
+    "maharashtra": {"beed": "bid", "buldhana": "buldana", "gondia": "gondiya", "raigad": "raigarh"}
+    "odisha": {"boudh": "baudh", "deogarh": "debagarh", "nabarangpur": "nabarangapur",
+               "sonepur": "subarnapur"}
+    "punjab": {"gurdaspur": "gurudaspur", "sri muktsar sahib": "muktsar"}
+    "rajasthan": {"chittorgarh": "chittaurgarh", "dholpur": "dhaulpur", "jalore": "jalor"}
+    "tamil nadu": {"kanchipuram": "kancheepuram", "villupuram": "viluppuram"}
+    "telangana": {"kumuram bheem asifabad": "komaram bheem asifabad", "hanumakonda": "warangal urban"}
+    "uttar pradesh": {"amroha": "jyotiba phule nagar", "ayodhya": "faizabad",
+                      "bhadohi": "sant ravidas nagar bhadohi", "hathras": "mahamaya nagar",
+                      "kasganj": "kanshiram nagar", "maharajganj": "mahrajganj"}
+    "west bengal": {"cooch behar": "koch bihar", "hooghly": "hugli", "howrah": "haora",
+                    "paschim bardhaman": "paschim barddhaman", "purba bardhaman": "purba barddhaman",
+                    "purulia": "puruliya"}
+
+# ---------------------------------------------------------------------
+# Indicators
+# ---------------------------------------------------------------------
+indicators:
+  # Minimum share of core districts with a non-missing value in EACH of
+  # NFHS-4 and NFHS-5 for an indicator to be included. NFHS-6 coverage is
+  # deliberately NOT used for selection (no-leakage rule).
+  min_coverage_rounds_4_5: 0.90
+  # Minimum share of districts whose NFHS-5 value agrees (within 0.5) between
+  # India.csv and the NFHS-6 file's own NFHS-5 column. Lower agreement means
+  # NFHS-5 was recalculated for the NFHS-6 fact sheets (or mis-parsed), so the
+  # NFHS-4/5 series is not comparable with NFHS-6. Uses NFHS-5 values only.
+  min_audit_agreement: 0.90
+  # Core set (DECISIONS D12). `text` is matched against the NFHS-6 canonical
+  # text after normalisation (exact match preferred, else unique substring).
+  # se_group links to noise.sample_size below.
+  core:
+    - {id: water_improved,      domain: wash,               se_group: households,        text: "improved drinking-water source"}
+    - {id: health_insurance,    domain: wash,               se_group: households,        text: "health insurance"}
+    - {id: menstrual_hygiene,   domain: wash,               se_group: women_subgroup,    text: "hygienic methods of protection"}
+    - {id: women_10yr_school,   domain: women_empowerment,  se_group: women,             text: "Women with 10 or more years of schooling"}
+    - {id: child_marriage,      domain: women_empowerment,  se_group: women_subgroup,    text: "Women age 20-24 years married before age 18"}
+    - {id: teen_pregnancy,      domain: women_empowerment,  se_group: women_subgroup,    text: "Women age 15-19 years who were already mothers or pregnant"}
+    - {id: fp_modern,           domain: women_empowerment,  se_group: women,             text: "Any modern method"}
+    - {id: unmet_need,          domain: women_empowerment,  se_group: women,             text: "Total unmet need"}
+    - {id: anc_first_trimester, domain: maternal_care,      se_group: mothers,           text: "antenatal check-up in the first trimester"}
+    - {id: anc_4plus,           domain: maternal_care,      se_group: mothers,           text: "at least 4 antenatal care visits"}
+    - {id: ifa_100d,            domain: maternal_care,      se_group: mothers,           text: "iron folic acid for 100 days"}
+    - {id: pnc_mother,          domain: maternal_care,      se_group: mothers,           text: "Mothers who received postnatal care"}
+    - {id: inst_births,         domain: maternal_care,      se_group: mothers,           text: "Institutional births"}
+    - {id: csection,            domain: maternal_care,      se_group: mothers,           text: "Births delivered by caesarean section"}
+    - {id: full_vacc,           domain: child_health,       se_group: children_subgroup, text: "fully vaccinated based on information from either vaccination card or mother's recall"}
+    - {id: mcv1,                domain: child_health,       se_group: children_subgroup, text: "first dose of measles-containing vaccine"}
+    - {id: vitamin_a,           domain: child_health,       se_group: children_subgroup, text: "vitamin A dose"}
+    - {id: diarrhoea,           domain: child_health,       se_group: children,          text: "Prevalence of diarrhoea in the 2 weeks"}
+    - {id: early_bf,            domain: child_health,       se_group: children,          text: "breastfed within one hour of birth"}
+    - {id: stunting,            domain: nutrition,          se_group: children,          text: "who are stunted"}
+    - {id: wasting,             domain: nutrition,          se_group: children,          text: "who are wasted"}
+    - {id: underweight,         domain: nutrition,          se_group: children,          text: "who are underweight"}
+    - {id: women_thin,          domain: nutrition,          se_group: women,             text: "Women whose Body Mass Index"}
+    - {id: women_overweight,    domain: nutrition,          se_group: women,             text: "Women who are overweight or obese"}
+  # Cross-round matches whose wording shows a definition change. Matched on
+  # the NFHS-6 canonical text (substring after normalisation). Never included.
+  definition_exclusions:
+    - {text: "3 doses of pentavalent vaccine", reason: "NFHS-4/5 count 'penta OR DPT'; NFHS-6 counts pentavalent only"}
+    - {text: "receiving an adequate diet",     reason: "possible revision to the WHO 2021 IYCF definition (NFHS-6 footnote 11); unverified, so excluded as ambiguous"}
+
+# ---------------------------------------------------------------------
+# Noise model (DECISIONS D14). ALL VALUES HERE ARE ASSUMPTIONS.
+# The fact sheets do not publish sample sizes. n is the ASSUMED number of
+# sampled units per district in the indicator's denominator population;
+# SE = 100 * sqrt(p (1 - p) / n * deff) for a percentage p.
+# ---------------------------------------------------------------------
+noise:
+  deff: 2.0                     # ASSUMPTION: design effect
+  deff_sensitivity: [1.5, 2.0, 3.0]
+  sample_size:                  # ASSUMPTION: per-district n (see DECISIONS D14 for derivation)
+    households: 900             # households / household population
+    women: 1000                 # women age 15-49 (or currently married women)
+    women_subgroup: 200         # women in a 5-10 year age band (20-24, 15-19, 15-24)
+    mothers: 250                # women with a birth in the last 5 years / births
+    men: 140                    # men (state module subsample)
+    children: 300               # children under 5 (anthropometry, illness)
+    children_subgroup: 70       # children 12-23 months (vaccination) and similar narrow cohorts
+  # NFHS fact sheets bracket estimates based on 25-49 unweighted cases. For a
+  # row with small_sample_flag == True, n is capped at this value (inflates SE).
+  small_sample_n: 37
+
+# ---------------------------------------------------------------------
+# Models and evaluation (trained / validated on NFHS-4 -> NFHS-5 ONLY)
+# ---------------------------------------------------------------------
+models:
+  elastic_net:
+    l1_ratio: [0.1, 0.5, 0.9]
+    n_alphas: 30
+    inner_cv_folds: 5           # GroupKFold by state inside each training fold
+    max_iter: 20000
+  lightgbm:                     # deliberately small: ~550 districts
+    n_estimators: 150
+    learning_rate: 0.05
+    num_leaves: 7
+    max_depth: 3
+    min_child_samples: 25
+    subsample: 0.8
+    subsample_freq: 1
+    colsample_bytree: 0.7
+    reg_lambda: 10.0
+  state_trend_damping: 1.0      # multiplier on the state mean change (1.0 = full trend)
+
+evaluation:
+  bootstrap_reps: 1000          # state-clustered bootstrap for 95% CIs
+  ci_level: 0.95
+
+# State -> region, used as a model feature that still carries information for
+# a held-out state in leave-one-state-out CV. Keys are canonical state names.
+regions:
+  north: [jammu and kashmir, ladakh, himachal pradesh, punjab, chandigarh, haryana, nct of delhi, uttarakhand, rajasthan]
+  central: [uttar pradesh, madhya pradesh, chhattisgarh]
+  east: [bihar, jharkhand, odisha, west bengal, andaman and nicobar islands]
+  northeast: [assam, arunachal pradesh, manipur, meghalaya, mizoram, nagaland, sikkim, tripura]
+  west: [gujarat, maharashtra, goa, dadra and nagar haveli, daman and diu, dadra and nagar haveli and daman and diu]
+  south: [andhra pradesh, telangana, karnataka, kerala, tamil nadu, puducherry, lakshadweep]
