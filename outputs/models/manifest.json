@@ -1,7 +1,7 @@
 {
- "created_utc": "2026-10-18T14:43:39+00:00",
- "train_hash": "791f980116a74d5a",
- "config_hash": "fe5b43a3a90972d1",
+ "created_utc": "2026-10-22T13:05:58+00:00",
+ "train_hash": "d3f06bee428deeef",
+ "config_hash": "24e4b2befa146b0a",
  "indicators": [
   "anc_4plus",
   "anc_first_trimester",
@@ -27,12 +27,40 @@
   "women_overweight",
   "women_thin"
  ],
- "n_core_districts": 547,
+ "n_core_districts": 571,
+ "n_test_units": 684,
+ "n_stable_units": 547,
+ "harmonised": true,
+ "feature_sets": [
+  "full",
+  "own",
+  "cross",
+  "cross_spatial",
+  "nostate"
+ ],
+ "methods": [
+  "persistence",
+  "national_trend",
+  "state_trend",
+  "rtm",
+  "fay_herriot",
+  "fh_rtm",
+  "elastic_net",
+  "lightgbm",
+  "elastic_net__own",
+  "lightgbm__own",
+  "elastic_net__cross",
+  "lightgbm__cross",
+  "elastic_net__cross_spatial",
+  "lightgbm__cross_spatial",
+  "elastic_net__nostate",
+  "lightgbm__nostate"
+ ],
  "versions": {
   "python": "3.11.9",
-  "sklearn": "1.9.1",
+  "sklearn": "1.9.0",
   "lightgbm": "4.7.0",
-  "pandas": "3.0.6",
+  "pandas": "3.0.3",
   "numpy": "2.4.6"
  },
  "trained_on": "NFHS-4 -> NFHS-5 only",

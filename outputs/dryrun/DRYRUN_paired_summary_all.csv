@@ -1,0 +1,5 @@
+run_mode,comparison,indicators,better_raw,significantly_better,significantly_worse,overall_diff_mse,overall_diff_lo,overall_diff_hi,overall_p
+DRYRUN,elastic_net vs rtm,23,19,2,0,-4.92586,-7.71207,-2.00492,0
+DRYRUN,elastic_net__nostate vs rtm,23,15,0,0,-2.44933,-6.24412,1.19859,0.21
+DRYRUN,lightgbm vs rtm,23,16,0,0,-3.44058,-8.28907,1.77024,0.186
+DRYRUN,lightgbm__nostate vs rtm,23,15,0,0,-2.79981,-7.67803,2.37609,0.274

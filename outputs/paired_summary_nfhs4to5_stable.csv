@@ -1,0 +1,5 @@
+comparison,indicators,better_raw,significantly_better,significantly_worse,overall_diff_mse,overall_diff_lo,overall_diff_hi,overall_p
+elastic_net vs rtm,23,19,4,0,-5.3207,-8.0687,-2.3271,0.0020
+elastic_net__nostate vs rtm,23,15,0,0,-2.0121,-6.7460,2.8254,0.4060
+lightgbm vs rtm,23,15,0,0,-3.4793,-8.3633,0.9940,0.1340
+lightgbm__nostate vs rtm,23,16,0,0,-2.7076,-7.9020,1.8198,0.2580

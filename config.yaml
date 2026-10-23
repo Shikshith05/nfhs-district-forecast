@@ -11,6 +11,11 @@ paths:
   processed_dir: data/processed
   outputs_dir: outputs
   models_dir: outputs/models
+  # Optional human-supplied inputs for boundary harmonisation (data/lineage/README.md).
+  # Missing files are fine: only repo-supported lineage is used then.
+  lineage_supplied: data/lineage/lineage_supplied.csv
+  population_supplied: data/lineage/population.csv
+  nfhs4_census2011_supplied: data/lineage/nfhs4_census2011_values.csv
 
 random_seed: 2026
 
@@ -132,6 +137,34 @@ indicators:
     - {text: "receiving an adequate diet",     reason: "possible revision to the WHO 2021 IYCF definition (NFHS-6 footnote 11); unverified, so excluded as ambiguous"}
 
 # ---------------------------------------------------------------------
+# Boundary harmonisation (nfhs_forecast/harmonise.py; DECISIONS D27-D31)
+# ---------------------------------------------------------------------
+harmonise:
+  enabled: true                 # false = base pipeline (547 stable districts only)
+  # Lineage edges below this confidence are not used (they go to
+  # outputs/crosswalk_review.csv). high > medium > low > unresolved.
+  min_confidence: medium
+  # Train on NFHS-5 districts whose NFHS-4/5 values share boundaries even if the
+  # NFHS-5 audit could not run (boundary-flagged in NFHS-6, or absent from it).
+  train_include_unaudited: true
+  # Use NFHS-4 values inherited from Census-2011 parents (needs supplied files).
+  train_on_inherited_nfhs4: true
+  # A split with no population weights: score each NFHS-6 child against its
+  # NFHS-5 parent's forecast ("inherit") or drop the component ("drop").
+  split_without_weights: inherit
+  # ASSUMPTION: extra variance for an inherited value, as a share of the
+  # indicator's within-state between-district variance (NFHS-5 values only).
+  inherit_var_share:
+    remnant: 0.25               # parent kept its name and most of its territory
+    child: 0.50                 # child carved out of the parent
+  # ASSUMPTION: coefficient of variation of estimated population weights.
+  weight_cv: 0.10
+  # Aggregate only if children with a value carry at least this weight share.
+  min_weight_coverage: 0.80
+  # Tolerance (percentage points) for rebuilding published state values.
+  state_rebuild_tolerance: 1.0
+
+# ---------------------------------------------------------------------
 # Noise model (DECISIONS D14). ALL VALUES HERE ARE ASSUMPTIONS.
 # The fact sheets do not publish sample sizes. n is the ASSUMED number of
 # sampled units per district in the indicator's denominator population;
@@ -172,10 +205,53 @@ models:
     colsample_bytree: 0.7
     reg_lambda: 10.0
   state_trend_damping: 1.0      # multiplier on the state mean change (1.0 = full trend)
+  # ML feature sets fitted and frozen (DECISIONS D32, pre-registered). "full" is
+  # the primary model; the others are ablations / the no-state-dummy variant.
+  feature_sets: [full, own, cross, cross_spatial, nostate]
+  # Feature sets also run on the stable-boundary subset and in seen-state CV.
+  feature_sets_secondary: [full, nostate]
 
 evaluation:
   bootstrap_reps: 1000          # state-clustered bootstrap for 95% CIs
+  n_jobs: -1                    # parallel CV folds (joblib); results do not depend on it
+  seen_state_folds: 10          # secondary CV, districts held out, states seen (D32)
+  freeze_tag: freeze-v1         # evaluate_nfhs6.py runs only if this tag == HEAD (DECISIONS D26)
   ci_level: 0.95
+
+# ---------------------------------------------------------------------
+# Gate C analyses (scripts/gate_c_analysis.py; DECISIONS D34, pre-registered)
+# ---------------------------------------------------------------------
+gate_c:
+  alpha: 0.10                   # 90% conformal intervals
+  conformal_methods: [rtm, fh_rtm, elastic_net, lightgbm]
+  primary_method: auto          # lowest pooled LOSO MSE on NFHS-4->5 among primary methods
+  fdr_q: 0.10                   # Benjamini-Hochberg level for surprises
+  sigma_floor_share: 0.05       # forecast-error variance floor (share of residual variance)
+  naive_k_min: 10               # naive top-k comparison uses k = max(#BH surprises, this)
+  weight_clip: 20               # clip covariate-shift weights to [1/20, 20]
+  dev_seed: 2026                # state split for --dev
+
+# ---------------------------------------------------------------------
+# Post-run pipeline (scripts/post_run.py; DECISIONS D37). Excluded from the
+# config hash: it only steers analyses AFTER the NFHS-6 evaluation (D35).
+# ---------------------------------------------------------------------
+post_run:
+  out_dir: outputs/post_run         # real results (after Gate B)
+  dryrun_dir: outputs/dryrun        # DRYRUN stand-in results (NFHS-4 -> NFHS-5 LOSO predictions)
+  bootstrap_reps: 1000              # state-clustered bootstrap for CIs and paired tests
+  break_bootstrap_reps: 1000        # structural-break check (exploratory)
+  break_q: 0.05                     # BH level for the structural-break check
+  release_dir: outputs/release
+
+# ---------------------------------------------------------------------
+# NFHS-6 spot-check against the IIPS PDFs (scripts/spot_check_nfhs6.py; D33)
+# ---------------------------------------------------------------------
+pdf_check:
+  pdf_dir: data/raw/pdfs        # PDFs + manifest.csv (file,state,district), placed by a human
+  sample_size: 200              # random district x indicator pairs
+  seed: 2026                    # fixed before any PDF was seen
+  tolerance: 0.05               # values agree if |CSV - PDF| <= this (percentage points)
+  value_columns: [nfhs6, nfhs5] # order of the value columns in the district fact sheets
 
 # State -> region, used as a model feature that still carries information for
 # a held-out state in leave-one-state-out CV. Keys are canonical state names.

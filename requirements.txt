@@ -1,13 +1,17 @@
-# Python 3.11 (tested on 3.11.9, Windows 11). Pinned from `pip freeze` of the top-level packages.
-pandas==3.0.6
+# Python 3.11 (tested on 3.11.9, Windows 11). Pinned top-level packages.
+# pandas, scikit-learn and pyarrow are pinned one release below the newest
+# because Windows Smart App Control blocked the newest wheels' DLLs on the
+# team machine (DECISIONS D24). Results are identical to the earlier pins.
+pandas==3.0.3
 numpy==2.4.6
 scipy==1.17.1
-scikit-learn==1.9.1
+scikit-learn==1.9.0
 lightgbm==4.7.0
 statsmodels==0.15.0
-pyarrow==26.0.0
+pyarrow==25.0.1
 PyYAML==6.0.3
 matplotlib==3.11.2
 python-docx==1.2.0
 RapidFuzz==3.14.6
 pytest==9.1.1
+pypdf==5.4.0                # pure Python; independent NFHS-6 PDF parser (D33)

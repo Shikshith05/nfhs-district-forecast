@@ -1,0 +1,2 @@
+run_mode,method,n,districts,indicators,r2_indicator_only,r2_district_only,r2_additive,unique_indicator,unique_district
+DRYRUN,elastic_net,13096,571,23,0.0622757,0.077993,0.140215,0.0622218,0.0779391

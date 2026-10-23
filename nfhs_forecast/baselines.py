@@ -103,3 +103,69 @@ def eb_shrinkage(y_prev, se_prev, states, return_weights: bool = False):
     if return_weights:
         return theta.to_numpy(), B.to_numpy(), tau2
     return theta.to_numpy()
+
+
+# ---------------------------------------------------------------------
+# Fay-Herriot area-level model (replaces the simple EB in results; D32)
+# ---------------------------------------------------------------------
+def _fh_reml_nll(s2: float, y: np.ndarray, X: np.ndarray, D: np.ndarray) -> float:
+    """Negative REML log-likelihood of the Fay-Herriot model at sigma_u^2 = s2."""
+    v = s2 + D
+    vi = 1.0 / v
+    XtViX = X.T @ (X * vi[:, None])
+    sign, logdet = np.linalg.slogdet(XtViX)
+    if sign <= 0:
+        return np.inf
+    beta = np.linalg.solve(XtViX, X.T @ (vi * y))
+    r = y - X @ beta
+    return 0.5 * (np.sum(np.log(v)) + logdet + np.sum(r ** 2 * vi))
+
+
+def fit_fay_herriot(y, se, X) -> dict:
+    """Fit y_d = x_d'beta + u_d + e_d, u ~ N(0, s2_u), e_d ~ N(0, se_d^2) (se known).
+
+    s2_u by REML (bounded 1-D search); beta by GLS through statsmodels WLS with
+    weights 1 / (s2_u + se_d^2). Rows with missing y or se must be removed first.
+    """
+    from scipy.optimize import minimize_scalar
+    from statsmodels.regression.linear_model import WLS
+
+    y, se, X = np.asarray(y, float), np.asarray(se, float), np.asarray(X, float)
+    D = se ** 2
+    upper = max(2.0 * float(np.var(y)), 1e-6)
+    res = minimize_scalar(_fh_reml_nll, bounds=(0.0, upper), args=(y, X, D), method="bounded",
+                          options={"xatol": 1e-6 * upper})
+    s2 = float(res.x)
+    if _fh_reml_nll(0.0, y, X, D) <= res.fun:   # boundary solution
+        s2 = 0.0
+    beta = WLS(y, X, weights=1.0 / (s2 + D)).fit().params
+    return {"sigma2_u": s2, "beta": np.asarray(beta, float)}
+
+
+def fay_herriot(y_prev, se_prev, states, return_info: bool = False):
+    """Fay-Herriot estimate of each district's round-t level, with state fixed effects.
+
+    theta_d = gamma_d y_d + (1 - gamma_d) x_d'beta,  gamma_d = s2_u / (s2_u + se_d^2).
+    Like eb_shrinkage it shrinks toward the state mean, but s2_u is estimated
+    by REML and the state means by GLS. Districts without a value or SE are
+    returned unchanged. Uses only round-t information (denoised persistence).
+    """
+    y = np.asarray(y_prev, float)
+    se = np.asarray(se_prev, float)
+    st = np.asarray(states)
+    ok = ~(np.isnan(y) | np.isnan(se))
+    theta = y.copy()
+    gamma = np.ones_like(y)
+    info = {"sigma2_u": np.nan, "n": int(ok.sum())}
+    levels = sorted(set(st[ok]))
+    if ok.sum() >= len(levels) + 3:
+        X = (st[ok][:, None] == np.array(levels)[None, :]).astype(float)
+        fit = fit_fay_herriot(y[ok], se[ok], X)
+        s2 = fit["sigma2_u"]
+        g = s2 / (s2 + se[ok] ** 2) if s2 > 0 else np.zeros(ok.sum())
+        theta[ok] = g * y[ok] + (1 - g) * (X @ fit["beta"])
+        gamma[ok] = g
+        info["sigma2_u"] = s2
+    if return_info:
+        return theta, gamma, info
+    return theta

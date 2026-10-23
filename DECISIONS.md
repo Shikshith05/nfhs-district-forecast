@@ -268,3 +268,492 @@ not colour. A filled dot means the 95% CI excludes 0.
 
 **D23. No pull request.** `gh` is not installed on this machine, so the branch
 `base-pipeline` was pushed and no PR was opened.
+
+## Gate A work (2026-10-22)
+
+**D24. Package pins changed for Windows Smart App Control.** On the team
+machine Smart App Control (Windows 11, state `On`) blocked DLLs in the newest
+wheels of pandas 3.0.6, scikit-learn 1.9.1 and pyarrow 26.0.0 ("An Application
+Control policy has blocked this file"). The security setting was left as it
+is. `requirements.txt` now pins pandas 3.0.3, scikit-learn 1.9.0 and pyarrow
+25.0.1, which load. With these pins `run_pipeline.py` reproduces the committed
+results exactly (same `results_nfhs4to5.csv` and training hash
+`791f980116a74d5a`). `statsmodels.api` is also blocked (its Kalman-filter
+DLL), but `statsmodels.regression.linear_model` loads, and that is all the
+Fay-Herriot code uses. Code imports statsmodels submodules, never
+`statsmodels.api`.
+
+**D25. OS-independent training hash and outputs (bug 5.1).**
+`models.training_data_hash` serialised the training data with the platform's
+default line terminator, so Windows (CRLF) and Linux/macOS (LF) gave different
+hashes for identical data (`791f980116a74d5a` vs `4f73a5ed88b1143e`). The hash
+now uses `lineterminator="\n"` and UTF-8, and a test checks that it does not
+depend on `os.linesep`. All CSV, JSON and Markdown outputs are written with
+`\n` line endings through `config.write_csv/write_text/write_json`, so a
+re-run on Windows no longer rewrites every tracked output file. The manifest
+hash changed because of this. The training data did not change.
+
+**D26. "Run once" is enforced in `evaluate_nfhs6.py` (bug 5.2).** Besides
+`--confirm-frozen` and the training-hash check, the script now refuses to run
+unless (a) the git tag `evaluation.freeze_tag` (`freeze-v1`) exists and points
+at HEAD, (b) the working tree is clean (git-ignored files such as
+`data/processed/` are allowed; tracked outputs and the frozen models must be
+committed), and (c) `outputs/nfhs6_evaluation_run.json` does not exist. The
+marker is created with exclusive-create mode after the checks pass and before
+any NFHS-6 value is scored, and it records the HEAD commit, the tag commit,
+the training hash, the hash and config checks, and the start and finish times.
+A crash part-way through therefore still counts as the run. A failed check
+(no tag, dirty tree, hash mismatch) does not create the marker. There is
+deliberately no switch to skip the git checks. The checks live in
+`nfhs_forecast/freeze_guard.py`. Exit codes: 5 = already run, 6 = git check
+failed.
+
+**D27. Boundary lineage crosswalk: repo evidence only, with source and
+confidence per edge (Task A1).** `harmonise.build_crosswalk` writes
+`outputs/crosswalk.csv`, one edge per parent → child pair for two
+transitions:
+- **5to6.** `unchanged` (name match and NFHS-6 flag False; high, or medium
+  for an alias the NFHS-5 audit could not confirm);
+  `retained_name_boundary_changed` (name match and flag True; medium);
+  `new_district_parent_unknown` (an NFHS-6 district absent from India.csv;
+  unresolved); `split_candidate_single_flagged_parent` (low: the only
+  flagged district in the same state, Bilaspur → Gaurela-Pendra-Marwahi;
+  not verified); `absent_in_nfhs6`.
+- **4to5.** `unchanged` (India.csv has an NFHS-4 value, which IIPS gives
+  only where boundaries are comparable; high);
+  `boundary_changed_4to5_parent_unknown` (unresolved).
+
+Only edges at or above `harmonise.min_confidence` (medium) are used.
+Everything below it, every retained-name change and every unresolved case
+goes to `outputs/crosswalk_review.csv` with a suggested action. Lineage is
+not invented: India.csv Census codes do not link new districts to parents
+(new districts have no code, D09). Official lineage could not be fetched,
+because the LGD download (lgdirectory.gov.in) needs a captcha. Official
+lineage, populations and NFHS-4 Census-2011 values can be supplied in
+`data/lineage/` (formats in its README). Supplied rows replace repo rows for
+the same child. The district names known to the author (e.g. Chengalpattu
+from Kanchipuram) were deliberately NOT hard-coded, because they could not
+be cited to an official file here.
+
+**D28. Analysis units, training set and test sets (Task A1).** The used 5to6
+edges form a bipartite graph between NFHS-5 and NFHS-6 districts, and each
+connected component (union-find) is one unit:
+- `identity`: same district in both rounds;
+- `inherited_remnant`: the NFHS-6 namesake's boundary changed. It is scored
+  against the forecast for the whole NFHS-5 district (D29);
+- `inherited_child`: needs supplied lineage without weights;
+- `aggregated`: needs supplied lineage and populations (D30).
+
+The sets are:
+- **Training set (NFHS-4 → NFHS-5).** Every NFHS-5 district whose NFHS-4 and
+  NFHS-5 values refer to the same boundaries (India.csv has both) and that
+  does not fail the NFHS-5 audit. A 4→5 pair does not depend on NFHS-6
+  boundaries, so the 11 NFHS-6-flagged districts with NFHS-4 values and the
+  13 districts absent from NFHS-6 (Manipur ×9, Puducherry, DNH, Daman, Diu)
+  are now in training (571 = 547 + 24). These 24 could not be audited
+  (`harmonise.train_include_unaudited: true`). Their effect is visible by
+  comparing with the stable-subset CV.
+- **Test set (NFHS-5 → NFHS-6, harmonised).** Units with NFHS-5 inputs and a
+  used lineage edge. This adds the 121 districts whose boundaries changed
+  between NFHS-4 and NFHS-5 but not between NFHS-5 and NFHS-6. They need no
+  NFHS-4 value to be forecast. It also adds the 16 retained-name remnants:
+  684 = 547 + 137.
+- **Stable-boundary subset.** The base pipeline's 547 core districts
+  (identity in both transitions, audited).
+
+Every result is reported on both the full harmonised set and the stable
+subset. Unit membership and eligibility use NFHS-5 values and NFHS-6
+*metadata* (names, flags) only. The sets are fixed in the frozen artifact
+(`test_units`, `stable_units`) before the NFHS-6 run. Indicator selection is
+unchanged: coverage is still computed on the 547 stable districts.
+
+The NFHS-5 audit rule (D12) now also applies to districts that were
+previously excluded earlier for lack of NFHS-4. Six Delhi districts (North,
+North East, North West, South, South East, South West: 4-22% agreement) fail
+it and are excluded from every set.
+
+**Selection caveat (bug 5.8):** the 132 districts without NFHS-4 values are
+the districts whose boundaries changed between 2011 and NFHS-5. They are not
+a random sample: they are mostly in states that reorganised districts
+(Telangana, Assam, Gujarat, Chhattisgarh, Meghalaya, Tripura, Arunachal,
+Delhi). They cannot enter training without supplied NFHS-4 Census-2011
+values and lineage. In the test set they are forecast by models trained on
+other districts.
+
+**D29. Inherited values get extra variance (ASSUMPTION).** When a value
+stands in for a different territory, the forecast error has an extra
+boundary-mismatch term. This covers the remnant scored against its parent's
+forecast, a child scored against its parent's, and (with supplied files) an
+NFHS-4 value inherited from a Census-2011 parent. The extra variance is
+`share × τ²`. τ² is the indicator's within-state between-district variance:
+var(y − state mean) − mean(SE²), floored at 0, estimated on NFHS-5 values of
+the stable districts only, so no NFHS-6 values are used. The shares are
+`harmonise.inherit_var_share`: remnant 0.25, child 0.5. The reasoning: a
+remnant keeping a share w ≈ 0.6–0.7 of the population differs from the whole
+by (1−w)(y_rem − y_carved). With independent parts that gives (1−w)²·2τ² ≈
+0.2–0.3 τ². A child differs from the whole by w(y_child − y_rem), giving about
+0.5–0.7 τ² before the positive correlation between neighbours, which lowers
+it. For 5→6 mismatch the extra variance is added to the scored round-6 row
+(`se² = se_sampling² + extra_var`), so the noise ceiling, conformal
+intervals and FDR scaling allow for it. For 4→5 inheritance it is added to
+the inherited round-4 row. Rows are flagged in `value_method` and
+`harmonised`.
+
+**D30. Aggregation with population weights and SE propagation.** For a
+component with supplied populations, the value at each round is
+Σ wᵢ yᵢ with wᵢ = popᵢ / Σ pop over that round's member districts. The
+variance is se² = Σ wᵢ² seᵢ² (independent district samples) + Σ (cv·wᵢ)²
+(yᵢ − ȳ)². The second term is a delta-method allowance for estimated
+weights, with cv = `harmonise.weight_cv` = 0.10 (ASSUMPTION). It is applied
+when the population file marks weights as `estimated`. Missing members are
+dropped and the weights renormalised if the remaining weight share is at
+least 0.8 (`min_weight_coverage`); otherwise the value is NaN. Total
+population is the default weight basis. Indicator-specific denominators
+(women, births) would be better and can be supplied. Tests check that
+weights sum to 1, that a re-aggregated synthetic split reproduces its
+parent, and the SE formula. Rebuilding published state values
+(`check_state_reconstruction`, tolerance `harmonise.state_rebuild_tolerance`
+= 1 pp) needs state values and populations, neither of which is in the repo.
+The function is written and tested on synthetic data only.
+
+**D31. Bootstrap clustering with harmonised units.** Lineage never crosses a
+state boundary: repo edges are within-state name matches, and supplied
+names are resolved within the row's state, so a cross-state edge cannot be
+created.
+So every parent district and component nests inside one state, and the
+existing state-clustered bootstrap is at least as coarse as clustering by
+parent district. Units derived from the same parent are never split across
+bootstrap clusters. Each prediction row also carries `parent_uid` for a
+parent-level analysis.
+
+**D32. PRE-REGISTRATION of model variants, tests and secondary metrics
+(Task A3; written and committed before any of them was run).** Every method
+below is fitted on NFHS-4 → NFHS-5 only, validated by LOSO CV, frozen, and
+scored once on NFHS-6 with the methods already in place. Nothing is added or
+dropped after seeing NFHS-6.
+
+*Primary comparison (unchanged in spirit):* each ML model against regression
+to the mean (RTM), the strongest simple baseline in D19.
+
+*Methods:*
+1. `national_trend`: y_t + the national mean change estimated on training
+   pairs. It separates the national shift from state-specific trends (bug
+   5.4). In LOSO, `state_trend` equals it (the held-out state is unseen). On
+   NFHS-6, `state_trend` extrapolates each state's NFHS-4→5 change and
+   `national_trend` does not, so both are scored.
+2. `fay_herriot` replaces `eb_shrinkage` in every results table (EB stays in
+   `baselines.py` for reference). Area-level model y_d = x_d'β + u_d + e_d,
+   u_d ~ N(0, σ²_u), e_d ~ N(0, SE_d²) with the assumed SEs, and x_d = state
+   fixed effects. σ²_u is estimated by REML, β by GLS
+   (statsmodels WLS with weights 1/(σ²_u + SE_d²)). Forecast = the FH
+   estimate of the round-t level (denoised persistence; round-t data only).
+3. `fh_rtm`: RTM fitted on FH-denoised inputs (θ̂_t → y_{t+1}), predicting
+   a + b·θ̂_t. Measurement error in y_t attenuates the RTM slope
+   (errors-in-variables). Denoising the input is the standard correction.
+4. ML feature sets, for both elastic net (`elastic_net`) and LightGBM
+   (`lightgbm`). The primary ML methods use the FULL set. Ablation variants
+   are suffixed:
+   - `__own`: the target indicator's round-t value only;
+   - `__cross`: round-t values of all 23 included indicators;
+   - `__cross_spatial`: `__cross` + spatial-neighbour features;
+   - FULL (no suffix): `__cross_spatial` + the target's state mean +
+     one-hot region + one-hot state;
+   - `__nostate`: FULL without the one-hot state dummies (keeps state mean
+     and region). This is the variant asked for in bug 5.3, because LOSO
+     never exercises the state dummies while the NFHS-6 test uses seen
+     states.
+5. Spatial-neighbour features: neighbours are Census-2011 districts whose
+   polygons in `Districts.geojson` share at least 2 vertices (coordinates
+   rounded to 1e-5°). The 4 island districts with none use their 3 nearest
+   centroids. A unit's neighbours are the units whose Census code is in its
+   code's neighbour set, or that share its code (e.g. split siblings). Units
+   without a code (created after 2011) get missing spatial features, which
+   are median-imputed (elastic net) or handled natively (LightGBM).
+   Features: the neighbours' mean round-t value of the target
+   (`nbr_mean__target`) and own minus neighbour mean (`nbr_diff__target`).
+   They are computed on the full round-t cross-section before any CV split,
+   so held-out and test units see the same features as in training. Only
+   round-t values and geometry are used.
+
+*Validation designs:*
+- Primary: LOSO CV (unchanged).
+- Secondary, `seen-state` CV: 10-fold CV over districts (GroupKFold by
+  `parent_uid`, so units from one parent stay together). Every held-out
+  district's state is seen in training. This exercises the state dummies as
+  the NFHS-6 test does. It is OPTIMISTIC: it shares the same transition's
+  state shocks, which the NFHS-6 forecast cannot know. It is reported as an
+  upper reference and covers only persistence, national/state trend, RTM,
+  `fh_rtm` and the FULL and `__nostate` ML models.
+
+*Tests:* paired state-clustered bootstrap (1,000 resamples of states, the
+same resample for both methods) of ΔMSE = MSE(ML) − MSE(RTM), per indicator
+and OVERALL, for `elastic_net`, `lightgbm`, `elastic_net__nostate` and
+`lightgbm__nostate`. Reported: ΔMSE, the 95% percentile CI, a two-sided
+bootstrap p-value (2 × the smaller tail share of ΔMSE* ≤ 0 / ≥ 0), and
+Benjamini–Hochberg-adjusted p-values across the 23 indicators within each
+comparison. "ML beats RTM on indicator k" is claimed only if the
+BH-adjusted p < 0.05 and ΔMSE < 0. No best-of-two selection.
+
+*Secondary metrics (CLAUDE.md §5), per indicator and method:*
+- skill net of the national shift: 1 − MSE/MSE(`national_trend`);
+- an unweighted MEAN over the 23 indicators of each skill, with a
+  state-clustered bootstrap CI, next to the pooled OVERALL row;
+- noise share of the variance of change: mean(SE_t² + SE_{t+1}²) /
+  var(y_{t+1} − y_t), over common-support rows;
+- the noise ceiling relative to persistence (as before) and relative to
+  RTM: 1 − noise_mse/MSE(RTM).
+
+The same metrics and tests are computed on NFHS-5 → NFHS-6 by the
+evaluation script, on the full harmonised set and on the stable subset.
+
+**D33. Independent NFHS-6 PDF check (Task A4).** `parse_nfhs6.py` reads the
+IIPS district PDFs with `pypdf`, which is pure Python, so Smart App Control
+has no DLL to block. It uses the text layer only (no OCR). It accepts an
+indicator row only if it ends in unambiguous value tokens; ambiguous or
+incomplete rows are flagged and excluded, so no PDF value is guessed. A
+human-written manifest (`data/raw/pdfs/manifest.csv`) says which district
+each PDF is: the district is not inferred from the file. Indicators are
+matched to the community CSV by normalised text, not by number.
+`scripts/spot_check_nfhs6.py` draws a random sample of district × indicator
+rows from the districts whose PDFs are present (seed 2026, 200 pairs,
+`pdf_check` in config.yaml, fixed before any PDF was seen). It reports
+agreement for the NFHS-6 and NFHS-5 columns with Wilson 95% CIs. No PDFs are
+in the repository yet, so the agreement rate is still to be measured
+(instructions: `docs/NFHS6_PDF_CHECK.md`). This is a data audit of the NFHS-6
+source and is allowed under the no-leakage rule (loading / cleaning / audit).
+The values never reach a model. The parser is tested on synthetic fact-sheet
+text and on a synthetic PDF.
+
+**D34. PRE-REGISTRATION of the Gate C analyses (conformal, FDR surprises,
+forecastability).** These are written and tested before Gate B, on synthetic
+data and on NFHS-4 → NFHS-5 LOSO residuals only. All settings are in
+`config.yaml` under `gate_c`. `scripts/gate_c_analysis.py` takes any
+predictions file in the format of `predictions_nfhs5to6.parquet`. Its
+`--dev` mode calibrates on a random half of states (seed 2026) and evaluates
+on the other half of the NFHS-4 → NFHS-5 LOSO residuals.
+
+- **Primary forecaster** for C2 and C3: the method with the lowest pooled
+  LOSO MSE on NFHS-4 → NFHS-5 (harmonised training set) among national
+  trend, state trend, RTM, Fay-Herriot, FH-RTM, elastic net and LightGBM.
+  Ablation variants are excluded. The rule uses NFHS-4/5 only. RTM is always
+  reported alongside it.
+- **C1 conformal** (nominal 90%, α = 0.10), calibrated per indicator × method
+  on the LOSO residuals of the harmonised training set, for RTM, FH-RTM,
+  elastic net and LightGBM. Three variants:
+  - **split:** absolute residual;
+  - **normalised:** residual / √(se_prev² + s0²), with s0² the median squared
+    calibration residual; the width adapts to the origin's sampling noise,
+    which is known at forecast time;
+  - **weighted:** covariate-shift weighted conformal (Tibshirani et al. 2019),
+    with density-ratio weights from a logistic classifier on round-t inputs
+    only (y_prev, se_prev, region), clipped to [1/20, 20].
+
+  Coverage is the share of NFHS-6 values inside the interval, per indicator
+  and OVERALL, on the harmonised set and the stable subset. The claim is
+  exchangeability across states and time. The 4→5 calibration does not
+  guarantee 5→6 coverage, which is what is being tested.
+- **C2 surprises:** z = (y − ŷ)/√(σ²_f + SE²). σ²_f is the forecast-error
+  variance net of sampling noise, estimated from the calibration residuals
+  per indicator × method, floored at 5% of the residual variance. SE
+  includes the extra variance of inherited units (D29), so a boundary change
+  alone does not make a surprise. Primary p-value: normal; secondary:
+  conformal p-value against the calibration |z|. Benjamini–Hochberg at
+  q = 0.10 over all district × indicator pairs of one method. It is compared
+  with a naive top-k of |residual| (k = number of BH discoveries, at least
+  10), reporting the overlap and the mean SE of each set.
+- **C3 forecastability.** Per pair, noise share = SE²/v_i and normalised
+  squared error = (y − ŷ)²/v_i, where v_i is the persistence MSE of indicator
+  i. Per district: ceiling = 1 − mean noise share, skill = 1 − mean
+  normalised squared error, gap = ceiling − skill (districts with ≥ 10
+  indicators). An additive decomposition of log normalised squared error into
+  district and indicator effects gives R² for each factor alone, for the
+  additive model, and the unique share of each. Maps use the Census-2011
+  polygons (units without a 2011 code are not drawn, and their number is
+  stated).
+
+*D34 addendum (from the `--dev` run on NFHS-4 → NFHS-5 only, before Gate
+B).* The conformal p-value has a resolution of 1/(n_cal + 1) per indicator.
+With about 250–570 calibration districts per indicator, its minimum (about
+0.002–0.004) cannot pass BH over about 7,000–16,000 tests, so the conformal
+variant will report no surprises by construction. It stays a secondary
+check. The normal-theory p-value is primary, as pre-registered. Development
+results (`outputs/gate_c_dev/`): OVERALL 90% coverage 0.88–0.89 for split
+and normalised, 0.885–0.893 for weighted; 21 BH surprises for elastic net
+with 5 overlapping the naive top-21, and the naive picks have a higher mean
+SE (4.9 vs 3.4).
+
+## Gate B preparation (2026-10-23)
+
+*Everything from D35 onwards was added AFTER the pre-registrations D32 and
+D34. None of it changes the frozen models, the training data, the methods,
+or any pre-registered analysis. Where a D35+ item adds an analysis, it is
+labelled "post-registration (exploratory)" and is reported as such.*
+
+**D35. Pre-flight checks (`scripts/preflight.py`).**
+- **Tree and run state:** the tree is clean (before and after the checks),
+  and neither the freeze tag nor the NFHS-6 run marker exists yet.
+- **Tests:** the full pytest suite and the leakage tests pass.
+- **Training hash:** `run_pipeline.py --hash-only` rebuilds the training
+  panel into a temporary directory and reproduces the frozen training-data
+  hash. The config hash must also match.
+- **Crosswalk:**
+  - FAIL if any low-confidence or unresolved case touches a stable-boundary
+    district, if an unresolved 4→5 case touches a training unit, or if a
+    weak 5→6 case touches a test unit that is not flagged as inherited.
+  - WARN, not FAIL, if a weak 5→6 case touches a flagged test unit. This is
+    currently Bilaspur, through the unverified Gaurela-Pendra-Marwahi edge:
+    Bilaspur is scored by inheritance either way. The 126 test units that
+    lack 4→5 lineage are reported as information; they affect training
+    eligibility only.
+- **Pre-registration order:** the commits that introduced D32 and D34 come
+  strictly before the first commit of any result they govern, and their
+  text is unchanged. D34 and the NFHS-4→5 `--dev` outputs
+  (`outputs/gate_c_dev/`) were committed together (8f41e4a). D34 governs
+  only NFHS-6 analyses, so this is reported as a WARN, not hidden.
+
+Two enabling changes, neither of which touches training:
+- `run_pipeline.py --hash-only` stops before CV and freezing.
+- `config_hash` now ignores a `post_run` config section, which steers only
+  post-run tables, figures and the report. The frozen config hash
+  (`24e4b2befa146b0a`) is unchanged, which preflight verifies.
+
+**D36. Gate B helper (`scripts/gate_b.ps1`).** Windows PowerShell 5.1
+compatible. It runs the full pre-flight, shows the commit, tag and frozen
+hash, and requires the exact text `YES`. It then tags HEAD `freeze-v1`, runs
+the evaluation once, checks that the run log says `completed`, and commits
+`outputs/`. It force-adds `predictions_nfhs5to6.parquet`, which
+`.gitignore` would otherwise skip, because the predictions are the evidence
+every post-run analysis rests on.
+
+It stops at the first error and never retries:
+- **Failure before scoring** (no run marker): it explains how to delete the
+  local tag if the cause is fixed.
+- **Failure after the run was claimed:** it states that this counts as the
+  one run.
+
+It does not push. Pushing is left to the human. It is tested end to end in
+temporary repositories with stub pre-flight and evaluation scripts, so the
+real evaluation is never run by the tests.
+
+**D37. Post-run pipeline (`scripts/post_run.py`, `nfhs_forecast/post_run.py`).**
+One command after Gate B. It reads `outputs/predictions_nfhs5to6.parquet`
+and refuses unless the run log says `completed` and the input carries no
+DRYRUN marks. It writes `outputs/post_run/`, renders `docs/report.md`,
+checks every number in it against the result files, and adds round 6 to
+the release. Nothing is refitted and the frozen models are not loaded. The
+analyses fall into two groups:
+
+**Pre-registered (D32, D34), unchanged:**
+- metrics on the harmonised set and the stable subset;
+- paired tests against RTM;
+- secondary metrics;
+- conformal coverage with split, normalised and weighted variants,
+  calibrated on the NFHS-4→5 LOSO residuals;
+- BH-FDR surprises against a naive top-k, for the primary method and RTM;
+- per-district forecastability, its decomposition, and the maps.
+
+**Added after the pre-registration (exploratory; the report labels them so):**
+- *Rows by unit group.* Stable; identity districts whose boundary changed
+  between NFHS-4 and NFHS-5; flagged (inherited or aggregated) units. Each
+  group is scored separately so that flagged rows are visible on their own.
+  The pre-registered "all" and "stable" sets are unchanged.
+- *NFHS-4→5 vs NFHS-5→6 comparison.* Skill per method and indicator in both
+  periods, the Spearman correlation of method rankings and of per-indicator
+  skill, and the best method in each period.
+- *Structural-break check.* Per indicator, it compares the 4→5 and 5→6
+  values of three quantities: the mean change (national shift), the OLS
+  slope of y_{t+1} on y_t (regression to the mean), and the primary
+  method's RMS error. The two periods are not paired, so each difference
+  gets a 95% CI from independent state-clustered bootstraps, one per
+  period. p-values are BH-adjusted over indicators per statistic, at
+  q = 0.05 (`post_run.break_q`). The 5→6 slope is estimated on NFHS-6 values
+  purely as a description of what happened. It is never used to predict.
+
+Settings are in `config.yaml` → `post_run`, which is excluded from the config
+hash (D35). The frozen hash is verified unchanged. Figures use the existing
+plot style. Two-series charts use the first two categorical hues in fixed
+order, plus marker shape, so colour is never the only cue.
+
+**D38. Report generated from a template, with every number checked.**
+`docs/report_template.md` is the only hand-edited report text. Every result
+in it is a slot `{{name}}`. `nfhs_forecast/report_build.py` declares each
+slot's source file, row filter, column and format, and wraps each rendered
+value in an invisible `<!--slot:name-->` marker. `docs/report.md` is
+generated, and `docs/report_values.json` lists the source of every number.
+
+Before Gate B the report is rendered in `prerun` mode: NFHS-4→5 numbers are
+filled and each NFHS-6 slot shows `[[NFHS-6 PENDING]]`. `post_run.py`
+re-renders it in `final` mode. Prose about NFHS-6 that depends on the
+outcome is limited to rule-based verdict phrases ("significantly lower /
+higher MSE than", "no significant difference from"), decided from the
+95% CI, so no conclusion can be written by hand before the results exist.
+
+`scripts/check_report_numbers.py` (`nfhs_forecast/report_check.py`) checks:
+1. Each slot re-renders to exactly the text shown, so no number is stale.
+2. Separately, each scalar and each fixed-row table cell agrees with its
+   source file within the displayed rounding.
+3. No decimal or percentage appears in the prose unless it is a
+   `config.yaml` constant (settings like α = 0.10, not results).
+4. No unfilled slot remains. PENDING is allowed only in `prerun` mode and
+   only for NFHS-6 slots.
+5. The real report never mentions DRYRUN.
+6. Every figure exists.
+
+The tests regenerate `docs/report.md` from committed files. If any result
+file changes without re-rendering the report, the tree becomes dirty and
+preflight fails, so a stale report cannot reach Gate B. Integers in the
+prose (years, section and D-numbers) are not checked. Every count that is a
+result is a slot. The related-work references are from the authors'
+knowledge, and the template asks the team to verify each one.
+
+**D39. Dry run of the post-run pipeline.** `scripts/post_run.py --dryrun`
+uses the committed NFHS-4→5 LOSO predictions as a stand-in in the exact
+NFHS-5→6 predictions format, and runs everything, including the report. Its
+outputs are deliberately unmistakable:
+- they live only in `outputs/dryrun/`;
+- every file name starts with `DRYRUN_`, and the folder has a
+  `DRYRUN_README.md`;
+- every table has `run_mode = DRYRUN`, every JSON carries it, and every
+  Markdown file opens with a DRYRUN banner;
+- every figure is watermarked "DRYRUN — NOT NFHS-6 RESULTS";
+- the report states it in its status line.
+
+Real mode refuses a predictions file whose path or rows say DRYRUN. The
+renderer refuses to build the real report from a DRYRUN folder. The checker
+fails the real report if it mentions DRYRUN. Tests run the whole dry run (60
+bootstrap replicates for speed) and check: the report is fully filled and
+passes the number check; every file is marked; real mode refuses the
+stand-in; the real report and template never reference DRYRUN files.
+
+The dry-run numbers are meaningless by design. Calibration and target are
+the same predictions, so coverage is about 90% and no structural break
+appears. They test plumbing only. The committed `outputs/dryrun/` is a
+1,000-replicate run, minus the parquet stand-in, which is git-ignored.
+
+**D40. Public release; reproducible re-runs without re-freezing.**
+
+`scripts/make_release.py` writes `outputs/release/`:
+- `harmonised_panel.csv`: unit × indicator × round, with value, total and
+  sampling SE, extra variance, assumed n, value method, flags and parent;
+- `units.csv`: unit types, train/test/stable flags, lineage members,
+  confidence, Census-2011 code;
+- `codebook.csv`: the included indicators;
+- `crosswalk.csv`, plus `DATA_DICTIONARY.md` and `SOURCES_AND_LICENCE.md`;
+- `release_manifest.json`, with the SHA-256 of every file.
+
+Before Gate B the release holds **NFHS-4 and NFHS-5 only**. NFHS-6 values
+are added by `post_run.py` after the one-shot test, so no NFHS-6 outcome is
+copied or distributed before it. On licences: the NFHS-4/5 community repository
+shows no licence (checked 2026-10-23), and the Patra MIT licence covers code,
+not data. The release therefore states that the underlying estimates stay
+under IIPS / Government of India terms. The project has no licence file, and
+the team must choose one before publishing.
+
+To let a new reader rebuild `data/processed/` without re-freezing the models:
+- `run_pipeline.py --data-only` (an alias of `--hash-only`, D35) stops before
+  CV and freezing.
+- `data_report.md` no longer prints the run date, its only non-deterministic
+  line, so a re-run leaves the tracked tree byte-identical. The training hash
+  is unaffected.
+
+The README now lists the full reproduction order.

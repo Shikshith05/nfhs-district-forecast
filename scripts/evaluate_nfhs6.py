@@ -16,14 +16,21 @@ parameters estimated on NFHS-4 -> NFHS-5 and only NFHS-5 values as inputs.
 The oracle state trend is not computed (it would need NFHS-6 values).
 Run it once. If anything is changed after seeing NFHS-6 results, say so in
 DECISIONS.md and report both runs.
+
+"Run once" is enforced (DECISIONS D26): the script refuses to run unless the
+git tag `evaluation.freeze_tag` (freeze-v1) exists and points at HEAD and the
+working tree is clean, and it refuses if outputs/nfhs6_evaluation_run.json
+already exists. That marker is created before any NFHS-6 value is scored and
+records the commit id.
+
+Exit codes: 0 ok, 2 not confirmed, 3 training-data hash mismatch, 4 no NFHS-6
+rows, 5 already run, 6 freeze/git check failed.
 """
 
 from __future__ import annotations
 
 import argparse
-import json
 import sys
-from datetime import datetime, timezone
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
@@ -31,8 +38,8 @@ sys.path.insert(0, str(REPO))
 
 import pandas as pd  # noqa: E402
 
-from nfhs_forecast import evaluate, models  # noqa: E402
-from nfhs_forecast.config import config_hash, load_config  # noqa: E402
+from nfhs_forecast import evaluate, freeze_guard, models  # noqa: E402
+from nfhs_forecast.config import config_hash, load_config, write_csv  # noqa: E402
 
 
 def main(argv=None) -> int:
@@ -45,6 +52,7 @@ def main(argv=None) -> int:
     ap.add_argument("--out-dir", default=None, help="default: <outputs_dir>")
     ap.add_argument("--allow-hash-mismatch", action="store_true",
                     help="score even if the NFHS-4/5 training data differ from the frozen data")
+    ap.add_argument("--repo", default=str(REPO), help="git working tree to check (default: this repo)")
     args = ap.parse_args(argv)
     if not args.confirm_frozen:
         print("Refusing to run: this is the one-shot NFHS-6 test. Review the pipeline, git-tag the "
@@ -57,6 +65,18 @@ def main(argv=None) -> int:
     models_path = Path(args.models) if args.models else P["models_dir"] / "frozen_models.pkl"
     out = Path(args.out_dir) if args.out_dir else P["outputs_dir"]
     out.mkdir(parents=True, exist_ok=True)
+
+    try:
+        freeze_guard.check_not_already_run(out)
+    except freeze_guard.AlreadyRunError as e:
+        print(f"ABORT: {e}")
+        return 5
+    tag = cfg["evaluation"].get("freeze_tag", "freeze-v1")
+    try:
+        git_info = freeze_guard.check_freeze(args.repo, tag)
+    except freeze_guard.FreezeCheckError as e:
+        print(f"ABORT: {e}")
+        return 6
 
     frozen = models.load_frozen(models_path)
     panel = pd.read_parquet(panel_path)
@@ -72,31 +92,55 @@ def main(argv=None) -> int:
             print("ABORT: " + msg)
             return 3
         print("WARNING: " + msg)
-    if config_hash(cfg) != frozen.config_hash:
+    config_match = config_hash(cfg) == frozen.config_hash
+    if not config_match:
         print("WARNING: config.yaml changed since the freeze (frozen models are used regardless).")
 
+    # Claim the one run BEFORE any NFHS-6 value is scored.
+    marker = freeze_guard.claim_run(out, {
+        **git_info, "frozen_created_utc": frozen.created_utc, "train_hash": frozen.train_hash,
+        "hash_check": h == frozen.train_hash, "config_hash_match": config_match,
+        "allow_hash_mismatch": bool(args.allow_hash_mismatch)})
+
     # Build NFHS-5 -> NFHS-6. Round-6 values are read ONLY to score predictions.
-    data = models.build_transition(panel, 5, 6, frozen.indicators, frozen.core_districts, cfg,
-                                   for_training=False)
+    # Test units (harmonised set) and the stable-boundary subset were fixed at the
+    # freeze from NFHS-5 data and NFHS-6 metadata only (DECISIONS D28).
+    test_units = frozen.test_units or frozen.core_districts
+    stable_units = set(frozen.stable_units or frozen.core_districts)
+    # Spatial neighbours use the geometry frozen with the models (Census-2011 polygons).
+    data = models.build_transition(panel, 5, 6, frozen.indicators, test_units, cfg,
+                                   for_training=False, adjacency=frozen.fitted.spec.adjacency)
     if data.next is None:
+        freeze_guard.finish_run(marker, outcome="aborted: no NFHS-6 rows in the panel")
         print("ABORT: no NFHS-6 rows in the panel.")
         return 4
     # Predictions get a copy without the round-6 matrices, so they cannot see NFHS-6.
-    inputs_only = models.Transition(5, 6, data.prev, data.se_prev, data.meta)
-    preds = models.predict_methods(frozen.fitted, inputs_only, cfg, include_eb=True)
+    preds = models.predict_methods(frozen.fitted, data.inputs_only(), cfg, include_eb=True)
     preds = evaluate.attach_truth(preds, data)
+    preds = evaluate.annotate_units(preds, frozen.units, stable_units)
     preds.to_parquet(out / "predictions_nfhs5to6.parquet", index=False)
 
-    results = evaluate.metric_table(preds, evaluate.HONEST_METHODS,
-                                    bootstrap_reps=cfg["evaluation"]["bootstrap_reps"],
-                                    ci_level=cfg["evaluation"]["ci_level"], seed=cfg["random_seed"])
-    results.to_csv(out / "results_nfhs5to6.csv", index=False, float_format="%.4f")
+    # Pre-registered tables (DECISIONS D32), on the harmonised set and the stable subset.
+    ev = cfg["evaluation"]
+    kw = dict(bootstrap_reps=ev["bootstrap_reps"], ci_level=ev["ci_level"], seed=cfg["random_seed"])
+    outputs = ["predictions_nfhs5to6.parquet"]
+    for suffix, sub in (("", preds), ("_stable", preds[preds.stable_unit])):
+        res = evaluate.metric_table(sub, evaluate.HONEST_METHODS, **kw)
+        tests = evaluate.paired_tests(sub, **kw)
+        tables = {f"results_nfhs5to6{suffix}.csv": res,
+                  f"secondary_nfhs5to6{suffix}.csv": evaluate.secondary_metrics(sub, **kw),
+                  f"paired_tests_nfhs5to6{suffix}.csv": tests,
+                  f"paired_summary_nfhs5to6{suffix}.csv": evaluate.paired_summary(tests)}
+        for name, table in tables.items():
+            write_csv(table, out / name, float_format="%.4f")
+            outputs.append(name)
+        if suffix == "":
+            results = res
     evaluate.plot_skill(results, out / "skill_by_indicator_nfhs6.png",
                         "Skill vs persistence, NFHS-5 → NFHS-6 (frozen models)")
-    with open(out / "nfhs6_evaluation_run.json", "w", encoding="utf-8") as f:
-        json.dump({"run_utc": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-                   "frozen_created_utc": frozen.created_utc, "train_hash": frozen.train_hash,
-                   "hash_check": h == frozen.train_hash}, f, indent=1)
+    outputs.append("skill_by_indicator_nfhs6.png")
+    freeze_guard.finish_run(marker, outcome="scored", outputs=outputs, n_test_units=len(test_units),
+                            n_stable_units=len(stable_units))
 
     overall = results[results.indicator_id == "OVERALL"].set_index("method")
     print("OVERALL (pooled over indicators), NFHS-5 -> NFHS-6, frozen models")

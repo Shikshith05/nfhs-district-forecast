@@ -1,0 +1,422 @@
+{
+ "mode": "dryrun",
+ "primary_method": "elastic_net",
+ "slots": {
+  "run_status": {
+   "text": "**DRYRUN — NOT NFHS-6 RESULTS.** The 'NFHS-6' numbers in this file come from the NFHS-4 → NFHS-5 leave-one-state-out predictions used as a stand-in, only to test the report pipeline.",
+   "source": null
+  },
+  "train_hash": {
+   "text": "d3f06bee428deeef",
+   "source": "../models/manifest.json"
+  },
+  "n_train": {
+   "text": "571",
+   "source": "../models/manifest.json"
+  },
+  "n_test": {
+   "text": "684",
+   "source": "../models/manifest.json"
+  },
+  "s45_rtm": {
+   "text": "0.613",
+   "source": "../results_nfhs4to5.csv"
+  },
+  "s45_en": {
+   "text": "0.637",
+   "source": "../results_nfhs4to5.csv"
+  },
+  "v45_en_rtm": {
+   "text": "significantly lower MSE than",
+   "source": "../paired_tests_nfhs4to5.csv"
+  },
+  "n45_en_better": {
+   "text": "2",
+   "source": "../paired_summary_nfhs4to5.csv"
+  },
+  "n_ind": {
+   "text": "23",
+   "source": "../models/manifest.json"
+  },
+  "primary_method": {
+   "text": "Elastic net",
+   "source": null
+  },
+  "s56_primary": {
+   "text": "0.637",
+   "source": "DRYRUN_results_all.csv"
+  },
+  "s56_rtm": {
+   "text": "0.613",
+   "source": "DRYRUN_results_all.csv"
+  },
+  "v56_en_rtm": {
+   "text": "significantly lower MSE than",
+   "source": "DRYRUN_paired_tests_all.csv"
+  },
+  "cov_split": {
+   "text": "0.901",
+   "source": "DRYRUN_key_numbers.csv"
+  },
+  "cov_weighted": {
+   "text": "0.901",
+   "source": "DRYRUN_key_numbers.csv"
+  },
+  "n_surprises": {
+   "text": "18",
+   "source": "DRYRUN_key_numbers.csv"
+  },
+  "n_train_added": {
+   "text": "24",
+   "source": "../harmonised_units.csv"
+  },
+  "n_test_changed45": {
+   "text": "121",
+   "source": "../harmonised_units.csv"
+  },
+  "n_test_inherited": {
+   "text": "16",
+   "source": "../harmonised_units.csv"
+  },
+  "n_stable": {
+   "text": "547",
+   "source": "../models/manifest.json"
+  },
+  "n_review": {
+   "text": "165",
+   "source": "../crosswalk_review.csv"
+  },
+  "n_rev_45": {
+   "text": "132",
+   "source": "../crosswalk_review.csv"
+  },
+  "n_rev_new": {
+   "text": "16",
+   "source": "../crosswalk_review.csv"
+  },
+  "n_rev_retained": {
+   "text": "16",
+   "source": "../crosswalk_review.csv"
+  },
+  "n_rev_low": {
+   "text": "1",
+   "source": "../crosswalk_review.csv"
+  },
+  "t45_main": {
+   "text": "| Method | Pooled skill | 95% CI | Mean skill over indicators | Pooled skill, stable subset |\n|---|---|---|---|---|\n| Persistence | 0.000 | [0.000, 0.000] | 0.000 | 0.000 |\n| National trend | 0.422 | [0.326, 0.478] | 0.337 | 0.422 |\n| State trend | 0.422 | [0.326, 0.478] | 0.337 | 0.422 |\n| Regression to the mean (RTM) | 0.613 | [0.535, 0.672] | 0.540 | 0.613 |\n| Fay-Herriot | 0.083 | [0.071, 0.098] | 0.108 | 0.085 |\n| FH + RTM | 0.624 | [0.551, 0.678] | 0.554 | 0.624 |\n| Elastic net | 0.637 | [0.566, 0.690] | 0.577 | 0.639 |\n| LightGBM | 0.630 | [0.552, 0.687] | 0.557 | 0.630 |\n| Elastic net, no state dummies | 0.625 | [0.554, 0.677] | 0.565 | 0.623 |\n| LightGBM, no state dummies | 0.627 | [0.553, 0.682] | 0.556 | 0.626 |\n| State trend (oracle) | 0.601 | [0.535, 0.647] | 0.510 | 0.597 |",
+   "source": "../results_nfhs4to5.csv"
+  },
+  "s45_nat": {
+   "text": "0.422",
+   "source": "../results_nfhs4to5.csv"
+  },
+  "s45_rtm_mean": {
+   "text": "0.540",
+   "source": "../results_nfhs4to5.csv"
+  },
+  "s45_en_mean": {
+   "text": "0.577",
+   "source": "../results_nfhs4to5.csv"
+  },
+  "s45_lgbm": {
+   "text": "0.630",
+   "source": "../results_nfhs4to5.csv"
+  },
+  "s45_oracle": {
+   "text": "0.601",
+   "source": "../results_nfhs4to5.csv"
+  },
+  "s45_fh": {
+   "text": "0.083",
+   "source": "../results_nfhs4to5.csv"
+  },
+  "fh_deff15": {
+   "text": "0.067",
+   "source": "../sensitivity_deff.csv"
+  },
+  "fh_deff3": {
+   "text": "0.105",
+   "source": "../sensitivity_deff.csv"
+  },
+  "s45_en_stable": {
+   "text": "0.639",
+   "source": "../results_nfhs4to5_stable.csv"
+  },
+  "s45_rtm_stable": {
+   "text": "0.613",
+   "source": "../results_nfhs4to5_stable.csv"
+  },
+  "fig45_skill": {
+   "text": "![Skill vs persistence by indicator, NFHS-4 → NFHS-5, leave-one-state-out CV](../skill_by_indicator.png)",
+   "source": "../skill_by_indicator.png"
+  },
+  "t45_paired": {
+   "text": "| Comparison | Indicators better (raw) | Significantly better (BH) | Significantly worse (BH) | Pooled ΔMSE | 95% CI | p |\n|---|---|---|---|---|---|---|\n| Elastic net vs RTM | 19 | 2 | 0 | -4.93 | [-7.71, -2.00] | 0.000 |\n| LightGBM vs RTM | 16 | 0 | 0 | -3.44 | [-8.29, 1.77] | 0.186 |\n| Elastic net (no state dummies) vs RTM | 15 | 0 | 0 | -2.45 | [-6.24, 1.20] | 0.210 |\n| LightGBM (no state dummies) vs RTM | 15 | 0 | 0 | -2.80 | [-7.68, 2.38] | 0.274 |",
+   "source": "../paired_summary_nfhs4to5.csv"
+  },
+  "d45_en_rtm": {
+   "text": "-4.93",
+   "source": "../paired_tests_nfhs4to5.csv"
+  },
+  "d45_en_rtm_lo": {
+   "text": "-7.71",
+   "source": "../paired_tests_nfhs4to5.csv"
+  },
+  "d45_en_rtm_hi": {
+   "text": "-2.00",
+   "source": "../paired_tests_nfhs4to5.csv"
+  },
+  "n45_en_better_stable": {
+   "text": "4",
+   "source": "../paired_summary_nfhs4to5_stable.csv"
+  },
+  "v45_lgbm_rtm": {
+   "text": "no significant difference in MSE from",
+   "source": "../paired_tests_nfhs4to5.csv"
+  },
+  "t45_ablation": {
+   "text": "| Feature set | Pooled skill | Mean skill |\n|---|---|---|\n| Elastic net, own history | 0.611 | 0.538 |\n| Elastic net, + other indicators | 0.611 | 0.541 |\n| Elastic net, + spatial | 0.632 | 0.568 |\n| Elastic net | 0.637 | 0.577 |\n| Elastic net, no state dummies | 0.625 | 0.565 |\n| LightGBM, own history | 0.594 | 0.517 |\n| LightGBM, + other indicators | 0.597 | 0.520 |\n| LightGBM, + spatial | 0.619 | 0.549 |\n| LightGBM | 0.630 | 0.557 |\n| LightGBM, no state dummies | 0.627 | 0.556 |",
+   "source": "../results_nfhs4to5.csv"
+  },
+  "t45_secondary": {
+   "text": "| Method | Skill vs persistence | Skill net of national shift | 95% CI | Skill vs RTM |\n|---|---|---|---|---|\n| Regression to the mean (RTM) | 0.613 | 0.330 | [0.252, 0.396] | 0.000 |\n| FH + RTM | 0.624 | 0.350 | [0.280, 0.406] | 0.029 |\n| Elastic net | 0.637 | 0.373 | [0.308, 0.424] | 0.064 |\n| LightGBM | 0.630 | 0.360 | [0.293, 0.419] | 0.044 |",
+   "source": "../secondary_nfhs4to5.csv"
+  },
+  "noise_share_45": {
+   "text": "24.4%",
+   "source": "../secondary_nfhs4to5.csv"
+  },
+  "noise_share_45_mean": {
+   "text": "31.7%",
+   "source": "../secondary_nfhs4to5.csv"
+  },
+  "ceil_p_45": {
+   "text": "0.933",
+   "source": "../secondary_nfhs4to5.csv"
+  },
+  "ceil_rtm_45": {
+   "text": "0.828",
+   "source": "../secondary_nfhs4to5.csv"
+  },
+  "s45_seen_en": {
+   "text": "0.763",
+   "source": "../results_nfhs4to5_seenstate.csv"
+  },
+  "s45_seen_en_nostate": {
+   "text": "0.692",
+   "source": "../results_nfhs4to5_seenstate.csv"
+  },
+  "s45_seen_rtm": {
+   "text": "0.637",
+   "source": "../results_nfhs4to5_seenstate.csv"
+  },
+  "s45_seen_st": {
+   "text": "0.597",
+   "source": "../results_nfhs4to5_seenstate.csv"
+  },
+  "dev_cov_split": {
+   "text": "0.877",
+   "source": "../gate_c_dev/coverage.csv"
+  },
+  "dev_cov_weighted": {
+   "text": "0.885",
+   "source": "../gate_c_dev/coverage.csv"
+  },
+  "n56": {
+   "text": "571",
+   "source": "DRYRUN_key_numbers.csv"
+  },
+  "n56_stable": {
+   "text": "547",
+   "source": "DRYRUN_key_numbers.csv"
+  },
+  "n56_changed": {
+   "text": "13",
+   "source": "DRYRUN_key_numbers.csv"
+  },
+  "n56_flagged": {
+   "text": "11",
+   "source": "DRYRUN_key_numbers.csv"
+  },
+  "t56_main": {
+   "text": "| Method | Pooled skill | 95% CI | Mean skill over indicators | Pooled skill, stable subset |\n|---|---|---|---|---|\n| Persistence | 0.000 | [0.000, 0.000] | 0.000 | 0.000 |\n| National trend | 0.422 | [0.325, 0.478] | 0.337 | 0.422 |\n| State trend | 0.422 | [0.325, 0.478] | 0.337 | 0.422 |\n| Regression to the mean (RTM) | 0.613 | [0.535, 0.672] | 0.540 | 0.614 |\n| Fay-Herriot | 0.083 | [0.071, 0.098] | 0.108 | 0.082 |\n| FH + RTM | 0.624 | [0.551, 0.678] | 0.554 | 0.624 |\n| Elastic net | 0.637 | [0.566, 0.690] | 0.577 | 0.639 |\n| LightGBM | 0.630 | [0.552, 0.687] | 0.557 | 0.632 |\n| Elastic net, no state dummies | 0.625 | [0.554, 0.677] | 0.565 | 0.626 |\n| LightGBM, no state dummies | 0.627 | [0.554, 0.682] | 0.556 | 0.628 |",
+   "source": "DRYRUN_results_all.csv"
+  },
+  "s56_primary_lo": {
+   "text": "0.566",
+   "source": "DRYRUN_results_all.csv"
+  },
+  "s56_primary_hi": {
+   "text": "0.690",
+   "source": "DRYRUN_results_all.csv"
+  },
+  "s56_primary_stable": {
+   "text": "0.639",
+   "source": "DRYRUN_results_stable.csv"
+  },
+  "s56_nat": {
+   "text": "0.422",
+   "source": "DRYRUN_results_all.csv"
+  },
+  "s56_st": {
+   "text": "0.422",
+   "source": "DRYRUN_results_all.csv"
+  },
+  "fig56_skill": {
+   "text": "![Skill vs persistence by indicator, NFHS-5 → NFHS-6 (frozen models)](DRYRUN_skill_by_indicator_all.png)",
+   "source": "DRYRUN_skill_by_indicator_all.png"
+  },
+  "fig56_skill_stable": {
+   "text": "![The same on the stable-boundary subset](DRYRUN_skill_by_indicator_stable.png)",
+   "source": "DRYRUN_skill_by_indicator_stable.png"
+  },
+  "t56_groups": {
+   "text": "| Subset | Districts | RTM skill | Primary-method skill | Mean skill, primary |\n|---|---|---|---|---|\n| harmonised set (all) | 571 | 0.613 | 0.637 | 0.577 |\n| stable-boundary subset | 547 | 0.614 | 0.639 | 0.578 |\n| identity, boundary changed NFHS-4→5 | 13 | 0.326 | 0.298 | -0.004 |\n| flagged (inherited / aggregated) | 11 | 0.751 | 0.787 | 0.627 |",
+   "source": "DRYRUN_results_subsets.csv"
+  },
+  "t56_paired": {
+   "text": "| Comparison | Significantly better (BH) | Significantly worse (BH) | Pooled ΔMSE | 95% CI | p |\n|---|---|---|---|---|---|\n| Elastic net vs RTM | 2 | 0 | -4.93 | [-7.71, -2.00] | 0.000 |\n| LightGBM vs RTM | 0 | 0 | -3.44 | [-8.29, 1.77] | 0.186 |\n| Elastic net (no state dummies) vs RTM | 0 | 0 | -2.45 | [-6.24, 1.20] | 0.210 |\n| LightGBM (no state dummies) vs RTM | 0 | 0 | -2.80 | [-7.68, 2.38] | 0.274 |",
+   "source": "DRYRUN_paired_summary_all.csv"
+  },
+  "v56_en_rtm_stable": {
+   "text": "significantly lower MSE than",
+   "source": "DRYRUN_paired_tests_stable.csv"
+  },
+  "v56_lgbm_rtm": {
+   "text": "no significant difference in MSE from",
+   "source": "DRYRUN_paired_tests_all.csv"
+  },
+  "t56_secondary": {
+   "text": "| Method | Skill net of national shift | 95% CI | Skill vs RTM |\n|---|---|---|---|\n| National trend | 0.000 | [0.000, 0.000] | -0.493 |\n| State trend | 0.000 | [0.000, 0.000] | -0.493 |\n| Regression to the mean (RTM) | 0.330 | [0.252, 0.396] | 0.000 |\n| FH + RTM | 0.350 | [0.280, 0.406] | 0.029 |\n| Elastic net | 0.373 | [0.308, 0.424] | 0.064 |\n| LightGBM | 0.360 | [0.293, 0.419] | 0.044 |",
+   "source": "DRYRUN_secondary_all.csv"
+  },
+  "noise_share_56": {
+   "text": "24.4%",
+   "source": "DRYRUN_secondary_all.csv"
+  },
+  "ceil_rtm_56": {
+   "text": "0.828",
+   "source": "DRYRUN_secondary_all.csv"
+  },
+  "t56_compare": {
+   "text": "| Method | Skill 4→5 (CV) | Skill 5→6 (test) | Change |\n|---|---|---|---|\n| Persistence | 0.000 | 0.000 | 0.000 |\n| National trend | 0.422 | 0.422 | -0.000 |\n| State trend | 0.422 | 0.422 | -0.000 |\n| Regression to the mean (RTM) | 0.613 | 0.613 | 0.000 |\n| Fay-Herriot | 0.083 | 0.083 | -0.000 |\n| FH + RTM | 0.624 | 0.624 | 0.000 |\n| Elastic net | 0.637 | 0.637 | -0.000 |\n| LightGBM | 0.630 | 0.630 | 0.000 |\n| Elastic net, no state dummies | 0.625 | 0.625 | -0.000 |\n| LightGBM, no state dummies | 0.627 | 0.627 | 0.000 |",
+   "source": "DRYRUN_comparison_45_vs_56.csv"
+  },
+  "cmp_spearman_methods": {
+   "text": "1.00",
+   "source": "DRYRUN_key_numbers.csv"
+  },
+  "cmp_best45": {
+   "text": "Elastic net",
+   "source": "DRYRUN_key_numbers.csv"
+  },
+  "cmp_best56": {
+   "text": "Elastic net",
+   "source": "DRYRUN_key_numbers.csv"
+  },
+  "cmp_spearman_ind": {
+   "text": "1.00",
+   "source": "DRYRUN_key_numbers.csv"
+  },
+  "fig56_compare": {
+   "text": "![Per-indicator skill in NFHS-4 → 5 CV vs NFHS-5 → 6](DRYRUN_comparison_45_vs_56.png)",
+   "source": "DRYRUN_comparison_45_vs_56.png"
+  },
+  "breaks_any": {
+   "text": "0",
+   "source": "DRYRUN_key_numbers.csv"
+  },
+  "breaks_shift": {
+   "text": "0",
+   "source": "DRYRUN_key_numbers.csv"
+  },
+  "breaks_slope": {
+   "text": "0",
+   "source": "DRYRUN_key_numbers.csv"
+  },
+  "breaks_scale": {
+   "text": "0",
+   "source": "DRYRUN_key_numbers.csv"
+  },
+  "t56_breaks": {
+   "text": "*(none)*",
+   "source": "DRYRUN_structural_break.csv"
+  },
+  "fig56_break": {
+   "text": "![Structural-break check (exploratory)](DRYRUN_structural_break.png)",
+   "source": "DRYRUN_structural_break.png"
+  },
+  "t56_coverage": {
+   "text": "| Variant · method | n | Coverage | Mean width (pp) |\n|---|---|---|---|\n| normalised · Elastic net | 13105 | 0.901 | 24.7 |\n| normalised · FH + RTM | 13105 | 0.901 | 25.2 |\n| normalised · LightGBM | 13105 | 0.901 | 25.0 |\n| normalised · Regression to the mean (RTM) | 13105 | 0.901 | 25.4 |\n| split · Elastic net | 13105 | 0.901 | 25.0 |\n| split · FH + RTM | 13105 | 0.901 | 25.5 |\n| split · LightGBM | 13105 | 0.901 | 25.4 |\n| split · Regression to the mean (RTM) | 13105 | 0.901 | 25.9 |\n| shift-weighted · Elastic net | 13105 | 0.901 | 25.0 |\n| shift-weighted · FH + RTM | 13105 | 0.901 | 25.5 |\n| shift-weighted · LightGBM | 13105 | 0.901 | 25.4 |\n| shift-weighted · Regression to the mean (RTM) | 13105 | 0.901 | 25.9 |",
+   "source": "DRYRUN_coverage.csv"
+  },
+  "cov_normalised": {
+   "text": "0.901",
+   "source": "DRYRUN_key_numbers.csv"
+  },
+  "fig56_coverage": {
+   "text": "![Conformal coverage on NFHS-6](DRYRUN_coverage.png)",
+   "source": "DRYRUN_coverage.png"
+  },
+  "n_surprise_tests": {
+   "text": "13096",
+   "source": "DRYRUN_key_numbers.csv"
+  },
+  "naive_k": {
+   "text": "18",
+   "source": "DRYRUN_key_numbers.csv"
+  },
+  "surprise_overlap": {
+   "text": "1",
+   "source": "DRYRUN_key_numbers.csv"
+  },
+  "naive_se": {
+   "text": "4.44",
+   "source": "DRYRUN_key_numbers.csv"
+  },
+  "bh_se": {
+   "text": "2.90",
+   "source": "DRYRUN_key_numbers.csv"
+  },
+  "t56_surprises": {
+   "text": "| District · indicator | Forecast | Observed | z | BH q | Unit type |\n|---|---|---|---|---|---|\n| chhattisgarh|bijapur · women_thin | 17.6 | 43.6 | 6.33 | 0.000 | identity |\n| assam|cachar · water_improved | 72.9 | 43.8 | -6.19 | 0.000 | identity |\n| assam|hailakandi · water_improved | 68.6 | 41.2 | -5.85 | 0.000 | identity |\n| bihar|supaul · diarrhoea | 8.8 | 39.3 | 5.78 | 0.000 | identity |\n| nagaland|peren · water_improved | 71.9 | 92.5 | 4.84 | 0.003 | identity |\n| assam|karimganj · wasting | 17.4 | 48.0 | 4.76 | 0.004 | identity |\n| arunachal pradesh|west kameng · teen_pregnancy | 12.6 | 1.4 | -4.75 | 0.004 | identity |\n| arunachal pradesh|tawang · inst_births | 55.6 | 84.2 | 4.56 | 0.008 | identity |\n| bihar|madhubani · diarrhoea | 7.6 | 30.2 | 4.43 | 0.014 | identity |\n| nagaland|mon · inst_births | 48.8 | 21.4 | -4.22 | 0.032 | identity |\n| nagaland|zunheboto · underweight | 17.5 | 44.5 | 4.19 | 0.034 | identity |\n| meghalaya|south garo hills · water_improved | 79.9 | 60.4 | -4.17 | 0.034 | identity |\n| puducherry|mahe · csection | 51.7 | 27.5 | -4.10 | 0.041 | identity |\n| chhattisgarh|kabeerdham · inst_births | 67.8 | 91.7 | 4.05 | 0.047 | identity |\n| meghalaya|east khasi hills · unmet_need | 14.4 | 33.0 | 4.00 | 0.053 | identity |",
+   "source": "DRYRUN_surprises_elastic_net.csv"
+  },
+  "fig56_surprises": {
+   "text": "![BH-FDR surprises vs naive top-k](DRYRUN_surprises.png)",
+   "source": "DRYRUN_surprises.png"
+  },
+  "r2_ind": {
+   "text": "0.062",
+   "source": "DRYRUN_key_numbers.csv"
+  },
+  "r2_dist": {
+   "text": "0.078",
+   "source": "DRYRUN_key_numbers.csv"
+  },
+  "r2_add": {
+   "text": "0.140",
+   "source": "DRYRUN_key_numbers.csv"
+  },
+  "t56_hard": {
+   "text": "| Indicator | Noise ceiling | Normalised skill |\n|---|---|---|\n| early_bf | 0.943 | 0.201 |\n| teen_pregnancy | 0.630 | 0.345 |\n| stunting | 0.755 | 0.416 |\n| women_overweight | 0.933 | 0.441 |\n| underweight | 0.817 | 0.471 |\n| anc_4plus | 0.956 | 0.477 |",
+   "source": "DRYRUN_forecastability_indicators.csv"
+  },
+  "fig56_map_skill": {
+   "text": "![Forecast skill by district](DRYRUN_map_skill.png)",
+   "source": "DRYRUN_map_skill.png"
+  },
+  "fig56_map_ceiling": {
+   "text": "![Noise ceiling by district](DRYRUN_map_ceiling.png)",
+   "source": "DRYRUN_map_ceiling.png"
+  },
+  "config_hash": {
+   "text": "24e4b2befa146b0a",
+   "source": "../models/manifest.json"
+  },
+  "n_methods": {
+   "text": "16",
+   "source": "../models/manifest.json"
+  }
+ }
+}

@@ -1,0 +1,422 @@
+{
+ "mode": "prerun",
+ "primary_method": "elastic_net",
+ "slots": {
+  "run_status": {
+   "text": "**Status: before Gate B.** NFHS-4 → NFHS-5 results are final. Every NFHS-6 number is marked `[[NFHS-6 PENDING]]` and is filled in automatically by `scripts/post_run.py` after the one-shot evaluation.",
+   "source": null
+  },
+  "train_hash": {
+   "text": "d3f06bee428deeef",
+   "source": "../outputs/models/manifest.json"
+  },
+  "n_train": {
+   "text": "571",
+   "source": "../outputs/models/manifest.json"
+  },
+  "n_test": {
+   "text": "684",
+   "source": "../outputs/models/manifest.json"
+  },
+  "s45_rtm": {
+   "text": "0.613",
+   "source": "../outputs/results_nfhs4to5.csv"
+  },
+  "s45_en": {
+   "text": "0.637",
+   "source": "../outputs/results_nfhs4to5.csv"
+  },
+  "v45_en_rtm": {
+   "text": "significantly lower MSE than",
+   "source": "../outputs/paired_tests_nfhs4to5.csv"
+  },
+  "n45_en_better": {
+   "text": "2",
+   "source": "../outputs/paired_summary_nfhs4to5.csv"
+  },
+  "n_ind": {
+   "text": "23",
+   "source": "../outputs/models/manifest.json"
+  },
+  "primary_method": {
+   "text": "Elastic net",
+   "source": null
+  },
+  "s56_primary": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "s56_rtm": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "v56_en_rtm": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "cov_split": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "cov_weighted": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "n_surprises": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "n_train_added": {
+   "text": "24",
+   "source": "../outputs/harmonised_units.csv"
+  },
+  "n_test_changed45": {
+   "text": "121",
+   "source": "../outputs/harmonised_units.csv"
+  },
+  "n_test_inherited": {
+   "text": "16",
+   "source": "../outputs/harmonised_units.csv"
+  },
+  "n_stable": {
+   "text": "547",
+   "source": "../outputs/models/manifest.json"
+  },
+  "n_review": {
+   "text": "165",
+   "source": "../outputs/crosswalk_review.csv"
+  },
+  "n_rev_45": {
+   "text": "132",
+   "source": "../outputs/crosswalk_review.csv"
+  },
+  "n_rev_new": {
+   "text": "16",
+   "source": "../outputs/crosswalk_review.csv"
+  },
+  "n_rev_retained": {
+   "text": "16",
+   "source": "../outputs/crosswalk_review.csv"
+  },
+  "n_rev_low": {
+   "text": "1",
+   "source": "../outputs/crosswalk_review.csv"
+  },
+  "t45_main": {
+   "text": "| Method | Pooled skill | 95% CI | Mean skill over indicators | Pooled skill, stable subset |\n|---|---|---|---|---|\n| Persistence | 0.000 | [0.000, 0.000] | 0.000 | 0.000 |\n| National trend | 0.422 | [0.326, 0.478] | 0.337 | 0.422 |\n| State trend | 0.422 | [0.326, 0.478] | 0.337 | 0.422 |\n| Regression to the mean (RTM) | 0.613 | [0.535, 0.672] | 0.540 | 0.613 |\n| Fay-Herriot | 0.083 | [0.071, 0.098] | 0.108 | 0.085 |\n| FH + RTM | 0.624 | [0.551, 0.678] | 0.554 | 0.624 |\n| Elastic net | 0.637 | [0.566, 0.690] | 0.577 | 0.639 |\n| LightGBM | 0.630 | [0.552, 0.687] | 0.557 | 0.630 |\n| Elastic net, no state dummies | 0.625 | [0.554, 0.677] | 0.565 | 0.623 |\n| LightGBM, no state dummies | 0.627 | [0.553, 0.682] | 0.556 | 0.626 |\n| State trend (oracle) | 0.601 | [0.535, 0.647] | 0.510 | 0.597 |",
+   "source": "../outputs/results_nfhs4to5.csv"
+  },
+  "s45_nat": {
+   "text": "0.422",
+   "source": "../outputs/results_nfhs4to5.csv"
+  },
+  "s45_rtm_mean": {
+   "text": "0.540",
+   "source": "../outputs/results_nfhs4to5.csv"
+  },
+  "s45_en_mean": {
+   "text": "0.577",
+   "source": "../outputs/results_nfhs4to5.csv"
+  },
+  "s45_lgbm": {
+   "text": "0.630",
+   "source": "../outputs/results_nfhs4to5.csv"
+  },
+  "s45_oracle": {
+   "text": "0.601",
+   "source": "../outputs/results_nfhs4to5.csv"
+  },
+  "s45_fh": {
+   "text": "0.083",
+   "source": "../outputs/results_nfhs4to5.csv"
+  },
+  "fh_deff15": {
+   "text": "0.067",
+   "source": "../outputs/sensitivity_deff.csv"
+  },
+  "fh_deff3": {
+   "text": "0.105",
+   "source": "../outputs/sensitivity_deff.csv"
+  },
+  "s45_en_stable": {
+   "text": "0.639",
+   "source": "../outputs/results_nfhs4to5_stable.csv"
+  },
+  "s45_rtm_stable": {
+   "text": "0.613",
+   "source": "../outputs/results_nfhs4to5_stable.csv"
+  },
+  "fig45_skill": {
+   "text": "![Skill vs persistence by indicator, NFHS-4 → NFHS-5, leave-one-state-out CV](../outputs/skill_by_indicator.png)",
+   "source": "../outputs/skill_by_indicator.png"
+  },
+  "t45_paired": {
+   "text": "| Comparison | Indicators better (raw) | Significantly better (BH) | Significantly worse (BH) | Pooled ΔMSE | 95% CI | p |\n|---|---|---|---|---|---|---|\n| Elastic net vs RTM | 19 | 2 | 0 | -4.93 | [-7.71, -2.00] | 0.000 |\n| LightGBM vs RTM | 16 | 0 | 0 | -3.44 | [-8.29, 1.77] | 0.186 |\n| Elastic net (no state dummies) vs RTM | 15 | 0 | 0 | -2.45 | [-6.24, 1.20] | 0.210 |\n| LightGBM (no state dummies) vs RTM | 15 | 0 | 0 | -2.80 | [-7.68, 2.38] | 0.274 |",
+   "source": "../outputs/paired_summary_nfhs4to5.csv"
+  },
+  "d45_en_rtm": {
+   "text": "-4.93",
+   "source": "../outputs/paired_tests_nfhs4to5.csv"
+  },
+  "d45_en_rtm_lo": {
+   "text": "-7.71",
+   "source": "../outputs/paired_tests_nfhs4to5.csv"
+  },
+  "d45_en_rtm_hi": {
+   "text": "-2.00",
+   "source": "../outputs/paired_tests_nfhs4to5.csv"
+  },
+  "n45_en_better_stable": {
+   "text": "4",
+   "source": "../outputs/paired_summary_nfhs4to5_stable.csv"
+  },
+  "v45_lgbm_rtm": {
+   "text": "no significant difference in MSE from",
+   "source": "../outputs/paired_tests_nfhs4to5.csv"
+  },
+  "t45_ablation": {
+   "text": "| Feature set | Pooled skill | Mean skill |\n|---|---|---|\n| Elastic net, own history | 0.611 | 0.538 |\n| Elastic net, + other indicators | 0.611 | 0.541 |\n| Elastic net, + spatial | 0.632 | 0.568 |\n| Elastic net | 0.637 | 0.577 |\n| Elastic net, no state dummies | 0.625 | 0.565 |\n| LightGBM, own history | 0.594 | 0.517 |\n| LightGBM, + other indicators | 0.597 | 0.520 |\n| LightGBM, + spatial | 0.619 | 0.549 |\n| LightGBM | 0.630 | 0.557 |\n| LightGBM, no state dummies | 0.627 | 0.556 |",
+   "source": "../outputs/results_nfhs4to5.csv"
+  },
+  "t45_secondary": {
+   "text": "| Method | Skill vs persistence | Skill net of national shift | 95% CI | Skill vs RTM |\n|---|---|---|---|---|\n| Regression to the mean (RTM) | 0.613 | 0.330 | [0.252, 0.396] | 0.000 |\n| FH + RTM | 0.624 | 0.350 | [0.280, 0.406] | 0.029 |\n| Elastic net | 0.637 | 0.373 | [0.308, 0.424] | 0.064 |\n| LightGBM | 0.630 | 0.360 | [0.293, 0.419] | 0.044 |",
+   "source": "../outputs/secondary_nfhs4to5.csv"
+  },
+  "noise_share_45": {
+   "text": "24.4%",
+   "source": "../outputs/secondary_nfhs4to5.csv"
+  },
+  "noise_share_45_mean": {
+   "text": "31.7%",
+   "source": "../outputs/secondary_nfhs4to5.csv"
+  },
+  "ceil_p_45": {
+   "text": "0.933",
+   "source": "../outputs/secondary_nfhs4to5.csv"
+  },
+  "ceil_rtm_45": {
+   "text": "0.828",
+   "source": "../outputs/secondary_nfhs4to5.csv"
+  },
+  "s45_seen_en": {
+   "text": "0.763",
+   "source": "../outputs/results_nfhs4to5_seenstate.csv"
+  },
+  "s45_seen_en_nostate": {
+   "text": "0.692",
+   "source": "../outputs/results_nfhs4to5_seenstate.csv"
+  },
+  "s45_seen_rtm": {
+   "text": "0.637",
+   "source": "../outputs/results_nfhs4to5_seenstate.csv"
+  },
+  "s45_seen_st": {
+   "text": "0.597",
+   "source": "../outputs/results_nfhs4to5_seenstate.csv"
+  },
+  "dev_cov_split": {
+   "text": "0.877",
+   "source": "../outputs/gate_c_dev/coverage.csv"
+  },
+  "dev_cov_weighted": {
+   "text": "0.885",
+   "source": "../outputs/gate_c_dev/coverage.csv"
+  },
+  "n56": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "n56_stable": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "n56_changed": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "n56_flagged": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "t56_main": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "s56_primary_lo": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "s56_primary_hi": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "s56_primary_stable": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "s56_nat": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "s56_st": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "fig56_skill": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "fig56_skill_stable": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "t56_groups": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "t56_paired": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "v56_en_rtm_stable": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "v56_lgbm_rtm": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "t56_secondary": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "noise_share_56": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "ceil_rtm_56": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "t56_compare": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "cmp_spearman_methods": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "cmp_best45": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "cmp_best56": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "cmp_spearman_ind": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "fig56_compare": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "breaks_any": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "breaks_shift": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "breaks_slope": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "breaks_scale": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "t56_breaks": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "fig56_break": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "t56_coverage": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "cov_normalised": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "fig56_coverage": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "n_surprise_tests": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "naive_k": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "surprise_overlap": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "naive_se": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "bh_se": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "t56_surprises": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "fig56_surprises": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "r2_ind": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "r2_dist": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "r2_add": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "t56_hard": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "fig56_map_skill": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "fig56_map_ceiling": {
+   "text": "[[NFHS-6 PENDING]]",
+   "source": null
+  },
+  "config_hash": {
+   "text": "24e4b2befa146b0a",
+   "source": "../outputs/models/manifest.json"
+  },
+  "n_methods": {
+   "text": "16",
+   "source": "../outputs/models/manifest.json"
+  }
+ }
+}

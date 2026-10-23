@@ -1,0 +1,698 @@
+state,members_nfhs5,members_nfhs6,confidence,component,unit_uid,unit_type,parent_uid,test_unit,train_unit,nfhs4_inherited,stable_unit,audit_status
+Andaman And Nicobar Islands,andaman and nicobar islands|nicobar,andaman and nicobar islands|nicobar,high,0.0,andaman and nicobar islands|nicobar,identity,andaman and nicobar islands|nicobar,True,True,False,True,pass
+Andaman And Nicobar Islands,andaman and nicobar islands|north and middle andaman,andaman and nicobar islands|north and middle andaman,high,1.0,andaman and nicobar islands|north and middle andaman,identity,andaman and nicobar islands|north and middle andaman,True,True,False,True,pass
+Andaman And Nicobar Islands,andaman and nicobar islands|south andaman,andaman and nicobar islands|south andaman,high,2.0,andaman and nicobar islands|south andaman,identity,andaman and nicobar islands|south andaman,True,True,False,True,pass
+Andhra Pradesh,andhra pradesh|anantapur,andhra pradesh|anantapur,high,3.0,andhra pradesh|anantapur,identity,andhra pradesh|anantapur,True,True,False,True,pass
+Andhra Pradesh,andhra pradesh|chittoor,andhra pradesh|chittoor,high,4.0,andhra pradesh|chittoor,identity,andhra pradesh|chittoor,True,True,False,True,pass
+Andhra Pradesh,andhra pradesh|east godavari,andhra pradesh|east godavari,high,5.0,andhra pradesh|east godavari,identity,andhra pradesh|east godavari,True,True,False,True,pass
+Andhra Pradesh,andhra pradesh|guntur,andhra pradesh|guntur,high,6.0,andhra pradesh|guntur,identity,andhra pradesh|guntur,True,True,False,True,pass
+Andhra Pradesh,andhra pradesh|krishna,andhra pradesh|krishna,high,7.0,andhra pradesh|krishna,identity,andhra pradesh|krishna,True,True,False,True,pass
+Andhra Pradesh,andhra pradesh|kurnool,andhra pradesh|kurnool,high,8.0,andhra pradesh|kurnool,identity,andhra pradesh|kurnool,True,True,False,True,pass
+Andhra Pradesh,andhra pradesh|prakasam,andhra pradesh|prakasam,high,9.0,andhra pradesh|prakasam,identity,andhra pradesh|prakasam,True,True,False,True,pass
+Andhra Pradesh,andhra pradesh|sri potti sriramulu nellore,andhra pradesh|sri potti sriramulu nellore,high,10.0,andhra pradesh|sri potti sriramulu nellore,identity,andhra pradesh|sri potti sriramulu nellore,True,True,False,True,pass
+Andhra Pradesh,andhra pradesh|srikakulam,andhra pradesh|srikakulam,high,11.0,andhra pradesh|srikakulam,identity,andhra pradesh|srikakulam,True,True,False,True,pass
+Andhra Pradesh,andhra pradesh|visakhapatnam,andhra pradesh|visakhapatnam,high,12.0,andhra pradesh|visakhapatnam,identity,andhra pradesh|visakhapatnam,True,True,False,True,pass
+Andhra Pradesh,andhra pradesh|vizianagaram,andhra pradesh|vizianagaram,high,13.0,andhra pradesh|vizianagaram,identity,andhra pradesh|vizianagaram,True,True,False,True,pass
+Andhra Pradesh,andhra pradesh|west godavari,andhra pradesh|west godavari,high,14.0,andhra pradesh|west godavari,identity,andhra pradesh|west godavari,True,True,False,True,pass
+Andhra Pradesh,andhra pradesh|y s r,andhra pradesh|y s r,high,15.0,andhra pradesh|y s r,identity,andhra pradesh|y s r,True,True,False,True,pass
+Arunachal Pradesh,arunachal pradesh|anjaw,arunachal pradesh|anjaw,high,16.0,arunachal pradesh|anjaw,identity,arunachal pradesh|anjaw,True,True,False,True,pass
+Arunachal Pradesh,arunachal pradesh|changlang,arunachal pradesh|changlang,high,17.0,arunachal pradesh|changlang,identity,arunachal pradesh|changlang,True,True,False,True,pass
+Arunachal Pradesh,arunachal pradesh|dibang valley,arunachal pradesh|dibang valley,high,18.0,arunachal pradesh|dibang valley,identity,arunachal pradesh|dibang valley,True,True,False,True,pass
+Arunachal Pradesh,arunachal pradesh|east kameng,arunachal pradesh|east kameng,medium,19.0,arunachal pradesh|east kameng,inherited_remnant,arunachal pradesh|east kameng,True,True,False,False,unaudited
+Arunachal Pradesh,arunachal pradesh|east siang,arunachal pradesh|east siang,medium,20.0,arunachal pradesh|east siang,inherited_remnant,arunachal pradesh|east siang,True,False,False,False,unaudited
+Arunachal Pradesh,arunachal pradesh|kra daadi,arunachal pradesh|kra daadi,high,21.0,arunachal pradesh|kra daadi,identity,arunachal pradesh|kra daadi,True,False,False,False,pass
+Arunachal Pradesh,arunachal pradesh|kurung kumey,arunachal pradesh|kurung kumey,high,22.0,arunachal pradesh|kurung kumey,identity,arunachal pradesh|kurung kumey,True,False,False,False,pass
+Arunachal Pradesh,arunachal pradesh|lohit,arunachal pradesh|lohit,high,23.0,arunachal pradesh|lohit,identity,arunachal pradesh|lohit,True,False,False,False,pass
+Arunachal Pradesh,arunachal pradesh|longding,arunachal pradesh|longding,high,24.0,arunachal pradesh|longding,identity,arunachal pradesh|longding,True,False,False,False,pass
+Arunachal Pradesh,arunachal pradesh|lower dibang valley,arunachal pradesh|lower dibang valley,high,25.0,arunachal pradesh|lower dibang valley,identity,arunachal pradesh|lower dibang valley,True,True,False,True,pass
+Arunachal Pradesh,arunachal pradesh|lower subansiri,arunachal pradesh|lower subansiri,medium,26.0,arunachal pradesh|lower subansiri,inherited_remnant,arunachal pradesh|lower subansiri,True,True,False,False,unaudited
+Arunachal Pradesh,arunachal pradesh|namsai,arunachal pradesh|namsai,high,27.0,arunachal pradesh|namsai,identity,arunachal pradesh|namsai,True,False,False,False,pass
+Arunachal Pradesh,arunachal pradesh|papum pare,arunachal pradesh|papum pare,high,28.0,arunachal pradesh|papum pare,identity,arunachal pradesh|papum pare,True,True,False,True,pass
+Arunachal Pradesh,arunachal pradesh|siang,arunachal pradesh|siang,high,29.0,arunachal pradesh|siang,identity,arunachal pradesh|siang,True,False,False,False,pass
+Arunachal Pradesh,arunachal pradesh|tawang,arunachal pradesh|tawang,high,30.0,arunachal pradesh|tawang,identity,arunachal pradesh|tawang,True,True,False,True,pass
+Arunachal Pradesh,arunachal pradesh|tirap,arunachal pradesh|tirap,high,31.0,arunachal pradesh|tirap,identity,arunachal pradesh|tirap,True,False,False,False,pass
+Arunachal Pradesh,arunachal pradesh|upper siang,arunachal pradesh|upper siang,high,32.0,arunachal pradesh|upper siang,identity,arunachal pradesh|upper siang,True,True,False,True,pass
+Arunachal Pradesh,arunachal pradesh|upper subansiri,arunachal pradesh|upper subansiri,medium,33.0,arunachal pradesh|upper subansiri,inherited_remnant,arunachal pradesh|upper subansiri,True,True,False,False,unaudited
+Arunachal Pradesh,arunachal pradesh|west kameng,arunachal pradesh|west kameng,high,34.0,arunachal pradesh|west kameng,identity,arunachal pradesh|west kameng,True,True,False,True,pass
+Arunachal Pradesh,arunachal pradesh|west siang,arunachal pradesh|west siang,medium,35.0,arunachal pradesh|west siang,inherited_remnant,arunachal pradesh|west siang,True,False,False,False,unaudited
+Assam,assam|baksa,assam|baksa,high,36.0,assam|baksa,identity,assam|baksa,True,True,False,True,pass
+Assam,assam|barpeta,assam|barpeta,high,37.0,assam|barpeta,identity,assam|barpeta,True,True,False,True,pass
+Assam,assam|biswanath,assam|biswanath,high,38.0,assam|biswanath,identity,assam|biswanath,True,False,False,False,pass
+Assam,assam|bongaigaon,assam|bongaigaon,high,39.0,assam|bongaigaon,identity,assam|bongaigaon,True,True,False,True,pass
+Assam,assam|cachar,assam|cachar,high,40.0,assam|cachar,identity,assam|cachar,True,True,False,True,pass
+Assam,assam|charaideo,assam|charaideo,high,41.0,assam|charaideo,identity,assam|charaideo,True,False,False,False,pass
+Assam,assam|chirang,assam|chirang,high,42.0,assam|chirang,identity,assam|chirang,True,True,False,True,pass
+Assam,assam|darrang,assam|darrang,high,43.0,assam|darrang,identity,assam|darrang,True,True,False,True,pass
+Assam,assam|dhemaji,assam|dhemaji,high,44.0,assam|dhemaji,identity,assam|dhemaji,True,True,False,True,pass
+Assam,assam|dhubri,assam|dhubri,high,45.0,assam|dhubri,identity,assam|dhubri,True,False,False,False,pass
+Assam,assam|dibrugarh,assam|dibrugarh,high,46.0,assam|dibrugarh,identity,assam|dibrugarh,True,True,False,True,pass
+Assam,assam|dima hasao,assam|dima hasao,high,47.0,assam|dima hasao,identity,assam|dima hasao,True,True,False,True,pass
+Assam,assam|goalpara,assam|goalpara,high,48.0,assam|goalpara,identity,assam|goalpara,True,True,False,True,pass
+Assam,assam|golaghat,assam|golaghat,high,49.0,assam|golaghat,identity,assam|golaghat,True,True,False,True,pass
+Assam,assam|hailakandi,assam|hailakandi,high,50.0,assam|hailakandi,identity,assam|hailakandi,True,True,False,True,pass
+Assam,assam|hojai,assam|hojai,high,51.0,assam|hojai,identity,assam|hojai,True,False,False,False,pass
+Assam,assam|jorhat,assam|jorhat,high,52.0,assam|jorhat,identity,assam|jorhat,True,False,False,False,pass
+Assam,assam|kamrup,assam|kamrup,high,53.0,assam|kamrup,identity,assam|kamrup,True,True,False,True,pass
+Assam,assam|kamrup metropolitan,assam|kamrup metropolitan,high,54.0,assam|kamrup metropolitan,identity,assam|kamrup metropolitan,True,True,False,True,pass
+Assam,assam|karbi anglong,assam|karbi anglong,high,55.0,assam|karbi anglong,identity,assam|karbi anglong,True,False,False,False,pass
+Assam,assam|karimganj,assam|karimganj,high,56.0,assam|karimganj,identity,assam|karimganj,True,True,False,True,pass
+Assam,assam|kokrajhar,assam|kokrajhar,high,57.0,assam|kokrajhar,identity,assam|kokrajhar,True,True,False,True,pass
+Assam,assam|lakhimpur,assam|lakhimpur,high,58.0,assam|lakhimpur,identity,assam|lakhimpur,True,True,False,True,pass
+Assam,assam|majuli,assam|majuli,high,59.0,assam|majuli,identity,assam|majuli,True,False,False,False,pass
+Assam,assam|marigaon,assam|marigaon,high,60.0,assam|marigaon,identity,assam|marigaon,True,True,False,True,pass
+Assam,assam|nagaon,assam|nagaon,high,61.0,assam|nagaon,identity,assam|nagaon,True,False,False,False,pass
+Assam,assam|nalbari,assam|nalbari,high,62.0,assam|nalbari,identity,assam|nalbari,True,True,False,True,pass
+Assam,assam|sivasagar,assam|sivasagar,high,63.0,assam|sivasagar,identity,assam|sivasagar,True,False,False,False,pass
+Assam,assam|sonitpur,assam|sonitpur,high,64.0,assam|sonitpur,identity,assam|sonitpur,True,False,False,False,pass
+Assam,assam|south salmara mancachar,assam|south salmara mancachar,high,65.0,assam|south salmara mancachar,identity,assam|south salmara mancachar,True,False,False,False,pass
+Assam,assam|tinsukia,assam|tinsukia,high,66.0,assam|tinsukia,identity,assam|tinsukia,True,True,False,True,pass
+Assam,assam|udalguri,assam|udalguri,high,67.0,assam|udalguri,identity,assam|udalguri,True,True,False,True,pass
+Assam,assam|west karbi anglong,assam|west karbi anglong,high,68.0,assam|west karbi anglong,identity,assam|west karbi anglong,True,False,False,False,pass
+Bihar,bihar|araria,bihar|araria,high,69.0,bihar|araria,identity,bihar|araria,True,True,False,True,pass
+Bihar,bihar|arwal,bihar|arwal,high,70.0,bihar|arwal,identity,bihar|arwal,True,True,False,True,pass
+Bihar,bihar|aurangabad,bihar|aurangabad,high,71.0,bihar|aurangabad,identity,bihar|aurangabad,True,True,False,True,pass
+Bihar,bihar|banka,bihar|banka,high,72.0,bihar|banka,identity,bihar|banka,True,True,False,True,pass
+Bihar,bihar|begusarai,bihar|begusarai,high,73.0,bihar|begusarai,identity,bihar|begusarai,True,True,False,True,pass
+Bihar,bihar|bhagalpur,bihar|bhagalpur,high,74.0,bihar|bhagalpur,identity,bihar|bhagalpur,True,True,False,True,pass
+Bihar,bihar|bhojpur,bihar|bhojpur,high,75.0,bihar|bhojpur,identity,bihar|bhojpur,True,True,False,True,pass
+Bihar,bihar|buxar,bihar|buxar,high,76.0,bihar|buxar,identity,bihar|buxar,True,True,False,True,pass
+Bihar,bihar|darbhanga,bihar|darbhanga,high,77.0,bihar|darbhanga,identity,bihar|darbhanga,True,True,False,True,pass
+Bihar,bihar|gaya,bihar|gaya,high,78.0,bihar|gaya,identity,bihar|gaya,True,True,False,True,pass
+Bihar,bihar|gopalganj,bihar|gopalganj,high,79.0,bihar|gopalganj,identity,bihar|gopalganj,True,True,False,True,pass
+Bihar,bihar|jamui,bihar|jamui,high,80.0,bihar|jamui,identity,bihar|jamui,True,True,False,True,pass
+Bihar,bihar|jehanabad,bihar|jehanabad,high,81.0,bihar|jehanabad,identity,bihar|jehanabad,True,True,False,True,pass
+Bihar,bihar|kaimur bhabua,bihar|kaimur bhabua,high,82.0,bihar|kaimur bhabua,identity,bihar|kaimur bhabua,True,True,False,True,pass
+Bihar,bihar|katihar,bihar|katihar,high,83.0,bihar|katihar,identity,bihar|katihar,True,True,False,True,pass
+Bihar,bihar|khagaria,bihar|khagaria,high,84.0,bihar|khagaria,identity,bihar|khagaria,True,True,False,True,pass
+Bihar,bihar|kishanganj,bihar|kishanganj,high,85.0,bihar|kishanganj,identity,bihar|kishanganj,True,True,False,True,pass
+Bihar,bihar|lakhisarai,bihar|lakhisarai,high,86.0,bihar|lakhisarai,identity,bihar|lakhisarai,True,True,False,True,pass
+Bihar,bihar|madhepura,bihar|madhepura,high,87.0,bihar|madhepura,identity,bihar|madhepura,True,True,False,True,pass
+Bihar,bihar|madhubani,bihar|madhubani,high,88.0,bihar|madhubani,identity,bihar|madhubani,True,True,False,True,pass
+Bihar,bihar|munger,bihar|munger,high,89.0,bihar|munger,identity,bihar|munger,True,True,False,True,pass
+Bihar,bihar|muzaffarpur,bihar|muzaffarpur,high,90.0,bihar|muzaffarpur,identity,bihar|muzaffarpur,True,True,False,True,pass
+Bihar,bihar|nalanda,bihar|nalanda,high,91.0,bihar|nalanda,identity,bihar|nalanda,True,True,False,True,pass
+Bihar,bihar|nawada,bihar|nawada,high,92.0,bihar|nawada,identity,bihar|nawada,True,True,False,True,pass
+Bihar,bihar|pashchim champaran,bihar|pashchim champaran,high,93.0,bihar|pashchim champaran,identity,bihar|pashchim champaran,True,True,False,True,pass
+Bihar,bihar|patna,bihar|patna,high,94.0,bihar|patna,identity,bihar|patna,True,True,False,True,pass
+Bihar,bihar|purbi champaran,bihar|purbi champaran,high,95.0,bihar|purbi champaran,identity,bihar|purbi champaran,True,True,False,True,pass
+Bihar,bihar|purnia,bihar|purnia,high,96.0,bihar|purnia,identity,bihar|purnia,True,True,False,True,pass
+Bihar,bihar|rohtas,bihar|rohtas,high,97.0,bihar|rohtas,identity,bihar|rohtas,True,True,False,True,pass
+Bihar,bihar|saharsa,bihar|saharsa,high,98.0,bihar|saharsa,identity,bihar|saharsa,True,True,False,True,pass
+Bihar,bihar|samastipur,bihar|samastipur,high,99.0,bihar|samastipur,identity,bihar|samastipur,True,True,False,True,pass
+Bihar,bihar|saran,bihar|saran,high,100.0,bihar|saran,identity,bihar|saran,True,True,False,True,pass
+Bihar,bihar|sheikhpura,bihar|sheikhpura,high,101.0,bihar|sheikhpura,identity,bihar|sheikhpura,True,True,False,True,pass
+Bihar,bihar|sheohar,bihar|sheohar,high,102.0,bihar|sheohar,identity,bihar|sheohar,True,True,False,True,pass
+Bihar,bihar|sitamarhi,bihar|sitamarhi,high,103.0,bihar|sitamarhi,identity,bihar|sitamarhi,True,True,False,True,pass
+Bihar,bihar|siwan,bihar|siwan,high,104.0,bihar|siwan,identity,bihar|siwan,True,True,False,True,pass
+Bihar,bihar|supaul,bihar|supaul,high,105.0,bihar|supaul,identity,bihar|supaul,True,True,False,True,pass
+Bihar,bihar|vaishali,bihar|vaishali,high,106.0,bihar|vaishali,identity,bihar|vaishali,True,True,False,True,pass
+Chhattisgarh,chhattisgarh|balod,chhattisgarh|balod,high,107.0,chhattisgarh|balod,identity,chhattisgarh|balod,True,False,False,False,pass
+Chhattisgarh,chhattisgarh|baloda bazar,chhattisgarh|baloda bazar,high,108.0,chhattisgarh|baloda bazar,identity,chhattisgarh|baloda bazar,True,False,False,False,pass
+Chhattisgarh,chhattisgarh|balrampur,chhattisgarh|balrampur,high,109.0,chhattisgarh|balrampur,identity,chhattisgarh|balrampur,True,False,False,False,pass
+Chhattisgarh,chhattisgarh|bastar,chhattisgarh|bastar,high,110.0,chhattisgarh|bastar,identity,chhattisgarh|bastar,True,False,False,False,pass
+Chhattisgarh,chhattisgarh|bemetara,chhattisgarh|bemetara,high,111.0,chhattisgarh|bemetara,identity,chhattisgarh|bemetara,True,False,False,False,pass
+Chhattisgarh,chhattisgarh|bijapur,chhattisgarh|bijapur,high,112.0,chhattisgarh|bijapur,identity,chhattisgarh|bijapur,True,True,False,True,pass
+Chhattisgarh,chhattisgarh|bilaspur,chhattisgarh|bilaspur,medium,113.0,chhattisgarh|bilaspur,inherited_remnant,chhattisgarh|bilaspur,True,False,False,False,unaudited
+Chhattisgarh,chhattisgarh|dantewada,chhattisgarh|dantewada,high,114.0,chhattisgarh|dantewada,identity,chhattisgarh|dantewada,True,False,False,False,pass
+Chhattisgarh,chhattisgarh|dhamtari,chhattisgarh|dhamtari,high,115.0,chhattisgarh|dhamtari,identity,chhattisgarh|dhamtari,True,True,False,True,pass
+Chhattisgarh,chhattisgarh|durg,chhattisgarh|durg,high,116.0,chhattisgarh|durg,identity,chhattisgarh|durg,True,False,False,False,pass
+Chhattisgarh,chhattisgarh|gariyaband,chhattisgarh|gariyaband,high,117.0,chhattisgarh|gariyaband,identity,chhattisgarh|gariyaband,True,False,False,False,pass
+Chhattisgarh,chhattisgarh|janjgir champa,chhattisgarh|janjgir champa,high,118.0,chhattisgarh|janjgir champa,identity,chhattisgarh|janjgir champa,True,True,False,True,pass
+Chhattisgarh,chhattisgarh|jashpur,chhattisgarh|jashpur,high,119.0,chhattisgarh|jashpur,identity,chhattisgarh|jashpur,True,True,False,True,pass
+Chhattisgarh,chhattisgarh|kabeerdham,chhattisgarh|kabeerdham,high,120.0,chhattisgarh|kabeerdham,identity,chhattisgarh|kabeerdham,True,True,False,True,pass
+Chhattisgarh,chhattisgarh|kondagaon,chhattisgarh|kondagaon,high,121.0,chhattisgarh|kondagaon,identity,chhattisgarh|kondagaon,True,False,False,False,pass
+Chhattisgarh,chhattisgarh|korba,chhattisgarh|korba,high,122.0,chhattisgarh|korba,identity,chhattisgarh|korba,True,True,False,True,pass
+Chhattisgarh,chhattisgarh|korea,chhattisgarh|korea,high,123.0,chhattisgarh|korea,identity,chhattisgarh|korea,True,True,False,True,pass
+Chhattisgarh,chhattisgarh|mahasamund,chhattisgarh|mahasamund,high,124.0,chhattisgarh|mahasamund,identity,chhattisgarh|mahasamund,True,True,False,True,pass
+Chhattisgarh,chhattisgarh|mungeli,chhattisgarh|mungeli,high,125.0,chhattisgarh|mungeli,identity,chhattisgarh|mungeli,True,False,False,False,pass
+Chhattisgarh,chhattisgarh|narayanpur,chhattisgarh|narayanpur,high,126.0,chhattisgarh|narayanpur,identity,chhattisgarh|narayanpur,True,True,False,True,pass
+Chhattisgarh,chhattisgarh|raigarh,chhattisgarh|raigarh,high,127.0,chhattisgarh|raigarh,identity,chhattisgarh|raigarh,True,True,False,True,pass
+Chhattisgarh,chhattisgarh|raipur,chhattisgarh|raipur,high,128.0,chhattisgarh|raipur,identity,chhattisgarh|raipur,True,False,False,False,pass
+Chhattisgarh,chhattisgarh|rajnandgaon,chhattisgarh|rajnandgaon,high,129.0,chhattisgarh|rajnandgaon,identity,chhattisgarh|rajnandgaon,True,True,False,True,pass
+Chhattisgarh,chhattisgarh|sukma,chhattisgarh|sukma,high,130.0,chhattisgarh|sukma,identity,chhattisgarh|sukma,True,False,False,False,pass
+Chhattisgarh,chhattisgarh|surajpur,chhattisgarh|surajpur,high,131.0,chhattisgarh|surajpur,identity,chhattisgarh|surajpur,True,False,False,False,pass
+Chhattisgarh,chhattisgarh|surguja,chhattisgarh|surguja,high,132.0,chhattisgarh|surguja,identity,chhattisgarh|surguja,True,False,False,False,pass
+Chhattisgarh,chhattisgarh|uttar bastar kanker,chhattisgarh|uttar bastar kanker,high,133.0,chhattisgarh|uttar bastar kanker,identity,chhattisgarh|uttar bastar kanker,True,True,False,True,pass
+Dadra & Nagar Haveli,dadra and nagar haveli|dadra and nagar haveli,,high,,dadra and nagar haveli|dadra and nagar haveli,identity_train_only,dadra and nagar haveli|dadra and nagar haveli,False,True,False,False,unaudited
+Daman & Diu,daman and diu|daman,,high,,daman and diu|daman,identity_train_only,daman and diu|daman,False,True,False,False,unaudited
+Daman & Diu,daman and diu|diu,,high,,daman and diu|diu,identity_train_only,daman and diu|diu,False,True,False,False,unaudited
+Goa,goa|north goa,goa|north goa,high,134.0,goa|north goa,identity,goa|north goa,True,True,False,True,pass
+Goa,goa|south goa,goa|south goa,high,135.0,goa|south goa,identity,goa|south goa,True,True,False,True,pass
+Gujarat,gujarat|ahmedabad,gujarat|ahmedabad,high,136.0,gujarat|ahmedabad,identity,gujarat|ahmedabad,True,False,False,False,pass
+Gujarat,gujarat|amreli,gujarat|amreli,high,137.0,gujarat|amreli,identity,gujarat|amreli,True,True,False,True,pass
+Gujarat,gujarat|anand,gujarat|anand,high,138.0,gujarat|anand,identity,gujarat|anand,True,True,False,True,pass
+Gujarat,gujarat|aravali,gujarat|aravali,high,139.0,gujarat|aravali,identity,gujarat|aravali,True,False,False,False,pass
+Gujarat,gujarat|banas kantha,gujarat|banas kantha,high,140.0,gujarat|banas kantha,identity,gujarat|banas kantha,True,True,False,True,pass
+Gujarat,gujarat|bharuch,gujarat|bharuch,high,141.0,gujarat|bharuch,identity,gujarat|bharuch,True,True,False,True,pass
+Gujarat,gujarat|bhavnagar,gujarat|bhavnagar,high,142.0,gujarat|bhavnagar,identity,gujarat|bhavnagar,True,False,False,False,pass
+Gujarat,gujarat|botad,gujarat|botad,high,143.0,gujarat|botad,identity,gujarat|botad,True,False,False,False,pass
+Gujarat,gujarat|chhota udaipur,gujarat|chhota udaipur,high,144.0,gujarat|chhota udaipur,identity,gujarat|chhota udaipur,True,False,False,False,pass
+Gujarat,gujarat|dahod,gujarat|dahod,high,145.0,gujarat|dahod,identity,gujarat|dahod,True,True,False,True,pass
+Gujarat,gujarat|devbhumi dwarka,gujarat|devbhumi dwarka,high,146.0,gujarat|devbhumi dwarka,identity,gujarat|devbhumi dwarka,True,False,False,False,pass
+Gujarat,gujarat|gandhinagar,gujarat|gandhinagar,high,147.0,gujarat|gandhinagar,identity,gujarat|gandhinagar,True,True,False,True,pass
+Gujarat,gujarat|gir somnath,gujarat|gir somnath,high,148.0,gujarat|gir somnath,identity,gujarat|gir somnath,True,False,False,False,pass
+Gujarat,gujarat|jamnagar,gujarat|jamnagar,high,149.0,gujarat|jamnagar,identity,gujarat|jamnagar,True,False,False,False,pass
+Gujarat,gujarat|junagadh,gujarat|junagadh,high,150.0,gujarat|junagadh,identity,gujarat|junagadh,True,False,False,False,pass
+Gujarat,gujarat|kachchh,gujarat|kachchh,high,151.0,gujarat|kachchh,identity,gujarat|kachchh,True,True,False,True,pass
+Gujarat,gujarat|kheda,gujarat|kheda,high,152.0,gujarat|kheda,identity,gujarat|kheda,True,False,False,False,pass
+Gujarat,gujarat|mahesana,gujarat|mahesana,high,153.0,gujarat|mahesana,identity,gujarat|mahesana,True,True,False,True,pass
+Gujarat,gujarat|mahisagar,gujarat|mahisagar,high,154.0,gujarat|mahisagar,identity,gujarat|mahisagar,True,False,False,False,pass
+Gujarat,gujarat|morbi,gujarat|morbi,high,155.0,gujarat|morbi,identity,gujarat|morbi,True,False,False,False,pass
+Gujarat,gujarat|narmada,gujarat|narmada,high,156.0,gujarat|narmada,identity,gujarat|narmada,True,True,False,True,pass
+Gujarat,gujarat|navsari,gujarat|navsari,high,157.0,gujarat|navsari,identity,gujarat|navsari,True,True,False,True,pass
+Gujarat,gujarat|panch mahals,gujarat|panch mahals,high,158.0,gujarat|panch mahals,identity,gujarat|panch mahals,True,False,False,False,pass
+Gujarat,gujarat|patan,gujarat|patan,high,159.0,gujarat|patan,identity,gujarat|patan,True,True,False,True,pass
+Gujarat,gujarat|porbandar,gujarat|porbandar,high,160.0,gujarat|porbandar,identity,gujarat|porbandar,True,True,False,True,pass
+Gujarat,gujarat|rajkot,gujarat|rajkot,high,161.0,gujarat|rajkot,identity,gujarat|rajkot,True,False,False,False,pass
+Gujarat,gujarat|sabar kantha,gujarat|sabar kantha,high,162.0,gujarat|sabar kantha,identity,gujarat|sabar kantha,True,False,False,False,pass
+Gujarat,gujarat|surat,gujarat|surat,high,163.0,gujarat|surat,identity,gujarat|surat,True,True,False,True,pass
+Gujarat,gujarat|surendranagar,gujarat|surendranagar,high,164.0,gujarat|surendranagar,identity,gujarat|surendranagar,True,False,False,False,pass
+Gujarat,gujarat|tapi,gujarat|tapi,high,165.0,gujarat|tapi,identity,gujarat|tapi,True,True,False,True,pass
+Gujarat,gujarat|the dangs,gujarat|the dangs,high,166.0,gujarat|the dangs,identity,gujarat|the dangs,True,True,False,True,pass
+Gujarat,gujarat|vadodara,gujarat|vadodara,high,167.0,gujarat|vadodara,identity,gujarat|vadodara,True,False,False,False,pass
+Gujarat,gujarat|valsad,gujarat|valsad,high,168.0,gujarat|valsad,identity,gujarat|valsad,True,True,False,True,pass
+Haryana,haryana|ambala,haryana|ambala,high,169.0,haryana|ambala,identity,haryana|ambala,True,True,False,True,pass
+Haryana,haryana|bhiwani,haryana|bhiwani,high,170.0,haryana|bhiwani,identity,haryana|bhiwani,True,False,False,False,pass
+Haryana,haryana|charkhi dadri,haryana|charkhi dadri,high,171.0,haryana|charkhi dadri,identity,haryana|charkhi dadri,True,False,False,False,pass
+Haryana,haryana|faridabad,haryana|faridabad,high,172.0,haryana|faridabad,identity,haryana|faridabad,True,True,False,True,pass
+Haryana,haryana|fatehabad,haryana|fatehabad,high,173.0,haryana|fatehabad,identity,haryana|fatehabad,True,True,False,True,pass
+Haryana,haryana|gurugram,haryana|gurugram,high,174.0,haryana|gurugram,identity,haryana|gurugram,True,True,False,True,pass
+Haryana,haryana|hisar,haryana|hisar,high,175.0,haryana|hisar,identity,haryana|hisar,True,True,False,True,pass
+Haryana,haryana|jhajjar,haryana|jhajjar,high,176.0,haryana|jhajjar,identity,haryana|jhajjar,True,True,False,True,pass
+Haryana,haryana|jind,haryana|jind,high,177.0,haryana|jind,identity,haryana|jind,True,True,False,True,pass
+Haryana,haryana|kaithal,haryana|kaithal,high,178.0,haryana|kaithal,identity,haryana|kaithal,True,True,False,True,pass
+Haryana,haryana|karnal,haryana|karnal,high,179.0,haryana|karnal,identity,haryana|karnal,True,True,False,True,pass
+Haryana,haryana|kurukshetra,haryana|kurukshetra,high,180.0,haryana|kurukshetra,identity,haryana|kurukshetra,True,True,False,True,pass
+Haryana,haryana|mahendragarh,haryana|mahendragarh,high,181.0,haryana|mahendragarh,identity,haryana|mahendragarh,True,True,False,True,pass
+Haryana,haryana|nuh,haryana|nuh,high,182.0,haryana|nuh,identity,haryana|nuh,True,True,False,True,pass
+Haryana,haryana|palwal,haryana|palwal,high,183.0,haryana|palwal,identity,haryana|palwal,True,True,False,True,pass
+Haryana,haryana|panchkula,haryana|panchkula,high,184.0,haryana|panchkula,identity,haryana|panchkula,True,True,False,True,pass
+Haryana,haryana|panipat,haryana|panipat,high,185.0,haryana|panipat,identity,haryana|panipat,True,True,False,True,pass
+Haryana,haryana|rewari,haryana|rewari,high,186.0,haryana|rewari,identity,haryana|rewari,True,True,False,True,pass
+Haryana,haryana|rohtak,haryana|rohtak,high,187.0,haryana|rohtak,identity,haryana|rohtak,True,True,False,True,pass
+Haryana,haryana|sirsa,haryana|sirsa,high,188.0,haryana|sirsa,identity,haryana|sirsa,True,True,False,True,pass
+Haryana,haryana|sonipat,haryana|sonipat,high,189.0,haryana|sonipat,identity,haryana|sonipat,True,True,False,True,pass
+Haryana,haryana|yamunanagar,haryana|yamunanagar,high,190.0,haryana|yamunanagar,identity,haryana|yamunanagar,True,True,False,True,pass
+Himachal Pradesh,himachal pradesh|bilaspur,himachal pradesh|bilaspur,high,191.0,himachal pradesh|bilaspur,identity,himachal pradesh|bilaspur,True,True,False,True,pass
+Himachal Pradesh,himachal pradesh|chamba,himachal pradesh|chamba,high,192.0,himachal pradesh|chamba,identity,himachal pradesh|chamba,True,True,False,True,pass
+Himachal Pradesh,himachal pradesh|hamirpur,himachal pradesh|hamirpur,high,193.0,himachal pradesh|hamirpur,identity,himachal pradesh|hamirpur,True,True,False,True,pass
+Himachal Pradesh,himachal pradesh|kangra,himachal pradesh|kangra,high,194.0,himachal pradesh|kangra,identity,himachal pradesh|kangra,True,True,False,True,pass
+Himachal Pradesh,himachal pradesh|kinnaur,himachal pradesh|kinnaur,high,195.0,himachal pradesh|kinnaur,identity,himachal pradesh|kinnaur,True,True,False,True,pass
+Himachal Pradesh,himachal pradesh|kullu,himachal pradesh|kullu,high,196.0,himachal pradesh|kullu,identity,himachal pradesh|kullu,True,True,False,True,pass
+Himachal Pradesh,himachal pradesh|lahul and spiti,himachal pradesh|lahul and spiti,high,197.0,himachal pradesh|lahul and spiti,identity,himachal pradesh|lahul and spiti,True,True,False,True,pass
+Himachal Pradesh,himachal pradesh|mandi,himachal pradesh|mandi,high,198.0,himachal pradesh|mandi,identity,himachal pradesh|mandi,True,True,False,True,pass
+Himachal Pradesh,himachal pradesh|shimla,himachal pradesh|shimla,high,199.0,himachal pradesh|shimla,identity,himachal pradesh|shimla,True,True,False,True,pass
+Himachal Pradesh,himachal pradesh|sirmaur,himachal pradesh|sirmaur,high,200.0,himachal pradesh|sirmaur,identity,himachal pradesh|sirmaur,True,True,False,True,pass
+Himachal Pradesh,himachal pradesh|solan,himachal pradesh|solan,high,201.0,himachal pradesh|solan,identity,himachal pradesh|solan,True,True,False,True,pass
+Himachal Pradesh,himachal pradesh|una,himachal pradesh|una,high,202.0,himachal pradesh|una,identity,himachal pradesh|una,True,True,False,True,pass
+Jammu And Kashmir,jammu and kashmir|anantnag,jammu and kashmir|anantnag,high,203.0,jammu and kashmir|anantnag,identity,jammu and kashmir|anantnag,True,True,False,True,pass
+Jammu And Kashmir,jammu and kashmir|bandipora,jammu and kashmir|bandipora,high,204.0,jammu and kashmir|bandipora,identity,jammu and kashmir|bandipora,True,True,False,True,pass
+Jammu And Kashmir,jammu and kashmir|baramulla,jammu and kashmir|baramulla,high,205.0,jammu and kashmir|baramulla,identity,jammu and kashmir|baramulla,True,True,False,True,pass
+Jammu And Kashmir,jammu and kashmir|budgam,jammu and kashmir|budgam,high,206.0,jammu and kashmir|budgam,identity,jammu and kashmir|budgam,True,True,False,True,pass
+Jammu And Kashmir,jammu and kashmir|doda,jammu and kashmir|doda,high,207.0,jammu and kashmir|doda,identity,jammu and kashmir|doda,True,True,False,True,pass
+Jammu And Kashmir,jammu and kashmir|ganderbal,jammu and kashmir|ganderbal,high,208.0,jammu and kashmir|ganderbal,identity,jammu and kashmir|ganderbal,True,True,False,True,pass
+Jammu And Kashmir,jammu and kashmir|jammu,jammu and kashmir|jammu,high,209.0,jammu and kashmir|jammu,identity,jammu and kashmir|jammu,True,True,False,True,pass
+Jammu And Kashmir,jammu and kashmir|kathua,jammu and kashmir|kathua,high,210.0,jammu and kashmir|kathua,identity,jammu and kashmir|kathua,True,True,False,True,pass
+Jammu And Kashmir,jammu and kashmir|kishtwar,jammu and kashmir|kishtwar,high,211.0,jammu and kashmir|kishtwar,identity,jammu and kashmir|kishtwar,True,True,False,True,pass
+Jammu And Kashmir,jammu and kashmir|kulgam,jammu and kashmir|kulgam,high,212.0,jammu and kashmir|kulgam,identity,jammu and kashmir|kulgam,True,True,False,True,pass
+Jammu And Kashmir,jammu and kashmir|kupwara,jammu and kashmir|kupwara,high,213.0,jammu and kashmir|kupwara,identity,jammu and kashmir|kupwara,True,True,False,True,pass
+Jammu And Kashmir,jammu and kashmir|poonch,jammu and kashmir|poonch,high,214.0,jammu and kashmir|poonch,identity,jammu and kashmir|poonch,True,True,False,True,pass
+Jammu And Kashmir,jammu and kashmir|pulwama,jammu and kashmir|pulwama,high,215.0,jammu and kashmir|pulwama,identity,jammu and kashmir|pulwama,True,True,False,True,pass
+Jammu And Kashmir,jammu and kashmir|rajouri,jammu and kashmir|rajouri,high,216.0,jammu and kashmir|rajouri,identity,jammu and kashmir|rajouri,True,True,False,True,pass
+Jammu And Kashmir,jammu and kashmir|ramban,jammu and kashmir|ramban,high,217.0,jammu and kashmir|ramban,identity,jammu and kashmir|ramban,True,True,False,True,pass
+Jammu And Kashmir,jammu and kashmir|reasi,jammu and kashmir|reasi,high,218.0,jammu and kashmir|reasi,identity,jammu and kashmir|reasi,True,True,False,True,pass
+Jammu And Kashmir,jammu and kashmir|samba,jammu and kashmir|samba,high,219.0,jammu and kashmir|samba,identity,jammu and kashmir|samba,True,True,False,True,pass
+Jammu And Kashmir,jammu and kashmir|shopian,jammu and kashmir|shopian,high,220.0,jammu and kashmir|shopian,identity,jammu and kashmir|shopian,True,True,False,True,pass
+Jammu And Kashmir,jammu and kashmir|srinagar,jammu and kashmir|srinagar,high,221.0,jammu and kashmir|srinagar,identity,jammu and kashmir|srinagar,True,True,False,True,pass
+Jammu And Kashmir,jammu and kashmir|udhampur,jammu and kashmir|udhampur,high,222.0,jammu and kashmir|udhampur,identity,jammu and kashmir|udhampur,True,True,False,True,pass
+Jharkhand,jharkhand|bokaro,jharkhand|bokaro,high,223.0,jharkhand|bokaro,identity,jharkhand|bokaro,True,True,False,True,pass
+Jharkhand,jharkhand|chatra,jharkhand|chatra,high,224.0,jharkhand|chatra,identity,jharkhand|chatra,True,True,False,True,pass
+Jharkhand,jharkhand|deoghar,jharkhand|deoghar,high,225.0,jharkhand|deoghar,identity,jharkhand|deoghar,True,True,False,True,pass
+Jharkhand,jharkhand|dhanbad,jharkhand|dhanbad,high,226.0,jharkhand|dhanbad,identity,jharkhand|dhanbad,True,True,False,True,pass
+Jharkhand,jharkhand|dumka,jharkhand|dumka,high,227.0,jharkhand|dumka,identity,jharkhand|dumka,True,True,False,True,pass
+Jharkhand,jharkhand|garhwa,jharkhand|garhwa,high,228.0,jharkhand|garhwa,identity,jharkhand|garhwa,True,True,False,True,pass
+Jharkhand,jharkhand|giridih,jharkhand|giridih,high,229.0,jharkhand|giridih,identity,jharkhand|giridih,True,True,False,True,pass
+Jharkhand,jharkhand|godda,jharkhand|godda,high,230.0,jharkhand|godda,identity,jharkhand|godda,True,True,False,True,pass
+Jharkhand,jharkhand|gumla,jharkhand|gumla,high,231.0,jharkhand|gumla,identity,jharkhand|gumla,True,True,False,True,pass
+Jharkhand,jharkhand|hazaribagh,jharkhand|hazaribagh,high,232.0,jharkhand|hazaribagh,identity,jharkhand|hazaribagh,True,True,False,True,pass
+Jharkhand,jharkhand|jamtara,jharkhand|jamtara,high,233.0,jharkhand|jamtara,identity,jharkhand|jamtara,True,True,False,True,pass
+Jharkhand,jharkhand|khunti,jharkhand|khunti,high,234.0,jharkhand|khunti,identity,jharkhand|khunti,True,True,False,True,pass
+Jharkhand,jharkhand|koderma,jharkhand|koderma,high,235.0,jharkhand|koderma,identity,jharkhand|koderma,True,True,False,True,pass
+Jharkhand,jharkhand|latehar,jharkhand|latehar,high,236.0,jharkhand|latehar,identity,jharkhand|latehar,True,True,False,True,pass
+Jharkhand,jharkhand|lohardaga,jharkhand|lohardaga,high,237.0,jharkhand|lohardaga,identity,jharkhand|lohardaga,True,True,False,True,pass
+Jharkhand,jharkhand|pakur,jharkhand|pakur,high,238.0,jharkhand|pakur,identity,jharkhand|pakur,True,True,False,True,pass
+Jharkhand,jharkhand|palamu,jharkhand|palamu,high,239.0,jharkhand|palamu,identity,jharkhand|palamu,True,True,False,True,pass
+Jharkhand,jharkhand|pashchimi singhbhum,jharkhand|pashchimi singhbhum,high,240.0,jharkhand|pashchimi singhbhum,identity,jharkhand|pashchimi singhbhum,True,True,False,True,pass
+Jharkhand,jharkhand|purbi singhbum,jharkhand|purbi singhbum,high,241.0,jharkhand|purbi singhbum,identity,jharkhand|purbi singhbum,True,True,False,True,pass
+Jharkhand,jharkhand|ramgarh,jharkhand|ramgarh,high,242.0,jharkhand|ramgarh,identity,jharkhand|ramgarh,True,True,False,True,pass
+Jharkhand,jharkhand|ranchi,jharkhand|ranchi,high,243.0,jharkhand|ranchi,identity,jharkhand|ranchi,True,True,False,True,pass
+Jharkhand,jharkhand|sahibganj,jharkhand|sahibganj,high,244.0,jharkhand|sahibganj,identity,jharkhand|sahibganj,True,True,False,True,pass
+Jharkhand,jharkhand|saraikela kharsawan,jharkhand|saraikela kharsawan,high,245.0,jharkhand|saraikela kharsawan,identity,jharkhand|saraikela kharsawan,True,True,False,True,pass
+Jharkhand,jharkhand|simdega,jharkhand|simdega,high,246.0,jharkhand|simdega,identity,jharkhand|simdega,True,True,False,True,pass
+Karnataka,karnataka|bagalkote,karnataka|bagalkote,high,247.0,karnataka|bagalkote,identity,karnataka|bagalkote,True,True,False,True,pass
+Karnataka,karnataka|ballari,karnataka|ballari,high,248.0,karnataka|ballari,identity,karnataka|ballari,True,True,False,True,pass
+Karnataka,karnataka|belagavi,karnataka|belagavi,high,249.0,karnataka|belagavi,identity,karnataka|belagavi,True,True,False,True,pass
+Karnataka,karnataka|bengaluru rural,karnataka|bengaluru rural,high,250.0,karnataka|bengaluru rural,identity,karnataka|bengaluru rural,True,True,False,True,pass
+Karnataka,karnataka|bengaluru urban,karnataka|bengaluru urban,high,251.0,karnataka|bengaluru urban,identity,karnataka|bengaluru urban,True,True,False,True,pass
+Karnataka,karnataka|bidar,karnataka|bidar,high,252.0,karnataka|bidar,identity,karnataka|bidar,True,True,False,True,pass
+Karnataka,karnataka|chamarajanagar,karnataka|chamarajanagar,high,253.0,karnataka|chamarajanagar,identity,karnataka|chamarajanagar,True,True,False,True,pass
+Karnataka,karnataka|chikkaballapura,karnataka|chikkaballapura,high,254.0,karnataka|chikkaballapura,identity,karnataka|chikkaballapura,True,True,False,True,pass
+Karnataka,karnataka|chikkamagaluru,karnataka|chikkamagaluru,high,255.0,karnataka|chikkamagaluru,identity,karnataka|chikkamagaluru,True,True,False,True,pass
+Karnataka,karnataka|chitradurga,karnataka|chitradurga,high,256.0,karnataka|chitradurga,identity,karnataka|chitradurga,True,True,False,True,pass
+Karnataka,karnataka|dakshina kannada,karnataka|dakshina kannada,high,257.0,karnataka|dakshina kannada,identity,karnataka|dakshina kannada,True,True,False,True,pass
+Karnataka,karnataka|davanagere,karnataka|davanagere,high,258.0,karnataka|davanagere,identity,karnataka|davanagere,True,True,False,True,pass
+Karnataka,karnataka|dharwad,karnataka|dharwad,high,259.0,karnataka|dharwad,identity,karnataka|dharwad,True,True,False,True,pass
+Karnataka,karnataka|gadag,karnataka|gadag,high,260.0,karnataka|gadag,identity,karnataka|gadag,True,True,False,True,pass
+Karnataka,karnataka|hassan,karnataka|hassan,high,261.0,karnataka|hassan,identity,karnataka|hassan,True,True,False,True,pass
+Karnataka,karnataka|haveri,karnataka|haveri,high,262.0,karnataka|haveri,identity,karnataka|haveri,True,True,False,True,pass
+Karnataka,karnataka|kalaburagi,karnataka|kalaburagi,high,263.0,karnataka|kalaburagi,identity,karnataka|kalaburagi,True,True,False,True,pass
+Karnataka,karnataka|kodagu,karnataka|kodagu,high,264.0,karnataka|kodagu,identity,karnataka|kodagu,True,True,False,True,pass
+Karnataka,karnataka|kolar,karnataka|kolar,high,265.0,karnataka|kolar,identity,karnataka|kolar,True,True,False,True,pass
+Karnataka,karnataka|koppal,karnataka|koppal,high,266.0,karnataka|koppal,identity,karnataka|koppal,True,True,False,True,pass
+Karnataka,karnataka|mandya,karnataka|mandya,high,267.0,karnataka|mandya,identity,karnataka|mandya,True,True,False,True,pass
+Karnataka,karnataka|mysuru,karnataka|mysuru,high,268.0,karnataka|mysuru,identity,karnataka|mysuru,True,True,False,True,pass
+Karnataka,karnataka|raichur,karnataka|raichur,high,269.0,karnataka|raichur,identity,karnataka|raichur,True,True,False,True,pass
+Karnataka,karnataka|ramanagara,karnataka|ramanagara,high,270.0,karnataka|ramanagara,identity,karnataka|ramanagara,True,True,False,True,pass
+Karnataka,karnataka|shivamogga,karnataka|shivamogga,high,271.0,karnataka|shivamogga,identity,karnataka|shivamogga,True,True,False,True,pass
+Karnataka,karnataka|tumakuru,karnataka|tumakuru,high,272.0,karnataka|tumakuru,identity,karnataka|tumakuru,True,True,False,True,pass
+Karnataka,karnataka|udupi,karnataka|udupi,high,273.0,karnataka|udupi,identity,karnataka|udupi,True,True,False,True,pass
+Karnataka,karnataka|uttara kannada,karnataka|uttara kannada,high,274.0,karnataka|uttara kannada,identity,karnataka|uttara kannada,True,True,False,True,pass
+Karnataka,karnataka|vijayapura,karnataka|vijayapura,high,275.0,karnataka|vijayapura,identity,karnataka|vijayapura,True,True,False,True,pass
+Karnataka,karnataka|yadgir,karnataka|yadgir,high,276.0,karnataka|yadgir,identity,karnataka|yadgir,True,True,False,True,pass
+Kerala,kerala|alappuzha,kerala|alappuzha,high,277.0,kerala|alappuzha,identity,kerala|alappuzha,True,True,False,True,pass
+Kerala,kerala|ernakulam,kerala|ernakulam,high,278.0,kerala|ernakulam,identity,kerala|ernakulam,True,True,False,True,pass
+Kerala,kerala|idukki,kerala|idukki,high,279.0,kerala|idukki,identity,kerala|idukki,True,True,False,True,pass
+Kerala,kerala|kannur,kerala|kannur,high,280.0,kerala|kannur,identity,kerala|kannur,True,True,False,True,pass
+Kerala,kerala|kasaragod,kerala|kasaragod,high,281.0,kerala|kasaragod,identity,kerala|kasaragod,True,True,False,True,pass
+Kerala,kerala|kollam,kerala|kollam,high,282.0,kerala|kollam,identity,kerala|kollam,True,True,False,True,pass
+Kerala,kerala|kottayam,kerala|kottayam,high,283.0,kerala|kottayam,identity,kerala|kottayam,True,True,False,True,pass
+Kerala,kerala|kozhikode,kerala|kozhikode,high,284.0,kerala|kozhikode,identity,kerala|kozhikode,True,True,False,True,pass
+Kerala,kerala|malappuram,kerala|malappuram,high,285.0,kerala|malappuram,identity,kerala|malappuram,True,True,False,True,pass
+Kerala,kerala|palakkad,kerala|palakkad,high,286.0,kerala|palakkad,identity,kerala|palakkad,True,True,False,True,pass
+Kerala,kerala|pathanamthitta,kerala|pathanamthitta,high,287.0,kerala|pathanamthitta,identity,kerala|pathanamthitta,True,True,False,True,pass
+Kerala,kerala|thiruvananthapuram,kerala|thiruvananthapuram,high,288.0,kerala|thiruvananthapuram,identity,kerala|thiruvananthapuram,True,True,False,True,pass
+Kerala,kerala|thrissur,kerala|thrissur,high,289.0,kerala|thrissur,identity,kerala|thrissur,True,True,False,True,pass
+Kerala,kerala|wayanad,kerala|wayanad,high,290.0,kerala|wayanad,identity,kerala|wayanad,True,True,False,True,pass
+Ladakh,ladakh|kargil,ladakh|kargil,high,291.0,ladakh|kargil,identity,ladakh|kargil,True,True,False,True,pass
+Ladakh,ladakh|leh ladakh,ladakh|leh ladakh,high,292.0,ladakh|leh ladakh,identity,ladakh|leh ladakh,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|agar malwa,madhya pradesh|agar malwa,high,293.0,madhya pradesh|agar malwa,identity,madhya pradesh|agar malwa,True,False,False,False,pass
+Madhya Pradesh,madhya pradesh|alirajpur,madhya pradesh|alirajpur,high,294.0,madhya pradesh|alirajpur,identity,madhya pradesh|alirajpur,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|anuppur,madhya pradesh|anuppur,high,295.0,madhya pradesh|anuppur,identity,madhya pradesh|anuppur,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|ashoknagar,madhya pradesh|ashoknagar,high,296.0,madhya pradesh|ashoknagar,identity,madhya pradesh|ashoknagar,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|balaghat,madhya pradesh|balaghat,high,297.0,madhya pradesh|balaghat,identity,madhya pradesh|balaghat,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|barwani,madhya pradesh|barwani,high,298.0,madhya pradesh|barwani,identity,madhya pradesh|barwani,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|betul,madhya pradesh|betul,high,299.0,madhya pradesh|betul,identity,madhya pradesh|betul,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|bhind,madhya pradesh|bhind,high,300.0,madhya pradesh|bhind,identity,madhya pradesh|bhind,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|bhopal,madhya pradesh|bhopal,high,301.0,madhya pradesh|bhopal,identity,madhya pradesh|bhopal,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|burhanpur,madhya pradesh|burhanpur,high,302.0,madhya pradesh|burhanpur,identity,madhya pradesh|burhanpur,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|chhatarpur,madhya pradesh|chhatarpur,high,303.0,madhya pradesh|chhatarpur,identity,madhya pradesh|chhatarpur,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|chhindwara,madhya pradesh|chhindwara,high,304.0,madhya pradesh|chhindwara,identity,madhya pradesh|chhindwara,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|damoh,madhya pradesh|damoh,high,305.0,madhya pradesh|damoh,identity,madhya pradesh|damoh,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|datia,madhya pradesh|datia,high,306.0,madhya pradesh|datia,identity,madhya pradesh|datia,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|dewas,madhya pradesh|dewas,high,307.0,madhya pradesh|dewas,identity,madhya pradesh|dewas,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|dhar,madhya pradesh|dhar,high,308.0,madhya pradesh|dhar,identity,madhya pradesh|dhar,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|dindori,madhya pradesh|dindori,high,309.0,madhya pradesh|dindori,identity,madhya pradesh|dindori,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|guna,madhya pradesh|guna,high,310.0,madhya pradesh|guna,identity,madhya pradesh|guna,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|gwalior,madhya pradesh|gwalior,high,311.0,madhya pradesh|gwalior,identity,madhya pradesh|gwalior,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|harda,madhya pradesh|harda,high,312.0,madhya pradesh|harda,identity,madhya pradesh|harda,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|hoshangabad,madhya pradesh|hoshangabad,high,313.0,madhya pradesh|hoshangabad,identity,madhya pradesh|hoshangabad,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|indore,madhya pradesh|indore,high,314.0,madhya pradesh|indore,identity,madhya pradesh|indore,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|jabalpur,madhya pradesh|jabalpur,high,315.0,madhya pradesh|jabalpur,identity,madhya pradesh|jabalpur,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|jhabua,madhya pradesh|jhabua,high,316.0,madhya pradesh|jhabua,identity,madhya pradesh|jhabua,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|katni,madhya pradesh|katni,high,317.0,madhya pradesh|katni,identity,madhya pradesh|katni,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|khandwa east nimar,madhya pradesh|khandwa east nimar,high,318.0,madhya pradesh|khandwa east nimar,identity,madhya pradesh|khandwa east nimar,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|khargone west nimar,madhya pradesh|khargone west nimar,high,319.0,madhya pradesh|khargone west nimar,identity,madhya pradesh|khargone west nimar,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|mandla,madhya pradesh|mandla,high,320.0,madhya pradesh|mandla,identity,madhya pradesh|mandla,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|mandsaur,madhya pradesh|mandsaur,high,321.0,madhya pradesh|mandsaur,identity,madhya pradesh|mandsaur,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|morena,madhya pradesh|morena,high,322.0,madhya pradesh|morena,identity,madhya pradesh|morena,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|narsimhapur,madhya pradesh|narsimhapur,high,323.0,madhya pradesh|narsimhapur,identity,madhya pradesh|narsimhapur,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|neemuch,madhya pradesh|neemuch,high,324.0,madhya pradesh|neemuch,identity,madhya pradesh|neemuch,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|panna,madhya pradesh|panna,high,325.0,madhya pradesh|panna,identity,madhya pradesh|panna,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|raisen,madhya pradesh|raisen,high,326.0,madhya pradesh|raisen,identity,madhya pradesh|raisen,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|rajgarh,madhya pradesh|rajgarh,high,327.0,madhya pradesh|rajgarh,identity,madhya pradesh|rajgarh,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|ratlam,madhya pradesh|ratlam,high,328.0,madhya pradesh|ratlam,identity,madhya pradesh|ratlam,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|rewa,madhya pradesh|rewa,high,329.0,madhya pradesh|rewa,identity,madhya pradesh|rewa,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|sagar,madhya pradesh|sagar,high,330.0,madhya pradesh|sagar,identity,madhya pradesh|sagar,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|satna,madhya pradesh|satna,high,331.0,madhya pradesh|satna,identity,madhya pradesh|satna,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|sehore,madhya pradesh|sehore,high,332.0,madhya pradesh|sehore,identity,madhya pradesh|sehore,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|seoni,madhya pradesh|seoni,high,333.0,madhya pradesh|seoni,identity,madhya pradesh|seoni,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|shahdol,madhya pradesh|shahdol,high,334.0,madhya pradesh|shahdol,identity,madhya pradesh|shahdol,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|shajapur,madhya pradesh|shajapur,high,335.0,madhya pradesh|shajapur,identity,madhya pradesh|shajapur,True,False,False,False,pass
+Madhya Pradesh,madhya pradesh|sheopur,madhya pradesh|sheopur,high,336.0,madhya pradesh|sheopur,identity,madhya pradesh|sheopur,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|shivpuri,madhya pradesh|shivpuri,high,337.0,madhya pradesh|shivpuri,identity,madhya pradesh|shivpuri,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|sidhi,madhya pradesh|sidhi,high,338.0,madhya pradesh|sidhi,identity,madhya pradesh|sidhi,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|singrauli,madhya pradesh|singrauli,high,339.0,madhya pradesh|singrauli,identity,madhya pradesh|singrauli,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|tikamgarh,madhya pradesh|tikamgarh,high,340.0,madhya pradesh|tikamgarh,identity,madhya pradesh|tikamgarh,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|ujjain,madhya pradesh|ujjain,high,341.0,madhya pradesh|ujjain,identity,madhya pradesh|ujjain,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|umaria,madhya pradesh|umaria,high,342.0,madhya pradesh|umaria,identity,madhya pradesh|umaria,True,True,False,True,pass
+Madhya Pradesh,madhya pradesh|vidisha,madhya pradesh|vidisha,high,343.0,madhya pradesh|vidisha,identity,madhya pradesh|vidisha,True,True,False,True,pass
+Maharashtra,maharashtra|ahmednagar,maharashtra|ahmednagar,high,344.0,maharashtra|ahmednagar,identity,maharashtra|ahmednagar,True,True,False,True,pass
+Maharashtra,maharashtra|akola,maharashtra|akola,high,345.0,maharashtra|akola,identity,maharashtra|akola,True,True,False,True,pass
+Maharashtra,maharashtra|amravati,maharashtra|amravati,high,346.0,maharashtra|amravati,identity,maharashtra|amravati,True,True,False,True,pass
+Maharashtra,maharashtra|aurangabad,maharashtra|aurangabad,high,347.0,maharashtra|aurangabad,identity,maharashtra|aurangabad,True,True,False,True,pass
+Maharashtra,maharashtra|beed,maharashtra|beed,high,348.0,maharashtra|beed,identity,maharashtra|beed,True,True,False,True,pass
+Maharashtra,maharashtra|bhandara,maharashtra|bhandara,high,349.0,maharashtra|bhandara,identity,maharashtra|bhandara,True,True,False,True,pass
+Maharashtra,maharashtra|buldhana,maharashtra|buldhana,high,350.0,maharashtra|buldhana,identity,maharashtra|buldhana,True,True,False,True,pass
+Maharashtra,maharashtra|chandrapur,maharashtra|chandrapur,high,351.0,maharashtra|chandrapur,identity,maharashtra|chandrapur,True,True,False,True,pass
+Maharashtra,maharashtra|dhule,maharashtra|dhule,high,352.0,maharashtra|dhule,identity,maharashtra|dhule,True,True,False,True,pass
+Maharashtra,maharashtra|gadchiroli,maharashtra|gadchiroli,high,353.0,maharashtra|gadchiroli,identity,maharashtra|gadchiroli,True,True,False,True,pass
+Maharashtra,maharashtra|gondia,maharashtra|gondia,high,354.0,maharashtra|gondia,identity,maharashtra|gondia,True,True,False,True,pass
+Maharashtra,maharashtra|hingoli,maharashtra|hingoli,high,355.0,maharashtra|hingoli,identity,maharashtra|hingoli,True,True,False,True,pass
+Maharashtra,maharashtra|jalgaon,maharashtra|jalgaon,high,356.0,maharashtra|jalgaon,identity,maharashtra|jalgaon,True,True,False,True,pass
+Maharashtra,maharashtra|jalna,maharashtra|jalna,high,357.0,maharashtra|jalna,identity,maharashtra|jalna,True,True,False,True,pass
+Maharashtra,maharashtra|kolhapur,maharashtra|kolhapur,high,358.0,maharashtra|kolhapur,identity,maharashtra|kolhapur,True,True,False,True,pass
+Maharashtra,maharashtra|latur,maharashtra|latur,high,359.0,maharashtra|latur,identity,maharashtra|latur,True,True,False,True,pass
+Maharashtra,maharashtra|mumbai,maharashtra|mumbai,high,360.0,maharashtra|mumbai,identity,maharashtra|mumbai,True,True,False,True,pass
+Maharashtra,maharashtra|mumbai suburban,maharashtra|mumbai suburban,high,361.0,maharashtra|mumbai suburban,identity,maharashtra|mumbai suburban,True,True,False,True,pass
+Maharashtra,maharashtra|nagpur,maharashtra|nagpur,high,362.0,maharashtra|nagpur,identity,maharashtra|nagpur,True,True,False,True,pass
+Maharashtra,maharashtra|nanded,maharashtra|nanded,high,363.0,maharashtra|nanded,identity,maharashtra|nanded,True,True,False,True,pass
+Maharashtra,maharashtra|nandurbar,maharashtra|nandurbar,high,364.0,maharashtra|nandurbar,identity,maharashtra|nandurbar,True,True,False,True,pass
+Maharashtra,maharashtra|nashik,maharashtra|nashik,high,365.0,maharashtra|nashik,identity,maharashtra|nashik,True,True,False,True,pass
+Maharashtra,maharashtra|osmanabad,maharashtra|osmanabad,high,366.0,maharashtra|osmanabad,identity,maharashtra|osmanabad,True,True,False,True,pass
+Maharashtra,maharashtra|palghar,maharashtra|palghar,high,367.0,maharashtra|palghar,identity,maharashtra|palghar,True,False,False,False,pass
+Maharashtra,maharashtra|parbhani,maharashtra|parbhani,high,368.0,maharashtra|parbhani,identity,maharashtra|parbhani,True,True,False,True,pass
+Maharashtra,maharashtra|pune,maharashtra|pune,high,369.0,maharashtra|pune,identity,maharashtra|pune,True,True,False,True,pass
+Maharashtra,maharashtra|raigad,maharashtra|raigad,high,370.0,maharashtra|raigad,identity,maharashtra|raigad,True,True,False,True,pass
+Maharashtra,maharashtra|ratnagiri,maharashtra|ratnagiri,high,371.0,maharashtra|ratnagiri,identity,maharashtra|ratnagiri,True,True,False,True,pass
+Maharashtra,maharashtra|sangli,maharashtra|sangli,high,372.0,maharashtra|sangli,identity,maharashtra|sangli,True,True,False,True,pass
+Maharashtra,maharashtra|satara,maharashtra|satara,high,373.0,maharashtra|satara,identity,maharashtra|satara,True,True,False,True,pass
+Maharashtra,maharashtra|sindhudurg,maharashtra|sindhudurg,high,374.0,maharashtra|sindhudurg,identity,maharashtra|sindhudurg,True,True,False,True,pass
+Maharashtra,maharashtra|solapur,maharashtra|solapur,high,375.0,maharashtra|solapur,identity,maharashtra|solapur,True,True,False,True,pass
+Maharashtra,maharashtra|thane,maharashtra|thane,high,376.0,maharashtra|thane,identity,maharashtra|thane,True,False,False,False,pass
+Maharashtra,maharashtra|wardha,maharashtra|wardha,high,377.0,maharashtra|wardha,identity,maharashtra|wardha,True,True,False,True,pass
+Maharashtra,maharashtra|washim,maharashtra|washim,high,378.0,maharashtra|washim,identity,maharashtra|washim,True,True,False,True,pass
+Maharashtra,maharashtra|yavatmal,maharashtra|yavatmal,high,379.0,maharashtra|yavatmal,identity,maharashtra|yavatmal,True,True,False,True,pass
+Manipur,manipur|bishnupur,,high,,manipur|bishnupur,identity_train_only,manipur|bishnupur,False,True,False,False,unaudited
+Manipur,manipur|chandel,,high,,manipur|chandel,identity_train_only,manipur|chandel,False,True,False,False,unaudited
+Manipur,manipur|churachandpur,,high,,manipur|churachandpur,identity_train_only,manipur|churachandpur,False,True,False,False,unaudited
+Manipur,manipur|imphal east,,high,,manipur|imphal east,identity_train_only,manipur|imphal east,False,True,False,False,unaudited
+Manipur,manipur|imphal west,,high,,manipur|imphal west,identity_train_only,manipur|imphal west,False,True,False,False,unaudited
+Manipur,manipur|senapati,,high,,manipur|senapati,identity_train_only,manipur|senapati,False,True,False,False,unaudited
+Manipur,manipur|tamenglong,,high,,manipur|tamenglong,identity_train_only,manipur|tamenglong,False,True,False,False,unaudited
+Manipur,manipur|thoubal,,high,,manipur|thoubal,identity_train_only,manipur|thoubal,False,True,False,False,unaudited
+Manipur,manipur|ukhrul,,high,,manipur|ukhrul,identity_train_only,manipur|ukhrul,False,True,False,False,unaudited
+Meghalaya,meghalaya|east garo hills,meghalaya|east garo hills,high,380.0,meghalaya|east garo hills,identity,meghalaya|east garo hills,True,False,False,False,pass
+Meghalaya,meghalaya|east jaintia hills,meghalaya|east jaintia hills,high,381.0,meghalaya|east jaintia hills,identity,meghalaya|east jaintia hills,True,False,False,False,pass
+Meghalaya,meghalaya|east khasi hills,meghalaya|east khasi hills,high,382.0,meghalaya|east khasi hills,identity,meghalaya|east khasi hills,True,True,False,True,pass
+Meghalaya,meghalaya|north garo hills,meghalaya|north garo hills,high,383.0,meghalaya|north garo hills,identity,meghalaya|north garo hills,True,False,False,False,pass
+Meghalaya,meghalaya|ribhoi,meghalaya|ribhoi,high,384.0,meghalaya|ribhoi,identity,meghalaya|ribhoi,True,True,False,True,pass
+Meghalaya,meghalaya|south garo hills,meghalaya|south garo hills,high,385.0,meghalaya|south garo hills,identity,meghalaya|south garo hills,True,True,False,True,pass
+Meghalaya,meghalaya|south west garo hills,meghalaya|south west garo hills,high,386.0,meghalaya|south west garo hills,identity,meghalaya|south west garo hills,True,False,False,False,pass
+Meghalaya,meghalaya|south west khasi hills,meghalaya|south west khasi hills,high,387.0,meghalaya|south west khasi hills,identity,meghalaya|south west khasi hills,True,False,False,False,pass
+Meghalaya,meghalaya|west garo hills,meghalaya|west garo hills,high,388.0,meghalaya|west garo hills,identity,meghalaya|west garo hills,True,False,False,False,pass
+Meghalaya,meghalaya|west jaintia hills,meghalaya|west jaintia hills,high,389.0,meghalaya|west jaintia hills,identity,meghalaya|west jaintia hills,True,False,False,False,pass
+Meghalaya,meghalaya|west khasi hills,meghalaya|west khasi hills,high,390.0,meghalaya|west khasi hills,identity,meghalaya|west khasi hills,True,False,False,False,pass
+Mizoram,mizoram|aizawl,mizoram|aizawl,high,391.0,mizoram|aizawl,identity,mizoram|aizawl,True,True,False,True,pass
+Mizoram,mizoram|champhai,mizoram|champhai,high,392.0,mizoram|champhai,identity,mizoram|champhai,True,True,False,True,pass
+Mizoram,mizoram|kolasib,mizoram|kolasib,high,393.0,mizoram|kolasib,identity,mizoram|kolasib,True,True,False,True,pass
+Mizoram,mizoram|lawngtlai,mizoram|lawngtlai,high,394.0,mizoram|lawngtlai,identity,mizoram|lawngtlai,True,True,False,True,pass
+Mizoram,mizoram|lunglei,mizoram|lunglei,high,395.0,mizoram|lunglei,identity,mizoram|lunglei,True,True,False,True,pass
+Mizoram,mizoram|mamit,mizoram|mamit,high,396.0,mizoram|mamit,identity,mizoram|mamit,True,True,False,True,pass
+Mizoram,mizoram|saiha,mizoram|saiha,high,397.0,mizoram|saiha,identity,mizoram|saiha,True,True,False,True,pass
+Mizoram,mizoram|serchhip,mizoram|serchhip,high,398.0,mizoram|serchhip,identity,mizoram|serchhip,True,True,False,True,pass
+Nagaland,nagaland|dimapur,nagaland|dimapur,high,399.0,nagaland|dimapur,identity,nagaland|dimapur,True,True,False,True,pass
+Nagaland,nagaland|kiphire,nagaland|kiphire,high,400.0,nagaland|kiphire,identity,nagaland|kiphire,True,True,False,True,pass
+Nagaland,nagaland|kohima,nagaland|kohima,high,401.0,nagaland|kohima,identity,nagaland|kohima,True,True,False,True,pass
+Nagaland,nagaland|longleng,nagaland|longleng,high,402.0,nagaland|longleng,identity,nagaland|longleng,True,True,False,True,pass
+Nagaland,nagaland|mokokchung,nagaland|mokokchung,high,403.0,nagaland|mokokchung,identity,nagaland|mokokchung,True,True,False,True,pass
+Nagaland,nagaland|mon,nagaland|mon,high,404.0,nagaland|mon,identity,nagaland|mon,True,True,False,True,pass
+Nagaland,nagaland|peren,nagaland|peren,high,405.0,nagaland|peren,identity,nagaland|peren,True,True,False,True,pass
+Nagaland,nagaland|phek,nagaland|phek,high,406.0,nagaland|phek,identity,nagaland|phek,True,True,False,True,pass
+Nagaland,nagaland|tuensang,nagaland|tuensang,high,407.0,nagaland|tuensang,identity,nagaland|tuensang,True,True,False,True,pass
+Nagaland,nagaland|wokha,nagaland|wokha,high,408.0,nagaland|wokha,identity,nagaland|wokha,True,True,False,True,pass
+Nagaland,nagaland|zunheboto,nagaland|zunheboto,high,409.0,nagaland|zunheboto,identity,nagaland|zunheboto,True,True,False,True,pass
+Nct Of Delhi,nct of delhi|central,nct of delhi|central,high,410.0,nct of delhi|central,identity,nct of delhi|central,True,False,False,False,pass
+Nct Of Delhi,nct of delhi|east,nct of delhi|east,high,411.0,nct of delhi|east,identity,nct of delhi|east,True,False,False,False,pass
+Nct Of Delhi,nct of delhi|new delhi,nct of delhi|new delhi,high,412.0,nct of delhi|new delhi,identity,nct of delhi|new delhi,True,False,False,False,pass
+Nct Of Delhi,nct of delhi|shahdara,nct of delhi|shahdara,high,413.0,nct of delhi|shahdara,identity,nct of delhi|shahdara,True,False,False,False,pass
+Nct Of Delhi,nct of delhi|west,nct of delhi|west,high,414.0,nct of delhi|west,identity,nct of delhi|west,True,False,False,False,pass
+Odisha,odisha|anugul,odisha|anugul,high,415.0,odisha|anugul,identity,odisha|anugul,True,True,False,True,pass
+Odisha,odisha|balangir,odisha|balangir,high,416.0,odisha|balangir,identity,odisha|balangir,True,True,False,True,pass
+Odisha,odisha|baleshwar,odisha|baleshwar,high,417.0,odisha|baleshwar,identity,odisha|baleshwar,True,True,False,True,pass
+Odisha,odisha|bargarh,odisha|bargarh,high,418.0,odisha|bargarh,identity,odisha|bargarh,True,True,False,True,pass
+Odisha,odisha|bhadrak,odisha|bhadrak,high,419.0,odisha|bhadrak,identity,odisha|bhadrak,True,True,False,True,pass
+Odisha,odisha|boudh,odisha|boudh,high,420.0,odisha|boudh,identity,odisha|boudh,True,True,False,True,pass
+Odisha,odisha|cuttack,odisha|cuttack,high,421.0,odisha|cuttack,identity,odisha|cuttack,True,True,False,True,pass
+Odisha,odisha|deogarh,odisha|deogarh,high,422.0,odisha|deogarh,identity,odisha|deogarh,True,True,False,True,pass
+Odisha,odisha|dhenkanal,odisha|dhenkanal,high,423.0,odisha|dhenkanal,identity,odisha|dhenkanal,True,True,False,True,pass
+Odisha,odisha|gajapati,odisha|gajapati,high,424.0,odisha|gajapati,identity,odisha|gajapati,True,True,False,True,pass
+Odisha,odisha|ganjam,odisha|ganjam,high,425.0,odisha|ganjam,identity,odisha|ganjam,True,True,False,True,pass
+Odisha,odisha|jagatsinghapur,odisha|jagatsinghapur,high,426.0,odisha|jagatsinghapur,identity,odisha|jagatsinghapur,True,True,False,True,pass
+Odisha,odisha|jajapur,odisha|jajapur,high,427.0,odisha|jajapur,identity,odisha|jajapur,True,True,False,True,pass
+Odisha,odisha|jharsuguda,odisha|jharsuguda,high,428.0,odisha|jharsuguda,identity,odisha|jharsuguda,True,True,False,True,pass
+Odisha,odisha|kalahandi,odisha|kalahandi,high,429.0,odisha|kalahandi,identity,odisha|kalahandi,True,True,False,True,pass
+Odisha,odisha|kandhamal,odisha|kandhamal,high,430.0,odisha|kandhamal,identity,odisha|kandhamal,True,True,False,True,pass
+Odisha,odisha|kendrapara,odisha|kendrapara,high,431.0,odisha|kendrapara,identity,odisha|kendrapara,True,True,False,True,pass
+Odisha,odisha|kendujhar,odisha|kendujhar,high,432.0,odisha|kendujhar,identity,odisha|kendujhar,True,True,False,True,pass
+Odisha,odisha|khordha,odisha|khordha,high,433.0,odisha|khordha,identity,odisha|khordha,True,True,False,True,pass
+Odisha,odisha|koraput,odisha|koraput,high,434.0,odisha|koraput,identity,odisha|koraput,True,True,False,True,pass
+Odisha,odisha|malkangiri,odisha|malkangiri,high,435.0,odisha|malkangiri,identity,odisha|malkangiri,True,True,False,True,pass
+Odisha,odisha|mayurbhanj,odisha|mayurbhanj,high,436.0,odisha|mayurbhanj,identity,odisha|mayurbhanj,True,True,False,True,pass
+Odisha,odisha|nabarangpur,odisha|nabarangpur,high,437.0,odisha|nabarangpur,identity,odisha|nabarangpur,True,True,False,True,pass
+Odisha,odisha|nayagarh,odisha|nayagarh,high,438.0,odisha|nayagarh,identity,odisha|nayagarh,True,True,False,True,pass
+Odisha,odisha|nuapada,odisha|nuapada,high,439.0,odisha|nuapada,identity,odisha|nuapada,True,True,False,True,pass
+Odisha,odisha|puri,odisha|puri,high,440.0,odisha|puri,identity,odisha|puri,True,True,False,True,pass
+Odisha,odisha|rayagada,odisha|rayagada,high,441.0,odisha|rayagada,identity,odisha|rayagada,True,True,False,True,pass
+Odisha,odisha|sambalpur,odisha|sambalpur,high,442.0,odisha|sambalpur,identity,odisha|sambalpur,True,True,False,True,pass
+Odisha,odisha|sonepur,odisha|sonepur,high,443.0,odisha|sonepur,identity,odisha|sonepur,True,True,False,True,pass
+Odisha,odisha|sundargarh,odisha|sundargarh,high,444.0,odisha|sundargarh,identity,odisha|sundargarh,True,True,False,True,pass
+Puducherry,puducherry|karaikal,puducherry|karaikal,high,445.0,puducherry|karaikal,identity,puducherry|karaikal,True,True,False,True,pass
+Puducherry,puducherry|mahe,puducherry|mahe,high,446.0,puducherry|mahe,identity,puducherry|mahe,True,True,False,True,pass
+Puducherry,puducherry|puducherry,,high,,puducherry|puducherry,identity_train_only,puducherry|puducherry,False,True,False,False,unaudited
+Puducherry,puducherry|yanam,puducherry|yanam,high,447.0,puducherry|yanam,identity,puducherry|yanam,True,True,False,True,pass
+Punjab,punjab|amritsar,punjab|amritsar,high,448.0,punjab|amritsar,identity,punjab|amritsar,True,True,False,True,pass
+Punjab,punjab|barnala,punjab|barnala,high,449.0,punjab|barnala,identity,punjab|barnala,True,True,False,True,pass
+Punjab,punjab|bathinda,punjab|bathinda,high,450.0,punjab|bathinda,identity,punjab|bathinda,True,True,False,True,pass
+Punjab,punjab|faridkot,punjab|faridkot,high,451.0,punjab|faridkot,identity,punjab|faridkot,True,True,False,True,pass
+Punjab,punjab|fatehgarh sahib,punjab|fatehgarh sahib,high,452.0,punjab|fatehgarh sahib,identity,punjab|fatehgarh sahib,True,True,False,True,pass
+Punjab,punjab|fazilka,punjab|fazilka,high,453.0,punjab|fazilka,identity,punjab|fazilka,True,False,False,False,pass
+Punjab,punjab|firozpur,punjab|firozpur,high,454.0,punjab|firozpur,identity,punjab|firozpur,True,False,False,False,pass
+Punjab,punjab|gurdaspur,punjab|gurdaspur,high,455.0,punjab|gurdaspur,identity,punjab|gurdaspur,True,False,False,False,pass
+Punjab,punjab|hoshiarpur,punjab|hoshiarpur,high,456.0,punjab|hoshiarpur,identity,punjab|hoshiarpur,True,True,False,True,pass
+Punjab,punjab|jalandhar,punjab|jalandhar,high,457.0,punjab|jalandhar,identity,punjab|jalandhar,True,True,False,True,pass
+Punjab,punjab|kapurthala,punjab|kapurthala,high,458.0,punjab|kapurthala,identity,punjab|kapurthala,True,True,False,True,pass
+Punjab,punjab|ludhiana,punjab|ludhiana,high,459.0,punjab|ludhiana,identity,punjab|ludhiana,True,True,False,True,pass
+Punjab,punjab|mansa,punjab|mansa,high,460.0,punjab|mansa,identity,punjab|mansa,True,True,False,True,pass
+Punjab,punjab|moga,punjab|moga,high,461.0,punjab|moga,identity,punjab|moga,True,True,False,True,pass
+Punjab,punjab|pathankot,punjab|pathankot,high,462.0,punjab|pathankot,identity,punjab|pathankot,True,False,False,False,pass
+Punjab,punjab|patiala,punjab|patiala,high,463.0,punjab|patiala,identity,punjab|patiala,True,True,False,True,pass
+Punjab,punjab|rupnagar,punjab|rupnagar,high,464.0,punjab|rupnagar,identity,punjab|rupnagar,True,True,False,True,pass
+Punjab,punjab|sahibzada ajit singh nagar,punjab|sahibzada ajit singh nagar,high,465.0,punjab|sahibzada ajit singh nagar,identity,punjab|sahibzada ajit singh nagar,True,True,False,True,pass
+Punjab,punjab|sangrur,punjab|sangrur,high,466.0,punjab|sangrur,identity,punjab|sangrur,True,True,False,True,pass
+Punjab,punjab|shahid bhagat singh nagar,punjab|shahid bhagat singh nagar,high,467.0,punjab|shahid bhagat singh nagar,identity,punjab|shahid bhagat singh nagar,True,True,False,True,pass
+Punjab,punjab|sri muktsar sahib,punjab|sri muktsar sahib,high,468.0,punjab|sri muktsar sahib,identity,punjab|sri muktsar sahib,True,True,False,True,pass
+Punjab,punjab|tarn taran,punjab|tarn taran,high,469.0,punjab|tarn taran,identity,punjab|tarn taran,True,True,False,True,pass
+Rajasthan,rajasthan|ajmer,rajasthan|ajmer,high,470.0,rajasthan|ajmer,identity,rajasthan|ajmer,True,True,False,True,pass
+Rajasthan,rajasthan|alwar,rajasthan|alwar,high,471.0,rajasthan|alwar,identity,rajasthan|alwar,True,True,False,True,pass
+Rajasthan,rajasthan|banswara,rajasthan|banswara,high,472.0,rajasthan|banswara,identity,rajasthan|banswara,True,True,False,True,pass
+Rajasthan,rajasthan|baran,rajasthan|baran,high,473.0,rajasthan|baran,identity,rajasthan|baran,True,True,False,True,pass
+Rajasthan,rajasthan|barmer,rajasthan|barmer,high,474.0,rajasthan|barmer,identity,rajasthan|barmer,True,True,False,True,pass
+Rajasthan,rajasthan|bharatpur,rajasthan|bharatpur,high,475.0,rajasthan|bharatpur,identity,rajasthan|bharatpur,True,True,False,True,pass
+Rajasthan,rajasthan|bhilwara,rajasthan|bhilwara,high,476.0,rajasthan|bhilwara,identity,rajasthan|bhilwara,True,True,False,True,pass
+Rajasthan,rajasthan|bikaner,rajasthan|bikaner,high,477.0,rajasthan|bikaner,identity,rajasthan|bikaner,True,True,False,True,pass
+Rajasthan,rajasthan|bundi,rajasthan|bundi,high,478.0,rajasthan|bundi,identity,rajasthan|bundi,True,True,False,True,pass
+Rajasthan,rajasthan|chittorgarh,rajasthan|chittorgarh,high,479.0,rajasthan|chittorgarh,identity,rajasthan|chittorgarh,True,True,False,True,pass
+Rajasthan,rajasthan|churu,rajasthan|churu,high,480.0,rajasthan|churu,identity,rajasthan|churu,True,True,False,True,pass
+Rajasthan,rajasthan|dausa,rajasthan|dausa,high,481.0,rajasthan|dausa,identity,rajasthan|dausa,True,True,False,True,pass
+Rajasthan,rajasthan|dholpur,rajasthan|dholpur,high,482.0,rajasthan|dholpur,identity,rajasthan|dholpur,True,True,False,True,pass
+Rajasthan,rajasthan|dungarpur,rajasthan|dungarpur,high,483.0,rajasthan|dungarpur,identity,rajasthan|dungarpur,True,True,False,True,pass
+Rajasthan,rajasthan|ganganagar,rajasthan|ganganagar,high,484.0,rajasthan|ganganagar,identity,rajasthan|ganganagar,True,True,False,True,pass
+Rajasthan,rajasthan|hanumangarh,rajasthan|hanumangarh,high,485.0,rajasthan|hanumangarh,identity,rajasthan|hanumangarh,True,True,False,True,pass
+Rajasthan,rajasthan|jaipur,rajasthan|jaipur,high,486.0,rajasthan|jaipur,identity,rajasthan|jaipur,True,True,False,True,pass
+Rajasthan,rajasthan|jaisalmer,rajasthan|jaisalmer,high,487.0,rajasthan|jaisalmer,identity,rajasthan|jaisalmer,True,True,False,True,pass
+Rajasthan,rajasthan|jalore,rajasthan|jalore,high,488.0,rajasthan|jalore,identity,rajasthan|jalore,True,True,False,True,pass
+Rajasthan,rajasthan|jhalawar,rajasthan|jhalawar,high,489.0,rajasthan|jhalawar,identity,rajasthan|jhalawar,True,True,False,True,pass
+Rajasthan,rajasthan|jhunjhunu,rajasthan|jhunjhunu,high,490.0,rajasthan|jhunjhunu,identity,rajasthan|jhunjhunu,True,True,False,True,pass
+Rajasthan,rajasthan|jodhpur,rajasthan|jodhpur,high,491.0,rajasthan|jodhpur,identity,rajasthan|jodhpur,True,True,False,True,pass
+Rajasthan,rajasthan|karauli,rajasthan|karauli,high,492.0,rajasthan|karauli,identity,rajasthan|karauli,True,True,False,True,pass
+Rajasthan,rajasthan|kota,rajasthan|kota,high,493.0,rajasthan|kota,identity,rajasthan|kota,True,True,False,True,pass
+Rajasthan,rajasthan|nagaur,rajasthan|nagaur,high,494.0,rajasthan|nagaur,identity,rajasthan|nagaur,True,True,False,True,pass
+Rajasthan,rajasthan|pali,rajasthan|pali,high,495.0,rajasthan|pali,identity,rajasthan|pali,True,True,False,True,pass
+Rajasthan,rajasthan|pratapgarh,rajasthan|pratapgarh,high,496.0,rajasthan|pratapgarh,identity,rajasthan|pratapgarh,True,True,False,True,pass
+Rajasthan,rajasthan|rajsamand,rajasthan|rajsamand,high,497.0,rajasthan|rajsamand,identity,rajasthan|rajsamand,True,True,False,True,pass
+Rajasthan,rajasthan|sawai madhopur,rajasthan|sawai madhopur,high,498.0,rajasthan|sawai madhopur,identity,rajasthan|sawai madhopur,True,True,False,True,pass
+Rajasthan,rajasthan|sikar,rajasthan|sikar,high,499.0,rajasthan|sikar,identity,rajasthan|sikar,True,True,False,True,pass
+Rajasthan,rajasthan|sirohi,rajasthan|sirohi,high,500.0,rajasthan|sirohi,identity,rajasthan|sirohi,True,True,False,True,pass
+Rajasthan,rajasthan|tonk,rajasthan|tonk,high,501.0,rajasthan|tonk,identity,rajasthan|tonk,True,True,False,True,pass
+Rajasthan,rajasthan|udaipur,rajasthan|udaipur,high,502.0,rajasthan|udaipur,identity,rajasthan|udaipur,True,True,False,True,pass
+Sikkim,sikkim|east district,sikkim|east district,high,503.0,sikkim|east district,identity,sikkim|east district,True,True,False,True,pass
+Sikkim,sikkim|north district,sikkim|north district,high,504.0,sikkim|north district,identity,sikkim|north district,True,True,False,True,pass
+Sikkim,sikkim|south district,sikkim|south district,high,505.0,sikkim|south district,identity,sikkim|south district,True,True,False,True,pass
+Sikkim,sikkim|west district,sikkim|west district,high,506.0,sikkim|west district,identity,sikkim|west district,True,True,False,True,pass
+Tamil Nadu,tamil nadu|ariyalur,tamil nadu|ariyalur,high,507.0,tamil nadu|ariyalur,identity,tamil nadu|ariyalur,True,True,False,True,pass
+Tamil Nadu,tamil nadu|chennai,tamil nadu|chennai,high,508.0,tamil nadu|chennai,identity,tamil nadu|chennai,True,True,False,True,pass
+Tamil Nadu,tamil nadu|coimbatore,tamil nadu|coimbatore,high,509.0,tamil nadu|coimbatore,identity,tamil nadu|coimbatore,True,True,False,True,pass
+Tamil Nadu,tamil nadu|cuddalore,tamil nadu|cuddalore,high,510.0,tamil nadu|cuddalore,identity,tamil nadu|cuddalore,True,True,False,True,pass
+Tamil Nadu,tamil nadu|dharmapuri,tamil nadu|dharmapuri,high,511.0,tamil nadu|dharmapuri,identity,tamil nadu|dharmapuri,True,True,False,True,pass
+Tamil Nadu,tamil nadu|dindigul,tamil nadu|dindigul,high,512.0,tamil nadu|dindigul,identity,tamil nadu|dindigul,True,True,False,True,pass
+Tamil Nadu,tamil nadu|erode,tamil nadu|erode,high,513.0,tamil nadu|erode,identity,tamil nadu|erode,True,True,False,True,pass
+Tamil Nadu,tamil nadu|kanchipuram,tamil nadu|kanchipuram,medium,514.0,tamil nadu|kanchipuram,inherited_remnant,tamil nadu|kanchipuram,True,True,False,False,unaudited
+Tamil Nadu,tamil nadu|kanniyakumari,tamil nadu|kanniyakumari,high,515.0,tamil nadu|kanniyakumari,identity,tamil nadu|kanniyakumari,True,True,False,True,pass
+Tamil Nadu,tamil nadu|karur,tamil nadu|karur,high,516.0,tamil nadu|karur,identity,tamil nadu|karur,True,True,False,True,pass
+Tamil Nadu,tamil nadu|krishnagiri,tamil nadu|krishnagiri,high,517.0,tamil nadu|krishnagiri,identity,tamil nadu|krishnagiri,True,True,False,True,pass
+Tamil Nadu,tamil nadu|madurai,tamil nadu|madurai,high,518.0,tamil nadu|madurai,identity,tamil nadu|madurai,True,True,False,True,pass
+Tamil Nadu,tamil nadu|nagapattinam,tamil nadu|nagapattinam,medium,519.0,tamil nadu|nagapattinam,inherited_remnant,tamil nadu|nagapattinam,True,True,False,False,unaudited
+Tamil Nadu,tamil nadu|namakkal,tamil nadu|namakkal,high,520.0,tamil nadu|namakkal,identity,tamil nadu|namakkal,True,True,False,True,pass
+Tamil Nadu,tamil nadu|perambalur,tamil nadu|perambalur,high,521.0,tamil nadu|perambalur,identity,tamil nadu|perambalur,True,True,False,True,pass
+Tamil Nadu,tamil nadu|pudukkottai,tamil nadu|pudukkottai,high,522.0,tamil nadu|pudukkottai,identity,tamil nadu|pudukkottai,True,True,False,True,pass
+Tamil Nadu,tamil nadu|ramanathapuram,tamil nadu|ramanathapuram,high,523.0,tamil nadu|ramanathapuram,identity,tamil nadu|ramanathapuram,True,True,False,True,pass
+Tamil Nadu,tamil nadu|salem,tamil nadu|salem,high,524.0,tamil nadu|salem,identity,tamil nadu|salem,True,True,False,True,pass
+Tamil Nadu,tamil nadu|sivaganga,tamil nadu|sivaganga,high,525.0,tamil nadu|sivaganga,identity,tamil nadu|sivaganga,True,True,False,True,pass
+Tamil Nadu,tamil nadu|thanjavur,tamil nadu|thanjavur,high,526.0,tamil nadu|thanjavur,identity,tamil nadu|thanjavur,True,True,False,True,pass
+Tamil Nadu,tamil nadu|the nilgiris,tamil nadu|the nilgiris,high,527.0,tamil nadu|the nilgiris,identity,tamil nadu|the nilgiris,True,True,False,True,pass
+Tamil Nadu,tamil nadu|theni,tamil nadu|theni,high,528.0,tamil nadu|theni,identity,tamil nadu|theni,True,True,False,True,pass
+Tamil Nadu,tamil nadu|thiruvallur,tamil nadu|thiruvallur,high,529.0,tamil nadu|thiruvallur,identity,tamil nadu|thiruvallur,True,True,False,True,pass
+Tamil Nadu,tamil nadu|thiruvarur,tamil nadu|thiruvarur,high,530.0,tamil nadu|thiruvarur,identity,tamil nadu|thiruvarur,True,True,False,True,pass
+Tamil Nadu,tamil nadu|thoothukkudi,tamil nadu|thoothukkudi,high,531.0,tamil nadu|thoothukkudi,identity,tamil nadu|thoothukkudi,True,True,False,True,pass
+Tamil Nadu,tamil nadu|tiruchirappalli,tamil nadu|tiruchirappalli,high,532.0,tamil nadu|tiruchirappalli,identity,tamil nadu|tiruchirappalli,True,True,False,True,pass
+Tamil Nadu,tamil nadu|tirunelveli,tamil nadu|tirunelveli,medium,533.0,tamil nadu|tirunelveli,inherited_remnant,tamil nadu|tirunelveli,True,True,False,False,unaudited
+Tamil Nadu,tamil nadu|tiruppur,tamil nadu|tiruppur,high,534.0,tamil nadu|tiruppur,identity,tamil nadu|tiruppur,True,True,False,True,pass
+Tamil Nadu,tamil nadu|tiruvannamalai,tamil nadu|tiruvannamalai,high,535.0,tamil nadu|tiruvannamalai,identity,tamil nadu|tiruvannamalai,True,True,False,True,pass
+Tamil Nadu,tamil nadu|vellore,tamil nadu|vellore,medium,536.0,tamil nadu|vellore,inherited_remnant,tamil nadu|vellore,True,True,False,False,unaudited
+Tamil Nadu,tamil nadu|villupuram,tamil nadu|villupuram,medium,537.0,tamil nadu|villupuram,inherited_remnant,tamil nadu|villupuram,True,True,False,False,unaudited
+Tamil Nadu,tamil nadu|virudhunagar,tamil nadu|virudhunagar,high,538.0,tamil nadu|virudhunagar,identity,tamil nadu|virudhunagar,True,True,False,True,pass
+Telangana,telangana|adilabad,telangana|adilabad,high,539.0,telangana|adilabad,identity,telangana|adilabad,True,False,False,False,pass
+Telangana,telangana|bhadradri kothagudem,telangana|bhadradri kothagudem,high,540.0,telangana|bhadradri kothagudem,identity,telangana|bhadradri kothagudem,True,False,False,False,pass
+Telangana,telangana|hanumakonda,telangana|hanumakonda,high,541.0,telangana|hanumakonda,identity,telangana|hanumakonda,True,False,False,False,pass
+Telangana,telangana|hyderabad,telangana|hyderabad,high,542.0,telangana|hyderabad,identity,telangana|hyderabad,True,False,False,False,pass
+Telangana,telangana|jagitial,telangana|jagitial,high,543.0,telangana|jagitial,identity,telangana|jagitial,True,False,False,False,pass
+Telangana,telangana|jangoan,telangana|jangoan,high,544.0,telangana|jangoan,identity,telangana|jangoan,True,False,False,False,pass
+Telangana,telangana|jayashankar bhupalapally,telangana|jayashankar bhupalapally,medium,545.0,telangana|jayashankar bhupalapally,inherited_remnant,telangana|jayashankar bhupalapally,True,False,False,False,unaudited
+Telangana,telangana|jogulamba gadwal,telangana|jogulamba gadwal,high,546.0,telangana|jogulamba gadwal,identity,telangana|jogulamba gadwal,True,False,False,False,pass
+Telangana,telangana|kamareddy,telangana|kamareddy,high,547.0,telangana|kamareddy,identity,telangana|kamareddy,True,False,False,False,pass
+Telangana,telangana|karimnagar,telangana|karimnagar,high,548.0,telangana|karimnagar,identity,telangana|karimnagar,True,False,False,False,pass
+Telangana,telangana|khammam,telangana|khammam,high,549.0,telangana|khammam,identity,telangana|khammam,True,False,False,False,pass
+Telangana,telangana|kumuram bheem asifabad,telangana|kumuram bheem asifabad,high,550.0,telangana|kumuram bheem asifabad,identity,telangana|kumuram bheem asifabad,True,False,False,False,pass
+Telangana,telangana|mahabubabad,telangana|mahabubabad,high,551.0,telangana|mahabubabad,identity,telangana|mahabubabad,True,False,False,False,pass
+Telangana,telangana|mahabubnagar,telangana|mahabubnagar,medium,552.0,telangana|mahabubnagar,inherited_remnant,telangana|mahabubnagar,True,False,False,False,unaudited
+Telangana,telangana|mancherial,telangana|mancherial,high,553.0,telangana|mancherial,identity,telangana|mancherial,True,False,False,False,pass
+Telangana,telangana|medak,telangana|medak,high,554.0,telangana|medak,identity,telangana|medak,True,False,False,False,pass
+Telangana,telangana|medchal malkajgiri,telangana|medchal malkajgiri,high,555.0,telangana|medchal malkajgiri,identity,telangana|medchal malkajgiri,True,False,False,False,pass
+Telangana,telangana|nagarkurnool,telangana|nagarkurnool,high,556.0,telangana|nagarkurnool,identity,telangana|nagarkurnool,True,False,False,False,pass
+Telangana,telangana|nalgonda,telangana|nalgonda,high,557.0,telangana|nalgonda,identity,telangana|nalgonda,True,False,False,False,pass
+Telangana,telangana|nirmal,telangana|nirmal,high,558.0,telangana|nirmal,identity,telangana|nirmal,True,False,False,False,pass
+Telangana,telangana|nizamabad,telangana|nizamabad,high,559.0,telangana|nizamabad,identity,telangana|nizamabad,True,False,False,False,pass
+Telangana,telangana|peddapalli,telangana|peddapalli,high,560.0,telangana|peddapalli,identity,telangana|peddapalli,True,False,False,False,pass
+Telangana,telangana|rajanna sircilla,telangana|rajanna sircilla,high,561.0,telangana|rajanna sircilla,identity,telangana|rajanna sircilla,True,False,False,False,pass
+Telangana,telangana|ranga reddy,telangana|ranga reddy,high,562.0,telangana|ranga reddy,identity,telangana|ranga reddy,True,False,False,False,pass
+Telangana,telangana|sangareddy,telangana|sangareddy,high,563.0,telangana|sangareddy,identity,telangana|sangareddy,True,False,False,False,pass
+Telangana,telangana|siddipet,telangana|siddipet,high,564.0,telangana|siddipet,identity,telangana|siddipet,True,False,False,False,pass
+Telangana,telangana|suryapet,telangana|suryapet,high,565.0,telangana|suryapet,identity,telangana|suryapet,True,False,False,False,pass
+Telangana,telangana|vikarabad,telangana|vikarabad,high,566.0,telangana|vikarabad,identity,telangana|vikarabad,True,False,False,False,pass
+Telangana,telangana|wanaparthy,telangana|wanaparthy,high,567.0,telangana|wanaparthy,identity,telangana|wanaparthy,True,False,False,False,pass
+Telangana,telangana|warangal rural,telangana|warangal rural,high,568.0,telangana|warangal rural,identity,telangana|warangal rural,True,False,False,False,pass
+Telangana,telangana|yadadri bhuvanagiri,telangana|yadadri bhuvanagiri,high,569.0,telangana|yadadri bhuvanagiri,identity,telangana|yadadri bhuvanagiri,True,False,False,False,pass
+Tripura,tripura|dhalai,tripura|dhalai,high,570.0,tripura|dhalai,identity,tripura|dhalai,True,True,False,True,pass
+Tripura,tripura|gomati,tripura|gomati,high,571.0,tripura|gomati,identity,tripura|gomati,True,False,False,False,pass
+Tripura,tripura|khowai,tripura|khowai,high,572.0,tripura|khowai,identity,tripura|khowai,True,False,False,False,pass
+Tripura,tripura|north tripura,tripura|north tripura,high,573.0,tripura|north tripura,identity,tripura|north tripura,True,False,False,False,pass
+Tripura,tripura|sepahijala,tripura|sepahijala,high,574.0,tripura|sepahijala,identity,tripura|sepahijala,True,False,False,False,pass
+Tripura,tripura|south tripura,tripura|south tripura,high,575.0,tripura|south tripura,identity,tripura|south tripura,True,False,False,False,pass
+Tripura,tripura|unakoti,tripura|unakoti,high,576.0,tripura|unakoti,identity,tripura|unakoti,True,False,False,False,pass
+Tripura,tripura|west tripura,tripura|west tripura,high,577.0,tripura|west tripura,identity,tripura|west tripura,True,False,False,False,pass
+Uttar Pradesh,uttar pradesh|agra,uttar pradesh|agra,high,578.0,uttar pradesh|agra,identity,uttar pradesh|agra,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|aligarh,uttar pradesh|aligarh,high,579.0,uttar pradesh|aligarh,identity,uttar pradesh|aligarh,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|ambedkar nagar,uttar pradesh|ambedkar nagar,high,580.0,uttar pradesh|ambedkar nagar,identity,uttar pradesh|ambedkar nagar,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|amethi,uttar pradesh|amethi,high,581.0,uttar pradesh|amethi,identity,uttar pradesh|amethi,True,False,False,False,pass
+Uttar Pradesh,uttar pradesh|amroha,uttar pradesh|amroha,high,582.0,uttar pradesh|amroha,identity,uttar pradesh|amroha,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|auraiya,uttar pradesh|auraiya,high,583.0,uttar pradesh|auraiya,identity,uttar pradesh|auraiya,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|ayodhya,uttar pradesh|ayodhya,high,584.0,uttar pradesh|ayodhya,identity,uttar pradesh|ayodhya,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|azamgarh,uttar pradesh|azamgarh,high,585.0,uttar pradesh|azamgarh,identity,uttar pradesh|azamgarh,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|baghpat,uttar pradesh|baghpat,high,586.0,uttar pradesh|baghpat,identity,uttar pradesh|baghpat,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|bahraich,uttar pradesh|bahraich,high,587.0,uttar pradesh|bahraich,identity,uttar pradesh|bahraich,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|ballia,uttar pradesh|ballia,high,588.0,uttar pradesh|ballia,identity,uttar pradesh|ballia,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|balrampur,uttar pradesh|balrampur,high,589.0,uttar pradesh|balrampur,identity,uttar pradesh|balrampur,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|banda,uttar pradesh|banda,high,590.0,uttar pradesh|banda,identity,uttar pradesh|banda,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|barabanki,uttar pradesh|barabanki,high,591.0,uttar pradesh|barabanki,identity,uttar pradesh|barabanki,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|bareilly,uttar pradesh|bareilly,high,592.0,uttar pradesh|bareilly,identity,uttar pradesh|bareilly,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|basti,uttar pradesh|basti,high,593.0,uttar pradesh|basti,identity,uttar pradesh|basti,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|bhadohi,uttar pradesh|bhadohi,high,594.0,uttar pradesh|bhadohi,identity,uttar pradesh|bhadohi,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|bijnor,uttar pradesh|bijnor,high,595.0,uttar pradesh|bijnor,identity,uttar pradesh|bijnor,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|budaun,uttar pradesh|budaun,high,596.0,uttar pradesh|budaun,identity,uttar pradesh|budaun,True,False,False,False,pass
+Uttar Pradesh,uttar pradesh|bulandshahr,uttar pradesh|bulandshahr,high,597.0,uttar pradesh|bulandshahr,identity,uttar pradesh|bulandshahr,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|chandauli,uttar pradesh|chandauli,high,598.0,uttar pradesh|chandauli,identity,uttar pradesh|chandauli,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|chitrakoot,uttar pradesh|chitrakoot,high,599.0,uttar pradesh|chitrakoot,identity,uttar pradesh|chitrakoot,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|deoria,uttar pradesh|deoria,high,600.0,uttar pradesh|deoria,identity,uttar pradesh|deoria,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|etah,uttar pradesh|etah,high,601.0,uttar pradesh|etah,identity,uttar pradesh|etah,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|etawah,uttar pradesh|etawah,high,602.0,uttar pradesh|etawah,identity,uttar pradesh|etawah,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|farrukhabad,uttar pradesh|farrukhabad,high,603.0,uttar pradesh|farrukhabad,identity,uttar pradesh|farrukhabad,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|fatehpur,uttar pradesh|fatehpur,high,604.0,uttar pradesh|fatehpur,identity,uttar pradesh|fatehpur,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|firozabad,uttar pradesh|firozabad,high,605.0,uttar pradesh|firozabad,identity,uttar pradesh|firozabad,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|gautam buddha nagar,uttar pradesh|gautam buddha nagar,high,606.0,uttar pradesh|gautam buddha nagar,identity,uttar pradesh|gautam buddha nagar,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|ghaziabad,uttar pradesh|ghaziabad,high,607.0,uttar pradesh|ghaziabad,identity,uttar pradesh|ghaziabad,True,False,False,False,pass
+Uttar Pradesh,uttar pradesh|ghazipur,uttar pradesh|ghazipur,high,608.0,uttar pradesh|ghazipur,identity,uttar pradesh|ghazipur,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|gonda,uttar pradesh|gonda,high,609.0,uttar pradesh|gonda,identity,uttar pradesh|gonda,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|gorakhpur,uttar pradesh|gorakhpur,high,610.0,uttar pradesh|gorakhpur,identity,uttar pradesh|gorakhpur,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|hamirpur,uttar pradesh|hamirpur,high,611.0,uttar pradesh|hamirpur,identity,uttar pradesh|hamirpur,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|hapur,uttar pradesh|hapur,high,612.0,uttar pradesh|hapur,identity,uttar pradesh|hapur,True,False,False,False,pass
+Uttar Pradesh,uttar pradesh|hardoi,uttar pradesh|hardoi,high,613.0,uttar pradesh|hardoi,identity,uttar pradesh|hardoi,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|hathras,uttar pradesh|hathras,high,614.0,uttar pradesh|hathras,identity,uttar pradesh|hathras,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|jalaun,uttar pradesh|jalaun,high,615.0,uttar pradesh|jalaun,identity,uttar pradesh|jalaun,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|jaunpur,uttar pradesh|jaunpur,high,616.0,uttar pradesh|jaunpur,identity,uttar pradesh|jaunpur,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|jhansi,uttar pradesh|jhansi,high,617.0,uttar pradesh|jhansi,identity,uttar pradesh|jhansi,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|kannauj,uttar pradesh|kannauj,high,618.0,uttar pradesh|kannauj,identity,uttar pradesh|kannauj,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|kanpur dehat,uttar pradesh|kanpur dehat,high,619.0,uttar pradesh|kanpur dehat,identity,uttar pradesh|kanpur dehat,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|kanpur nagar,uttar pradesh|kanpur nagar,high,620.0,uttar pradesh|kanpur nagar,identity,uttar pradesh|kanpur nagar,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|kasganj,uttar pradesh|kasganj,high,621.0,uttar pradesh|kasganj,identity,uttar pradesh|kasganj,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|kaushambi,uttar pradesh|kaushambi,high,622.0,uttar pradesh|kaushambi,identity,uttar pradesh|kaushambi,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|kheri,uttar pradesh|kheri,high,623.0,uttar pradesh|kheri,identity,uttar pradesh|kheri,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|kushinagar,uttar pradesh|kushinagar,high,624.0,uttar pradesh|kushinagar,identity,uttar pradesh|kushinagar,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|lalitpur,uttar pradesh|lalitpur,high,625.0,uttar pradesh|lalitpur,identity,uttar pradesh|lalitpur,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|lucknow,uttar pradesh|lucknow,high,626.0,uttar pradesh|lucknow,identity,uttar pradesh|lucknow,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|mainpuri,uttar pradesh|mainpuri,high,627.0,uttar pradesh|mainpuri,identity,uttar pradesh|mainpuri,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|mathura,uttar pradesh|mathura,high,628.0,uttar pradesh|mathura,identity,uttar pradesh|mathura,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|mau,uttar pradesh|mau,high,629.0,uttar pradesh|mau,identity,uttar pradesh|mau,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|meerut,uttar pradesh|meerut,high,630.0,uttar pradesh|meerut,identity,uttar pradesh|meerut,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|mirzapur,uttar pradesh|mirzapur,high,631.0,uttar pradesh|mirzapur,identity,uttar pradesh|mirzapur,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|moradabad,uttar pradesh|moradabad,high,632.0,uttar pradesh|moradabad,identity,uttar pradesh|moradabad,True,False,False,False,pass
+Uttar Pradesh,uttar pradesh|muzaffarnagar,uttar pradesh|muzaffarnagar,high,633.0,uttar pradesh|muzaffarnagar,identity,uttar pradesh|muzaffarnagar,True,False,False,False,pass
+Uttar Pradesh,uttar pradesh|pilibhit,uttar pradesh|pilibhit,high,634.0,uttar pradesh|pilibhit,identity,uttar pradesh|pilibhit,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|pratapgarh,uttar pradesh|pratapgarh,high,635.0,uttar pradesh|pratapgarh,identity,uttar pradesh|pratapgarh,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|prayagraj,uttar pradesh|prayagraj,high,636.0,uttar pradesh|prayagraj,identity,uttar pradesh|prayagraj,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|rae bareli,uttar pradesh|rae bareli,high,637.0,uttar pradesh|rae bareli,identity,uttar pradesh|rae bareli,True,False,False,False,pass
+Uttar Pradesh,uttar pradesh|rampur,uttar pradesh|rampur,high,638.0,uttar pradesh|rampur,identity,uttar pradesh|rampur,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|saharanpur,uttar pradesh|saharanpur,high,639.0,uttar pradesh|saharanpur,identity,uttar pradesh|saharanpur,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|sambhal,uttar pradesh|sambhal,high,640.0,uttar pradesh|sambhal,identity,uttar pradesh|sambhal,True,False,False,False,pass
+Uttar Pradesh,uttar pradesh|sant kabir nagar,uttar pradesh|sant kabir nagar,high,641.0,uttar pradesh|sant kabir nagar,identity,uttar pradesh|sant kabir nagar,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|shahjahanpur,uttar pradesh|shahjahanpur,high,642.0,uttar pradesh|shahjahanpur,identity,uttar pradesh|shahjahanpur,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|shamli,uttar pradesh|shamli,high,643.0,uttar pradesh|shamli,identity,uttar pradesh|shamli,True,False,False,False,pass
+Uttar Pradesh,uttar pradesh|shrawasti,uttar pradesh|shrawasti,high,644.0,uttar pradesh|shrawasti,identity,uttar pradesh|shrawasti,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|siddharth nagar,uttar pradesh|siddharth nagar,high,645.0,uttar pradesh|siddharth nagar,identity,uttar pradesh|siddharth nagar,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|sitapur,uttar pradesh|sitapur,high,646.0,uttar pradesh|sitapur,identity,uttar pradesh|sitapur,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|sonbhadra,uttar pradesh|sonbhadra,high,647.0,uttar pradesh|sonbhadra,identity,uttar pradesh|sonbhadra,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|sultanpur,uttar pradesh|sultanpur,high,648.0,uttar pradesh|sultanpur,identity,uttar pradesh|sultanpur,True,False,False,False,pass
+Uttar Pradesh,uttar pradesh|unnao,uttar pradesh|unnao,high,649.0,uttar pradesh|unnao,identity,uttar pradesh|unnao,True,True,False,True,pass
+Uttar Pradesh,uttar pradesh|varanasi,uttar pradesh|varanasi,high,650.0,uttar pradesh|varanasi,identity,uttar pradesh|varanasi,True,True,False,True,pass
+Uttarakhand,uttarakhand|almora,uttarakhand|almora,high,651.0,uttarakhand|almora,identity,uttarakhand|almora,True,True,False,True,pass
+Uttarakhand,uttarakhand|bageshwar,uttarakhand|bageshwar,high,652.0,uttarakhand|bageshwar,identity,uttarakhand|bageshwar,True,True,False,True,pass
+Uttarakhand,uttarakhand|chamoli,uttarakhand|chamoli,high,653.0,uttarakhand|chamoli,identity,uttarakhand|chamoli,True,True,False,True,pass
+Uttarakhand,uttarakhand|champawat,uttarakhand|champawat,high,654.0,uttarakhand|champawat,identity,uttarakhand|champawat,True,True,False,True,pass
+Uttarakhand,uttarakhand|dehradun,uttarakhand|dehradun,high,655.0,uttarakhand|dehradun,identity,uttarakhand|dehradun,True,True,False,True,pass
+Uttarakhand,uttarakhand|haridwar,uttarakhand|haridwar,high,656.0,uttarakhand|haridwar,identity,uttarakhand|haridwar,True,True,False,True,pass
+Uttarakhand,uttarakhand|nainital,uttarakhand|nainital,high,657.0,uttarakhand|nainital,identity,uttarakhand|nainital,True,True,False,True,pass
+Uttarakhand,uttarakhand|pauri garhwal,uttarakhand|pauri garhwal,high,658.0,uttarakhand|pauri garhwal,identity,uttarakhand|pauri garhwal,True,True,False,True,pass
+Uttarakhand,uttarakhand|pithoragarh,uttarakhand|pithoragarh,high,659.0,uttarakhand|pithoragarh,identity,uttarakhand|pithoragarh,True,True,False,True,pass
+Uttarakhand,uttarakhand|rudra prayag,uttarakhand|rudra prayag,high,660.0,uttarakhand|rudra prayag,identity,uttarakhand|rudra prayag,True,True,False,True,pass
+Uttarakhand,uttarakhand|tehri garhwal,uttarakhand|tehri garhwal,high,661.0,uttarakhand|tehri garhwal,identity,uttarakhand|tehri garhwal,True,True,False,True,pass
+Uttarakhand,uttarakhand|udham singh nagar,uttarakhand|udham singh nagar,high,662.0,uttarakhand|udham singh nagar,identity,uttarakhand|udham singh nagar,True,True,False,True,pass
+Uttarakhand,uttarakhand|uttarkashi,uttarakhand|uttarkashi,high,663.0,uttarakhand|uttarkashi,identity,uttarakhand|uttarkashi,True,True,False,True,pass
+West Bengal,west bengal|bankura,west bengal|bankura,high,664.0,west bengal|bankura,identity,west bengal|bankura,True,True,False,True,pass
+West Bengal,west bengal|birbhum,west bengal|birbhum,high,665.0,west bengal|birbhum,identity,west bengal|birbhum,True,True,False,True,pass
+West Bengal,west bengal|cooch behar,west bengal|cooch behar,high,666.0,west bengal|cooch behar,identity,west bengal|cooch behar,True,True,False,True,pass
+West Bengal,west bengal|dakshin dinajpur,west bengal|dakshin dinajpur,high,667.0,west bengal|dakshin dinajpur,identity,west bengal|dakshin dinajpur,True,True,False,True,pass
+West Bengal,west bengal|darjeeling,west bengal|darjeeling,medium,668.0,west bengal|darjeeling,inherited_remnant,west bengal|darjeeling,True,True,False,False,unaudited
+West Bengal,west bengal|hooghly,west bengal|hooghly,high,669.0,west bengal|hooghly,identity,west bengal|hooghly,True,True,False,True,pass
+West Bengal,west bengal|howrah,west bengal|howrah,high,670.0,west bengal|howrah,identity,west bengal|howrah,True,True,False,True,pass
+West Bengal,west bengal|jalpaiguri,west bengal|jalpaiguri,medium,671.0,west bengal|jalpaiguri,inherited_remnant,west bengal|jalpaiguri,True,True,False,False,unaudited
+West Bengal,west bengal|kolkata,west bengal|kolkata,high,672.0,west bengal|kolkata,identity,west bengal|kolkata,True,True,False,True,pass
+West Bengal,west bengal|maldah,west bengal|maldah,high,673.0,west bengal|maldah,identity,west bengal|maldah,True,True,False,True,pass
+West Bengal,west bengal|murshidabad,west bengal|murshidabad,high,674.0,west bengal|murshidabad,identity,west bengal|murshidabad,True,True,False,True,pass
+West Bengal,west bengal|nadia,west bengal|nadia,high,675.0,west bengal|nadia,identity,west bengal|nadia,True,True,False,True,pass
+West Bengal,west bengal|north twenty four parganas,west bengal|north twenty four parganas,high,676.0,west bengal|north twenty four parganas,identity,west bengal|north twenty four parganas,True,True,False,True,pass
+West Bengal,west bengal|paschim bardhaman,west bengal|paschim bardhaman,high,677.0,west bengal|paschim bardhaman,identity,west bengal|paschim bardhaman,True,False,False,False,pass
+West Bengal,west bengal|paschim medinipur,west bengal|paschim medinipur,medium,678.0,west bengal|paschim medinipur,inherited_remnant,west bengal|paschim medinipur,True,True,False,False,unaudited
+West Bengal,west bengal|purba bardhaman,west bengal|purba bardhaman,high,679.0,west bengal|purba bardhaman,identity,west bengal|purba bardhaman,True,False,False,False,pass
+West Bengal,west bengal|purba medinipur,west bengal|purba medinipur,high,680.0,west bengal|purba medinipur,identity,west bengal|purba medinipur,True,True,False,True,pass
+West Bengal,west bengal|purulia,west bengal|purulia,high,681.0,west bengal|purulia,identity,west bengal|purulia,True,True,False,True,pass
+West Bengal,west bengal|south twenty four parganas,west bengal|south twenty four parganas,high,682.0,west bengal|south twenty four parganas,identity,west bengal|south twenty four parganas,True,True,False,True,pass
+West Bengal,west bengal|uttar dinajpur,west bengal|uttar dinajpur,high,683.0,west bengal|uttar dinajpur,identity,west bengal|uttar dinajpur,True,True,False,True,pass
