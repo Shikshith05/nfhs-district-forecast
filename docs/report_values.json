@@ -75,7 +75,7 @@
    "source": "../outputs/harmonised_units.csv"
   },
   "n_test_inherited": {
-   "text": "16",
+   "text": "5",
    "source": "../outputs/harmonised_units.csv"
   },
   "n_stable": {
@@ -83,7 +83,7 @@
    "source": "../outputs/models/manifest.json"
   },
   "n_review": {
-   "text": "165",
+   "text": "138",
    "source": "../outputs/crosswalk_review.csv"
   },
   "n_rev_45": {
@@ -91,15 +91,15 @@
    "source": "../outputs/crosswalk_review.csv"
   },
   "n_rev_new": {
-   "text": "16",
+   "text": "3",
    "source": "../outputs/crosswalk_review.csv"
   },
   "n_rev_retained": {
-   "text": "16",
+   "text": "3",
    "source": "../outputs/crosswalk_review.csv"
   },
   "n_rev_low": {
-   "text": "1",
+   "text": "0",
    "source": "../outputs/crosswalk_review.csv"
   },
   "t45_main": {

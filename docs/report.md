@@ -92,14 +92,14 @@ bipartite graph between NFHS-5 and NFHS-6 districts; each connected component is
   same boundaries (<!--slot:n_train_added-->24<!--/slot--> more than the base pipeline's stable set).
 - **Test set (NFHS-5 → NFHS-6):** <!--slot:n_test-->684<!--/slot--> units. Besides the stable districts it contains
   <!--slot:n_test_changed45-->121<!--/slot--> districts whose boundary changed between NFHS-4 and NFHS-5 but not afterwards, and
-  <!--slot:n_test_inherited-->16<!--/slot--> districts that kept their name but lost territory in NFHS-6. The latter are scored
+  <!--slot:n_test_inherited-->5<!--/slot--> districts that kept their name but lost territory in NFHS-6. The latter are scored
   against the forecast for the whole NFHS-5 district, carry extra variance and are flagged.
 - **Stable-boundary subset:** <!--slot:n_stable-->547<!--/slot--> districts with identical boundaries in all three rounds. Every
   result is reported on it as well.
-- **Not resolved:** <!--slot:n_review-->165<!--/slot--> cases are listed for review: <!--slot:n_rev_45-->132<!--/slot--> districts that changed between
+- **Not resolved:** <!--slot:n_review-->138<!--/slot--> cases are listed for review: <!--slot:n_rev_45-->132<!--/slot--> districts that changed between
   NFHS-4 and NFHS-5 (no NFHS-4 value on their boundaries, so they cannot be used for training),
-  <!--slot:n_rev_new-->16<!--/slot--> new NFHS-6 districts whose parent is not recorded in the available data,
-  <!--slot:n_rev_retained-->16<!--/slot--> retained-name boundary changes, and <!--slot:n_rev_low-->1<!--/slot--> low-confidence inferred parent.
+  <!--slot:n_rev_new-->3<!--/slot--> new NFHS-6 districts whose parent is not recorded in the available data,
+  <!--slot:n_rev_retained-->3<!--/slot--> retained-name boundary changes, and <!--slot:n_rev_low-->0<!--/slot--> low-confidence inferred parent.
   No lineage was invented: official Local Government Directory lineage could not be obtained
   automatically.
 
