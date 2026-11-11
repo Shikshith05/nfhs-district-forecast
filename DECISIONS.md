@@ -600,16 +600,22 @@ labelled "post-registration (exploratory)" and is reported as such.*
   - FAIL if any low-confidence or unresolved case touches a stable-boundary
     district, if an unresolved 4→5 case touches a training unit, or if a
     weak 5→6 case touches a test unit that is not flagged as inherited.
-  - WARN, not FAIL, if a weak 5→6 case touches a flagged test unit. This is
-    currently Bilaspur, through the unverified Gaurela-Pendra-Marwahi edge:
-    Bilaspur is scored by inheritance either way. The 126 test units that
-    lack 4→5 lineage are reported as information; they affect training
+  - WARN, not FAIL, if a weak 5→6 case touches a flagged test unit. (Before
+    D41 this was Bilaspur, through the then-unverified Gaurela-Pendra-Marwahi
+    edge; D41 confirmed that edge from the state notification.) Test units
+    that lack 4→5 lineage are reported as information; they affect training
     eligibility only.
 - **Pre-registration order:** the commits that introduced D32 and D34 come
   strictly before the first commit of any result they govern, and their
-  text is unchanged. D34 and the NFHS-4→5 `--dev` outputs
-  (`outputs/gate_c_dev/`) were committed together (8f41e4a). D34 governs
-  only NFHS-6 analyses, so this is reported as a WARN, not hidden.
+  text is unchanged. On the shared repository this cannot be shown from git
+  alone: the branch was squashed into one commit (`f04e151`) when it was
+  pushed, so D32, D34 and the NFHS-4→5 outputs they govern (paired tests,
+  secondary metrics, seen-state CV, `outputs/gate_c_dev/`) all first appear
+  in that commit. The local commit cited earlier for D34 (8f41e4a) was not
+  pushed and no longer exists. The check reports this as a WARN, not a FAIL.
+  The pre-registration rests on the decision log: D32 and D34 were written
+  before their analyses were run, and their text has not changed since. The
+  NFHS-6 analyses they govern have not been run (Gate B is still closed).
 
 Two enabling changes, neither of which touches training:
 - `run_pipeline.py --hash-only` stops before CV and freezing.
