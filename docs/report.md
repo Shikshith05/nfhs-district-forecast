@@ -17,7 +17,7 @@ rests on a small sample and the next round arrives years later. We ask how far d
 forecast one round ahead, and whether that depends on the indicator and the district rather than only on
 the model. We trained forecasting models on the NFHS-4 (2015-16) → NFHS-5 (2019-21) transition, froze them
 (training-data hash `<!--slot:train_hash-->d3f06bee428deeef<!--/slot-->`), and scored them once against NFHS-6 (2023-24). Boundary changes
-were harmonised through a lineage crosswalk (<!--slot:n_train-->571<!--/slot--> training districts, <!--slot:n_test-->684<!--/slot--> test units).
+were harmonised through a lineage crosswalk (<!--slot:n_train-->571<!--/slot--> training districts, <!--slot:n_test-->686<!--/slot--> test units).
 
 In leave-one-state-out cross-validation on NFHS-4 → NFHS-5, regression to the mean (RTM) reached a pooled
 skill of <!--slot:s45_rtm-->0.613<!--/slot--> over persistence, and an elastic net with spatial-neighbour features reached
@@ -90,7 +90,7 @@ bipartite graph between NFHS-5 and NFHS-6 districts; each connected component is
 
 - **Training set (NFHS-4 → NFHS-5):** <!--slot:n_train-->571<!--/slot--> districts whose NFHS-4 and NFHS-5 values refer to the
   same boundaries (<!--slot:n_train_added-->24<!--/slot--> more than the base pipeline's stable set).
-- **Test set (NFHS-5 → NFHS-6):** <!--slot:n_test-->684<!--/slot--> units. Besides the stable districts it contains
+- **Test set (NFHS-5 → NFHS-6):** <!--slot:n_test-->686<!--/slot--> units. Besides the stable districts it contains
   <!--slot:n_test_changed45-->121<!--/slot--> districts whose boundary changed between NFHS-4 and NFHS-5 but not afterwards, and
   <!--slot:n_test_aggregated-->11<!--/slot--> NFHS-5 districts that were split before NFHS-6. For these, the NFHS-6 children are
   recombined into the NFHS-5 parent with Census-2011 population weights, and the weight uncertainty is
@@ -165,9 +165,9 @@ Committed before any result they govern (verified by `scripts/preflight.py`):
 | Fay-Herriot | 0.083 | [0.071, 0.098] | 0.108 | 0.085 |
 | FH + RTM | 0.624 | [0.551, 0.678] | 0.554 | 0.624 |
 | Elastic net | 0.637 | [0.566, 0.690] | 0.577 | 0.639 |
-| LightGBM | 0.630 | [0.552, 0.687] | 0.557 | 0.630 |
+| LightGBM | 0.630 | [0.553, 0.687] | 0.557 | 0.630 |
 | Elastic net, no state dummies | 0.625 | [0.554, 0.677] | 0.565 | 0.623 |
-| LightGBM, no state dummies | 0.627 | [0.553, 0.682] | 0.556 | 0.626 |
+| LightGBM, no state dummies | 0.627 | [0.554, 0.682] | 0.556 | 0.626 |
 | State trend (oracle) | 0.601 | [0.535, 0.647] | 0.510 | 0.597 |<!--/slot-->
 
 National trend alone reaches <!--slot:s45_nat-->0.422<!--/slot-->, so a large part of the skill of every trend-aware method is the
@@ -184,9 +184,9 @@ On the stable subset the elastic net reaches <!--slot:s45_en_stable-->0.639<!--/
 <!--slot:t45_paired-->| Comparison | Indicators better (raw) | Significantly better (BH) | Significantly worse (BH) | Pooled ΔMSE | 95% CI | p |
 |---|---|---|---|---|---|---|
 | Elastic net vs RTM | 19 | 2 | 0 | -4.93 | [-7.71, -2.00] | 0.000 |
-| LightGBM vs RTM | 16 | 0 | 0 | -3.44 | [-8.29, 1.77] | 0.186 |
+| LightGBM vs RTM | 16 | 0 | 0 | -3.45 | [-8.26, 1.73] | 0.184 |
 | Elastic net (no state dummies) vs RTM | 15 | 0 | 0 | -2.45 | [-6.24, 1.20] | 0.210 |
-| LightGBM (no state dummies) vs RTM | 15 | 0 | 0 | -2.80 | [-7.68, 2.38] | 0.274 |<!--/slot-->
+| LightGBM (no state dummies) vs RTM | 15 | 0 | 0 | -2.84 | [-7.66, 2.27] | 0.260 |<!--/slot-->
 
 Pooled over indicators, the elastic net has <!--slot:v45_en_rtm-->significantly lower MSE than<!--/slot--> RTM (ΔMSE <!--slot:d45_en_rtm-->-4.93<!--/slot-->, 95% CI
 [<!--slot:d45_en_rtm_lo-->-7.71<!--/slot-->, <!--slot:d45_en_rtm_hi-->-2.00<!--/slot-->]), but after Benjamini–Hochberg adjustment it is significantly
@@ -204,7 +204,7 @@ LightGBM has <!--slot:v45_lgbm_rtm-->no significant difference in MSE from<!--/s
 | Elastic net, no state dummies | 0.625 | 0.565 |
 | LightGBM, own history | 0.594 | 0.517 |
 | LightGBM, + other indicators | 0.597 | 0.520 |
-| LightGBM, + spatial | 0.619 | 0.549 |
+| LightGBM, + spatial | 0.618 | 0.549 |
 | LightGBM | 0.630 | 0.557 |
 | LightGBM, no state dummies | 0.627 | 0.556 |<!--/slot-->
 
@@ -218,7 +218,7 @@ gain over RTM, and state dummies add little in LOSO, where they cannot be exerci
 | Regression to the mean (RTM) | 0.613 | 0.330 | [0.252, 0.396] | 0.000 |
 | FH + RTM | 0.624 | 0.350 | [0.280, 0.406] | 0.029 |
 | Elastic net | 0.637 | 0.373 | [0.308, 0.424] | 0.064 |
-| LightGBM | 0.630 | 0.360 | [0.293, 0.419] | 0.044 |<!--/slot-->
+| LightGBM | 0.630 | 0.360 | [0.293, 0.420] | 0.044 |<!--/slot-->
 
 Sampling noise is <!--slot:noise_share_45-->24.4%<!--/slot--> of the variance of district change (pooled; mean over indicators
 <!--slot:noise_share_45_mean-->31.7%<!--/slot-->). The noise ceiling is <!--slot:ceil_p_45-->0.933<!--/slot--> relative to persistence but <!--slot:ceil_rtm_45-->0.828<!--/slot-->

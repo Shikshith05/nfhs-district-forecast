@@ -15,7 +15,7 @@
    "source": "../outputs/models/manifest.json"
   },
   "n_test": {
-   "text": "684",
+   "text": "686",
    "source": "../outputs/models/manifest.json"
   },
   "s45_rtm": {
@@ -111,7 +111,7 @@
    "source": "../outputs/crosswalk_review.csv"
   },
   "t45_main": {
-   "text": "| Method | Pooled skill | 95% CI | Mean skill over indicators | Pooled skill, stable subset |\n|---|---|---|---|---|\n| Persistence | 0.000 | [0.000, 0.000] | 0.000 | 0.000 |\n| National trend | 0.422 | [0.326, 0.478] | 0.337 | 0.422 |\n| State trend | 0.422 | [0.326, 0.478] | 0.337 | 0.422 |\n| Regression to the mean (RTM) | 0.613 | [0.535, 0.672] | 0.540 | 0.613 |\n| Fay-Herriot | 0.083 | [0.071, 0.098] | 0.108 | 0.085 |\n| FH + RTM | 0.624 | [0.551, 0.678] | 0.554 | 0.624 |\n| Elastic net | 0.637 | [0.566, 0.690] | 0.577 | 0.639 |\n| LightGBM | 0.630 | [0.552, 0.687] | 0.557 | 0.630 |\n| Elastic net, no state dummies | 0.625 | [0.554, 0.677] | 0.565 | 0.623 |\n| LightGBM, no state dummies | 0.627 | [0.553, 0.682] | 0.556 | 0.626 |\n| State trend (oracle) | 0.601 | [0.535, 0.647] | 0.510 | 0.597 |",
+   "text": "| Method | Pooled skill | 95% CI | Mean skill over indicators | Pooled skill, stable subset |\n|---|---|---|---|---|\n| Persistence | 0.000 | [0.000, 0.000] | 0.000 | 0.000 |\n| National trend | 0.422 | [0.326, 0.478] | 0.337 | 0.422 |\n| State trend | 0.422 | [0.326, 0.478] | 0.337 | 0.422 |\n| Regression to the mean (RTM) | 0.613 | [0.535, 0.672] | 0.540 | 0.613 |\n| Fay-Herriot | 0.083 | [0.071, 0.098] | 0.108 | 0.085 |\n| FH + RTM | 0.624 | [0.551, 0.678] | 0.554 | 0.624 |\n| Elastic net | 0.637 | [0.566, 0.690] | 0.577 | 0.639 |\n| LightGBM | 0.630 | [0.553, 0.687] | 0.557 | 0.630 |\n| Elastic net, no state dummies | 0.625 | [0.554, 0.677] | 0.565 | 0.623 |\n| LightGBM, no state dummies | 0.627 | [0.554, 0.682] | 0.556 | 0.626 |\n| State trend (oracle) | 0.601 | [0.535, 0.647] | 0.510 | 0.597 |",
    "source": "../outputs/results_nfhs4to5.csv"
   },
   "s45_nat": {
@@ -159,7 +159,7 @@
    "source": "../outputs/skill_by_indicator.png"
   },
   "t45_paired": {
-   "text": "| Comparison | Indicators better (raw) | Significantly better (BH) | Significantly worse (BH) | Pooled ΔMSE | 95% CI | p |\n|---|---|---|---|---|---|---|\n| Elastic net vs RTM | 19 | 2 | 0 | -4.93 | [-7.71, -2.00] | 0.000 |\n| LightGBM vs RTM | 16 | 0 | 0 | -3.44 | [-8.29, 1.77] | 0.186 |\n| Elastic net (no state dummies) vs RTM | 15 | 0 | 0 | -2.45 | [-6.24, 1.20] | 0.210 |\n| LightGBM (no state dummies) vs RTM | 15 | 0 | 0 | -2.80 | [-7.68, 2.38] | 0.274 |",
+   "text": "| Comparison | Indicators better (raw) | Significantly better (BH) | Significantly worse (BH) | Pooled ΔMSE | 95% CI | p |\n|---|---|---|---|---|---|---|\n| Elastic net vs RTM | 19 | 2 | 0 | -4.93 | [-7.71, -2.00] | 0.000 |\n| LightGBM vs RTM | 16 | 0 | 0 | -3.45 | [-8.26, 1.73] | 0.184 |\n| Elastic net (no state dummies) vs RTM | 15 | 0 | 0 | -2.45 | [-6.24, 1.20] | 0.210 |\n| LightGBM (no state dummies) vs RTM | 15 | 0 | 0 | -2.84 | [-7.66, 2.27] | 0.260 |",
    "source": "../outputs/paired_summary_nfhs4to5.csv"
   },
   "d45_en_rtm": {
@@ -183,11 +183,11 @@
    "source": "../outputs/paired_tests_nfhs4to5.csv"
   },
   "t45_ablation": {
-   "text": "| Feature set | Pooled skill | Mean skill |\n|---|---|---|\n| Elastic net, own history | 0.611 | 0.538 |\n| Elastic net, + other indicators | 0.611 | 0.541 |\n| Elastic net, + spatial | 0.632 | 0.568 |\n| Elastic net | 0.637 | 0.577 |\n| Elastic net, no state dummies | 0.625 | 0.565 |\n| LightGBM, own history | 0.594 | 0.517 |\n| LightGBM, + other indicators | 0.597 | 0.520 |\n| LightGBM, + spatial | 0.619 | 0.549 |\n| LightGBM | 0.630 | 0.557 |\n| LightGBM, no state dummies | 0.627 | 0.556 |",
+   "text": "| Feature set | Pooled skill | Mean skill |\n|---|---|---|\n| Elastic net, own history | 0.611 | 0.538 |\n| Elastic net, + other indicators | 0.611 | 0.541 |\n| Elastic net, + spatial | 0.632 | 0.568 |\n| Elastic net | 0.637 | 0.577 |\n| Elastic net, no state dummies | 0.625 | 0.565 |\n| LightGBM, own history | 0.594 | 0.517 |\n| LightGBM, + other indicators | 0.597 | 0.520 |\n| LightGBM, + spatial | 0.618 | 0.549 |\n| LightGBM | 0.630 | 0.557 |\n| LightGBM, no state dummies | 0.627 | 0.556 |",
    "source": "../outputs/results_nfhs4to5.csv"
   },
   "t45_secondary": {
-   "text": "| Method | Skill vs persistence | Skill net of national shift | 95% CI | Skill vs RTM |\n|---|---|---|---|---|\n| Regression to the mean (RTM) | 0.613 | 0.330 | [0.252, 0.396] | 0.000 |\n| FH + RTM | 0.624 | 0.350 | [0.280, 0.406] | 0.029 |\n| Elastic net | 0.637 | 0.373 | [0.308, 0.424] | 0.064 |\n| LightGBM | 0.630 | 0.360 | [0.293, 0.419] | 0.044 |",
+   "text": "| Method | Skill vs persistence | Skill net of national shift | 95% CI | Skill vs RTM |\n|---|---|---|---|---|\n| Regression to the mean (RTM) | 0.613 | 0.330 | [0.252, 0.396] | 0.000 |\n| FH + RTM | 0.624 | 0.350 | [0.280, 0.406] | 0.029 |\n| Elastic net | 0.637 | 0.373 | [0.308, 0.424] | 0.064 |\n| LightGBM | 0.630 | 0.360 | [0.293, 0.420] | 0.044 |",
    "source": "../outputs/secondary_nfhs4to5.csv"
   },
   "noise_share_45": {
