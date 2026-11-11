@@ -91,16 +91,21 @@ bipartite graph between NFHS-5 and NFHS-6 districts; each connected component is
   same boundaries ({{n_train_added}} more than the base pipeline's stable set).
 - **Test set (NFHS-5 → NFHS-6):** {{n_test}} units. Besides the stable districts it contains
   {{n_test_changed45}} districts whose boundary changed between NFHS-4 and NFHS-5 but not afterwards, and
-  {{n_test_inherited}} districts that kept their name but lost territory in NFHS-6. The latter are scored
-  against the forecast for the whole NFHS-5 district, carry extra variance and are flagged.
+  {{n_test_aggregated}} NFHS-5 districts that were split before NFHS-6. For these, the NFHS-6 children are
+  recombined into the NFHS-5 parent with Census-2011 population weights, and the weight uncertainty is
+  propagated into the standard error (D30, D41). A further {{n_test_inherited}} districts that kept their
+  name but lost territory, and {{n_test_child}} new districts with a single cited parent, have no population
+  weights. They are scored against the forecast for the whole NFHS-5 district, carry extra variance and
+  are flagged.
 - **Stable-boundary subset:** {{n_stable}} districts with identical boundaries in all three rounds. Every
   result is reported on it as well.
 - **Not resolved:** {{n_review}} cases are listed for review: {{n_rev_45}} districts that changed between
   NFHS-4 and NFHS-5 (no NFHS-4 value on their boundaries, so they cannot be used for training),
   {{n_rev_new}} new NFHS-6 districts whose parent is not recorded in the available data,
   {{n_rev_retained}} retained-name boundary changes, and {{n_rev_low}} low-confidence inferred parent.
-  No lineage was invented: official Local Government Directory lineage could not be obtained
-  automatically.
+  Lineage for the NFHS-5 → NFHS-6 splits was compiled from state government orders (D41); nothing was
+  inferred from NFHS-6 values. The new districts still unresolved have two NFHS-5 parents and no cited
+  populations.
 
 ## 5. Noise model
 

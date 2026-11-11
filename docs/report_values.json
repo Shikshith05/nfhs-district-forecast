@@ -74,8 +74,16 @@
    "text": "121",
    "source": "../outputs/harmonised_units.csv"
   },
+  "n_test_aggregated": {
+   "text": "11",
+   "source": "../outputs/harmonised_units.csv"
+  },
   "n_test_inherited": {
    "text": "5",
+   "source": "../outputs/harmonised_units.csv"
+  },
+  "n_test_child": {
+   "text": "2",
    "source": "../outputs/harmonised_units.csv"
   },
   "n_stable": {
