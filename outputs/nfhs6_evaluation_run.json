@@ -1,0 +1,29 @@
+{
+ "status": "completed",
+ "started_utc": "2026-11-11T09:34:13+00:00",
+ "python": "3.11.9",
+ "head_commit": "e29c618f52b51076682b9e85d2579d3431741d3d",
+ "freeze_tag": "freeze-v1",
+ "tag_commit": "e29c618f52b51076682b9e85d2579d3431741d3d",
+ "frozen_created_utc": "2026-11-11T06:54:55+00:00",
+ "train_hash": "d3f06bee428deeef",
+ "hash_check": true,
+ "config_hash_match": true,
+ "allow_hash_mismatch": false,
+ "outcome": "scored",
+ "outputs": [
+  "predictions_nfhs5to6.parquet",
+  "results_nfhs5to6.csv",
+  "secondary_nfhs5to6.csv",
+  "paired_tests_nfhs5to6.csv",
+  "paired_summary_nfhs5to6.csv",
+  "results_nfhs5to6_stable.csv",
+  "secondary_nfhs5to6_stable.csv",
+  "paired_tests_nfhs5to6_stable.csv",
+  "paired_summary_nfhs5to6_stable.csv",
+  "skill_by_indicator_nfhs6.png"
+ ],
+ "n_test_units": 686,
+ "n_stable_units": 547,
+ "completed_utc": "2026-11-11T09:34:30+00:00"
+}
