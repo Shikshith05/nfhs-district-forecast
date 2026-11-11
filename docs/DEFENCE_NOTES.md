@@ -88,10 +88,21 @@ and the NFHS-6 test.
   because they have no NFHS-4 value on their current boundaries. They are not random:
   they cluster in states that created new districts (Telangana, Gujarat, Chhattisgarh,
   Assam, Delhi).
-- **16 new NFHS-6 districts** are not scored, because we could not cite their parents.
-- **16 districts** lost territory. They are scored against their old boundaries, with
-  extra allowed noise, and shown separately.
-- *What would fix it:* official LGD lineage files and populations (`data/lineage/`).
+- **11 NFHS-5 districts were split before NFHS-6.** Their NFHS-6 pieces are recombined
+  with Census-2011 population weights, using lineage from state government orders (D41).
+  We checked the weighting on the Dadra & Nagar Haveli + Daman + Diu merger, without any
+  NFHS-6 outcome. It reproduces IIPS's own merged NFHS-5 value to a median of 0.6
+  percentage points.
+- **7 more units** (5 shrunken districts and 2 new ones in Arunachal) have no population
+  figures. They are scored against the old whole-district forecast, with extra allowed
+  noise, and shown separately.
+- **3 new Arunachal districts** (Kamle, Lower Siang, Lepa Rada) are not scored, because
+  each has two parent districts.
+- **Puducherry district** is missing from the NFHS-6 file because of a bug in the
+  compilation's PDF extractor. It skips any district named like its state, treating it as
+  the state summary. So it is not scored; it is one district, documented in D43.
+- *What would fix it:* NFHS-4 values on Census-2011 boundaries for the 132 districts, and
+  populations for the Arunachal districts (`data/lineage/`).
 
 **"Only one training transition."**
 Everything was learned from 2015-16 → 2019-21, a period that included COVID-era

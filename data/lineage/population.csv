@@ -1,0 +1,32 @@
+# Census-2011 total population of each NFHS-6 member of a split component, on post-split boundaries (re-aggregated by the
+# state/Census from taluks/blocks/mandals). Compiled 2026-11-08. Only nfhs6 rows are needed: every component here has a
+# single NFHS-5 parent, so the NFHS-5 side has weight 1 (harmonise.py). Arunachal components are left out on purpose and
+# stay inherited. Each pair/triple was checked to sum to the parent's Census-2011 total where that total is known
+# (Vellore, Tirunelveli, Viluppuram, Nagapattinam, Mahabubnagar, Jalpaiguri, Darjeeling, Paschim Medinipur, Bilaspur).
+# Kancheepuram children sum to 3,722,645 vs Census 2011 3,998,252 (the gap is territory outside this component, e.g. the
+# 2018 Chennai expansion); only within-component shares are used. Mulugu: sources give 294,671 / 300,471 / 257,744;
+# 294,671 is the figure consistent with Jayashankar Bhupalpally's 2016-boundary total (weight share 0.38-0.42 across sources).
+vintage,state,district,population,basis,reference_year,source,estimated
+nfhs6,Tamil Nadu,Kanchipuram,1166401,total,2011,Census 2011 on 2019 boundaries (Govt of Tamil Nadu district statistics via Wikipedia List of districts of Tamil Nadu),true
+nfhs6,Tamil Nadu,Chengalpattu,2556244,total,2011,Census 2011 on 2019 boundaries (as above),true
+nfhs6,Tamil Nadu,Villupuram,2093003,total,2011,Census 2011 on 2019 boundaries (as above),true
+nfhs6,Tamil Nadu,Kallakurichi,1370281,total,2011,Census 2011 on 2019 boundaries (as above),true
+nfhs6,Tamil Nadu,Vellore,1614242,total,2011,Census 2011 on 2019 boundaries (as above); sum of 3 = 3936331 = Census 2011 Vellore,true
+nfhs6,Tamil Nadu,Ranipet,1210277,total,2011,Census 2011 on 2019 boundaries (as above),true
+nfhs6,Tamil Nadu,Tirupathur,1111812,total,2011,Census 2011 on 2019 boundaries (as above),true
+nfhs6,Tamil Nadu,Tirunelveli,1665253,total,2011,Census 2011 on 2019 boundaries (as above),true
+nfhs6,Tamil Nadu,Tenkasi,1407627,total,2011,Census 2011 on 2019 boundaries (as above),true
+nfhs6,Tamil Nadu,Nagapattinam,697069,total,2011,Census 2011 on 2020 boundaries (as above),true
+nfhs6,Tamil Nadu,Mayiladuthurai,918356,total,2011,Census 2011 on 2020 boundaries (district website mayiladuthurai.nic.in: 918356),true
+nfhs6,Telangana,Jayashankar Bhupalapally,416763,total,2011,Census 2011 on 2019 boundaries (Wikipedia List of districts of Telangana),true
+nfhs6,Telangana,Mulugu,294671,total,2011,Census 2011 (Wikipedia Mulugu district citing DCHB Warangal and Khammam); alternatives 300471 and 257744,true
+nfhs6,Telangana,Mahabubnagar,919903,total,2011,Census 2011 on 2019 boundaries (Wikipedia List of districts of Telangana),true
+nfhs6,Telangana,Narayanpet,566874,total,2011,Census 2011 on 2019 boundaries (as above),true
+nfhs6,Chhattisgarh,Bilaspur,1625502,total,2011,Census 2011 Bilaspur after Mungeli (2012) and GPM (2020) carve-outs (Wikipedia Bilaspur district),true
+nfhs6,Chhattisgarh,Gaurela-pendra-marwahi,336420,total,2011,Census 2011 (Wikipedia citing DCHB Bilaspur 2011),true
+nfhs6,West Bengal,Jalpaiguri,2381596,total,2011,Census 2011 Jalpaiguri after Alipurduar carve-out (Wikipedia Jalpaiguri district),true
+nfhs6,West Bengal,Alipurduar,1491250,total,2011,Census 2011 (Wikipedia citing DCHB Jalpaiguri; citypopulation.de 1491250),true
+nfhs6,West Bengal,Darjeeling,1595181,total,2011,Census 2011 Darjeeling after Kalimpong carve-out (Wikipedia Darjeeling district),true
+nfhs6,West Bengal,Kalimpong,251642,total,2011,Census 2011 Kalimpong subdivision (citypopulation.de; Wikipedia),true
+nfhs6,West Bengal,Paschim Medinipur,4776909,total,2011,Census 2011 Paschim Medinipur after Jhargram carve-out (district lists); sum with Jhargram = 5913457 = Census 2011,true
+nfhs6,West Bengal,Jhargram,1136548,total,2011,Census 2011 Jhargram (Wikipedia; district lists),true

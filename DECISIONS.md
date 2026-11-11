@@ -600,16 +600,22 @@ labelled "post-registration (exploratory)" and is reported as such.*
   - FAIL if any low-confidence or unresolved case touches a stable-boundary
     district, if an unresolved 4→5 case touches a training unit, or if a
     weak 5→6 case touches a test unit that is not flagged as inherited.
-  - WARN, not FAIL, if a weak 5→6 case touches a flagged test unit. This is
-    currently Bilaspur, through the unverified Gaurela-Pendra-Marwahi edge:
-    Bilaspur is scored by inheritance either way. The 126 test units that
-    lack 4→5 lineage are reported as information; they affect training
+  - WARN, not FAIL, if a weak 5→6 case touches a flagged test unit. (Before
+    D41 this was Bilaspur, through the then-unverified Gaurela-Pendra-Marwahi
+    edge; D41 confirmed that edge from the state notification.) Test units
+    that lack 4→5 lineage are reported as information; they affect training
     eligibility only.
 - **Pre-registration order:** the commits that introduced D32 and D34 come
   strictly before the first commit of any result they govern, and their
-  text is unchanged. D34 and the NFHS-4→5 `--dev` outputs
-  (`outputs/gate_c_dev/`) were committed together (8f41e4a). D34 governs
-  only NFHS-6 analyses, so this is reported as a WARN, not hidden.
+  text is unchanged. On the shared repository this cannot be shown from git
+  alone: the branch was squashed into one commit (`f04e151`) when it was
+  pushed, so D32, D34 and the NFHS-4→5 outputs they govern (paired tests,
+  secondary metrics, seen-state CV, `outputs/gate_c_dev/`) all first appear
+  in that commit. The local commit cited earlier for D34 (8f41e4a) was not
+  pushed and no longer exists. The check reports this as a WARN, not a FAIL.
+  The pre-registration rests on the decision log: D32 and D34 were written
+  before their analyses were run, and their text has not changed since. The
+  NFHS-6 analyses they govern have not been run (Gate B is still closed).
 
 Two enabling changes, neither of which touches training:
 - `run_pipeline.py --hash-only` stops before CV and freezing.
@@ -757,3 +763,69 @@ To let a new reader rebuild `data/processed/` without re-freezing the models:
   is unaffected.
 
 The README now lists the full reproduction order.
+
+## Before Gate B: supplied lineage (2026-11-08)
+
+*Added before Gate B. D41 changes the NFHS-6 test set (not the training data,
+the models or any pre-registered method), so the pipeline is re-run and the
+freeze is redone before Gate B. D42 adds a licence only.*
+
+**D41. Official 5→6 lineage and populations supplied (Task A1 follow-up).**
+`data/lineage/lineage_supplied.csv` adds 27 `5to6` edges for 13 split
+components: Tamil Nadu (Kancheepuram, Viluppuram, Vellore, Tirunelveli,
+Nagapattinam), Telangana (Jayashankar Bhupalapally, Mahabubnagar),
+Chhattisgarh (Bilaspur → Gaurela-Pendra-Marwahi, which replaces the
+low-confidence inferred edge), West Bengal (Jalpaiguri, Darjeeling, Paschim
+Medinipur) and Arunachal Pradesh (East Kameng → Pakke Kessang, West Siang →
+Shi Yomi). Sources are state G.O.s as cited in RBI lead-bank circulars
+(confidence high); the three West Bengal splits use secondary sources
+(medium) and should be confirmed in LGD. `data/lineage/population.csv` gives
+Census-2011 totals on post-split boundaries for the 11 non-Arunachal
+components, so they become `aggregated` units (D30, `estimated` = true,
+weight_cv 0.10) instead of inherited remnants. Arunachal components have no
+reliable populations and stay inherited (D29).
+
+Left out on purpose: Kamle (two parents), Lower Siang (two parents) and Lepa
+Rada (carved from Lower Siang). With two NFHS-5 parents and no populations
+the code marks the whole component `unresolved_no_weights`, which would drop
+Lower/Upper Subansiri and East/West Siang from the test set. The
+Dadra & Nagar Haveli + Daman + Diu merger (one NFHS-6 unit) crosses state
+names, which the lineage format cannot express (D31); it stays excluded.
+
+Why aggregation and not inheritance here: D29 sized the remnant's extra
+variance assuming the remnant keeps 60–70 % of the population. The supplied
+populations show it often does not (Kanchipuram keeps 31 %, Vellore 41 %,
+Nagapattinam 43 %, Tirunelveli 54 %), so inheritance would understate the
+boundary mismatch for exactly these units.
+
+Check of the population-weight approximation without NFHS-6 outcomes: the
+NFHS-6 file prints an NFHS-5 value for the merged DNH&DD unit, which IIPS
+computed from the same NFHS-5 sample as the three district values in
+India.csv. Total-population weights (Census 2011) reproduce it with a median
+absolute error of 0.6 pp (mean 1.0, 90th percentile 2.1) over the 32
+indicators that match by text; women's-population weights do better on 78 %
+of indicators (median 0.47 pp). This is a stress case (Daman's sex ratio is
+534), so the total-population default is adequate and indicator-specific
+denominators would help. Only NFHS-5 values were read.
+
+Expected effect: training data and hash unchanged (no 4to5 rows supplied);
+test set gains 11 aggregated units and 2 inherited children (Pakke Kessang,
+Shi Yomi) and loses the 11 corresponding inherited remnants. The pipeline's
+own counts in `outputs/harmonisation_report.md` are authoritative.
+
+**D42. Licence.** Code is released under the MIT licence (`LICENSE`). The
+licence covers code only. NFHS estimates remain under IIPS / Government of
+India terms, and the Patra (2026) compilation under its own notice, as
+`outputs/release/SOURCES_AND_LICENCE.md` already states.
+
+**D43. Puducherry district missing from NFHS-6 (known data gap, not fixed).**
+The NFHS-6 compilation (Patra, 2026) has Karaikal, Mahe and Yanam but not
+Puducherry district. Its extractor (`scripts/extract_nfhs6.py` in the source
+repository) treats any `"<District>, <State> - Key Indicators"` heading whose
+district name equals the state name as the state-level summary and skips it.
+`"Puducherry, Puducherry - Key Indicators"` is the only such heading in India,
+so this is the only district affected. Found by reading the extractor; no NFHS-6
+value was read. Decision: document it rather than re-extract it from the IIPS
+PDF, because recovering one district would change the frozen test set. The
+NFHS-6 test therefore covers every eligible unit except this one. The bug is to
+be reported to the compilation's maintainer.

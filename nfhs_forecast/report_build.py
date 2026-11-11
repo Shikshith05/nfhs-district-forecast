@@ -107,6 +107,8 @@ SLOTS: dict[str, dict] = {
     "n_test_changed45": S(UNITS, "unit_uid", "int", {"unit_type": "identity", "stable_unit": "False",
                                                      "test_unit": "True"}, agg="count"),
     "n_test_inherited": S(UNITS, "unit_uid", "int", {"unit_type": "inherited_remnant", "test_unit": "True"}, agg="count"),
+    "n_test_aggregated": S(UNITS, "unit_uid", "int", {"unit_type": "aggregated", "test_unit": "True"}, agg="count"),
+    "n_test_child": S(UNITS, "unit_uid", "int", {"unit_type": "inherited_child", "test_unit": "True"}, agg="count"),
     "n_train_only": S(UNITS, "unit_uid", "int", {"unit_type": "identity_train_only"}, agg="count"),
     "n_train_added": S(UNITS, "unit_uid", "int", {"train_unit": "True", "stable_unit": "False"}, agg="count"),
     "n_review": S(REVIEW, "relation", "int", agg="count"),
