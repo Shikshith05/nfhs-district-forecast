@@ -811,3 +811,15 @@ own counts in `outputs/harmonisation_report.md` are authoritative.
 licence covers code only. NFHS estimates remain under IIPS / Government of
 India terms, and the Patra (2026) compilation under its own notice, as
 `outputs/release/SOURCES_AND_LICENCE.md` already states.
+
+**D43. Puducherry district missing from NFHS-6 (known data gap, not fixed).**
+The NFHS-6 compilation (Patra, 2026) has Karaikal, Mahe and Yanam but not
+Puducherry district. Its extractor (`scripts/extract_nfhs6.py` in the source
+repository) treats any `"<District>, <State> - Key Indicators"` heading whose
+district name equals the state name as the state-level summary and skips it.
+`"Puducherry, Puducherry - Key Indicators"` is the only such heading in India,
+so this is the only district affected. Found by reading the extractor; no NFHS-6
+value was read. Decision: document it rather than re-extract it from the IIPS
+PDF, because recovering one district would change the frozen test set. The
+NFHS-6 test therefore covers every eligible unit except this one. The bug is to
+be reported to the compilation's maintainer.

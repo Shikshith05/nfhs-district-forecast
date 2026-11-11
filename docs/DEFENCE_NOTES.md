@@ -98,6 +98,9 @@ and the NFHS-6 test.
   noise, and shown separately.
 - **3 new Arunachal districts** (Kamle, Lower Siang, Lepa Rada) are not scored, because
   each has two parent districts.
+- **Puducherry district** is missing from the NFHS-6 file because of a bug in the
+  compilation's PDF extractor. It skips any district named like its state, treating it as
+  the state summary. So it is not scored; it is one district, documented in D43.
 - *What would fix it:* NFHS-4 values on Census-2011 boundaries for the 132 districts, and
   populations for the Arunachal districts (`data/lineage/`).
 

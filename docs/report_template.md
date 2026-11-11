@@ -303,7 +303,9 @@ Hardest indicators (lowest normalised skill):
 - **Provisional, community-parsed NFHS-6 data.** NFHS-6 values are provisional IIPS figures parsed from
   PDFs by a third party. An independent parser and a random spot-check against the official PDFs exist
   (`scripts/spot_check_nfhs6.py`, D33) but were **not run** because the PDFs were not in the repository;
-  until they are, parsing errors in the NFHS-6 file cannot be excluded.
+  until they are, parsing errors in the NFHS-6 file cannot be excluded. One such error is known: the
+  compilation's extractor skips any district whose name equals its state's, so Puducherry district
+  (in the UT of Puducherry) is missing from the NFHS-6 file and is not scored (D43).
 - **Partial harmonisation.** Only lineage supported by the available files was used. Districts that
   changed between NFHS-4 and NFHS-5 cannot be used for training, and they are not a random sample (D28).
   New NFHS-6 districts without a recorded parent are not scored. Inherited units are scored with an
