@@ -1,0 +1,11 @@
+{
+ "method": "elastic_net",
+ "n": 7275,
+ "districts": 317,
+ "indicators": 23,
+ "r2_indicator_only": 0.0654938009639533,
+ "r2_district_only": 0.0714244014694807,
+ "r2_additive": 0.1368175930648039,
+ "unique_indicator": 0.0653931915953232,
+ "unique_district": 0.0713237921008506
+}

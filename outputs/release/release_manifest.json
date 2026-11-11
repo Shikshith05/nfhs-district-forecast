@@ -1,0 +1,19 @@
+{
+ "rounds": [
+  4,
+  5
+ ],
+ "includes_nfhs6": false,
+ "n_units": 697,
+ "n_indicators": 23,
+ "n_panel_rows": 32062,
+ "frozen_train_hash": "d3f06bee428deeef",
+ "sha256": {
+  "harmonised_panel.csv": "e290423a61c579ddbe97954be50585a0ace9dac5786e4ab7cf6cd11a0f5d3300",
+  "units.csv": "058536dff19ba97f8a9901f6fb20144b25b1639f6f3fe72895b7c5ee9ee0e830",
+  "codebook.csv": "229a1fa08918bf38799f886baaa71f4c2f3818091f2c0c96ad01dec506afc182",
+  "crosswalk.csv": "287a2dcf269b8d9b19d85852c1ea63d28cd9db15d02bea51acdd09fa8f2efa32",
+  "DATA_DICTIONARY.md": "8ab7a8e47416e347f458e6292470b8313d760159eed9f2c56ae9521991dba997",
+  "SOURCES_AND_LICENCE.md": "b43d1b0349e6cb7f895948b494ae8c374af7afc4fbed9189a2fcb2a8c30c78c3"
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "primary_method": "elastic_net",
+ "label": "DEVELOPMENT: calibrated on a random half of states, NFHS-4 -> NFHS-5 LOSO; evaluated on the other half",
+ "summaries": [
+  {
+   "method": "elastic_net",
+   "q": 0.1,
+   "tests": 7275,
+   "surprises_normal": 21,
+   "surprises_conformal": 0,
+   "naive_k": 21,
+   "overlap_naive_vs_bh": 5,
+   "naive_topk_mean_se_true": 4.862065608128646,
+   "bh_mean_se_true": 3.372460510780264,
+   "all_mean_se_true": 3.3013047336839,
+   "calibration_z_sd": 1.0005176465507561,
+   "target_z_sd": 1.0590518313198505
+  },
+  {
+   "method": "rtm",
+   "q": 0.1,
+   "tests": 7275,
+   "surprises_normal": 17,
+   "surprises_conformal": 0,
+   "naive_k": 17,
+   "overlap_naive_vs_bh": 5,
+   "naive_topk_mean_se_true": 4.391728822878141,
+   "bh_mean_se_true": 3.229456113090391,
+   "all_mean_se_true": 3.3013047336839,
+   "calibration_z_sd": 0.9982315376406985,
+   "target_z_sd": 1.0391455558798324
+  }
+ ]
+}

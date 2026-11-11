@@ -1,0 +1,318 @@
+district_uid,state,n_indicators,mean_noise_share,mean_norm_sq_err,ceiling,skill,gap
+uttar pradesh|farrukhabad,uttar pradesh,23,0.0998,0.1028,0.9002,0.8972,0.0030
+arunachal pradesh|changlang,arunachal pradesh,23,0.1087,0.1069,0.8913,0.8931,-0.0018
+uttar pradesh|etawah,uttar pradesh,23,0.0870,0.1158,0.9130,0.8842,0.0289
+maharashtra|satara,maharashtra,23,0.1075,0.1218,0.8925,0.8782,0.0143
+maharashtra|sangli,maharashtra,23,0.1176,0.1244,0.8824,0.8756,0.0068
+uttar pradesh|gautam buddha nagar,uttar pradesh,23,0.0879,0.1269,0.9121,0.8731,0.0391
+maharashtra|ratnagiri,maharashtra,23,0.0880,0.1271,0.9120,0.8729,0.0391
+madhya pradesh|chhatarpur,madhya pradesh,23,0.1158,0.1398,0.8842,0.8602,0.0241
+uttar pradesh|mainpuri,uttar pradesh,23,0.0948,0.1537,0.9052,0.8463,0.0590
+uttar pradesh|amroha,uttar pradesh,23,0.1007,0.1636,0.8993,0.8364,0.0629
+uttar pradesh|shahjahanpur,uttar pradesh,23,0.0999,0.1642,0.9001,0.8358,0.0643
+uttar pradesh|aligarh,uttar pradesh,23,0.1017,0.1679,0.8983,0.8321,0.0662
+puducherry|karaikal,puducherry,23,0.0713,0.1687,0.9287,0.8313,0.0974
+madhya pradesh|panna,madhya pradesh,23,0.1219,0.1690,0.8781,0.8310,0.0471
+uttar pradesh|agra,uttar pradesh,23,0.0925,0.1724,0.9075,0.8276,0.0799
+madhya pradesh|damoh,madhya pradesh,23,0.1162,0.1753,0.8838,0.8247,0.0591
+uttar pradesh|etah,uttar pradesh,23,0.1015,0.1787,0.8985,0.8213,0.0772
+uttar pradesh|varanasi,uttar pradesh,23,0.0847,0.1805,0.9153,0.8195,0.0959
+bihar|darbhanga,bihar,23,0.1315,0.1858,0.8685,0.8142,0.0543
+himachal pradesh|mandi,himachal pradesh,23,0.0844,0.1887,0.9156,0.8113,0.1043
+jammu and kashmir|pulwama,jammu and kashmir,23,0.0625,0.1898,0.9375,0.8102,0.1273
+uttar pradesh|rampur,uttar pradesh,23,0.0938,0.1960,0.9062,0.8040,0.1022
+madhya pradesh|sagar,madhya pradesh,23,0.1120,0.1969,0.8880,0.8031,0.0849
+bihar|gopalganj,bihar,23,0.1111,0.2004,0.8889,0.7996,0.0893
+uttar pradesh|pilibhit,uttar pradesh,23,0.0969,0.2026,0.9031,0.7974,0.1058
+karnataka|hassan,karnataka,23,0.0893,0.2046,0.9107,0.7954,0.1153
+west bengal|bankura,west bengal,23,0.1361,0.2055,0.8639,0.7945,0.0693
+uttar pradesh|lalitpur,uttar pradesh,23,0.1165,0.2062,0.8835,0.7938,0.0897
+uttar pradesh|kaushambi,uttar pradesh,23,0.0971,0.2089,0.9029,0.7911,0.1117
+maharashtra|yavatmal,maharashtra,23,0.0992,0.2100,0.9008,0.7900,0.1107
+maharashtra|latur,maharashtra,23,0.1259,0.2116,0.8741,0.7884,0.0857
+uttar pradesh|gorakhpur,uttar pradesh,23,0.0948,0.2119,0.9052,0.7881,0.1171
+uttar pradesh|meerut,uttar pradesh,23,0.0813,0.2124,0.9187,0.7876,0.1311
+karnataka|kodagu,karnataka,23,0.0880,0.2129,0.9120,0.7871,0.1249
+karnataka|bengaluru urban,karnataka,23,0.0877,0.2139,0.9123,0.7861,0.1262
+madhya pradesh|ashoknagar,madhya pradesh,23,0.1140,0.2159,0.8860,0.7841,0.1019
+uttar pradesh|hardoi,uttar pradesh,23,0.0994,0.2163,0.9006,0.7837,0.1169
+uttar pradesh|kasganj,uttar pradesh,23,0.1146,0.2167,0.8854,0.7833,0.1021
+bihar|begusarai,bihar,23,0.1325,0.2167,0.8675,0.7833,0.0842
+uttar pradesh|chandauli,uttar pradesh,23,0.0984,0.2193,0.9016,0.7807,0.1210
+bihar|gaya,bihar,23,0.1149,0.2194,0.8851,0.7806,0.1045
+uttar pradesh|mathura,uttar pradesh,23,0.1044,0.2212,0.8956,0.7788,0.1168
+uttar pradesh|bulandshahr,uttar pradesh,23,0.1034,0.2220,0.8966,0.7780,0.1185
+madhya pradesh|dewas,madhya pradesh,23,0.0918,0.2227,0.9082,0.7773,0.1310
+uttar pradesh|bijnor,uttar pradesh,23,0.0757,0.2294,0.9243,0.7706,0.1537
+bihar|muzaffarpur,bihar,23,0.1191,0.2319,0.8809,0.7681,0.1128
+maharashtra|bhandara,maharashtra,23,0.0821,0.2339,0.9179,0.7661,0.1518
+madhya pradesh|umaria,madhya pradesh,23,0.0950,0.2343,0.9050,0.7657,0.1393
+punjab|moga,punjab,23,0.0933,0.2345,0.9067,0.7655,0.1412
+bihar|samastipur,bihar,23,0.1333,0.2350,0.8667,0.7650,0.1017
+karnataka|bengaluru rural,karnataka,23,0.0901,0.2372,0.9099,0.7628,0.1471
+karnataka|udupi,karnataka,23,0.0762,0.2392,0.9238,0.7608,0.1630
+uttar pradesh|firozabad,uttar pradesh,23,0.1036,0.2410,0.8964,0.7590,0.1374
+uttar pradesh|jalaun,uttar pradesh,23,0.0964,0.2442,0.9036,0.7558,0.1477
+madhya pradesh|chhindwara,madhya pradesh,23,0.0942,0.2458,0.9058,0.7542,0.1516
+himachal pradesh|lahul and spiti,himachal pradesh,23,0.0881,0.2475,0.9119,0.7525,0.1594
+maharashtra|kolhapur,maharashtra,23,0.1206,0.2511,0.8794,0.7489,0.1305
+uttar pradesh|kheri,uttar pradesh,23,0.1054,0.2522,0.8946,0.7478,0.1468
+uttar pradesh|sitapur,uttar pradesh,23,0.1008,0.2531,0.8992,0.7469,0.1523
+karnataka|chikkaballapura,karnataka,23,0.0998,0.2560,0.9002,0.7440,0.1561
+puducherry|puducherry,puducherry,23,0.0771,0.2593,0.9229,0.7407,0.1822
+himachal pradesh|hamirpur,himachal pradesh,23,0.0875,0.2601,0.9125,0.7399,0.1725
+uttar pradesh|prayagraj,uttar pradesh,23,0.1016,0.2633,0.8984,0.7367,0.1616
+bihar|nawada,bihar,23,0.1207,0.2658,0.8793,0.7342,0.1451
+uttar pradesh|saharanpur,uttar pradesh,23,0.0762,0.2659,0.9238,0.7341,0.1897
+himachal pradesh|sirmaur,himachal pradesh,23,0.0697,0.2667,0.9303,0.7333,0.1970
+uttar pradesh|baghpat,uttar pradesh,23,0.0817,0.2688,0.9183,0.7312,0.1870
+uttar pradesh|kannauj,uttar pradesh,23,0.0925,0.2694,0.9075,0.7306,0.1769
+karnataka|mysuru,karnataka,23,0.0898,0.2699,0.9102,0.7301,0.1801
+maharashtra|ahmednagar,maharashtra,23,0.1257,0.2726,0.8743,0.7274,0.1469
+maharashtra|gadchiroli,maharashtra,23,0.0856,0.2737,0.9144,0.7263,0.1881
+karnataka|kolar,karnataka,23,0.1066,0.2737,0.8934,0.7263,0.1671
+west bengal|darjeeling,west bengal,23,0.1000,0.2748,0.9000,0.7252,0.1747
+uttar pradesh|chitrakoot,uttar pradesh,23,0.1016,0.2780,0.8984,0.7220,0.1764
+karnataka|raichur,karnataka,23,0.1177,0.2799,0.8823,0.7201,0.1622
+uttar pradesh|jaunpur,uttar pradesh,23,0.0832,0.2806,0.9168,0.7194,0.1974
+madhya pradesh|shahdol,madhya pradesh,23,0.1034,0.2810,0.8966,0.7190,0.1776
+maharashtra|hingoli,maharashtra,23,0.1308,0.2823,0.8692,0.7177,0.1515
+madhya pradesh|vidisha,madhya pradesh,23,0.1097,0.2841,0.8903,0.7159,0.1743
+bihar|siwan,bihar,23,0.1025,0.2845,0.8975,0.7155,0.1820
+madhya pradesh|datia,madhya pradesh,23,0.1066,0.2847,0.8934,0.7153,0.1781
+west bengal|howrah,west bengal,23,0.1147,0.2870,0.8853,0.7130,0.1723
+uttar pradesh|bareilly,uttar pradesh,23,0.0990,0.2887,0.9010,0.7113,0.1897
+uttar pradesh|kanpur dehat,uttar pradesh,23,0.0949,0.2891,0.9051,0.7109,0.1943
+karnataka|mandya,karnataka,23,0.0802,0.2902,0.9198,0.7098,0.2100
+himachal pradesh|solan,himachal pradesh,23,0.0912,0.2920,0.9088,0.7080,0.2008
+uttar pradesh|mau,uttar pradesh,23,0.0869,0.2930,0.9131,0.7070,0.2061
+maharashtra|amravati,maharashtra,23,0.0921,0.2933,0.9079,0.7067,0.2012
+bihar|vaishali,bihar,23,0.1252,0.2936,0.8748,0.7064,0.1685
+madhya pradesh|narsimhapur,madhya pradesh,23,0.1024,0.2941,0.8976,0.7059,0.1917
+bihar|aurangabad,bihar,23,0.1088,0.2957,0.8912,0.7043,0.1868
+madhya pradesh|sheopur,madhya pradesh,23,0.1155,0.2963,0.8845,0.7037,0.1809
+madhya pradesh|khandwa east nimar,madhya pradesh,23,0.0826,0.2964,0.9174,0.7036,0.2138
+uttar pradesh|gonda,uttar pradesh,23,0.1121,0.2971,0.8879,0.7029,0.1849
+uttar pradesh|sonbhadra,uttar pradesh,23,0.1119,0.2972,0.8881,0.7028,0.1853
+punjab|sahibzada ajit singh nagar,punjab,23,0.0922,0.2974,0.9078,0.7026,0.2052
+west bengal|purulia,west bengal,23,0.1289,0.2978,0.8711,0.7022,0.1689
+maharashtra|akola,maharashtra,23,0.1076,0.3006,0.8924,0.6994,0.1930
+jammu and kashmir|samba,jammu and kashmir,23,0.0753,0.3009,0.9247,0.6991,0.2255
+madhya pradesh|betul,madhya pradesh,23,0.0847,0.3056,0.9153,0.6944,0.2210
+uttar pradesh|sant kabir nagar,uttar pradesh,23,0.0818,0.3062,0.9182,0.6938,0.2243
+himachal pradesh|kangra,himachal pradesh,22,0.0804,0.3069,0.9196,0.6931,0.2265
+punjab|rupnagar,punjab,23,0.0751,0.3082,0.9249,0.6918,0.2331
+maharashtra|nandurbar,maharashtra,23,0.1268,0.3087,0.8732,0.6913,0.1819
+madhya pradesh|seoni,madhya pradesh,23,0.0893,0.3089,0.9107,0.6911,0.2196
+karnataka|haveri,karnataka,23,0.0924,0.3111,0.9076,0.6889,0.2187
+maharashtra|sindhudurg,maharashtra,23,0.0890,0.3117,0.9110,0.6883,0.2227
+madhya pradesh|sidhi,madhya pradesh,23,0.0965,0.3118,0.9035,0.6882,0.2153
+jammu and kashmir|bandipora,jammu and kashmir,23,0.0742,0.3145,0.9258,0.6855,0.2403
+uttar pradesh|kanpur nagar,uttar pradesh,23,0.0975,0.3152,0.9025,0.6848,0.2176
+karnataka|koppal,karnataka,23,0.1183,0.3162,0.8817,0.6838,0.1980
+karnataka|chikkamagaluru,karnataka,23,0.0949,0.3166,0.9051,0.6834,0.2217
+karnataka|yadgir,karnataka,23,0.1113,0.3167,0.8887,0.6833,0.2054
+punjab|fatehgarh sahib,punjab,23,0.0768,0.3172,0.9232,0.6828,0.2404
+madhya pradesh|rewa,madhya pradesh,23,0.1061,0.3183,0.8939,0.6817,0.2123
+punjab|hoshiarpur,punjab,23,0.0704,0.3184,0.9296,0.6816,0.2480
+uttar pradesh|azamgarh,uttar pradesh,23,0.0881,0.3202,0.9119,0.6798,0.2321
+uttar pradesh|hamirpur,uttar pradesh,23,0.0810,0.3248,0.9190,0.6752,0.2438
+bihar|jamui,bihar,23,0.1346,0.3267,0.8654,0.6733,0.1921
+arunachal pradesh|upper subansiri,arunachal pradesh,23,0.1248,0.3303,0.8752,0.6697,0.2055
+himachal pradesh|una,himachal pradesh,23,0.0848,0.3306,0.9152,0.6694,0.2458
+arunachal pradesh|papum pare,arunachal pradesh,23,0.1065,0.3330,0.8935,0.6670,0.2266
+madhya pradesh|anuppur,madhya pradesh,23,0.0993,0.3344,0.9007,0.6656,0.2351
+maharashtra|wardha,maharashtra,23,0.0789,0.3363,0.9211,0.6637,0.2574
+bihar|nalanda,bihar,23,0.1312,0.3394,0.8688,0.6606,0.2082
+uttar pradesh|fatehpur,uttar pradesh,23,0.0970,0.3398,0.9030,0.6602,0.2428
+bihar|rohtas,bihar,23,0.1018,0.3416,0.8982,0.6584,0.2399
+uttar pradesh|shrawasti,uttar pradesh,23,0.1119,0.3422,0.8881,0.6578,0.2303
+uttar pradesh|hathras,uttar pradesh,23,0.1095,0.3450,0.8905,0.6550,0.2355
+madhya pradesh|indore,madhya pradesh,23,0.0939,0.3470,0.9061,0.6530,0.2531
+punjab|barnala,punjab,23,0.0946,0.3474,0.9054,0.6526,0.2528
+daman and diu|diu,daman and diu,23,0.0663,0.3511,0.9337,0.6489,0.2848
+madhya pradesh|sehore,madhya pradesh,23,0.1076,0.3513,0.8924,0.6487,0.2437
+uttar pradesh|basti,uttar pradesh,23,0.0901,0.3515,0.9099,0.6485,0.2614
+karnataka|ramanagara,karnataka,23,0.0823,0.3517,0.9177,0.6483,0.2694
+west bengal|murshidabad,west bengal,23,0.1401,0.3531,0.8599,0.6469,0.2130
+uttar pradesh|ambedkar nagar,uttar pradesh,23,0.0815,0.3540,0.9185,0.6460,0.2726
+uttar pradesh|auraiya,uttar pradesh,23,0.0950,0.3560,0.9050,0.6440,0.2610
+karnataka|belagavi,karnataka,23,0.1142,0.3589,0.8858,0.6411,0.2447
+madhya pradesh|barwani,madhya pradesh,23,0.1156,0.3615,0.8844,0.6385,0.2459
+arunachal pradesh|anjaw,arunachal pradesh,23,0.0913,0.3618,0.9087,0.6382,0.2705
+himachal pradesh|shimla,himachal pradesh,23,0.0753,0.3643,0.9247,0.6357,0.2890
+bihar|khagaria,bihar,23,0.1381,0.3651,0.8619,0.6349,0.2270
+madhya pradesh|balaghat,madhya pradesh,23,0.0774,0.3652,0.9226,0.6348,0.2878
+bihar|madhepura,bihar,23,0.1457,0.3661,0.8543,0.6339,0.2203
+maharashtra|raigad,maharashtra,23,0.1010,0.3671,0.8990,0.6329,0.2661
+karnataka|vijayapura,karnataka,23,0.1315,0.3676,0.8685,0.6324,0.2361
+bihar|lakhisarai,bihar,23,0.1363,0.3683,0.8637,0.6317,0.2320
+maharashtra|gondia,maharashtra,23,0.0811,0.3688,0.9189,0.6312,0.2876
+bihar|patna,bihar,23,0.1315,0.3697,0.8685,0.6303,0.2381
+uttar pradesh|kushinagar,uttar pradesh,23,0.0939,0.3700,0.9061,0.6300,0.2761
+punjab|mansa,punjab,23,0.0918,0.3708,0.9082,0.6292,0.2790
+madhya pradesh|gwalior,madhya pradesh,23,0.0971,0.3735,0.9029,0.6265,0.2764
+sikkim|west district,sikkim,23,0.0807,0.3745,0.9193,0.6255,0.2938
+punjab|sangrur,punjab,23,0.0796,0.3749,0.9204,0.6251,0.2953
+maharashtra|osmanabad,maharashtra,23,0.1243,0.3756,0.8757,0.6244,0.2512
+madhya pradesh|mandla,madhya pradesh,23,0.0864,0.3768,0.9136,0.6232,0.2905
+jammu and kashmir|jammu,jammu and kashmir,23,0.0702,0.3771,0.9298,0.6229,0.3068
+karnataka|chamarajanagar,karnataka,23,0.0904,0.3771,0.9096,0.6229,0.2867
+maharashtra|solapur,maharashtra,23,0.1423,0.3775,0.8577,0.6225,0.2352
+punjab|shahid bhagat singh nagar,punjab,23,0.0688,0.3793,0.9312,0.6207,0.3105
+madhya pradesh|katni,madhya pradesh,23,0.0869,0.3799,0.9131,0.6201,0.2930
+bihar|buxar,bihar,23,0.1153,0.3806,0.8847,0.6194,0.2652
+uttar pradesh|deoria,uttar pradesh,23,0.0980,0.3821,0.9020,0.6179,0.2841
+karnataka|dakshina kannada,karnataka,23,0.0756,0.3831,0.9244,0.6169,0.3075
+uttar pradesh|bahraich,uttar pradesh,23,0.1244,0.3874,0.8756,0.6126,0.2629
+madhya pradesh|bhind,madhya pradesh,23,0.1038,0.3890,0.8962,0.6110,0.2852
+maharashtra|nanded,maharashtra,23,0.1231,0.3896,0.8769,0.6104,0.2665
+maharashtra|beed,maharashtra,23,0.1407,0.3905,0.8593,0.6095,0.2498
+uttar pradesh|barabanki,uttar pradesh,23,0.1047,0.3919,0.8953,0.6081,0.2872
+madhya pradesh|rajgarh,madhya pradesh,23,0.1147,0.3923,0.8853,0.6077,0.2775
+bihar|purbi champaran,bihar,23,0.1358,0.3944,0.8642,0.6056,0.2586
+jammu and kashmir|kulgam,jammu and kashmir,23,0.0590,0.3948,0.9410,0.6052,0.3358
+uttar pradesh|ghazipur,uttar pradesh,23,0.0965,0.3962,0.9035,0.6038,0.2997
+jammu and kashmir|baramulla,jammu and kashmir,23,0.0842,0.3970,0.9158,0.6030,0.3127
+punjab|ludhiana,punjab,23,0.0846,0.3975,0.9154,0.6025,0.3128
+karnataka|uttara kannada,karnataka,23,0.0842,0.3983,0.9158,0.6017,0.3141
+bihar|sheikhpura,bihar,23,0.1214,0.3998,0.8786,0.6002,0.2784
+bihar|arwal,bihar,23,0.1236,0.4015,0.8764,0.5985,0.2779
+madhya pradesh|satna,madhya pradesh,23,0.0877,0.4042,0.9123,0.5958,0.3165
+himachal pradesh|chamba,himachal pradesh,23,0.0741,0.4071,0.9259,0.5929,0.3330
+madhya pradesh|singrauli,madhya pradesh,23,0.1086,0.4073,0.8914,0.5927,0.2987
+uttar pradesh|lucknow,uttar pradesh,23,0.0959,0.4095,0.9041,0.5905,0.3136
+bihar|munger,bihar,23,0.1295,0.4112,0.8705,0.5888,0.2818
+karnataka|bidar,karnataka,23,0.1052,0.4114,0.8948,0.5886,0.3063
+madhya pradesh|shivpuri,madhya pradesh,23,0.1175,0.4139,0.8825,0.5861,0.2964
+uttar pradesh|balrampur,uttar pradesh,23,0.1107,0.4164,0.8893,0.5836,0.3057
+madhya pradesh|burhanpur,madhya pradesh,23,0.0883,0.4178,0.9117,0.5822,0.3295
+punjab|tarn taran,punjab,23,0.0919,0.4184,0.9081,0.5816,0.3265
+madhya pradesh|mandsaur,madhya pradesh,23,0.1060,0.4212,0.8940,0.5788,0.3152
+karnataka|dharwad,karnataka,23,0.0921,0.4237,0.9079,0.5763,0.3316
+bihar|pashchim champaran,bihar,23,0.1329,0.4246,0.8671,0.5754,0.2918
+arunachal pradesh|east kameng,arunachal pradesh,23,0.1118,0.4252,0.8882,0.5748,0.3134
+madhya pradesh|morena,madhya pradesh,23,0.1073,0.4257,0.8927,0.5743,0.3185
+west bengal|south twenty four parganas,west bengal,23,0.1224,0.4318,0.8776,0.5682,0.3094
+maharashtra|mumbai,maharashtra,21,0.0743,0.4320,0.9257,0.5680,0.3577
+bihar|kaimur bhabua,bihar,23,0.0933,0.4337,0.9067,0.5663,0.3404
+west bengal|north twenty four parganas,west bengal,23,0.1100,0.4381,0.8900,0.5619,0.3282
+arunachal pradesh|upper siang,arunachal pradesh,21,0.0952,0.4411,0.9048,0.5589,0.3459
+madhya pradesh|harda,madhya pradesh,23,0.0871,0.4414,0.9129,0.5586,0.3543
+madhya pradesh|ujjain,madhya pradesh,23,0.0996,0.4422,0.9004,0.5578,0.3426
+west bengal|hooghly,west bengal,23,0.1252,0.4427,0.8748,0.5573,0.3175
+bihar|jehanabad,bihar,23,0.1303,0.4432,0.8697,0.5568,0.3128
+karnataka|shivamogga,karnataka,23,0.0832,0.4432,0.9168,0.5568,0.3600
+jammu and kashmir|poonch,jammu and kashmir,23,0.0755,0.4451,0.9245,0.5549,0.3696
+bihar|saran,bihar,23,0.1172,0.4494,0.8828,0.5506,0.3322
+himachal pradesh|kullu,himachal pradesh,23,0.0910,0.4540,0.9090,0.5460,0.3631
+punjab|amritsar,punjab,23,0.0895,0.4578,0.9105,0.5422,0.3683
+bihar|bhojpur,bihar,23,0.1176,0.4587,0.8824,0.5413,0.3411
+jammu and kashmir|reasi,jammu and kashmir,23,0.0853,0.4593,0.9147,0.5407,0.3741
+madhya pradesh|neemuch,madhya pradesh,23,0.0945,0.4595,0.9055,0.5405,0.3650
+west bengal|jalpaiguri,west bengal,23,0.1097,0.4601,0.8903,0.5399,0.3504
+madhya pradesh|hoshangabad,madhya pradesh,23,0.1066,0.4625,0.8934,0.5375,0.3559
+maharashtra|mumbai suburban,maharashtra,21,0.0839,0.4627,0.9161,0.5373,0.3788
+jammu and kashmir|rajouri,jammu and kashmir,23,0.0955,0.4658,0.9045,0.5342,0.3702
+jammu and kashmir|kishtwar,jammu and kashmir,23,0.0852,0.4727,0.9148,0.5273,0.3875
+madhya pradesh|khargone west nimar,madhya pradesh,23,0.0991,0.4764,0.9009,0.5236,0.3774
+jammu and kashmir|ganderbal,jammu and kashmir,23,0.0757,0.4765,0.9243,0.5235,0.4008
+madhya pradesh|bhopal,madhya pradesh,21,0.0855,0.4833,0.9145,0.5167,0.3979
+punjab|kapurthala,punjab,23,0.0872,0.4840,0.9128,0.5160,0.3967
+bihar|araria,bihar,23,0.1394,0.4882,0.8606,0.5118,0.3488
+karnataka|chitradurga,karnataka,23,0.1015,0.4887,0.8985,0.5113,0.3872
+bihar|bhagalpur,bihar,23,0.1356,0.4887,0.8644,0.5113,0.3531
+maharashtra|buldhana,maharashtra,23,0.1074,0.4908,0.8926,0.5092,0.3834
+west bengal|birbhum,west bengal,23,0.1474,0.4916,0.8526,0.5084,0.3442
+arunachal pradesh|lower subansiri,arunachal pradesh,23,0.0895,0.4924,0.9105,0.5076,0.4029
+west bengal|uttar dinajpur,west bengal,23,0.1258,0.4964,0.8742,0.5036,0.3705
+uttar pradesh|siddharth nagar,uttar pradesh,23,0.1012,0.4966,0.8988,0.5034,0.3954
+bihar|banka,bihar,23,0.1372,0.5031,0.8628,0.4969,0.3659
+puducherry|yanam,puducherry,23,0.0871,0.5033,0.9129,0.4967,0.4162
+punjab|jalandhar,punjab,23,0.0733,0.5054,0.9267,0.4946,0.4321
+himachal pradesh|kinnaur,himachal pradesh,23,0.1017,0.5069,0.8983,0.4931,0.4051
+karnataka|ballari,karnataka,23,0.1046,0.5077,0.8954,0.4923,0.4032
+west bengal|dakshin dinajpur,west bengal,23,0.1292,0.5106,0.8708,0.4894,0.3814
+maharashtra|jalgaon,maharashtra,23,0.1386,0.5155,0.8614,0.4845,0.3769
+arunachal pradesh|dibang valley,arunachal pradesh,23,0.0761,0.5214,0.9239,0.4786,0.4453
+uttar pradesh|mirzapur,uttar pradesh,23,0.0955,0.5260,0.9045,0.4740,0.4305
+bihar|madhubani,bihar,23,0.1288,0.5272,0.8712,0.4728,0.3984
+bihar|sitamarhi,bihar,23,0.1411,0.5275,0.8589,0.4725,0.3864
+punjab|patiala,punjab,23,0.0916,0.5296,0.9084,0.4704,0.4380
+maharashtra|chandrapur,maharashtra,23,0.0843,0.5387,0.9157,0.4613,0.4544
+maharashtra|aurangabad,maharashtra,23,0.1380,0.5406,0.8620,0.4594,0.4025
+west bengal|maldah,west bengal,23,0.1377,0.5419,0.8623,0.4581,0.4042
+uttar pradesh|pratapgarh,uttar pradesh,23,0.0821,0.5421,0.9179,0.4579,0.4600
+madhya pradesh|dindori,madhya pradesh,23,0.1121,0.5444,0.8879,0.4556,0.4322
+uttar pradesh|ballia,uttar pradesh,23,0.0919,0.5458,0.9081,0.4542,0.4538
+maharashtra|pune,maharashtra,23,0.1161,0.5496,0.8839,0.4504,0.4335
+madhya pradesh|raisen,madhya pradesh,21,0.0865,0.5538,0.9135,0.4462,0.4673
+manipur|tamenglong,manipur,23,0.1193,0.5545,0.8807,0.4455,0.4352
+west bengal|nadia,west bengal,23,0.1249,0.5580,0.8751,0.4420,0.4331
+tripura|dhalai,tripura,23,0.1510,0.5605,0.8490,0.4395,0.4095
+uttar pradesh|jhansi,uttar pradesh,23,0.1058,0.5619,0.8942,0.4381,0.4561
+madhya pradesh|ratlam,madhya pradesh,23,0.1025,0.5627,0.8975,0.4373,0.4602
+jammu and kashmir|ramban,jammu and kashmir,23,0.0886,0.5679,0.9114,0.4321,0.4793
+maharashtra|nagpur,maharashtra,23,0.0752,0.5729,0.9248,0.4271,0.4977
+uttar pradesh|unnao,uttar pradesh,23,0.1019,0.5744,0.8981,0.4256,0.4726
+karnataka|bagalkote,karnataka,23,0.1131,0.5784,0.8869,0.4216,0.4653
+uttar pradesh|banda,uttar pradesh,23,0.0953,0.5856,0.9047,0.4144,0.4903
+maharashtra|nashik,maharashtra,23,0.1490,0.5871,0.8510,0.4129,0.4381
+meghalaya|ribhoi,meghalaya,23,0.1159,0.5872,0.8841,0.4128,0.4712
+punjab|sri muktsar sahib,punjab,23,0.0963,0.5955,0.9037,0.4045,0.4993
+jammu and kashmir|udhampur,jammu and kashmir,23,0.0939,0.6000,0.9061,0.4000,0.5061
+dadra and nagar haveli|dadra and nagar haveli,dadra and nagar haveli,23,0.0937,0.6016,0.9063,0.3984,0.5078
+karnataka|kalaburagi,karnataka,23,0.1124,0.6024,0.8876,0.3976,0.4900
+madhya pradesh|dhar,madhya pradesh,23,0.1086,0.6067,0.8914,0.3933,0.4981
+karnataka|gadag,karnataka,23,0.1091,0.6084,0.8909,0.3916,0.4993
+jammu and kashmir|doda,jammu and kashmir,23,0.0963,0.6101,0.9037,0.3899,0.5138
+karnataka|tumakuru,karnataka,23,0.0891,0.6146,0.9109,0.3854,0.5254
+jammu and kashmir|anantnag,jammu and kashmir,23,0.0802,0.6154,0.9198,0.3846,0.5352
+manipur|senapati,manipur,23,0.1065,0.6155,0.8935,0.3845,0.5090
+sikkim|east district,sikkim,21,0.0800,0.6245,0.9200,0.3755,0.5445
+west bengal|kolkata,west bengal,23,0.1036,0.6247,0.8964,0.3753,0.5211
+manipur|thoubal,manipur,23,0.1086,0.6315,0.8914,0.3685,0.5229
+madhya pradesh|guna,madhya pradesh,23,0.0965,0.6418,0.9035,0.3582,0.5453
+manipur|churachandpur,manipur,23,0.1068,0.6430,0.8932,0.3570,0.5362
+jammu and kashmir|kupwara,jammu and kashmir,23,0.0731,0.6532,0.9269,0.3468,0.5801
+bihar|sheohar,bihar,23,0.1080,0.6548,0.8920,0.3452,0.5468
+jammu and kashmir|budgam,jammu and kashmir,23,0.0696,0.6657,0.9304,0.3343,0.5962
+himachal pradesh|bilaspur,himachal pradesh,23,0.0819,0.6722,0.9181,0.3278,0.5903
+madhya pradesh|tikamgarh,madhya pradesh,23,0.1037,0.6727,0.8963,0.3273,0.5690
+daman and diu|daman,daman and diu,23,0.0986,0.6844,0.9014,0.3156,0.5859
+west bengal|cooch behar,west bengal,23,0.1403,0.6954,0.8597,0.3046,0.5550
+punjab|faridkot,punjab,23,0.1007,0.6983,0.8993,0.3017,0.5976
+uttar pradesh|ayodhya,uttar pradesh,23,0.0900,0.6992,0.9100,0.3008,0.6092
+karnataka|davanagere,karnataka,23,0.1082,0.6993,0.8918,0.3007,0.5910
+manipur|imphal east,manipur,23,0.1150,0.7000,0.8850,0.3000,0.5850
+sikkim|south district,sikkim,23,0.0906,0.7023,0.9094,0.2977,0.6117
+sikkim|north district,sikkim,23,0.0819,0.7084,0.9181,0.2916,0.6265
+bihar|katihar,bihar,23,0.1388,0.7319,0.8612,0.2681,0.5931
+uttar pradesh|bhadohi,uttar pradesh,23,0.0960,0.7330,0.9040,0.2670,0.6370
+arunachal pradesh|lower dibang valley,arunachal pradesh,23,0.0728,0.7412,0.9272,0.2588,0.6684
+maharashtra|jalna,maharashtra,23,0.1380,0.7625,0.8620,0.2375,0.6245
+manipur|chandel,manipur,23,0.1266,0.7634,0.8734,0.2366,0.6368
+madhya pradesh|alirajpur,madhya pradesh,23,0.0973,0.7644,0.9027,0.2356,0.6671
+manipur|imphal west,manipur,23,0.1053,0.7714,0.8947,0.2286,0.6660
+manipur|bishnupur,manipur,23,0.1118,0.7809,0.8882,0.2191,0.6691
+jammu and kashmir|srinagar,jammu and kashmir,23,0.0674,0.7986,0.9326,0.2014,0.7312
+west bengal|paschim medinipur,west bengal,23,0.1529,0.8406,0.8471,0.1594,0.6877
+bihar|kishanganj,bihar,23,0.1282,0.8424,0.8718,0.1576,0.7142
+maharashtra|dhule,maharashtra,23,0.1571,0.8439,0.8429,0.1561,0.6867
+manipur|ukhrul,manipur,23,0.1163,0.8448,0.8837,0.1552,0.7285
+madhya pradesh|jhabua,madhya pradesh,23,0.1039,0.8579,0.8961,0.1421,0.7540
+west bengal|purba medinipur,west bengal,23,0.1455,0.9378,0.8545,0.0622,0.7923
+bihar|supaul,bihar,23,0.1459,0.9449,0.8541,0.0551,0.7990
+arunachal pradesh|tawang,arunachal pradesh,23,0.0800,0.9590,0.9200,0.0410,0.8789
+arunachal pradesh|west kameng,arunachal pradesh,23,0.0891,0.9756,0.9109,0.0244,0.8866
+bihar|saharsa,bihar,23,0.1486,0.9970,0.8514,0.0030,0.8484
+punjab|bathinda,punjab,23,0.1044,1.0294,0.8956,-0.0294,0.9250
+maharashtra|washim,maharashtra,23,0.1401,1.0384,0.8599,-0.0384,0.8983
+jammu and kashmir|kathua,jammu and kashmir,23,0.0627,1.0704,0.9373,-0.0704,1.0077
+maharashtra|parbhani,maharashtra,23,0.1472,1.1570,0.8528,-0.1570,1.0098
+bihar|purnia,bihar,23,0.1519,1.1976,0.8481,-0.1976,1.0457
+meghalaya|east khasi hills,meghalaya,23,0.1234,1.2013,0.8766,-0.2013,1.0779
+jammu and kashmir|shopian,jammu and kashmir,23,0.0704,1.2258,0.9296,-0.2258,1.1554
+puducherry|mahe,puducherry,23,0.0582,1.3393,0.9418,-0.3393,1.2811
+madhya pradesh|jabalpur,madhya pradesh,20,0.1030,1.5136,0.8970,-0.5136,1.4106
+meghalaya|south garo hills,meghalaya,23,0.0839,1.7620,0.9161,-0.7620,1.6781

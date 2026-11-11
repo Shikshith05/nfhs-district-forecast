@@ -1,0 +1,2 @@
+transition,state,parent_district,child_district,relation,weight,source,confidence
+# 5to6,Tamil Nadu,Vellore,Ranipet,split,,LGD modification report <date>,high

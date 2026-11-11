@@ -1,10 +1,126 @@
-# Base pipeline: summary
+# Summary
+
+## Gate B preparation (2026-10-23)
+
+Everything that does not need NFHS-6 results is done (D35–D40, all added after the
+pre-registrations D32/D34 and labelled so). **NFHS-6 has still not been scored.**
+
+- `scripts/preflight.py`: PASS/WARN/FAIL checks; currently PASSED with 2 WARNs (Bilaspur
+  lineage; D34 committed together with the development outputs).
+- `scripts/gate_b.ps1`: pre-flight → YES → tag → one-shot evaluation → commit; stops on errors.
+- `scripts/post_run.py`: one command after Gate B for every table, figure, the filled
+  report and the release. `--dryrun` tested it end to end on the NFHS-4 → NFHS-5
+  predictions (`outputs/dryrun/`, every file marked DRYRUN, not NFHS-6 results).
+- `docs/report.md`: generated from `docs/report_template.md`; NFHS-4 → NFHS-5 numbers
+  filled, NFHS-6 slots `[[NFHS-6 PENDING]]`; every number checked by
+  `scripts/check_report_numbers.py`.
+- `outputs/release/`: harmonised panel (NFHS-4/5 only until Gate B), units, codebook,
+  crosswalk, data dictionary, sources and licence.
+- `docs/HUMAN_CHECKLIST.md` (what to check before Gate B) and `docs/DEFENCE_NOTES.md`.
+
+## Gate A update (2026-10-22): ready for review before the freeze
+
+Work on `main`, merged from one branch per task: `env-pins`,
+`a2-freeze-integrity`, `a1-harmonise`, `a3-models`, `a4-pdf-check`,
+`gate-c-prep`, `gate-a-final`. Decisions are D24–D34 in `DECISIONS.md`.
+**NFHS-6 has still not been scored.** The sections further down describe the
+base pipeline of 2026-10-18 and are kept for reference. Where they differ,
+the numbers here supersede them.
+
+**Freeze artifact:** `outputs/models/frozen_models.pkl`, training-data hash
+`d3f06bee428deeef` (OS-independent since D25), config hash `24e4b2befa146b0a`, 571 training
+units, 684 test units, 547 stable units, 23 indicators, and 16 methods
+(`manifest.json`).
+
+### What changed
+
+| task | result |
+|---|---|
+| A2 freeze integrity | The hash no longer depends on line endings. The NFHS-6 evaluation script runs only if tag `freeze-v1` == HEAD, the tree is clean, and it has never run before; it records the commit id (D25, D26). |
+| A1 harmonisation | `harmonise.py` builds a lineage crosswalk with a source and confidence per edge, union-find components, population-weighted aggregation with SE propagation, and flagged inheritance with extra variance (D27–D31). Training: 571 units (+24). Test: 684 units (+137 = 121 districts changed between NFHS-4 and NFHS-5 but stable between NFHS-5 and NFHS-6, plus 16 boundary-changed remnants). 165 cases are listed for review. Official lineage could not be fetched (the LGD download needs a captcha), so none was invented. |
+| A3 models | Fay-Herriot (REML) replaces EB; FH-RTM; national trend; spatial-neighbour features; ablations; a no-state-dummy variant; seen-state CV; paired state-clustered bootstrap tests with BH; secondary metrics. All pre-registered in D32 before they were run. |
+| A4 PDF check | An independent PDF parser and a random spot-check script. **Not run: needs the IIPS PDFs** (D33, `docs/NFHS6_PDF_CHECK.md`). |
+| Gate C prep | Conformal intervals (split, normalised, shift-weighted), BH-FDR surprises with a naive top-k comparison, per-district noise ceiling, forecastability decomposition and map. Pre-registered in D34 and checked in `--dev` mode on NFHS-4 → NFHS-5 (`outputs/gate_c_dev/`). Report skeleton in `docs/report.md`. |
+
+### NFHS-4 → NFHS-5 LOSO results (harmonised training set, 571 districts)
+
+Skill vs persistence with 95% state-clustered CI. OVERALL pools squared
+errors; MEAN is the unweighted mean over the 23 indicators.
+
+| method | OVERALL skill | MEAN skill | skill net of national shift (OVERALL) |
+|---|---|---|---|
+| national trend (= state trend in LOSO) | 0.422 [0.325, 0.478] | 0.337 | 0 (reference) |
+| RTM | 0.613 [0.535, 0.672] | 0.540 | 0.330 [0.252, 0.396] |
+| Fay-Herriot (denoised persistence) | 0.083 | 0.108 | −0.586 |
+| FH-RTM | 0.624 [0.551, 0.678] | 0.554 | 0.350 |
+| elastic net | 0.637 [0.566, 0.690] | 0.577 | 0.373 [0.308, 0.424] |
+| LightGBM | 0.630 [0.552, 0.687] | 0.557 | 0.360 |
+| elastic net, no state dummies | 0.625 | 0.565 | 0.352 |
+| LightGBM, no state dummies | 0.627 | 0.556 | 0.355 |
+
+On the stable subset (547 districts) the numbers are within 0.003: RTM
+0.613, elastic net 0.639, LightGBM 0.630 (`results_nfhs4to5_stable.csv`).
+Ablations (elastic net, OVERALL): own history 0.611, + other indicators
+0.611, + spatial neighbours 0.632, + state effects (full) 0.637. The spatial
+features carry the ML gain over RTM. Cross-indicator information adds
+nothing.
+
+**ML vs RTM, paired test (D32):**
+- **Elastic net:** beats RTM pooled (ΔMSE −4.9, 95% CI [−7.7, −2.0], about
+  6% lower MSE). Per indicator it is significantly better on only 2 of 23
+  after BH (child marriage, teen pregnancy; on the stable subset 4: plus PNC
+  and women overweight) and never significantly worse.
+- **LightGBM and both no-state variants:** not significantly different from
+  RTM overall.
+
+So "ML only ties RTM" (base pipeline) becomes "elastic net with spatial
+features is modestly but significantly better than RTM in pooled MSE on
+4→5. The gain is spread thin across indicators."
+
+**Seen-state CV (optimistic reference):** elastic net 0.763, RTM 0.637,
+state trend 0.597. The large gain comes from state dummies learning the
+same-transition state shocks, which a real forecast cannot know (bug 5.3).
+
+**Noise (D32 secondary metrics):** sampling noise is 24% of the variance of
+district change (pooled; 32% mean over indicators). The ceiling is 0.93
+relative to persistence and **0.83 relative to RTM**, so the best method
+recovers about 6% of the RTM error out of a possible 83%.
+
+### Review files for the team
+
+1. `outputs/crosswalk_review.csv` (165 rows): 132 districts changed between
+   NFHS-4 and NFHS-5 (need Census-2011 parents and NFHS-4 values), 16 new
+   NFHS-6 districts without a parent, 16 retained-name boundary changes
+   (scored by inheritance), and 1 low-confidence inferred parent
+   (Bilaspur → Gaurela-Pendra-Marwahi).
+2. `outputs/harmonisation_report.md` and `outputs/harmonised_units.csv`.
+3. `DECISIONS.md` D24–D34, especially the pre-registrations D32 and D34.
+4. `outputs/paired_summary_nfhs4to5*.csv`, `outputs/secondary_nfhs4to5*.csv`.
+
+### Gate B (humans only)
+
+1. Review the files above. Optionally supply `data/lineage/*.csv` and the
+   IIPS PDFs, then re-run `scripts/run_pipeline.py` and
+   `scripts/spot_check_nfhs6.py` and commit. Any change to training data or
+   config re-freezes the models.
+2. Make sure the tree is clean (`git status`) and HEAD is the commit to freeze.
+3. `git tag -a freeze-v1 -m "Models frozen before NFHS-6 evaluation"` and
+   `git push origin main freeze-v1`.
+4. `.venv\Scripts\python scripts\evaluate_nfhs6.py --confirm-frozen` (once;
+   it refuses a second run).
+5. Commit the NFHS-6 outputs and `outputs/nfhs6_evaluation_run.json`, then run
+   `scripts\gate_c_analysis.py --predictions outputs\predictions_nfhs5to6.parquet`
+   and fill `docs/report.md`.
+
+---
+
+## Base pipeline (2026-10-18)
 
 Branch `base-pipeline`, built 2026-10-18. Models are trained and validated on
 NFHS-4 → NFHS-5 and frozen. **NFHS-6 has not been scored**; that is the team's
 next step, after review (see "How to run").
 
-## What was built
+### What was built
 
 - A Python package, `nfhs_forecast/`, that:
   - loads both sources and cleans them (suppressed cells, India.csv's zero
@@ -31,7 +147,7 @@ next step, after review (see "How to run").
 - Stubs with TODOs: `harmonise.py` (boundary crosswalk), `parse_nfhs6.py`
   (independent PDF parser).
 
-## How to run
+### How to run
 
 ```powershell
 py -3.11 -m venv .venv
@@ -44,10 +160,10 @@ git tag -a freeze-v1 -m "Models frozen before NFHS-6 evaluation"
 ```
 
 The frozen models are `outputs/models/frozen_models.pkl` (training-data hash
-`791f980116a74d5a`, identical across reruns). `evaluate_nfhs6.py` aborts if the
+`4f73a5ed88b1143e` since the line-ending fix in D25; identical across reruns and operating systems). `evaluate_nfhs6.py` aborts if the
 NFHS-4/5 data no longer match that hash.
 
-## Files moved and deleted
+### Files moved and deleted
 
 | From | To |
 |---|---|
@@ -62,7 +178,7 @@ NFHS-4/5 data no longer match that hash.
 No raw file exceeds 50 MB (largest: `Districts.geojson`, 28 MB), so all raw
 data are tracked.
 
-## Districts and indicators
+### Districts and indicators
 
 | | count |
 |---|---|
@@ -94,7 +210,7 @@ female sterilisation, electricity, iodised salt, severe wasting) have
 `include = False` in `data/processed/indicator_codebook.csv`. Each can be
 switched on by adding it to `indicators.core` in `config.yaml`.
 
-## Data audit (NFHS-6 file's own NFHS-5 column vs India.csv NFHS-5)
+### Data audit (NFHS-6 file's own NFHS-5 column vs India.csv NFHS-5)
 
 - 49,967 matched district × indicator pairs; 46,395 have a number in both.
 - **Exact agreement: 95.3%. Within 0.5 points: 96.8%.**
@@ -109,7 +225,7 @@ switched on by adding it to `indicators.core` in `config.yaml`.
   sources. Chandigarh and Lakshadweep have misaligned India.csv rows. Delhi's
   districts disagree too, but they were already out (no NFHS-4).
 
-## Results: NFHS-4 → NFHS-5, leave-one-state-out CV
+### Results: NFHS-4 → NFHS-5, leave-one-state-out CV
 
 547 districts, 23 indicators, 30 folds (one per state/UT). Skill is
 1 − MSE(method)/MSE(persistence). The OVERALL row pools squared errors over
@@ -178,7 +294,7 @@ forecaster of the true value would reach, given the assumed SEs):
   (COVID-period fieldwork in NFHS-5) is exactly what the frozen test will
   show.
 
-## Assumptions (all in `config.yaml`; reasons in `DECISIONS.md`)
+### Assumptions (all in `config.yaml`; reasons in `DECISIONS.md`)
 
 1. **Sample sizes and design effect (D16).** Per-district n by group:
    households 900, women 1000, women_subgroup 200, mothers 250, men 140,
@@ -200,7 +316,7 @@ forecaster of the true value would reach, given the assumed SEs):
 9. State trend extrapolates the NFHS-4→5 state change to NFHS-5→6 with
    damping 1.0 (D17).
 
-## Problems found in the data
+### Problems found in the data
 
 **India.csv (NFHS-4/5)**
 - `na` and `*` are written as `0` (132 district-rounds and 14,950 values are
@@ -234,7 +350,7 @@ forecaster of the true value would reach, given the assumed SEs):
 
 Each of these should be checked against the IIPS PDFs.
 
-## Next steps
+### Next steps
 
 1. **Review and freeze.** Read `DECISIONS.md` and the codebook, agree the core
    indicator set, tag the commit, then run `scripts/evaluate_nfhs6.py
