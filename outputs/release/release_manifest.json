@@ -1,19 +1,20 @@
 {
  "rounds": [
   4,
-  5
+  5,
+  6
  ],
- "includes_nfhs6": false,
- "n_units": 697,
+ "includes_nfhs6": true,
+ "n_units": 707,
  "n_indicators": 23,
- "n_panel_rows": 32062,
+ "n_panel_rows": 48484,
  "frozen_train_hash": "d3f06bee428deeef",
  "sha256": {
-  "harmonised_panel.csv": "e290423a61c579ddbe97954be50585a0ace9dac5786e4ab7cf6cd11a0f5d3300",
-  "units.csv": "058536dff19ba97f8a9901f6fb20144b25b1639f6f3fe72895b7c5ee9ee0e830",
+  "harmonised_panel.csv": "04a8ce35d130359a26ff1a018a344c5798f89675b79b76eca4555b03e00a6963",
+  "units.csv": "457cfade1c8f692c4a8fb0b1d0a9ec945eb85a602bb902c5c9e9b453a8aeaf34",
   "codebook.csv": "229a1fa08918bf38799f886baaa71f4c2f3818091f2c0c96ad01dec506afc182",
-  "crosswalk.csv": "287a2dcf269b8d9b19d85852c1ea63d28cd9db15d02bea51acdd09fa8f2efa32",
-  "DATA_DICTIONARY.md": "8ab7a8e47416e347f458e6292470b8313d760159eed9f2c56ae9521991dba997",
+  "crosswalk.csv": "c600956aaee5a55be605125be96aeda6006731ab99f57b5963498d37751bdc22",
+  "DATA_DICTIONARY.md": "0d04f433ab2180955b7a8dd2fd515383bd0685b331fe765278094be4822e3050",
   "SOURCES_AND_LICENCE.md": "b43d1b0349e6cb7f895948b494ae8c374af7afc4fbed9189a2fcb2a8c30c78c3"
  }
 }

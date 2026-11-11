@@ -1,0 +1,5 @@
+run_mode,comparison,indicators,better_raw,significantly_better,significantly_worse,overall_diff_mse,overall_diff_lo,overall_diff_hi,overall_p
+NFHS6,elastic_net vs rtm,23,5,0,10,13.3556,7.22223,19.4517,0
+NFHS6,elastic_net__nostate vs rtm,23,12,3,4,2.72464,-1.9946,7.61449,0.322
+NFHS6,lightgbm vs rtm,23,7,2,4,4.41747,1.07752,7.64592,0.008
+NFHS6,lightgbm__nostate vs rtm,23,7,2,3,5.01154,1.13343,9.11946,0.008

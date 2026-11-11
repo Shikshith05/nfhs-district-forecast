@@ -1,6 +1,6 @@
 # Data dictionary: harmonised NFHS district panel
 
-Rounds 4 and 5 only. NFHS-6 values are added after the one-shot evaluation (Gate B), so that no NFHS-6 outcome is used or distributed before the test.
+Rounds 4, 5 and 6 (NFHS-6 added after the one-shot evaluation).
 
 All standard errors are **model assumptions**, not published figures (DECISIONS D16, D29).
 Percentages are 0-100. Missing values are empty cells.

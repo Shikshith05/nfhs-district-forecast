@@ -18,7 +18,7 @@ andhra pradesh|y s r,Andhra Pradesh,identity,True,True,True,andhra pradesh|y s r
 arunachal pradesh|anjaw,Arunachal Pradesh,identity,True,True,True,arunachal pradesh|anjaw,arunachal pradesh|anjaw,arunachal pradesh|anjaw,high,pass,False,260
 arunachal pradesh|changlang,Arunachal Pradesh,identity,True,True,True,arunachal pradesh|changlang,arunachal pradesh|changlang,arunachal pradesh|changlang,high,pass,False,253
 arunachal pradesh|dibang valley,Arunachal Pradesh,identity,True,True,True,arunachal pradesh|dibang valley,arunachal pradesh|dibang valley,arunachal pradesh|dibang valley,high,pass,False,257
-arunachal pradesh|east kameng,Arunachal Pradesh,inherited_remnant,True,True,False,arunachal pradesh|east kameng,arunachal pradesh|east kameng,arunachal pradesh|east kameng,medium,unaudited,False,247
+arunachal pradesh|east kameng,Arunachal Pradesh,inherited_remnant,True,True,False,arunachal pradesh|east kameng,arunachal pradesh|east kameng,arunachal pradesh|east kameng; arunachal pradesh|pakke kessang,high,unaudited,False,247
 arunachal pradesh|east siang,Arunachal Pradesh,inherited_remnant,False,True,False,arunachal pradesh|east siang,arunachal pradesh|east siang,arunachal pradesh|east siang,medium,unaudited,False,251
 arunachal pradesh|kra daadi,Arunachal Pradesh,identity,False,True,False,arunachal pradesh|kra daadi,arunachal pradesh|kra daadi,arunachal pradesh|kra daadi,high,pass,False,
 arunachal pradesh|kurung kumey,Arunachal Pradesh,identity,False,True,False,arunachal pradesh|kurung kumey,arunachal pradesh|kurung kumey,arunachal pradesh|kurung kumey,high,pass,False,256
@@ -27,14 +27,16 @@ arunachal pradesh|longding,Arunachal Pradesh,identity,False,True,False,arunachal
 arunachal pradesh|lower dibang valley,Arunachal Pradesh,identity,True,True,True,arunachal pradesh|lower dibang valley,arunachal pradesh|lower dibang valley,arunachal pradesh|lower dibang valley,high,pass,False,258
 arunachal pradesh|lower subansiri,Arunachal Pradesh,inherited_remnant,True,True,False,arunachal pradesh|lower subansiri,arunachal pradesh|lower subansiri,arunachal pradesh|lower subansiri,medium,unaudited,False,255
 arunachal pradesh|namsai,Arunachal Pradesh,identity,False,True,False,arunachal pradesh|namsai,arunachal pradesh|namsai,arunachal pradesh|namsai,high,pass,False,
+arunachal pradesh|pakke kessang,Arunachal Pradesh,inherited_child,False,True,False,arunachal pradesh|east kameng,arunachal pradesh|east kameng,arunachal pradesh|east kameng; arunachal pradesh|pakke kessang,high,unaudited,False,247
 arunachal pradesh|papum pare,Arunachal Pradesh,identity,True,True,True,arunachal pradesh|papum pare,arunachal pradesh|papum pare,arunachal pradesh|papum pare,high,pass,False,248
+arunachal pradesh|shi yomi,Arunachal Pradesh,inherited_child,False,True,False,arunachal pradesh|west siang,arunachal pradesh|west siang,arunachal pradesh|shi yomi; arunachal pradesh|west siang,high,unaudited,False,250
 arunachal pradesh|siang,Arunachal Pradesh,identity,False,True,False,arunachal pradesh|siang,arunachal pradesh|siang,arunachal pradesh|siang,high,pass,False,
 arunachal pradesh|tawang,Arunachal Pradesh,identity,True,True,True,arunachal pradesh|tawang,arunachal pradesh|tawang,arunachal pradesh|tawang,high,pass,False,245
 arunachal pradesh|tirap,Arunachal Pradesh,identity,False,True,False,arunachal pradesh|tirap,arunachal pradesh|tirap,arunachal pradesh|tirap,high,pass,False,254
 arunachal pradesh|upper siang,Arunachal Pradesh,identity,True,True,True,arunachal pradesh|upper siang,arunachal pradesh|upper siang,arunachal pradesh|upper siang,high,pass,False,252
 arunachal pradesh|upper subansiri,Arunachal Pradesh,inherited_remnant,True,True,False,arunachal pradesh|upper subansiri,arunachal pradesh|upper subansiri,arunachal pradesh|upper subansiri,medium,unaudited,False,249
 arunachal pradesh|west kameng,Arunachal Pradesh,identity,True,True,True,arunachal pradesh|west kameng,arunachal pradesh|west kameng,arunachal pradesh|west kameng,high,pass,False,246
-arunachal pradesh|west siang,Arunachal Pradesh,inherited_remnant,False,True,False,arunachal pradesh|west siang,arunachal pradesh|west siang,arunachal pradesh|west siang,medium,unaudited,False,250
+arunachal pradesh|west siang,Arunachal Pradesh,inherited_remnant,False,True,False,arunachal pradesh|west siang,arunachal pradesh|west siang,arunachal pradesh|shi yomi; arunachal pradesh|west siang,high,unaudited,False,250
 assam|baksa,Assam,identity,True,True,True,assam|baksa,assam|baksa,assam|baksa,high,pass,False,324
 assam|barpeta,Assam,identity,True,True,True,assam|barpeta,assam|barpeta,assam|barpeta,high,pass,False,303
 assam|biswanath,Assam,identity,False,True,False,assam|biswanath,assam|biswanath,assam|biswanath,high,pass,False,
@@ -112,11 +114,11 @@ chhattisgarh|balrampur,Chhattisgarh,identity,False,True,False,chhattisgarh|balra
 chhattisgarh|bastar,Chhattisgarh,identity,False,True,False,chhattisgarh|bastar,chhattisgarh|bastar,chhattisgarh|bastar,high,pass,False,414
 chhattisgarh|bemetara,Chhattisgarh,identity,False,True,False,chhattisgarh|bemetara,chhattisgarh|bemetara,chhattisgarh|bemetara,high,pass,False,
 chhattisgarh|bijapur,Chhattisgarh,identity,True,True,True,chhattisgarh|bijapur,chhattisgarh|bijapur,chhattisgarh|bijapur,high,pass,False,417
-chhattisgarh|bilaspur,Chhattisgarh,inherited_remnant,False,True,False,chhattisgarh|bilaspur,chhattisgarh|bilaspur,chhattisgarh|bilaspur,medium,unaudited,False,406
 chhattisgarh|dantewada,Chhattisgarh,identity,False,True,False,chhattisgarh|dantewada,chhattisgarh|dantewada,chhattisgarh|dantewada,high,pass,False,416
 chhattisgarh|dhamtari,Chhattisgarh,identity,True,True,True,chhattisgarh|dhamtari,chhattisgarh|dhamtari,chhattisgarh|dhamtari,high,pass,False,412
 chhattisgarh|durg,Chhattisgarh,identity,False,True,False,chhattisgarh|durg,chhattisgarh|durg,chhattisgarh|durg,high,pass,False,409
 chhattisgarh|gariyaband,Chhattisgarh,identity,False,True,False,chhattisgarh|gariyaband,chhattisgarh|gariyaband,chhattisgarh|gariyaband,high,pass,False,
+chhattisgarh|h:bilaspur,Chhattisgarh,aggregated,False,True,False,chhattisgarh|h:bilaspur,chhattisgarh|bilaspur,chhattisgarh|bilaspur; chhattisgarh|gaurela pendra marwahi,high,,False,406
 chhattisgarh|janjgir champa,Chhattisgarh,identity,True,True,True,chhattisgarh|janjgir champa,chhattisgarh|janjgir champa,chhattisgarh|janjgir champa,high,pass,False,405
 chhattisgarh|jashpur,Chhattisgarh,identity,True,True,True,chhattisgarh|jashpur,chhattisgarh|jashpur,chhattisgarh|jashpur,high,pass,False,402
 chhattisgarh|kabeerdham,Chhattisgarh,identity,True,True,True,chhattisgarh|kabeerdham,chhattisgarh|kabeerdham,chhattisgarh|kabeerdham,high,pass,False,407
@@ -526,12 +528,17 @@ tamil nadu|cuddalore,Tamil Nadu,identity,True,True,True,tamil nadu|cuddalore,tam
 tamil nadu|dharmapuri,Tamil Nadu,identity,True,True,True,tamil nadu|dharmapuri,tamil nadu|dharmapuri,tamil nadu|dharmapuri,high,pass,False,630
 tamil nadu|dindigul,Tamil Nadu,identity,True,True,True,tamil nadu|dindigul,tamil nadu|dindigul,tamil nadu|dindigul,high,pass,False,612
 tamil nadu|erode,Tamil Nadu,identity,True,True,True,tamil nadu|erode,tamil nadu|erode,tamil nadu|erode,high,pass,False,610
-tamil nadu|kanchipuram,Tamil Nadu,inherited_remnant,True,True,False,tamil nadu|kanchipuram,tamil nadu|kanchipuram,tamil nadu|kanchipuram,medium,unaudited,False,604
+tamil nadu|h:kanchipuram,Tamil Nadu,aggregated,False,True,False,tamil nadu|h:kanchipuram,tamil nadu|kanchipuram,tamil nadu|chengalpattu; tamil nadu|kanchipuram,high,,False,604
+tamil nadu|h:nagapattinam,Tamil Nadu,aggregated,False,True,False,tamil nadu|h:nagapattinam,tamil nadu|nagapattinam,tamil nadu|mayiladuthurai; tamil nadu|nagapattinam,high,,False,618
+tamil nadu|h:tirunelveli,Tamil Nadu,aggregated,False,True,False,tamil nadu|h:tirunelveli,tamil nadu|tirunelveli,tamil nadu|tenkasi; tamil nadu|tirunelveli,high,,False,628
+tamil nadu|h:vellore,Tamil Nadu,aggregated,False,True,False,tamil nadu|h:vellore,tamil nadu|vellore,tamil nadu|ranipet; tamil nadu|tirupathur; tamil nadu|vellore,high,,False,605
+tamil nadu|h:villupuram,Tamil Nadu,aggregated,False,True,False,tamil nadu|h:villupuram,tamil nadu|villupuram,tamil nadu|kallakurichi; tamil nadu|villupuram,high,,False,607
+tamil nadu|kanchipuram,Tamil Nadu,identity_train_only,True,False,False,tamil nadu|kanchipuram,tamil nadu|kanchipuram,,high,unaudited,False,604
 tamil nadu|kanniyakumari,Tamil Nadu,identity,True,True,True,tamil nadu|kanniyakumari,tamil nadu|kanniyakumari,tamil nadu|kanniyakumari,high,pass,False,629
 tamil nadu|karur,Tamil Nadu,identity,True,True,True,tamil nadu|karur,tamil nadu|karur,tamil nadu|karur,high,pass,False,613
 tamil nadu|krishnagiri,Tamil Nadu,identity,True,True,True,tamil nadu|krishnagiri,tamil nadu|krishnagiri,tamil nadu|krishnagiri,high,pass,False,631
 tamil nadu|madurai,Tamil Nadu,identity,True,True,True,tamil nadu|madurai,tamil nadu|madurai,tamil nadu|madurai,high,pass,False,623
-tamil nadu|nagapattinam,Tamil Nadu,inherited_remnant,True,True,False,tamil nadu|nagapattinam,tamil nadu|nagapattinam,tamil nadu|nagapattinam,medium,unaudited,False,618
+tamil nadu|nagapattinam,Tamil Nadu,identity_train_only,True,False,False,tamil nadu|nagapattinam,tamil nadu|nagapattinam,,high,unaudited,False,618
 tamil nadu|namakkal,Tamil Nadu,identity,True,True,True,tamil nadu|namakkal,tamil nadu|namakkal,tamil nadu|namakkal,high,pass,False,609
 tamil nadu|perambalur,Tamil Nadu,identity,True,True,True,tamil nadu|perambalur,tamil nadu|perambalur,tamil nadu|perambalur,high,pass,False,615
 tamil nadu|pudukkottai,Tamil Nadu,identity,True,True,True,tamil nadu|pudukkottai,tamil nadu|pudukkottai,tamil nadu|pudukkottai,high,pass,False,621
@@ -545,26 +552,26 @@ tamil nadu|thiruvallur,Tamil Nadu,identity,True,True,True,tamil nadu|thiruvallur
 tamil nadu|thiruvarur,Tamil Nadu,identity,True,True,True,tamil nadu|thiruvarur,tamil nadu|thiruvarur,tamil nadu|thiruvarur,high,pass,False,619
 tamil nadu|thoothukkudi,Tamil Nadu,identity,True,True,True,tamil nadu|thoothukkudi,tamil nadu|thoothukkudi,tamil nadu|thoothukkudi,high,pass,False,627
 tamil nadu|tiruchirappalli,Tamil Nadu,identity,True,True,True,tamil nadu|tiruchirappalli,tamil nadu|tiruchirappalli,tamil nadu|tiruchirappalli,high,pass,False,614
-tamil nadu|tirunelveli,Tamil Nadu,inherited_remnant,True,True,False,tamil nadu|tirunelveli,tamil nadu|tirunelveli,tamil nadu|tirunelveli,medium,unaudited,False,628
+tamil nadu|tirunelveli,Tamil Nadu,identity_train_only,True,False,False,tamil nadu|tirunelveli,tamil nadu|tirunelveli,,high,unaudited,False,628
 tamil nadu|tiruppur,Tamil Nadu,identity,True,True,True,tamil nadu|tiruppur,tamil nadu|tiruppur,tamil nadu|tiruppur,high,pass,False,633
 tamil nadu|tiruvannamalai,Tamil Nadu,identity,True,True,True,tamil nadu|tiruvannamalai,tamil nadu|tiruvannamalai,tamil nadu|tiruvannamalai,high,pass,False,606
-tamil nadu|vellore,Tamil Nadu,inherited_remnant,True,True,False,tamil nadu|vellore,tamil nadu|vellore,tamil nadu|vellore,medium,unaudited,False,605
-tamil nadu|villupuram,Tamil Nadu,inherited_remnant,True,True,False,tamil nadu|villupuram,tamil nadu|villupuram,tamil nadu|villupuram,medium,unaudited,False,607
+tamil nadu|vellore,Tamil Nadu,identity_train_only,True,False,False,tamil nadu|vellore,tamil nadu|vellore,,high,unaudited,False,605
+tamil nadu|villupuram,Tamil Nadu,identity_train_only,True,False,False,tamil nadu|villupuram,tamil nadu|villupuram,,high,unaudited,False,607
 tamil nadu|virudhunagar,Tamil Nadu,identity,True,True,True,tamil nadu|virudhunagar,tamil nadu|virudhunagar,tamil nadu|virudhunagar,high,pass,False,625
 telangana|adilabad,Telangana,identity,False,True,False,telangana|adilabad,telangana|adilabad,telangana|adilabad,high,pass,False,532
 telangana|bhadradri kothagudem,Telangana,identity,False,True,False,telangana|bhadradri kothagudem,telangana|bhadradri kothagudem,telangana|bhadradri kothagudem,high,pass,False,
+telangana|h:jayashankar bhupalapally,Telangana,aggregated,False,True,False,telangana|h:jayashankar bhupalapally,telangana|jayashankar bhupalapally,telangana|jayashankar bhupalapally; telangana|mulugu,high,,False,
+telangana|h:mahabubnagar,Telangana,aggregated,False,True,False,telangana|h:mahabubnagar,telangana|mahabubnagar,telangana|mahabubnagar; telangana|narayanpet,high,,False,538
 telangana|hanumakonda,Telangana,identity,False,True,False,telangana|hanumakonda,telangana|hanumakonda,telangana|hanumakonda,high,pass,False,540
 telangana|hyderabad,Telangana,identity,False,True,False,telangana|hyderabad,telangana|hyderabad,telangana|hyderabad,high,pass,False,536
 telangana|jagitial,Telangana,identity,False,True,False,telangana|jagitial,telangana|jagitial,telangana|jagitial,high,pass,False,
 telangana|jangoan,Telangana,identity,False,True,False,telangana|jangoan,telangana|jangoan,telangana|jangoan,high,pass,False,
-telangana|jayashankar bhupalapally,Telangana,inherited_remnant,False,True,False,telangana|jayashankar bhupalapally,telangana|jayashankar bhupalapally,telangana|jayashankar bhupalapally,medium,unaudited,False,
 telangana|jogulamba gadwal,Telangana,identity,False,True,False,telangana|jogulamba gadwal,telangana|jogulamba gadwal,telangana|jogulamba gadwal,high,pass,False,
 telangana|kamareddy,Telangana,identity,False,True,False,telangana|kamareddy,telangana|kamareddy,telangana|kamareddy,high,pass,False,
 telangana|karimnagar,Telangana,identity,False,True,False,telangana|karimnagar,telangana|karimnagar,telangana|karimnagar,high,pass,False,534
 telangana|khammam,Telangana,identity,False,True,False,telangana|khammam,telangana|khammam,telangana|khammam,high,pass,False,541
 telangana|kumuram bheem asifabad,Telangana,identity,False,True,False,telangana|kumuram bheem asifabad,telangana|kumuram bheem asifabad,telangana|kumuram bheem asifabad,high,pass,False,
 telangana|mahabubabad,Telangana,identity,False,True,False,telangana|mahabubabad,telangana|mahabubabad,telangana|mahabubabad,high,pass,False,
-telangana|mahabubnagar,Telangana,inherited_remnant,False,True,False,telangana|mahabubnagar,telangana|mahabubnagar,telangana|mahabubnagar,medium,unaudited,False,538
 telangana|mancherial,Telangana,identity,False,True,False,telangana|mancherial,telangana|mancherial,telangana|mancherial,high,pass,False,
 telangana|medak,Telangana,identity,False,True,False,telangana|medak,telangana|medak,telangana|medak,high,pass,False,535
 telangana|medchal malkajgiri,Telangana,identity,False,True,False,telangana|medchal malkajgiri,telangana|medchal malkajgiri,telangana|medchal malkajgiri,high,pass,False,
@@ -680,17 +687,20 @@ west bengal|bankura,West Bengal,identity,True,True,True,west bengal|bankura,west
 west bengal|birbhum,West Bengal,identity,True,True,True,west bengal|birbhum,west bengal|birbhum,west bengal|birbhum,high,pass,False,334
 west bengal|cooch behar,West Bengal,identity,True,True,True,west bengal|cooch behar,west bengal|cooch behar,west bengal|cooch behar,high,pass,False,329
 west bengal|dakshin dinajpur,West Bengal,identity,True,True,True,west bengal|dakshin dinajpur,west bengal|dakshin dinajpur,west bengal|dakshin dinajpur,high,pass,False,331
-west bengal|darjeeling,West Bengal,inherited_remnant,True,True,False,west bengal|darjeeling,west bengal|darjeeling,west bengal|darjeeling,medium,unaudited,False,327
+west bengal|darjeeling,West Bengal,identity_train_only,True,False,False,west bengal|darjeeling,west bengal|darjeeling,,high,unaudited,False,327
+west bengal|h:darjeeling,West Bengal,aggregated,False,True,False,west bengal|h:darjeeling,west bengal|darjeeling,west bengal|darjeeling; west bengal|kalimpong,medium,,False,327
+west bengal|h:jalpaiguri,West Bengal,aggregated,False,True,False,west bengal|h:jalpaiguri,west bengal|jalpaiguri,west bengal|alipurduar; west bengal|jalpaiguri,medium,,False,328
+west bengal|h:paschim medinipur,West Bengal,aggregated,False,True,False,west bengal|h:paschim medinipur,west bengal|paschim medinipur,west bengal|jhargram; west bengal|paschim medinipur,medium,,False,344
 west bengal|hooghly,West Bengal,identity,True,True,True,west bengal|hooghly,west bengal|hooghly,west bengal|hooghly,high,pass,False,338
 west bengal|howrah,West Bengal,identity,True,True,True,west bengal|howrah,west bengal|howrah,west bengal|howrah,high,pass,False,341
-west bengal|jalpaiguri,West Bengal,inherited_remnant,True,True,False,west bengal|jalpaiguri,west bengal|jalpaiguri,west bengal|jalpaiguri,medium,unaudited,False,328
+west bengal|jalpaiguri,West Bengal,identity_train_only,True,False,False,west bengal|jalpaiguri,west bengal|jalpaiguri,,high,unaudited,False,328
 west bengal|kolkata,West Bengal,identity,True,True,True,west bengal|kolkata,west bengal|kolkata,west bengal|kolkata,high,pass,False,342
 west bengal|maldah,West Bengal,identity,True,True,True,west bengal|maldah,west bengal|maldah,west bengal|maldah,high,pass,False,332
 west bengal|murshidabad,West Bengal,identity,True,True,True,west bengal|murshidabad,west bengal|murshidabad,west bengal|murshidabad,high,pass,False,333
 west bengal|nadia,West Bengal,identity,True,True,True,west bengal|nadia,west bengal|nadia,west bengal|nadia,high,pass,False,336
 west bengal|north twenty four parganas,West Bengal,identity,True,True,True,west bengal|north twenty four parganas,west bengal|north twenty four parganas,west bengal|north twenty four parganas,high,pass,False,337
 west bengal|paschim bardhaman,West Bengal,identity,False,True,False,west bengal|paschim bardhaman,west bengal|paschim bardhaman,west bengal|paschim bardhaman,high,pass,False,335
-west bengal|paschim medinipur,West Bengal,inherited_remnant,True,True,False,west bengal|paschim medinipur,west bengal|paschim medinipur,west bengal|paschim medinipur,medium,unaudited,False,344
+west bengal|paschim medinipur,West Bengal,identity_train_only,True,False,False,west bengal|paschim medinipur,west bengal|paschim medinipur,,high,unaudited,False,344
 west bengal|purba bardhaman,West Bengal,identity,False,True,False,west bengal|purba bardhaman,west bengal|purba bardhaman,west bengal|purba bardhaman,high,pass,False,344
 west bengal|purba medinipur,West Bengal,identity,True,True,True,west bengal|purba medinipur,west bengal|purba medinipur,west bengal|purba medinipur,high,pass,False,345
 west bengal|purulia,West Bengal,identity,True,True,True,west bengal|purulia,west bengal|purulia,west bengal|purulia,high,pass,False,340

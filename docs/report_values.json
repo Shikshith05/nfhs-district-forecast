@@ -1,9 +1,9 @@
 {
- "mode": "prerun",
+ "mode": "final",
  "primary_method": "elastic_net",
  "slots": {
   "run_status": {
-   "text": "**Status: before Gate B.** NFHS-4 → NFHS-5 results are final. Every NFHS-6 number is marked `[[NFHS-6 PENDING]]` and is filled in automatically by `scripts/post_run.py` after the one-shot evaluation.",
+   "text": "**Status: final.** All NFHS-6 numbers below were filled in automatically by `scripts/post_run.py` from `outputs/post_run/` after the one-shot evaluation, and checked by `scripts/check_report_numbers.py`.",
    "source": null
   },
   "train_hash": {
@@ -43,28 +43,28 @@
    "source": null
   },
   "s56_primary": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "0.169",
+   "source": "../outputs/post_run/results_all.csv"
   },
   "s56_rtm": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "0.293",
+   "source": "../outputs/post_run/results_all.csv"
   },
   "v56_en_rtm": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "significantly higher MSE than",
+   "source": "../outputs/post_run/paired_tests_all.csv"
   },
   "cov_split": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "0.850",
+   "source": "../outputs/post_run/key_numbers.csv"
   },
   "cov_weighted": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "0.841",
+   "source": "../outputs/post_run/key_numbers.csv"
   },
   "n_surprises": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "138",
+   "source": "../outputs/post_run/key_numbers.csv"
   },
   "n_train_added": {
    "text": "24",
@@ -231,192 +231,192 @@
    "source": "../outputs/gate_c_dev/coverage.csv"
   },
   "n56": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "686",
+   "source": "../outputs/post_run/key_numbers.csv"
   },
   "n56_stable": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "547",
+   "source": "../outputs/post_run/key_numbers.csv"
   },
   "n56_changed": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "121",
+   "source": "../outputs/post_run/key_numbers.csv"
   },
   "n56_flagged": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "18",
+   "source": "../outputs/post_run/key_numbers.csv"
   },
   "t56_main": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "| Method | Pooled skill | 95% CI | Mean skill over indicators | Pooled skill, stable subset |\n|---|---|---|---|---|\n| Persistence | 0.000 | [0.000, 0.000] | 0.000 | 0.000 |\n| National trend | -0.041 | [-0.174, 0.095] | -0.160 | -0.065 |\n| State trend | -0.495 | [-0.717, -0.264] | -0.582 | -0.547 |\n| Regression to the mean (RTM) | 0.293 | [0.228, 0.361] | 0.195 | 0.292 |\n| Fay-Herriot | 0.119 | [0.104, 0.132] | 0.127 | 0.122 |\n| FH + RTM | 0.296 | [0.223, 0.372] | 0.178 | 0.296 |\n| Elastic net | 0.169 | [0.068, 0.275] | 0.092 | 0.159 |\n| LightGBM | 0.252 | [0.172, 0.332] | 0.165 | 0.257 |\n| Elastic net, no state dummies | 0.268 | [0.167, 0.366] | 0.168 | 0.262 |\n| LightGBM, no state dummies | 0.246 | [0.156, 0.332] | 0.158 | 0.251 |",
+   "source": "../outputs/post_run/results_all.csv"
   },
   "s56_primary_lo": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "0.068",
+   "source": "../outputs/post_run/results_all.csv"
   },
   "s56_primary_hi": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "0.275",
+   "source": "../outputs/post_run/results_all.csv"
   },
   "s56_primary_stable": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "0.159",
+   "source": "../outputs/post_run/results_stable.csv"
   },
   "s56_nat": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "-0.041",
+   "source": "../outputs/post_run/results_all.csv"
   },
   "s56_st": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "-0.495",
+   "source": "../outputs/post_run/results_all.csv"
   },
   "fig56_skill": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "![Skill vs persistence by indicator, NFHS-5 → NFHS-6 (frozen models)](../outputs/post_run/skill_by_indicator_all.png)",
+   "source": "../outputs/post_run/skill_by_indicator_all.png"
   },
   "fig56_skill_stable": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "![The same on the stable-boundary subset](../outputs/post_run/skill_by_indicator_stable.png)",
+   "source": "../outputs/post_run/skill_by_indicator_stable.png"
   },
   "t56_groups": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "| Subset | Districts | RTM skill | Primary-method skill | Mean skill, primary |\n|---|---|---|---|---|\n| harmonised set (all) | 686 | 0.293 | 0.169 | 0.092 |\n| stable-boundary subset | 547 | 0.292 | 0.159 | 0.085 |\n| identity, boundary changed NFHS-4→5 | 121 | 0.286 | 0.195 | 0.106 |\n| flagged (inherited / aggregated) | 18 | 0.370 | 0.287 | -0.107 |",
+   "source": "../outputs/post_run/results_subsets.csv"
   },
   "t56_paired": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "| Comparison | Significantly better (BH) | Significantly worse (BH) | Pooled ΔMSE | 95% CI | p |\n|---|---|---|---|---|---|\n| Elastic net vs RTM | 0 | 10 | 13.36 | [7.22, 19.45] | 0.000 |\n| LightGBM vs RTM | 2 | 4 | 4.42 | [1.08, 7.65] | 0.008 |\n| Elastic net (no state dummies) vs RTM | 3 | 4 | 2.72 | [-1.99, 7.61] | 0.322 |\n| LightGBM (no state dummies) vs RTM | 2 | 3 | 5.01 | [1.13, 9.12] | 0.008 |",
+   "source": "../outputs/post_run/paired_summary_all.csv"
   },
   "v56_en_rtm_stable": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "significantly higher MSE than",
+   "source": "../outputs/post_run/paired_tests_stable.csv"
   },
   "v56_lgbm_rtm": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "significantly higher MSE than",
+   "source": "../outputs/post_run/paired_tests_all.csv"
   },
   "t56_secondary": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "| Method | Skill net of national shift | 95% CI | Skill vs RTM |\n|---|---|---|---|\n| National trend | 0.000 | [0.000, 0.000] | -0.472 |\n| State trend | -0.436 | [-0.518, -0.345] | -1.114 |\n| Regression to the mean (RTM) | 0.321 | [0.281, 0.352] | 0.000 |\n| FH + RTM | 0.323 | [0.292, 0.349] | 0.004 |\n| Elastic net | 0.202 | [0.164, 0.235] | -0.175 |\n| LightGBM | 0.281 | [0.242, 0.313] | -0.058 |",
+   "source": "../outputs/post_run/secondary_all.csv"
   },
   "noise_share_56": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "31.4%",
+   "source": "../outputs/post_run/secondary_all.csv"
   },
   "ceil_rtm_56": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "0.826",
+   "source": "../outputs/post_run/secondary_all.csv"
   },
   "t56_compare": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "| Method | Skill 4→5 (CV) | Skill 5→6 (test) | Change |\n|---|---|---|---|\n| Persistence | 0.000 | 0.000 | 0.000 |\n| National trend | 0.422 | -0.041 | -0.463 |\n| State trend | 0.422 | -0.495 | -0.916 |\n| Regression to the mean (RTM) | 0.613 | 0.293 | -0.320 |\n| Fay-Herriot | 0.083 | 0.119 | 0.036 |\n| FH + RTM | 0.624 | 0.296 | -0.328 |\n| Elastic net | 0.637 | 0.169 | -0.469 |\n| LightGBM | 0.630 | 0.252 | -0.378 |\n| Elastic net, no state dummies | 0.625 | 0.268 | -0.357 |\n| LightGBM, no state dummies | 0.627 | 0.246 | -0.381 |",
+   "source": "../outputs/post_run/comparison_45_vs_56.csv"
   },
   "cmp_spearman_methods": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "0.44",
+   "source": "../outputs/post_run/key_numbers.csv"
   },
   "cmp_best45": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "Elastic net",
+   "source": "../outputs/post_run/key_numbers.csv"
   },
   "cmp_best56": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "Elastic net, + spatial",
+   "source": "../outputs/post_run/key_numbers.csv"
   },
   "cmp_spearman_ind": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "-0.22",
+   "source": "../outputs/post_run/key_numbers.csv"
   },
   "fig56_compare": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "![Per-indicator skill in NFHS-4 → 5 CV vs NFHS-5 → 6](../outputs/post_run/comparison_45_vs_56.png)",
+   "source": "../outputs/post_run/comparison_45_vs_56.png"
   },
   "breaks_any": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "13",
+   "source": "../outputs/post_run/key_numbers.csv"
   },
   "breaks_shift": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "12",
+   "source": "../outputs/post_run/key_numbers.csv"
   },
   "breaks_slope": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "2",
+   "source": "../outputs/post_run/key_numbers.csv"
   },
   "breaks_scale": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "2",
+   "source": "../outputs/post_run/key_numbers.csv"
   },
   "t56_breaks": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "| Indicator | Δ mean change (pp) | Δ RTM slope | Δ RMS error (pp) |\n|---|---|---|---|\n| anc_first_trimester | -7.0 | 0.06 | -0.3 |\n| fp_modern | -13.2 | 0.19 | 1.2 |\n| full_vacc | -11.0 | 0.03 | -1.1 |\n| inst_births | -7.6 | 0.12 | 0.1 |\n| mcv1 | -5.1 | 0.08 | -0.3 |\n| menstrual_hygiene | -16.3 | 0.31 | 3.4 |\n| pnc_mother | -13.3 | 0.11 | -0.2 |\n| stunting | -2.8 | 0.02 | 0.8 |\n| teen_pregnancy | 1.1 | 0.02 | 0.3 |\n| underweight | 3.0 | 0.11 | 3.0 |\n| unmet_need | 3.5 | -0.01 | -0.3 |\n| water_improved | -1.9 | 0.04 | 0.8 |\n| women_thin | 5.6 | 0.23 | 2.9 |",
+   "source": "../outputs/post_run/structural_break.csv"
   },
   "fig56_break": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "![Structural-break check (exploratory)](../outputs/post_run/structural_break.png)",
+   "source": "../outputs/post_run/structural_break.png"
   },
   "t56_coverage": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "| Variant · method | n | Coverage | Mean width (pp) |\n|---|---|---|---|\n| normalised · Elastic net | 15732 | 0.844 | 24.2 |\n| normalised · FH + RTM | 15732 | 0.873 | 24.7 |\n| normalised · LightGBM | 15732 | 0.866 | 24.5 |\n| normalised · Regression to the mean (RTM) | 15732 | 0.877 | 24.9 |\n| split · Elastic net | 15732 | 0.850 | 25.0 |\n| split · FH + RTM | 15732 | 0.879 | 25.5 |\n| split · LightGBM | 15732 | 0.871 | 25.4 |\n| split · Regression to the mean (RTM) | 15732 | 0.882 | 25.9 |\n| shift-weighted · Elastic net | 15732 | 0.841 | 24.3 |\n| shift-weighted · FH + RTM | 15732 | 0.866 | 24.8 |\n| shift-weighted · LightGBM | 15732 | 0.860 | 24.8 |\n| shift-weighted · Regression to the mean (RTM) | 15732 | 0.870 | 25.0 |",
+   "source": "../outputs/post_run/coverage.csv"
   },
   "cov_normalised": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "0.844",
+   "source": "../outputs/post_run/key_numbers.csv"
   },
   "fig56_coverage": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "![Conformal coverage on NFHS-6](../outputs/post_run/coverage.png)",
+   "source": "../outputs/post_run/coverage.png"
   },
   "n_surprise_tests": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "15712",
+   "source": "../outputs/post_run/key_numbers.csv"
   },
   "naive_k": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "138",
+   "source": "../outputs/post_run/key_numbers.csv"
   },
   "surprise_overlap": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "25",
+   "source": "../outputs/post_run/key_numbers.csv"
   },
   "naive_se": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "4.36",
+   "source": "../outputs/post_run/key_numbers.csv"
   },
   "bh_se": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "2.95",
+   "source": "../outputs/post_run/key_numbers.csv"
   },
   "t56_surprises": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "| District · indicator | Forecast | Observed | z | BH q | Unit type |\n|---|---|---|---|---|---|\n| rajasthan|banswara · women_thin | 18.3 | 48.2 | 7.26 | 0.000 | identity |\n| nagaland|longleng · water_improved | 86.2 | 52.7 | -7.13 | 0.000 | identity |\n| nagaland|phek · water_improved | 100.0 | 71.3 | -6.24 | 0.000 | identity |\n| arunachal pradesh|longding · water_improved | 71.8 | 97.5 | 6.20 | 0.000 | identity |\n| rajasthan|pratapgarh · women_thin | 18.1 | 42.4 | 5.93 | 0.000 | identity |\n| madhya pradesh|alirajpur · women_thin | 18.7 | 43.0 | 5.92 | 0.000 | identity |\n| nagaland|mokokchung · water_improved | 99.2 | 72.7 | -5.79 | 0.000 | identity |\n| jharkhand|gumla · water_improved | 82.1 | 55.6 | -5.63 | 0.000 | identity |\n| rajasthan|dungarpur · women_thin | 19.1 | 42.0 | 5.57 | 0.000 | identity |\n| tripura|khowai · stunting | 48.3 | 18.8 | -5.41 | 0.000 | identity |\n| jammu and kashmir|shopian · csection | 43.8 | 74.9 | 5.35 | 0.000 | identity |\n| assam|cachar · water_improved | 59.7 | 83.1 | 5.27 | 0.000 | identity |\n| nagaland|zunheboto · underweight | 37.3 | 8.9 | -5.15 | 0.000 | identity |\n| nagaland|peren · water_improved | 95.5 | 72.2 | -5.07 | 0.000 | identity |\n| ladakh|kargil · csection | 51.3 | 23.0 | -4.93 | 0.001 | identity |",
+   "source": "../outputs/post_run/surprises_elastic_net.csv"
   },
   "fig56_surprises": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "![BH-FDR surprises vs naive top-k](../outputs/post_run/surprises.png)",
+   "source": "../outputs/post_run/surprises.png"
   },
   "r2_ind": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "0.061",
+   "source": "../outputs/post_run/key_numbers.csv"
   },
   "r2_dist": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "0.075",
+   "source": "../outputs/post_run/key_numbers.csv"
   },
   "r2_add": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "0.136",
+   "source": "../outputs/post_run/key_numbers.csv"
   },
   "t56_hard": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "| Indicator | Noise ceiling | Normalised skill |\n|---|---|---|\n| menstrual_hygiene | 0.819 | -1.155 |\n| women_thin | 0.868 | -0.980 |\n| underweight | 0.790 | -0.316 |\n| fp_modern | 0.960 | -0.196 |\n| vitamin_a | 0.750 | 0.012 |\n| inst_births | 0.844 | 0.040 |",
+   "source": "../outputs/post_run/forecastability_indicators.csv"
   },
   "fig56_map_skill": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "![Forecast skill by district](../outputs/post_run/map_skill.png)",
+   "source": "../outputs/post_run/map_skill.png"
   },
   "fig56_map_ceiling": {
-   "text": "[[NFHS-6 PENDING]]",
-   "source": null
+   "text": "![Noise ceiling by district](../outputs/post_run/map_ceiling.png)",
+   "source": "../outputs/post_run/map_ceiling.png"
   },
   "config_hash": {
    "text": "24e4b2befa146b0a",

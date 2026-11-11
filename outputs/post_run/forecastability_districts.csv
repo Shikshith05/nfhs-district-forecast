@@ -1,0 +1,687 @@
+run_mode,district_uid,state,n_indicators,mean_noise_share,mean_norm_sq_err,ceiling,skill,gap
+NFHS6,kerala|idukki,kerala,23,0.111388,0.149032,0.888612,0.850968,0.0376447
+NFHS6,kerala|pathanamthitta,kerala,20,0.0897936,0.154884,0.910206,0.845116,0.06509
+NFHS6,tamil nadu|h:nagapattinam,tamil nadu,23,0.0559773,0.187139,0.944023,0.812861,0.131162
+NFHS6,kerala|ernakulam,kerala,21,0.0728786,0.196278,0.927121,0.803722,0.1234
+NFHS6,maharashtra|nanded,maharashtra,23,0.180176,0.203691,0.819824,0.796309,0.0235147
+NFHS6,andhra pradesh|east godavari,andhra pradesh,23,0.166801,0.213149,0.833199,0.786851,0.0463482
+NFHS6,telangana|h:mahabubnagar,telangana,23,0.0850815,0.218067,0.914919,0.781933,0.132986
+NFHS6,madhya pradesh|sehore,madhya pradesh,23,0.124366,0.239508,0.875634,0.760492,0.115142
+NFHS6,punjab|rupnagar,punjab,23,0.108428,0.242075,0.891572,0.757925,0.133647
+NFHS6,haryana|rohtak,haryana,23,0.126073,0.258306,0.873927,0.741694,0.132233
+NFHS6,tamil nadu|krishnagiri,tamil nadu,23,0.138086,0.259717,0.861914,0.740283,0.121631
+NFHS6,kerala|kollam,kerala,23,0.103735,0.260834,0.896265,0.739166,0.157099
+NFHS6,maharashtra|dhule,maharashtra,23,0.197278,0.264353,0.802722,0.735647,0.0670749
+NFHS6,haryana|kaithal,haryana,23,0.10755,0.276318,0.89245,0.723682,0.168768
+NFHS6,kerala|thrissur,kerala,21,0.0819257,0.276495,0.918074,0.723505,0.194569
+NFHS6,telangana|siddipet,telangana,23,0.114029,0.276912,0.885971,0.723088,0.162883
+NFHS6,himachal pradesh|hamirpur,himachal pradesh,23,0.0973983,0.280989,0.902602,0.719011,0.183591
+NFHS6,tamil nadu|the nilgiris,tamil nadu,23,0.104086,0.288484,0.895914,0.711516,0.184398
+NFHS6,kerala|kottayam,kerala,21,0.0770658,0.298386,0.922934,0.701614,0.22132
+NFHS6,uttarakhand|nainital,uttarakhand,23,0.1418,0.29887,0.8582,0.70113,0.15707
+NFHS6,tamil nadu|ariyalur,tamil nadu,23,0.120242,0.302251,0.879758,0.697749,0.18201
+NFHS6,maharashtra|amravati,maharashtra,23,0.160488,0.304199,0.839512,0.695801,0.143711
+NFHS6,tamil nadu|virudhunagar,tamil nadu,23,0.138285,0.306997,0.861715,0.693003,0.168712
+NFHS6,maharashtra|akola,maharashtra,23,0.126245,0.308173,0.873755,0.691827,0.181927
+NFHS6,odisha|nayagarh,odisha,23,0.127536,0.309858,0.872464,0.690142,0.182321
+NFHS6,odisha|sambalpur,odisha,23,0.120703,0.315442,0.879297,0.684558,0.194739
+NFHS6,telangana|khammam,telangana,23,0.163029,0.319551,0.836971,0.680449,0.156521
+NFHS6,maharashtra|aurangabad,maharashtra,23,0.180351,0.323048,0.819649,0.676952,0.142698
+NFHS6,kerala|alappuzha,kerala,23,0.111403,0.330228,0.888597,0.669772,0.218825
+NFHS6,gujarat|jamnagar,gujarat,23,0.11462,0.332563,0.88538,0.667437,0.217944
+NFHS6,telangana|nalgonda,telangana,23,0.169644,0.333609,0.830356,0.666391,0.163965
+NFHS6,haryana|kurukshetra,haryana,23,0.089112,0.336504,0.910888,0.663496,0.247392
+NFHS6,tamil nadu|cuddalore,tamil nadu,23,0.133715,0.340013,0.866285,0.659987,0.206298
+NFHS6,nct of delhi|new delhi,nct of delhi,23,0.138339,0.340582,0.861661,0.659418,0.202243
+NFHS6,gujarat|morbi,gujarat,23,0.13721,0.341827,0.86279,0.658173,0.204618
+NFHS6,odisha|bargarh,odisha,23,0.116107,0.342284,0.883893,0.657716,0.226177
+NFHS6,tamil nadu|chennai,tamil nadu,23,0.0854022,0.343248,0.914598,0.656752,0.257846
+NFHS6,telangana|mancherial,telangana,23,0.130924,0.344236,0.869076,0.655764,0.213312
+NFHS6,telangana|rajanna sircilla,telangana,23,0.115083,0.346664,0.884917,0.653336,0.231581
+NFHS6,odisha|sonepur,odisha,23,0.111364,0.34683,0.888636,0.65317,0.235466
+NFHS6,punjab|patiala,punjab,23,0.123259,0.350113,0.876741,0.649887,0.226854
+NFHS6,maharashtra|osmanabad,maharashtra,23,0.154988,0.350655,0.845012,0.649345,0.195667
+NFHS6,tamil nadu|h:tirunelveli,tamil nadu,23,0.0547679,0.35113,0.945232,0.64887,0.296362
+NFHS6,gujarat|amreli,gujarat,23,0.125367,0.355495,0.874633,0.644505,0.230128
+NFHS6,gujarat|tapi,gujarat,23,0.141517,0.358296,0.858483,0.641704,0.216779
+NFHS6,kerala|kozhikode,kerala,23,0.11615,0.360225,0.88385,0.639775,0.244074
+NFHS6,haryana|yamunanagar,haryana,23,0.116185,0.361134,0.883815,0.638866,0.244949
+NFHS6,odisha|jajapur,odisha,23,0.160007,0.362919,0.839993,0.637081,0.202912
+NFHS6,madhya pradesh|hoshangabad,madhya pradesh,23,0.134739,0.363534,0.865261,0.636466,0.228795
+NFHS6,tamil nadu|perambalur,tamil nadu,23,0.12219,0.365179,0.87781,0.634821,0.242989
+NFHS6,telangana|karimnagar,telangana,23,0.117843,0.366103,0.882157,0.633897,0.248259
+NFHS6,maharashtra|ahmednagar,maharashtra,23,0.180975,0.36703,0.819025,0.63297,0.186055
+NFHS6,chhattisgarh|dhamtari,chhattisgarh,23,0.129635,0.36725,0.870365,0.63275,0.237615
+NFHS6,uttar pradesh|agra,uttar pradesh,23,0.15035,0.367674,0.84965,0.632326,0.217325
+NFHS6,rajasthan|jaipur,rajasthan,23,0.111119,0.368549,0.888881,0.631451,0.25743
+NFHS6,haryana|ambala,haryana,23,0.121869,0.370663,0.878131,0.629337,0.248794
+NFHS6,maharashtra|solapur,maharashtra,23,0.160045,0.372159,0.839955,0.627841,0.212115
+NFHS6,tamil nadu|ramanathapuram,tamil nadu,23,0.107644,0.3766,0.892356,0.6234,0.268956
+NFHS6,haryana|sonipat,haryana,23,0.123475,0.377065,0.876525,0.622935,0.253589
+NFHS6,himachal pradesh|lahul and spiti,himachal pradesh,23,0.138462,0.379554,0.861538,0.620446,0.241093
+NFHS6,kerala|palakkad,kerala,23,0.131461,0.379812,0.868539,0.620188,0.248351
+NFHS6,karnataka|mysuru,karnataka,23,0.118448,0.379951,0.881552,0.620049,0.261503
+NFHS6,bihar|samastipur,bihar,23,0.193251,0.380515,0.806749,0.619485,0.187263
+NFHS6,gujarat|vadodara,gujarat,23,0.15917,0.384184,0.84083,0.615816,0.225014
+NFHS6,odisha|nuapada,odisha,23,0.122243,0.384756,0.877757,0.615244,0.262513
+NFHS6,haryana|rewari,haryana,23,0.126322,0.387366,0.873678,0.612634,0.261044
+NFHS6,himachal pradesh|una,himachal pradesh,23,0.120064,0.388049,0.879936,0.611951,0.267985
+NFHS6,telangana|jangoan,telangana,23,0.116249,0.390264,0.883751,0.609736,0.274015
+NFHS6,madhya pradesh|shajapur,madhya pradesh,23,0.134592,0.396897,0.865408,0.603103,0.262306
+NFHS6,maharashtra|jalgaon,maharashtra,23,0.1692,0.396954,0.8308,0.603046,0.227753
+NFHS6,telangana|medchal malkajgiri,telangana,23,0.147855,0.398595,0.852145,0.601405,0.25074
+NFHS6,andhra pradesh|vizianagaram,andhra pradesh,23,0.225869,0.401986,0.774131,0.598014,0.176117
+NFHS6,uttar pradesh|mathura,uttar pradesh,23,0.174126,0.405091,0.825874,0.594909,0.230966
+NFHS6,odisha|anugul,odisha,23,0.14457,0.408502,0.85543,0.591498,0.263931
+NFHS6,odisha|jharsuguda,odisha,23,0.114342,0.409079,0.885658,0.590921,0.294736
+NFHS6,maharashtra|washim,maharashtra,23,0.14282,0.409502,0.85718,0.590498,0.266682
+NFHS6,gujarat|mahesana,gujarat,23,0.161641,0.410935,0.838359,0.589065,0.249293
+NFHS6,tamil nadu|h:vellore,tamil nadu,23,0.0436901,0.413163,0.95631,0.586837,0.369472
+NFHS6,maharashtra|satara,maharashtra,23,0.123559,0.414272,0.876441,0.585728,0.290714
+NFHS6,haryana|panchkula,haryana,23,0.120908,0.416928,0.879092,0.583072,0.29602
+NFHS6,maharashtra|kolhapur,maharashtra,23,0.13047,0.418703,0.86953,0.581297,0.288233
+NFHS6,punjab|jalandhar,punjab,23,0.158368,0.41915,0.841632,0.58085,0.260781
+NFHS6,jharkhand|bokaro,jharkhand,23,0.172348,0.420416,0.827652,0.579584,0.248068
+NFHS6,maharashtra|chandrapur,maharashtra,23,0.126235,0.424608,0.873765,0.575392,0.298373
+NFHS6,karnataka|chikkamagaluru,karnataka,23,0.111029,0.425142,0.888971,0.574858,0.314113
+NFHS6,tamil nadu|h:kanchipuram,tamil nadu,23,0.0721705,0.431039,0.92783,0.568961,0.358869
+NFHS6,punjab|sangrur,punjab,23,0.129865,0.431479,0.870135,0.568521,0.301613
+NFHS6,uttarakhand|almora,uttarakhand,23,0.127894,0.431879,0.872106,0.568121,0.303986
+NFHS6,andhra pradesh|srikakulam,andhra pradesh,23,0.12978,0.431966,0.87022,0.568034,0.302186
+NFHS6,rajasthan|jhunjhunu,rajasthan,23,0.12535,0.434799,0.87465,0.565201,0.30945
+NFHS6,nct of delhi|central,nct of delhi,23,0.160799,0.436666,0.839201,0.563334,0.275867
+NFHS6,assam|golaghat,assam,23,0.155231,0.439325,0.844769,0.560675,0.284094
+NFHS6,assam|nagaon,assam,23,0.178118,0.442349,0.821882,0.557651,0.264231
+NFHS6,tamil nadu|erode,tamil nadu,23,0.112571,0.443084,0.887429,0.556916,0.330513
+NFHS6,gujarat|patan,gujarat,23,0.145314,0.445851,0.854686,0.554149,0.300537
+NFHS6,odisha|sundargarh,odisha,23,0.15745,0.446689,0.84255,0.553311,0.289239
+NFHS6,tamil nadu|h:villupuram,tamil nadu,23,0.0571716,0.446768,0.942828,0.553232,0.389597
+NFHS6,haryana|fatehabad,haryana,23,0.106218,0.446907,0.893782,0.553093,0.340689
+NFHS6,himachal pradesh|bilaspur,himachal pradesh,23,0.11319,0.447568,0.88681,0.552432,0.334379
+NFHS6,jammu and kashmir|jammu,jammu and kashmir,23,0.107536,0.449235,0.892464,0.550765,0.341699
+NFHS6,tamil nadu|kanniyakumari,tamil nadu,23,0.0876361,0.453998,0.912364,0.546002,0.366362
+NFHS6,bihar|darbhanga,bihar,23,0.205288,0.454709,0.794712,0.545291,0.249421
+NFHS6,gujarat|gandhinagar,gujarat,23,0.168265,0.454712,0.831735,0.545288,0.286447
+NFHS6,jharkhand|koderma,jharkhand,23,0.182606,0.455077,0.817394,0.544923,0.272471
+NFHS6,uttarakhand|pauri garhwal,uttarakhand,23,0.131513,0.455956,0.868487,0.544044,0.324443
+NFHS6,karnataka|shivamogga,karnataka,23,0.1214,0.457174,0.8786,0.542826,0.335774
+NFHS6,andhra pradesh|y s r,andhra pradesh,23,0.117149,0.457276,0.882851,0.542724,0.340127
+NFHS6,telangana|jogulamba gadwal,telangana,23,0.122429,0.46021,0.877571,0.53979,0.337781
+NFHS6,uttarakhand|dehradun,uttarakhand,23,0.136496,0.461396,0.863504,0.538604,0.3249
+NFHS6,bihar|madhepura,bihar,23,0.236582,0.463067,0.763418,0.536933,0.226485
+NFHS6,uttar pradesh|lucknow,uttar pradesh,23,0.12195,0.4636,0.87805,0.5364,0.34165
+NFHS6,odisha|boudh,odisha,23,0.137058,0.46484,0.862942,0.53516,0.327782
+NFHS6,himachal pradesh|solan,himachal pradesh,23,0.135892,0.465298,0.864108,0.534702,0.329407
+NFHS6,telangana|hyderabad,telangana,23,0.14953,0.465602,0.85047,0.534398,0.316072
+NFHS6,rajasthan|dausa,rajasthan,23,0.153951,0.467916,0.846049,0.532084,0.313965
+NFHS6,gujarat|bhavnagar,gujarat,23,0.133887,0.469145,0.866113,0.530855,0.335258
+NFHS6,andhra pradesh|sri potti sriramulu nellore,andhra pradesh,23,0.118836,0.469827,0.881164,0.530173,0.35099
+NFHS6,haryana|gurugram,haryana,23,0.188083,0.470099,0.811917,0.529901,0.282016
+NFHS6,maharashtra|sindhudurg,maharashtra,21,0.11039,0.471232,0.88961,0.528768,0.360842
+NFHS6,kerala|malappuram,kerala,23,0.128212,0.475058,0.871788,0.524942,0.346846
+NFHS6,arunachal pradesh|west kameng,arunachal pradesh,21,0.114101,0.475132,0.885899,0.524868,0.361031
+NFHS6,maharashtra|bhandara,maharashtra,23,0.138638,0.476765,0.861362,0.523235,0.338127
+NFHS6,telangana|nirmal,telangana,23,0.133435,0.482689,0.866565,0.517311,0.349254
+NFHS6,andhra pradesh|west godavari,andhra pradesh,23,0.120221,0.485145,0.879779,0.514855,0.364923
+NFHS6,maharashtra|hingoli,maharashtra,23,0.204209,0.486881,0.795791,0.513119,0.282671
+NFHS6,kerala|thiruvananthapuram,kerala,23,0.0731223,0.488016,0.926878,0.511984,0.414893
+NFHS6,gujarat|surendranagar,gujarat,23,0.163689,0.490153,0.836311,0.509847,0.326464
+NFHS6,west bengal|birbhum,west bengal,23,0.19346,0.490862,0.80654,0.509138,0.297402
+NFHS6,telangana|nizamabad,telangana,23,0.0959436,0.491425,0.904056,0.508575,0.395481
+NFHS6,andhra pradesh|guntur,andhra pradesh,21,0.118159,0.495372,0.881841,0.504628,0.377213
+NFHS6,maharashtra|mumbai,maharashtra,21,0.363307,0.497056,0.636693,0.502944,0.133749
+NFHS6,bihar|khagaria,bihar,23,0.221363,0.502822,0.778637,0.497178,0.281458
+NFHS6,tamil nadu|namakkal,tamil nadu,21,0.0946197,0.503045,0.90538,0.496955,0.408425
+NFHS6,tamil nadu|tiruchirappalli,tamil nadu,23,0.118075,0.503584,0.881925,0.496416,0.385508
+NFHS6,haryana|hisar,haryana,23,0.10842,0.504594,0.89158,0.495406,0.396174
+NFHS6,gujarat|anand,gujarat,23,0.151375,0.504858,0.848625,0.495142,0.353483
+NFHS6,gujarat|gir somnath,gujarat,23,0.108872,0.506933,0.891128,0.493067,0.398061
+NFHS6,maharashtra|mumbai suburban,maharashtra,21,0.104142,0.507427,0.895858,0.492573,0.403285
+NFHS6,odisha|deogarh,odisha,23,0.155045,0.509415,0.844955,0.490585,0.35437
+NFHS6,telangana|mahabubabad,telangana,23,0.136926,0.512037,0.863074,0.487963,0.375111
+NFHS6,karnataka|kolar,karnataka,23,0.142086,0.51521,0.857914,0.48479,0.373123
+NFHS6,gujarat|junagadh,gujarat,23,0.152202,0.51544,0.847798,0.48456,0.363238
+NFHS6,telangana|bhadradri kothagudem,telangana,23,0.151697,0.516172,0.848303,0.483828,0.364475
+NFHS6,bihar|begusarai,bihar,23,0.197058,0.517198,0.802942,0.482802,0.32014
+NFHS6,telangana|wanaparthy,telangana,23,0.168289,0.518347,0.831711,0.481653,0.350058
+NFHS6,telangana|ranga reddy,telangana,23,0.128625,0.518789,0.871375,0.481211,0.390165
+NFHS6,haryana|karnal,haryana,23,0.131368,0.518968,0.868632,0.481032,0.3876
+NFHS6,telangana|kamareddy,telangana,23,0.151043,0.521403,0.848957,0.478597,0.37036
+NFHS6,tamil nadu|karur,tamil nadu,23,0.126187,0.523423,0.873813,0.476577,0.397236
+NFHS6,haryana|mahendragarh,haryana,23,0.123661,0.524609,0.876339,0.475391,0.400948
+NFHS6,haryana|sirsa,haryana,21,0.124052,0.525459,0.875948,0.474541,0.401407
+NFHS6,telangana|adilabad,telangana,23,0.151223,0.52581,0.848777,0.47419,0.374588
+NFHS6,arunachal pradesh|lower subansiri,arunachal pradesh,23,0.284992,0.526095,0.715008,0.473905,0.241103
+NFHS6,andhra pradesh|krishna,andhra pradesh,23,0.129269,0.528846,0.870731,0.471154,0.399577
+NFHS6,maharashtra|buldhana,maharashtra,23,0.165246,0.53032,0.834754,0.46968,0.365075
+NFHS6,madhya pradesh|ujjain,madhya pradesh,23,0.145492,0.531892,0.854508,0.468108,0.3864
+NFHS6,madhya pradesh|chhindwara,madhya pradesh,23,0.12976,0.53346,0.87024,0.46654,0.403699
+NFHS6,puducherry|karaikal,puducherry,23,0.100026,0.536087,0.899974,0.463913,0.436061
+NFHS6,punjab|shahid bhagat singh nagar,punjab,23,0.107843,0.538553,0.892157,0.461447,0.430709
+NFHS6,tamil nadu|tiruvannamalai,tamil nadu,23,0.149027,0.539256,0.850973,0.460744,0.39023
+NFHS6,karnataka|chitradurga,karnataka,23,0.154465,0.539587,0.845535,0.460413,0.385122
+NFHS6,west bengal|h:paschim medinipur,west bengal,23,0.12028,0.541917,0.87972,0.458083,0.421636
+NFHS6,puducherry|mahe,puducherry,23,0.0876985,0.545622,0.912301,0.454378,0.457924
+NFHS6,west bengal|maldah,west bengal,23,0.186284,0.546505,0.813716,0.453495,0.360221
+NFHS6,telangana|sangareddy,telangana,23,0.171561,0.546799,0.828439,0.453201,0.375238
+NFHS6,tamil nadu|thanjavur,tamil nadu,23,0.142156,0.550786,0.857844,0.449214,0.40863
+NFHS6,gujarat|aravali,gujarat,23,0.145162,0.551204,0.854838,0.448796,0.406042
+NFHS6,uttar pradesh|kushinagar,uttar pradesh,23,0.16096,0.553323,0.83904,0.446677,0.392364
+NFHS6,haryana|jind,haryana,23,0.119457,0.553418,0.880543,0.446582,0.433961
+NFHS6,bihar|purnia,bihar,23,0.211843,0.554822,0.788157,0.445178,0.342979
+NFHS6,maharashtra|yavatmal,maharashtra,23,0.168299,0.555207,0.831701,0.444793,0.386908
+NFHS6,kerala|wayanad,kerala,23,0.10533,0.555573,0.89467,0.444427,0.450244
+NFHS6,karnataka|hassan,karnataka,23,0.124646,0.560199,0.875354,0.439801,0.435553
+NFHS6,madhya pradesh|bhopal,madhya pradesh,21,0.111582,0.560263,0.888418,0.439737,0.448681
+NFHS6,maharashtra|ratnagiri,maharashtra,21,0.0929267,0.562543,0.907073,0.437457,0.469616
+NFHS6,bihar|madhubani,bihar,23,0.202365,0.563191,0.797635,0.436809,0.360826
+NFHS6,madhya pradesh|indore,madhya pradesh,23,0.113111,0.563733,0.886889,0.436267,0.450623
+NFHS6,karnataka|bengaluru rural,karnataka,23,0.105489,0.564958,0.894511,0.435042,0.459469
+NFHS6,punjab|sahibzada ajit singh nagar,punjab,23,0.162051,0.565126,0.837949,0.434874,0.403075
+NFHS6,kerala|kasaragod,kerala,23,0.0917935,0.567303,0.908207,0.432697,0.47551
+NFHS6,bihar|katihar,bihar,23,0.225576,0.567722,0.774424,0.432278,0.342147
+NFHS6,maharashtra|latur,maharashtra,23,0.15655,0.568373,0.84345,0.431627,0.411824
+NFHS6,karnataka|bidar,karnataka,23,0.134051,0.572278,0.865949,0.427722,0.438227
+NFHS6,bihar|araria,bihar,23,0.230135,0.572546,0.769865,0.427454,0.342411
+NFHS6,uttarakhand|haridwar,uttarakhand,23,0.12721,0.573376,0.87279,0.426624,0.446166
+NFHS6,tamil nadu|pudukkottai,tamil nadu,23,0.107905,0.574246,0.892095,0.425754,0.466341
+NFHS6,telangana|yadadri bhuvanagiri,telangana,23,0.144986,0.575013,0.855014,0.424987,0.430027
+NFHS6,jammu and kashmir|ganderbal,jammu and kashmir,23,0.0810131,0.578745,0.918987,0.421255,0.497732
+NFHS6,punjab|kapurthala,punjab,23,0.135198,0.584281,0.864802,0.415719,0.449084
+NFHS6,chhattisgarh|raigarh,chhattisgarh,23,0.14576,0.584492,0.85424,0.415508,0.438732
+NFHS6,arunachal pradesh|anjaw,arunachal pradesh,21,0.110722,0.587059,0.889278,0.412941,0.476338
+NFHS6,tamil nadu|thiruvarur,tamil nadu,23,0.0855294,0.5879,0.914471,0.4121,0.502371
+NFHS6,punjab|firozpur,punjab,23,0.152742,0.591046,0.847258,0.408954,0.438304
+NFHS6,arunachal pradesh|papum pare,arunachal pradesh,23,0.213019,0.592837,0.786981,0.407163,0.379818
+NFHS6,west bengal|purulia,west bengal,23,0.176696,0.593176,0.823304,0.406824,0.41648
+NFHS6,gujarat|valsad,gujarat,23,0.180237,0.593794,0.819763,0.406206,0.413557
+NFHS6,jammu and kashmir|ramban,jammu and kashmir,23,0.130601,0.597763,0.869399,0.402237,0.467162
+NFHS6,uttarakhand|chamoli,uttarakhand,23,0.132696,0.598245,0.867304,0.401755,0.46555
+NFHS6,odisha|ganjam,odisha,23,0.134106,0.600265,0.865894,0.399735,0.466159
+NFHS6,madhya pradesh|damoh,madhya pradesh,23,0.145633,0.601396,0.854367,0.398604,0.455763
+NFHS6,west bengal|h:darjeeling,west bengal,23,0.0999192,0.605028,0.900081,0.394972,0.505109
+NFHS6,karnataka|tumakuru,karnataka,23,0.104204,0.606088,0.895796,0.393912,0.501884
+NFHS6,madhya pradesh|datia,madhya pradesh,23,0.168339,0.606249,0.831661,0.393751,0.437909
+NFHS6,west bengal|purba bardhaman,west bengal,23,0.158217,0.606974,0.841783,0.393026,0.448757
+NFHS6,telangana|hanumakonda,telangana,23,0.129605,0.607411,0.870395,0.392589,0.477806
+NFHS6,tamil nadu|tiruppur,tamil nadu,21,0.10523,0.607729,0.89477,0.392271,0.502499
+NFHS6,tamil nadu|thoothukkudi,tamil nadu,23,0.0845368,0.6086,0.915463,0.3914,0.524063
+NFHS6,jharkhand|ranchi,jharkhand,23,0.153211,0.60962,0.846789,0.39038,0.456409
+NFHS6,tamil nadu|sivaganga,tamil nadu,23,0.160746,0.610673,0.839254,0.389327,0.449928
+NFHS6,punjab|gurdaspur,punjab,23,0.123832,0.610778,0.876168,0.389222,0.486946
+NFHS6,assam|sivasagar,assam,23,0.14461,0.6111,0.85539,0.3889,0.46649
+NFHS6,andhra pradesh|kurnool,andhra pradesh,23,0.140346,0.612084,0.859654,0.387916,0.471738
+NFHS6,jharkhand|ramgarh,jharkhand,23,0.172978,0.612629,0.827022,0.387371,0.439651
+NFHS6,himachal pradesh|mandi,himachal pradesh,23,0.148597,0.612955,0.851403,0.387045,0.464358
+NFHS6,odisha|kendrapara,odisha,23,0.119841,0.61611,0.880159,0.38389,0.49627
+NFHS6,karnataka|ballari,karnataka,23,0.148035,0.61732,0.851965,0.38268,0.469285
+NFHS6,karnataka|chikkaballapura,karnataka,23,0.117833,0.619443,0.882167,0.380557,0.50161
+NFHS6,madhya pradesh|chhatarpur,madhya pradesh,23,0.167108,0.620734,0.832892,0.379266,0.453625
+NFHS6,uttar pradesh|firozabad,uttar pradesh,23,0.155877,0.623009,0.844123,0.376991,0.467132
+NFHS6,gujarat|devbhumi dwarka,gujarat,23,0.114999,0.623101,0.885001,0.376899,0.508101
+NFHS6,jharkhand|hazaribagh,jharkhand,23,0.176777,0.623778,0.823223,0.376222,0.447002
+NFHS6,karnataka|ramanagara,karnataka,23,0.122891,0.62628,0.877109,0.37372,0.503389
+NFHS6,gujarat|bharuch,gujarat,23,0.208254,0.627364,0.791746,0.372636,0.41911
+NFHS6,odisha|balangir,odisha,23,0.143665,0.627853,0.856335,0.372147,0.484188
+NFHS6,jammu and kashmir|doda,jammu and kashmir,23,0.106892,0.628273,0.893108,0.371727,0.521382
+NFHS6,telangana|suryapet,telangana,21,0.257017,0.629665,0.742983,0.370335,0.372648
+NFHS6,rajasthan|jodhpur,rajasthan,23,0.109986,0.631068,0.890014,0.368932,0.521082
+NFHS6,uttar pradesh|etah,uttar pradesh,23,0.161809,0.6321,0.838191,0.3679,0.470291
+NFHS6,maharashtra|nashik,maharashtra,23,0.139502,0.633949,0.860498,0.366051,0.494448
+NFHS6,tamil nadu|dharmapuri,tamil nadu,23,0.114593,0.634152,0.885407,0.365848,0.519559
+NFHS6,uttarakhand|tehri garhwal,uttarakhand,23,0.117885,0.634316,0.882115,0.365684,0.516431
+NFHS6,madhya pradesh|narsimhapur,madhya pradesh,23,0.139317,0.635596,0.860683,0.364404,0.496279
+NFHS6,telangana|peddapalli,telangana,23,0.158217,0.637448,0.841783,0.362552,0.479231
+NFHS6,telangana|medak,telangana,23,0.114126,0.63751,0.885874,0.36249,0.523384
+NFHS6,chhattisgarh|mahasamund,chhattisgarh,23,0.150297,0.638726,0.849703,0.361274,0.488429
+NFHS6,odisha|baleshwar,odisha,23,0.169953,0.64113,0.830047,0.35887,0.471177
+NFHS6,maharashtra|beed,maharashtra,23,0.162594,0.641315,0.837406,0.358685,0.478721
+NFHS6,chhattisgarh|raipur,chhattisgarh,23,0.166833,0.642233,0.833167,0.357767,0.475399
+NFHS6,tamil nadu|salem,tamil nadu,23,0.111069,0.643532,0.888931,0.356468,0.532463
+NFHS6,karnataka|bengaluru urban,karnataka,23,0.103673,0.644453,0.896327,0.355547,0.54078
+NFHS6,uttarakhand|rudra prayag,uttarakhand,23,0.0963034,0.645373,0.903697,0.354627,0.54907
+NFHS6,telangana|jagitial,telangana,23,0.131551,0.651558,0.868449,0.348442,0.520007
+NFHS6,mizoram|aizawl,mizoram,23,0.154067,0.653223,0.845933,0.346777,0.499156
+NFHS6,rajasthan|nagaur,rajasthan,23,0.131908,0.653409,0.868092,0.346591,0.5215
+NFHS6,assam|dibrugarh,assam,23,0.129956,0.654376,0.870044,0.345624,0.524419
+NFHS6,kerala|kannur,kerala,23,0.137455,0.654632,0.862545,0.345368,0.517178
+NFHS6,punjab|pathankot,punjab,23,0.145029,0.657761,0.854971,0.342239,0.512732
+NFHS6,odisha|kalahandi,odisha,23,0.152561,0.657775,0.847439,0.342225,0.505214
+NFHS6,himachal pradesh|shimla,himachal pradesh,23,0.112563,0.659955,0.887437,0.340045,0.547392
+NFHS6,tamil nadu|dindigul,tamil nadu,23,0.172898,0.660158,0.827102,0.339842,0.48726
+NFHS6,telangana|nagarkurnool,telangana,23,0.165577,0.661724,0.834423,0.338276,0.496148
+NFHS6,madhya pradesh|gwalior,madhya pradesh,23,0.158006,0.662071,0.841994,0.337929,0.504065
+NFHS6,madhya pradesh|betul,madhya pradesh,23,0.146339,0.662417,0.853661,0.337583,0.516077
+NFHS6,bihar|saran,bihar,23,0.155825,0.66762,0.844175,0.33238,0.511796
+NFHS6,bihar|muzaffarpur,bihar,23,0.195883,0.669083,0.804117,0.330917,0.4732
+NFHS6,arunachal pradesh|east siang,arunachal pradesh,23,0.279887,0.669098,0.720113,0.330902,0.389211
+NFHS6,madhya pradesh|morena,madhya pradesh,23,0.160446,0.669142,0.839554,0.330858,0.508696
+NFHS6,odisha|gajapati,odisha,23,0.176135,0.669172,0.823865,0.330828,0.493037
+NFHS6,telangana|h:jayashankar bhupalapally,telangana,23,0.0743999,0.670235,0.9256,0.329765,0.595835
+NFHS6,assam|tinsukia,assam,23,0.180367,0.670237,0.819633,0.329763,0.48987
+NFHS6,chhattisgarh|korba,chhattisgarh,23,0.181948,0.670462,0.818052,0.329538,0.488515
+NFHS6,uttar pradesh|etawah,uttar pradesh,23,0.162326,0.674843,0.837674,0.325157,0.512517
+NFHS6,west bengal|cooch behar,west bengal,23,0.174371,0.679337,0.825629,0.320663,0.504966
+NFHS6,andhra pradesh|prakasam,andhra pradesh,23,0.120593,0.679643,0.879407,0.320357,0.559051
+NFHS6,maharashtra|wardha,maharashtra,23,0.0929309,0.681852,0.907069,0.318148,0.588921
+NFHS6,assam|kamrup,assam,23,0.188358,0.683021,0.811642,0.316979,0.494663
+NFHS6,uttarakhand|udham singh nagar,uttarakhand,23,0.130747,0.683336,0.869253,0.316664,0.552589
+NFHS6,madhya pradesh|seoni,madhya pradesh,23,0.13076,0.683622,0.86924,0.316378,0.552862
+NFHS6,jammu and kashmir|bandipora,jammu and kashmir,23,0.106232,0.684337,0.893768,0.315663,0.578104
+NFHS6,rajasthan|alwar,rajasthan,23,0.15592,0.685091,0.84408,0.314909,0.529171
+NFHS6,andhra pradesh|chittoor,andhra pradesh,23,0.135955,0.685117,0.864045,0.314883,0.549162
+NFHS6,jammu and kashmir|samba,jammu and kashmir,23,0.080821,0.687278,0.919179,0.312722,0.606457
+NFHS6,bihar|rohtas,bihar,23,0.169844,0.689248,0.830156,0.310752,0.519404
+NFHS6,telangana|kumuram bheem asifabad,telangana,23,0.154402,0.696025,0.845598,0.303975,0.541623
+NFHS6,uttarakhand|uttarkashi,uttarakhand,23,0.137089,0.699386,0.862911,0.300614,0.562297
+NFHS6,gujarat|banas kantha,gujarat,23,0.187091,0.69994,0.812909,0.30006,0.512849
+NFHS6,bihar|pashchim champaran,bihar,23,0.204564,0.701448,0.795436,0.298552,0.496883
+NFHS6,andhra pradesh|visakhapatnam,andhra pradesh,23,0.144663,0.701635,0.855337,0.298365,0.556971
+NFHS6,maharashtra|sangli,maharashtra,23,0.170217,0.701855,0.829783,0.298145,0.531639
+NFHS6,punjab|moga,punjab,23,0.128065,0.702495,0.871935,0.297505,0.57443
+NFHS6,jammu and kashmir|kishtwar,jammu and kashmir,23,0.121656,0.703808,0.878344,0.296192,0.582151
+NFHS6,jammu and kashmir|udhampur,jammu and kashmir,23,0.104639,0.708035,0.895361,0.291965,0.603396
+NFHS6,arunachal pradesh|siang,arunachal pradesh,23,0.174341,0.709114,0.825659,0.290886,0.534773
+NFHS6,mizoram|champhai,mizoram,23,0.130131,0.712087,0.869869,0.287913,0.581956
+NFHS6,maharashtra|jalna,maharashtra,23,0.185222,0.714088,0.814778,0.285912,0.528865
+NFHS6,karnataka|davanagere,karnataka,23,0.139781,0.715277,0.860219,0.284723,0.575497
+NFHS6,assam|sonitpur,assam,23,0.132481,0.715393,0.867519,0.284607,0.582912
+NFHS6,uttar pradesh|azamgarh,uttar pradesh,23,0.143085,0.716677,0.856915,0.283323,0.573592
+NFHS6,karnataka|udupi,karnataka,23,0.0753467,0.718587,0.924653,0.281413,0.643241
+NFHS6,maharashtra|nandurbar,maharashtra,23,0.211235,0.718639,0.788765,0.281361,0.507404
+NFHS6,haryana|jhajjar,haryana,23,0.114588,0.719693,0.885412,0.280307,0.605106
+NFHS6,bihar|gopalganj,bihar,23,0.170933,0.719814,0.829067,0.280186,0.54888
+NFHS6,assam|majuli,assam,23,0.14728,0.721324,0.85272,0.278676,0.574044
+NFHS6,rajasthan|churu,rajasthan,23,0.145646,0.721424,0.854354,0.278576,0.575778
+NFHS6,assam|udalguri,assam,23,0.139799,0.721871,0.860201,0.278129,0.582072
+NFHS6,karnataka|kalaburagi,karnataka,23,0.14765,0.722336,0.85235,0.277664,0.574687
+NFHS6,jharkhand|purbi singhbum,jharkhand,23,0.15995,0.723697,0.84005,0.276303,0.563747
+NFHS6,west bengal|h:jalpaiguri,west bengal,23,0.0786518,0.726461,0.921348,0.273539,0.647809
+NFHS6,bihar|aurangabad,bihar,23,0.182629,0.726742,0.817371,0.273258,0.544113
+NFHS6,karnataka|chamarajanagar,karnataka,23,0.161896,0.727028,0.838104,0.272972,0.565131
+NFHS6,rajasthan|kota,rajasthan,23,0.114365,0.728211,0.885635,0.271789,0.613846
+NFHS6,west bengal|nadia,west bengal,23,0.151138,0.728706,0.848862,0.271294,0.577568
+NFHS6,gujarat|porbandar,gujarat,23,0.150123,0.729783,0.849877,0.270217,0.57966
+NFHS6,haryana|faridabad,haryana,23,0.140107,0.732596,0.859893,0.267404,0.592489
+NFHS6,uttar pradesh|chitrakoot,uttar pradesh,23,0.159406,0.734684,0.840594,0.265316,0.575277
+NFHS6,bihar|supaul,bihar,23,0.231334,0.735265,0.768666,0.264735,0.503931
+NFHS6,karnataka|bagalkote,karnataka,23,0.143946,0.736642,0.856054,0.263358,0.592696
+NFHS6,odisha|dhenkanal,odisha,23,0.172749,0.737297,0.827251,0.262703,0.564548
+NFHS6,jharkhand|dumka,jharkhand,23,0.209165,0.742604,0.790835,0.257396,0.533439
+NFHS6,gujarat|botad,gujarat,23,0.197628,0.742644,0.802372,0.257356,0.545016
+NFHS6,uttarakhand|champawat,uttarakhand,23,0.151083,0.743043,0.848917,0.256957,0.59196
+NFHS6,haryana|charkhi dadri,haryana,23,0.112745,0.744035,0.887255,0.255965,0.63129
+NFHS6,bihar|bhojpur,bihar,23,0.199092,0.744722,0.800908,0.255278,0.545631
+NFHS6,uttar pradesh|aligarh,uttar pradesh,23,0.156665,0.746014,0.843335,0.253986,0.589349
+NFHS6,maharashtra|palghar,maharashtra,23,0.124621,0.748233,0.875379,0.251767,0.623612
+NFHS6,jharkhand|palamu,jharkhand,23,0.199045,0.751473,0.800955,0.248527,0.552428
+NFHS6,sikkim|north district,sikkim,23,0.10735,0.751945,0.89265,0.248055,0.644595
+NFHS6,uttar pradesh|kasganj,uttar pradesh,23,0.189022,0.7524,0.810978,0.2476,0.563378
+NFHS6,assam|baksa,assam,23,0.151284,0.758453,0.848716,0.241547,0.60717
+NFHS6,bihar|saharsa,bihar,23,0.229667,0.759093,0.770333,0.240907,0.529426
+NFHS6,bihar|siwan,bihar,23,0.145344,0.765755,0.854656,0.234245,0.620412
+NFHS6,uttar pradesh|baghpat,uttar pradesh,23,0.140122,0.767486,0.859878,0.232514,0.627364
+NFHS6,rajasthan|bikaner,rajasthan,23,0.153186,0.767841,0.846814,0.232159,0.614655
+NFHS6,rajasthan|sikar,rajasthan,23,0.147451,0.768453,0.852549,0.231547,0.621002
+NFHS6,punjab|fatehgarh sahib,punjab,23,0.165043,0.768875,0.834957,0.231125,0.603833
+NFHS6,arunachal pradesh|namsai,arunachal pradesh,23,0.182373,0.769728,0.817627,0.230272,0.587355
+NFHS6,arunachal pradesh|west siang,arunachal pradesh,23,0.302575,0.771441,0.697425,0.228559,0.468867
+NFHS6,punjab|barnala,punjab,23,0.115639,0.77476,0.884361,0.22524,0.659121
+NFHS6,gujarat|rajkot,gujarat,23,0.123735,0.77495,0.876265,0.22505,0.651215
+NFHS6,uttarakhand|bageshwar,uttarakhand,23,0.164397,0.774996,0.835603,0.225004,0.610598
+NFHS6,uttar pradesh|ghaziabad,uttar pradesh,23,0.157857,0.775025,0.842143,0.224975,0.617168
+NFHS6,west bengal|paschim bardhaman,west bengal,23,0.174482,0.775914,0.825518,0.224086,0.601432
+NFHS6,jammu and kashmir|baramulla,jammu and kashmir,23,0.105774,0.77735,0.894226,0.22265,0.671577
+NFHS6,uttar pradesh|bijnor,uttar pradesh,23,0.152995,0.777767,0.847005,0.222233,0.624772
+NFHS6,himachal pradesh|sirmaur,himachal pradesh,23,0.120934,0.77812,0.879066,0.22188,0.657186
+NFHS6,punjab|sri muktsar sahib,punjab,23,0.144315,0.778677,0.855685,0.221323,0.634362
+NFHS6,himachal pradesh|kinnaur,himachal pradesh,23,0.330679,0.779589,0.669321,0.220411,0.44891
+NFHS6,mizoram|serchhip,mizoram,23,0.0926952,0.779621,0.907305,0.220379,0.686926
+NFHS6,maharashtra|thane,maharashtra,21,0.0982783,0.780648,0.901722,0.219352,0.68237
+NFHS6,jharkhand|chatra,jharkhand,23,0.215696,0.781897,0.784304,0.218103,0.566201
+NFHS6,maharashtra|nagpur,maharashtra,23,0.0909136,0.782212,0.909086,0.217788,0.691299
+NFHS6,assam|biswanath,assam,23,0.148471,0.784336,0.851529,0.215664,0.635866
+NFHS6,ladakh|leh ladakh,ladakh,23,0.07329,0.785107,0.92671,0.214893,0.711817
+NFHS6,arunachal pradesh|lohit,arunachal pradesh,23,0.188076,0.785264,0.811924,0.214736,0.597188
+NFHS6,gujarat|sabar kantha,gujarat,23,0.164927,0.787741,0.835073,0.212259,0.622815
+NFHS6,maharashtra|pune,maharashtra,23,0.116025,0.790602,0.883975,0.209398,0.674577
+NFHS6,gujarat|kachchh,gujarat,23,0.156114,0.792315,0.843886,0.207685,0.636201
+NFHS6,uttar pradesh|meerut,uttar pradesh,23,0.149547,0.792506,0.850453,0.207494,0.642959
+NFHS6,uttar pradesh|hathras,uttar pradesh,23,0.169157,0.793191,0.830843,0.206809,0.624035
+NFHS6,bihar|vaishali,bihar,23,0.206228,0.798981,0.793772,0.201019,0.592753
+NFHS6,nct of delhi|east,nct of delhi,23,0.162633,0.799202,0.837367,0.200798,0.636569
+NFHS6,maharashtra|gondia,maharashtra,23,0.0933725,0.799514,0.906627,0.200486,0.706141
+NFHS6,rajasthan|baran,rajasthan,23,0.132014,0.800592,0.867986,0.199408,0.668578
+NFHS6,karnataka|raichur,karnataka,23,0.1479,0.803975,0.8521,0.196025,0.656075
+NFHS6,west bengal|dakshin dinajpur,west bengal,23,0.173071,0.804098,0.826929,0.195902,0.631027
+NFHS6,punjab|hoshiarpur,punjab,23,0.105985,0.805192,0.894015,0.194808,0.699206
+NFHS6,madhya pradesh|balaghat,madhya pradesh,23,0.121836,0.805446,0.878164,0.194554,0.68361
+NFHS6,assam|marigaon,assam,23,0.189052,0.809319,0.810948,0.190681,0.620267
+NFHS6,bihar|purbi champaran,bihar,23,0.218245,0.810577,0.781755,0.189423,0.592332
+NFHS6,bihar|kishanganj,bihar,23,0.219972,0.812005,0.780028,0.187995,0.592033
+NFHS6,madhya pradesh|katni,madhya pradesh,23,0.134045,0.813074,0.865955,0.186926,0.679029
+NFHS6,uttar pradesh|ballia,uttar pradesh,23,0.137719,0.813227,0.862281,0.186773,0.675508
+NFHS6,andaman and nicobar islands|north and middle andaman,andaman and nicobar islands,21,0.111976,0.814585,0.888024,0.185415,0.70261
+NFHS6,madhya pradesh|dewas,madhya pradesh,23,0.166373,0.817285,0.833627,0.182715,0.650912
+NFHS6,punjab|tarn taran,punjab,23,0.130757,0.818099,0.869243,0.181901,0.687342
+NFHS6,assam|hojai,assam,23,0.169772,0.8213,0.830228,0.1787,0.651528
+NFHS6,maharashtra|gadchiroli,maharashtra,23,0.121193,0.823985,0.878807,0.176015,0.702792
+NFHS6,mizoram|kolasib,mizoram,23,0.124855,0.824635,0.875145,0.175365,0.699779
+NFHS6,punjab|faridkot,punjab,23,0.191257,0.825569,0.808743,0.174431,0.634312
+NFHS6,tamil nadu|coimbatore,tamil nadu,23,0.120697,0.826598,0.879303,0.173402,0.705901
+NFHS6,bihar|arwal,bihar,23,0.201262,0.826845,0.798738,0.173155,0.625583
+NFHS6,karnataka|koppal,karnataka,23,0.149917,0.828026,0.850083,0.171974,0.678109
+NFHS6,meghalaya|west khasi hills,meghalaya,23,0.184553,0.829043,0.815447,0.170957,0.64449
+NFHS6,assam|dhubri,assam,23,0.220579,0.830437,0.779421,0.169563,0.609858
+NFHS6,haryana|panipat,haryana,23,0.136652,0.831661,0.863348,0.168339,0.69501
+NFHS6,nagaland|mon,nagaland,23,0.172931,0.833938,0.827069,0.166062,0.661007
+NFHS6,meghalaya|east khasi hills,meghalaya,23,0.175465,0.835399,0.824535,0.164601,0.659934
+NFHS6,punjab|amritsar,punjab,23,0.162445,0.836238,0.837555,0.163762,0.673794
+NFHS6,gujarat|kheda,gujarat,23,0.220691,0.836291,0.779309,0.163709,0.6156
+NFHS6,jammu and kashmir|pulwama,jammu and kashmir,23,0.0867924,0.83714,0.913208,0.16286,0.750347
+NFHS6,odisha|jagatsinghapur,odisha,23,0.12272,0.840158,0.87728,0.159842,0.717437
+NFHS6,karnataka|kodagu,karnataka,23,0.144636,0.841844,0.855364,0.158156,0.697208
+NFHS6,meghalaya|north garo hills,meghalaya,23,0.24514,0.842741,0.75486,0.157259,0.597601
+NFHS6,arunachal pradesh|dibang valley,arunachal pradesh,23,0.172458,0.844123,0.827542,0.155877,0.671665
+NFHS6,karnataka|dharwad,karnataka,23,0.124037,0.846327,0.875963,0.153673,0.722291
+NFHS6,andhra pradesh|anantapur,andhra pradesh,23,0.156358,0.846935,0.843642,0.153065,0.690577
+NFHS6,nct of delhi|shahdara,nct of delhi,23,0.167782,0.849686,0.832218,0.150314,0.681903
+NFHS6,west bengal|howrah,west bengal,23,0.128535,0.856404,0.871465,0.143596,0.727869
+NFHS6,madhya pradesh|ashoknagar,madhya pradesh,23,0.162439,0.857032,0.837561,0.142968,0.694594
+NFHS6,maharashtra|raigad,maharashtra,23,0.12354,0.858104,0.87646,0.141896,0.734564
+NFHS6,odisha|cuttack,odisha,23,0.155211,0.85987,0.844789,0.14013,0.704659
+NFHS6,assam|darrang,assam,23,0.168896,0.861175,0.831104,0.138825,0.692279
+NFHS6,uttar pradesh|barabanki,uttar pradesh,23,0.156391,0.865434,0.843609,0.134566,0.709042
+NFHS6,assam|nalbari,assam,23,0.14418,0.867739,0.85582,0.132261,0.723559
+NFHS6,rajasthan|hanumangarh,rajasthan,23,0.161952,0.868549,0.838048,0.131451,0.706597
+NFHS6,madhya pradesh|rewa,madhya pradesh,23,0.177932,0.870217,0.822068,0.129783,0.692286
+NFHS6,karnataka|dakshina kannada,karnataka,23,0.104792,0.871727,0.895208,0.128273,0.766935
+NFHS6,nct of delhi|west,nct of delhi,23,0.196567,0.871738,0.803433,0.128262,0.67517
+NFHS6,rajasthan|ganganagar,rajasthan,23,0.153249,0.872002,0.846751,0.127998,0.718752
+NFHS6,odisha|kendujhar,odisha,23,0.180736,0.872358,0.819264,0.127642,0.691623
+NFHS6,punjab|mansa,punjab,23,0.151947,0.874857,0.848053,0.125143,0.72291
+NFHS6,chhattisgarh|h:bilaspur,chhattisgarh,23,0.11534,0.875708,0.88466,0.124292,0.760368
+NFHS6,uttar pradesh|rampur,uttar pradesh,23,0.140149,0.879766,0.859851,0.120234,0.739616
+NFHS6,nagaland|kiphire,nagaland,23,0.17517,0.880195,0.82483,0.119805,0.705025
+NFHS6,arunachal pradesh|tawang,arunachal pradesh,23,0.215282,0.880689,0.784718,0.119311,0.665407
+NFHS6,uttar pradesh|mainpuri,uttar pradesh,23,0.140503,0.880733,0.859497,0.119267,0.740231
+NFHS6,jammu and kashmir|kupwara,jammu and kashmir,23,0.113716,0.883683,0.886284,0.116317,0.769967
+NFHS6,odisha|puri,odisha,23,0.175489,0.886712,0.824511,0.113288,0.711224
+NFHS6,chhattisgarh|mungeli,chhattisgarh,23,0.165021,0.887807,0.834979,0.112193,0.722786
+NFHS6,assam|charaideo,assam,23,0.169965,0.889967,0.830035,0.110033,0.720002
+NFHS6,uttar pradesh|rae bareli,uttar pradesh,23,0.146852,0.892441,0.853148,0.107559,0.745589
+NFHS6,chhattisgarh|kabeerdham,chhattisgarh,23,0.144972,0.893465,0.855028,0.106535,0.748492
+NFHS6,gujarat|narmada,gujarat,23,0.169129,0.893544,0.830871,0.106456,0.724414
+NFHS6,west bengal|purba medinipur,west bengal,23,0.150367,0.894884,0.849633,0.105116,0.744517
+NFHS6,chhattisgarh|jashpur,chhattisgarh,23,0.161852,0.895389,0.838148,0.104611,0.733537
+NFHS6,telangana|vikarabad,telangana,23,0.187721,0.897225,0.812279,0.102775,0.709504
+NFHS6,madhya pradesh|shahdol,madhya pradesh,23,0.154695,0.898148,0.845305,0.101852,0.743453
+NFHS6,telangana|warangal rural,telangana,21,0.0956193,0.899744,0.904381,0.100256,0.804125
+NFHS6,chhattisgarh|janjgir champa,chhattisgarh,23,0.148474,0.90062,0.851526,0.0993799,0.752146
+NFHS6,assam|jorhat,assam,23,0.141727,0.902556,0.858273,0.0974436,0.760829
+NFHS6,rajasthan|tonk,rajasthan,23,0.129703,0.9029,0.870297,0.0970999,0.773197
+NFHS6,assam|dima hasao,assam,21,0.121543,0.907555,0.878457,0.0924455,0.786011
+NFHS6,assam|goalpara,assam,23,0.186216,0.908755,0.813784,0.0912448,0.722539
+NFHS6,bihar|sitamarhi,bihar,23,0.216092,0.910039,0.783908,0.0899609,0.693948
+NFHS6,arunachal pradesh|kurung kumey,arunachal pradesh,23,0.184408,0.915721,0.815592,0.0842792,0.731313
+NFHS6,odisha|mayurbhanj,odisha,23,0.179945,0.918034,0.820055,0.0819659,0.738089
+NFHS6,west bengal|uttar dinajpur,west bengal,23,0.206081,0.918504,0.793919,0.0814958,0.712423
+NFHS6,gujarat|surat,gujarat,23,0.167512,0.920553,0.832488,0.0794469,0.753041
+NFHS6,jharkhand|dhanbad,jharkhand,23,0.170843,0.920583,0.829157,0.0794175,0.74974
+NFHS6,punjab|ludhiana,punjab,23,0.16801,0.920732,0.83199,0.0792683,0.752722
+NFHS6,west bengal|hooghly,west bengal,23,0.113525,0.923045,0.886475,0.0769552,0.809519
+NFHS6,chhattisgarh|durg,chhattisgarh,23,0.106075,0.923381,0.893925,0.0766191,0.817306
+NFHS6,arunachal pradesh|pakke kessang,arunachal pradesh,23,0.471052,0.924036,0.528948,0.0759636,0.452985
+NFHS6,chhattisgarh|balod,chhattisgarh,23,0.10122,0.925788,0.89878,0.0742117,0.824569
+NFHS6,jharkhand|garhwa,jharkhand,23,0.211847,0.926458,0.788153,0.0735415,0.714611
+NFHS6,madhya pradesh|jabalpur,madhya pradesh,20,0.461313,0.926696,0.538687,0.0733038,0.465383
+NFHS6,jammu and kashmir|poonch,jammu and kashmir,23,0.136643,0.928112,0.863357,0.071888,0.791469
+NFHS6,assam|chirang,assam,23,0.171122,0.928661,0.828878,0.0713392,0.757539
+NFHS6,uttar pradesh|moradabad,uttar pradesh,23,0.152449,0.931519,0.847551,0.0684809,0.77907
+NFHS6,assam|lakhimpur,assam,23,0.168468,0.933856,0.831532,0.0661445,0.765388
+NFHS6,arunachal pradesh|upper subansiri,arunachal pradesh,23,0.337307,0.935651,0.662693,0.0643494,0.598344
+NFHS6,rajasthan|dholpur,rajasthan,23,0.159076,0.939128,0.840924,0.0608715,0.780052
+NFHS6,karnataka|vijayapura,karnataka,23,0.237882,0.939647,0.762118,0.0603529,0.701765
+NFHS6,haryana|palwal,haryana,23,0.183742,0.941613,0.816258,0.058387,0.757871
+NFHS6,uttar pradesh|gorakhpur,uttar pradesh,23,0.145426,0.941979,0.854574,0.0580207,0.796554
+NFHS6,gujarat|navsari,gujarat,23,0.132033,0.946569,0.867967,0.0534306,0.814536
+NFHS6,madhya pradesh|rajgarh,madhya pradesh,23,0.163278,0.946757,0.836722,0.0532435,0.783478
+NFHS6,tripura|sepahijala,tripura,23,0.202615,0.948643,0.797385,0.051357,0.746028
+NFHS6,madhya pradesh|bhind,madhya pradesh,23,0.173209,0.954769,0.826791,0.0452313,0.78156
+NFHS6,maharashtra|parbhani,maharashtra,23,0.176229,0.957227,0.823771,0.0427733,0.780997
+NFHS6,uttar pradesh|jhansi,uttar pradesh,23,0.181802,0.958815,0.818198,0.0411851,0.777012
+NFHS6,madhya pradesh|mandsaur,madhya pradesh,23,0.150461,0.960289,0.849539,0.0397106,0.809828
+NFHS6,bihar|bhagalpur,bihar,23,0.197871,0.963079,0.802129,0.0369207,0.765208
+NFHS6,haryana|bhiwani,haryana,23,0.114884,0.965166,0.885116,0.0348344,0.850281
+NFHS6,madhya pradesh|umaria,madhya pradesh,23,0.136627,0.966198,0.863373,0.0338023,0.82957
+NFHS6,uttar pradesh|amethi,uttar pradesh,23,0.120591,0.968968,0.879409,0.0310324,0.848377
+NFHS6,uttar pradesh|jaunpur,uttar pradesh,23,0.148573,0.975697,0.851427,0.024303,0.827124
+NFHS6,himachal pradesh|kangra,himachal pradesh,23,0.0808952,0.978952,0.919105,0.0210476,0.898057
+NFHS6,assam|barpeta,assam,23,0.170161,0.979981,0.829839,0.0200194,0.80982
+NFHS6,bihar|munger,bihar,23,0.164245,0.982005,0.835755,0.0179953,0.81776
+NFHS6,punjab|bathinda,punjab,23,0.123863,0.982642,0.876137,0.0173575,0.858779
+NFHS6,uttar pradesh|deoria,uttar pradesh,23,0.146136,0.984686,0.853864,0.0153143,0.83855
+NFHS6,uttar pradesh|bareilly,uttar pradesh,23,0.162654,0.986126,0.837346,0.0138738,0.823472
+NFHS6,chhattisgarh|bemetara,chhattisgarh,23,0.150601,0.986937,0.849399,0.0130631,0.836336
+NFHS6,uttar pradesh|shahjahanpur,uttar pradesh,23,0.186491,0.987218,0.813509,0.0127822,0.800727
+NFHS6,gujarat|ahmedabad,gujarat,23,0.180615,0.987844,0.819385,0.0121559,0.807229
+NFHS6,uttar pradesh|sultanpur,uttar pradesh,23,0.147107,0.989761,0.852893,0.0102388,0.842655
+NFHS6,mizoram|lunglei,mizoram,23,0.109105,0.990304,0.890895,0.00969615,0.881198
+NFHS6,bihar|patna,bihar,23,0.195374,0.991146,0.804626,0.00885407,0.795772
+NFHS6,rajasthan|karauli,rajasthan,23,0.159929,0.991501,0.840071,0.00849909,0.831572
+NFHS6,bihar|buxar,bihar,23,0.191337,0.99337,0.808663,0.00663043,0.802032
+NFHS6,west bengal|murshidabad,west bengal,23,0.192705,0.994383,0.807295,0.00561681,0.801679
+NFHS6,assam|kamrup metropolitan,assam,21,0.114557,0.9944,0.885443,0.00559962,0.879843
+NFHS6,karnataka|haveri,karnataka,23,0.134554,0.994888,0.865446,0.00511165,0.860334
+NFHS6,jharkhand|giridih,jharkhand,23,0.221945,0.99537,0.778055,0.00463048,0.773425
+NFHS6,bihar|kaimur bhabua,bihar,23,0.175726,0.997335,0.824274,0.00266537,0.821609
+NFHS6,west bengal|bankura,west bengal,23,0.181535,1.00226,0.818465,-0.00226004,0.820725
+NFHS6,uttar pradesh|mau,uttar pradesh,23,0.156064,1.00348,0.843936,-0.00348384,0.84742
+NFHS6,uttar pradesh|varanasi,uttar pradesh,23,0.167019,1.00913,0.832981,-0.0091319,0.842113
+NFHS6,assam|hailakandi,assam,23,0.156602,1.00922,0.843398,-0.0092247,0.852623
+NFHS6,uttarakhand|pithoragarh,uttarakhand,23,0.144613,1.01082,0.855387,-0.010815,0.866202
+NFHS6,uttar pradesh|hapur,uttar pradesh,23,0.149809,1.01249,0.850191,-0.0124861,0.862677
+NFHS6,assam|dhemaji,assam,23,0.164833,1.01612,0.835167,-0.0161161,0.851283
+NFHS6,rajasthan|bundi,rajasthan,23,0.159475,1.01964,0.840525,-0.0196433,0.860168
+NFHS6,mizoram|lawngtlai,mizoram,23,0.152331,1.02083,0.847669,-0.0208309,0.8685
+NFHS6,mizoram|saiha,mizoram,23,0.113922,1.02617,0.886078,-0.0261654,0.912243
+NFHS6,sikkim|east district,sikkim,21,0.0990714,1.0271,0.900929,-0.0271047,0.928033
+NFHS6,bihar|sheohar,bihar,23,0.202896,1.03038,0.797104,-0.0303789,0.827483
+NFHS6,bihar|jamui,bihar,23,0.21344,1.0304,0.78656,-0.0304009,0.816961
+NFHS6,arunachal pradesh|changlang,arunachal pradesh,21,0.111764,1.03249,0.888236,-0.0324854,0.920722
+NFHS6,assam|bongaigaon,assam,23,0.196469,1.03608,0.803531,-0.0360805,0.839612
+NFHS6,mizoram|mamit,mizoram,23,0.177398,1.0437,0.822602,-0.0437016,0.866304
+NFHS6,karnataka|belagavi,karnataka,23,0.108541,1.04661,0.891459,-0.0466081,0.938068
+NFHS6,jharkhand|latehar,jharkhand,23,0.193462,1.04661,0.806538,-0.0466144,0.853153
+NFHS6,chhattisgarh|baloda bazar,chhattisgarh,23,0.157102,1.04736,0.842898,-0.0473622,0.89026
+NFHS6,jammu and kashmir|budgam,jammu and kashmir,23,0.0974604,1.048,0.90254,-0.0480038,0.950543
+NFHS6,karnataka|uttara kannada,karnataka,23,0.103552,1.05279,0.896448,-0.0527941,0.949243
+NFHS6,jammu and kashmir|reasi,jammu and kashmir,23,0.121723,1.06145,0.878277,-0.0614529,0.93973
+NFHS6,meghalaya|ribhoi,meghalaya,23,0.187499,1.06866,0.812501,-0.0686602,0.881161
+NFHS6,madhya pradesh|ratlam,madhya pradesh,23,0.158841,1.07005,0.841159,-0.0700515,0.91121
+NFHS6,madhya pradesh|raisen,madhya pradesh,21,0.141767,1.07062,0.858233,-0.0706221,0.928856
+NFHS6,punjab|fazilka,punjab,23,0.16173,1.07261,0.83827,-0.0726085,0.910879
+NFHS6,bihar|nalanda,bihar,23,0.189797,1.07591,0.810203,-0.0759055,0.886109
+NFHS6,assam|kokrajhar,assam,23,0.194528,1.07973,0.805472,-0.0797289,0.8852
+NFHS6,tamil nadu|theni,tamil nadu,23,0.204766,1.08782,0.795234,-0.0878177,0.883052
+NFHS6,jammu and kashmir|kathua,jammu and kashmir,23,0.102904,1.09198,0.897096,-0.0919789,0.989075
+NFHS6,odisha|rayagada,odisha,23,0.176238,1.09976,0.823762,-0.0997601,0.923523
+NFHS6,chhattisgarh|rajnandgaon,chhattisgarh,23,0.134721,1.10205,0.865279,-0.102048,0.967326
+NFHS6,bihar|gaya,bihar,23,0.205964,1.11245,0.794036,-0.112455,0.906491
+NFHS6,uttar pradesh|farrukhabad,uttar pradesh,23,0.19134,1.1164,0.80866,-0.116398,0.925057
+NFHS6,west bengal|south twenty four parganas,west bengal,23,0.181087,1.11687,0.818913,-0.116871,0.935784
+NFHS6,madhya pradesh|khandwa east nimar,madhya pradesh,23,0.205465,1.11742,0.794535,-0.117415,0.91195
+NFHS6,jharkhand|deoghar,jharkhand,23,0.251998,1.1252,0.748002,-0.125203,0.873206
+NFHS6,jharkhand|simdega,jharkhand,23,0.163722,1.12865,0.836278,-0.128646,0.964924
+NFHS6,sikkim|south district,sikkim,23,0.134915,1.12896,0.865085,-0.128961,0.994046
+NFHS6,goa|north goa,goa,23,0.0828723,1.13013,0.917128,-0.130129,1.04726
+NFHS6,uttar pradesh|kanpur nagar,uttar pradesh,23,0.167641,1.13392,0.832359,-0.133925,0.966284
+NFHS6,nagaland|dimapur,nagaland,23,0.216653,1.13594,0.783347,-0.135944,0.91929
+NFHS6,jammu and kashmir|anantnag,jammu and kashmir,23,0.0855648,1.14262,0.914435,-0.142618,1.05705
+NFHS6,uttar pradesh|bhadohi,uttar pradesh,23,0.184467,1.14401,0.815533,-0.144014,0.959547
+NFHS6,uttar pradesh|prayagraj,uttar pradesh,23,0.177074,1.1525,0.822926,-0.152501,0.975426
+NFHS6,ladakh|kargil,ladakh,23,0.0938963,1.15539,0.906104,-0.155391,1.06149
+NFHS6,bihar|jehanabad,bihar,23,0.203598,1.15567,0.796402,-0.155668,0.952069
+NFHS6,uttar pradesh|jalaun,uttar pradesh,23,0.167032,1.15615,0.832968,-0.156148,0.989116
+NFHS6,karnataka|yadgir,karnataka,23,0.182585,1.15672,0.817415,-0.156724,0.97414
+NFHS6,sikkim|west district,sikkim,21,0.0819122,1.16813,0.918088,-0.168132,1.08622
+NFHS6,rajasthan|bhilwara,rajasthan,23,0.1691,1.16857,0.8309,-0.168568,0.999468
+NFHS6,tripura|unakoti,tripura,23,0.229357,1.17132,0.770643,-0.171317,0.941959
+NFHS6,bihar|banka,bihar,23,0.207765,1.17787,0.792235,-0.177866,0.9701
+NFHS6,uttar pradesh|budaun,uttar pradesh,23,0.182634,1.18134,0.817366,-0.181341,0.998707
+NFHS6,odisha|bhadrak,odisha,23,0.130819,1.18186,0.869181,-0.181865,1.05105
+NFHS6,chhattisgarh|uttar bastar kanker,chhattisgarh,23,0.157271,1.18306,0.842729,-0.183061,1.02579
+NFHS6,rajasthan|pali,rajasthan,23,0.138766,1.18639,0.861234,-0.186387,1.04762
+NFHS6,uttar pradesh|ambedkar nagar,uttar pradesh,23,0.147239,1.18782,0.852761,-0.187818,1.04058
+NFHS6,himachal pradesh|kullu,himachal pradesh,23,0.179201,1.19073,0.820799,-0.190732,1.01153
+NFHS6,uttar pradesh|chandauli,uttar pradesh,23,0.18237,1.19157,0.81763,-0.191575,1.0092
+NFHS6,andaman and nicobar islands|south andaman,andaman and nicobar islands,21,0.100294,1.19397,0.899706,-0.193969,1.09367
+NFHS6,uttar pradesh|ghazipur,uttar pradesh,23,0.172359,1.19604,0.827641,-0.196042,1.02368
+NFHS6,uttar pradesh|unnao,uttar pradesh,23,0.169103,1.19773,0.830897,-0.197727,1.02862
+NFHS6,madhya pradesh|anuppur,madhya pradesh,23,0.163801,1.20308,0.836199,-0.203083,1.03928
+NFHS6,puducherry|yanam,puducherry,23,0.123235,1.2033,0.876765,-0.203304,1.08007
+NFHS6,bihar|lakhisarai,bihar,23,0.176415,1.20378,0.823585,-0.203777,1.02736
+NFHS6,uttar pradesh|saharanpur,uttar pradesh,23,0.145665,1.20903,0.854335,-0.20903,1.06336
+NFHS6,jammu and kashmir|kulgam,jammu and kashmir,23,0.0830254,1.21173,0.916975,-0.21173,1.1287
+NFHS6,madhya pradesh|neemuch,madhya pradesh,23,0.167962,1.21299,0.832038,-0.212994,1.04503
+NFHS6,madhya pradesh|harda,madhya pradesh,23,0.176365,1.21636,0.823635,-0.216361,1.04
+NFHS6,uttar pradesh|sant kabir nagar,uttar pradesh,23,0.146652,1.21659,0.853348,-0.216592,1.06994
+NFHS6,rajasthan|chittorgarh,rajasthan,23,0.189752,1.22415,0.810248,-0.224146,1.03439
+NFHS6,uttar pradesh|pratapgarh,uttar pradesh,23,0.149999,1.22433,0.850001,-0.224331,1.07433
+NFHS6,madhya pradesh|burhanpur,madhya pradesh,23,0.17712,1.2281,0.82288,-0.228097,1.05098
+NFHS6,madhya pradesh|sidhi,madhya pradesh,23,0.172848,1.22975,0.827152,-0.229752,1.0569
+NFHS6,chhattisgarh|gariyaband,chhattisgarh,23,0.118231,1.24065,0.881769,-0.240647,1.12242
+NFHS6,jharkhand|godda,jharkhand,23,0.228791,1.24535,0.771209,-0.245348,1.01656
+NFHS6,uttar pradesh|amroha,uttar pradesh,23,0.145537,1.24552,0.854463,-0.245523,1.09999
+NFHS6,madhya pradesh|satna,madhya pradesh,23,0.159143,1.24815,0.840857,-0.248146,1.089
+NFHS6,uttar pradesh|basti,uttar pradesh,23,0.14905,1.25055,0.85095,-0.25055,1.1015
+NFHS6,uttar pradesh|pilibhit,uttar pradesh,23,0.175156,1.25117,0.824844,-0.251166,1.07601
+NFHS6,tripura|south tripura,tripura,23,0.227605,1.26222,0.772395,-0.262224,1.03462
+NFHS6,uttar pradesh|bulandshahr,uttar pradesh,23,0.151218,1.26247,0.848782,-0.262467,1.11125
+NFHS6,nagaland|peren,nagaland,23,0.176595,1.26323,0.823405,-0.26323,1.08664
+NFHS6,madhya pradesh|tikamgarh,madhya pradesh,23,0.179513,1.26632,0.820487,-0.266325,1.08681
+NFHS6,tripura|gomati,tripura,23,0.236177,1.27093,0.763823,-0.270932,1.03475
+NFHS6,madhya pradesh|sagar,madhya pradesh,23,0.193215,1.27397,0.806785,-0.273967,1.08075
+NFHS6,tamil nadu|thiruvallur,tamil nadu,23,0.178444,1.27674,0.821556,-0.276743,1.0983
+NFHS6,uttar pradesh|muzaffarnagar,uttar pradesh,23,0.15299,1.27882,0.84701,-0.278821,1.12583
+NFHS6,goa|south goa,goa,21,0.0827299,1.28539,0.91727,-0.285391,1.20266
+NFHS6,uttar pradesh|mirzapur,uttar pradesh,23,0.176609,1.29272,0.823391,-0.292721,1.11611
+NFHS6,uttar pradesh|banda,uttar pradesh,23,0.168725,1.30041,0.831275,-0.30041,1.13168
+NFHS6,madhya pradesh|vidisha,madhya pradesh,23,0.169709,1.30311,0.830291,-0.303105,1.1334
+NFHS6,jharkhand|lohardaga,jharkhand,23,0.193647,1.3093,0.806353,-0.309301,1.11565
+NFHS6,arunachal pradesh|upper siang,arunachal pradesh,21,0.144524,1.31656,0.855476,-0.316557,1.17203
+NFHS6,rajasthan|bharatpur,rajasthan,23,0.192984,1.32142,0.807016,-0.321415,1.12843
+NFHS6,west bengal|kolkata,west bengal,21,0.122987,1.32169,0.877013,-0.321686,1.1987
+NFHS6,meghalaya|west garo hills,meghalaya,23,0.184311,1.33399,0.815689,-0.333994,1.14968
+NFHS6,gujarat|mahisagar,gujarat,23,0.163318,1.34567,0.836682,-0.345665,1.18235
+NFHS6,nagaland|tuensang,nagaland,23,0.172851,1.35336,0.827149,-0.353357,1.18051
+NFHS6,bihar|nawada,bihar,23,0.1983,1.35358,0.8017,-0.353576,1.15528
+NFHS6,jharkhand|sahibganj,jharkhand,23,0.257983,1.35475,0.742017,-0.35475,1.09677
+NFHS6,chhattisgarh|surguja,chhattisgarh,23,0.200013,1.35691,0.799987,-0.356914,1.1569
+NFHS6,uttar pradesh|ayodhya,uttar pradesh,23,0.161206,1.35817,0.838794,-0.35817,1.19696
+NFHS6,odisha|koraput,odisha,23,0.155088,1.36396,0.844912,-0.363962,1.20887
+NFHS6,madhya pradesh|shivpuri,madhya pradesh,23,0.200662,1.37269,0.799338,-0.372692,1.17203
+NFHS6,madhya pradesh|sheopur,madhya pradesh,23,0.202858,1.39009,0.797142,-0.390093,1.18723
+NFHS6,jharkhand|saraikela kharsawan,jharkhand,23,0.204351,1.39219,0.795649,-0.392195,1.18784
+NFHS6,madhya pradesh|mandla,madhya pradesh,23,0.157425,1.39352,0.842575,-0.393517,1.23609
+NFHS6,meghalaya|south garo hills,meghalaya,23,0.178554,1.39735,0.821446,-0.397352,1.2188
+NFHS6,jammu and kashmir|srinagar,jammu and kashmir,23,0.0745794,1.40004,0.925421,-0.400044,1.32546
+NFHS6,assam|karimganj,assam,23,0.152162,1.40071,0.847838,-0.40071,1.24855
+NFHS6,bihar|sheikhpura,bihar,23,0.217589,1.40188,0.782411,-0.40188,1.18429
+NFHS6,jammu and kashmir|rajouri,jammu and kashmir,23,0.170064,1.4038,0.829936,-0.403802,1.23374
+NFHS6,uttar pradesh|lalitpur,uttar pradesh,23,0.185503,1.40637,0.814497,-0.406369,1.22087
+NFHS6,rajasthan|ajmer,rajasthan,23,0.159004,1.40988,0.840996,-0.409876,1.25087
+NFHS6,uttar pradesh|shamli,uttar pradesh,23,0.164922,1.4126,0.835078,-0.412598,1.24768
+NFHS6,gujarat|chhota udaipur,gujarat,23,0.177071,1.4379,0.822929,-0.437902,1.26083
+NFHS6,rajasthan|sawai madhopur,rajasthan,23,0.171575,1.43848,0.828425,-0.438475,1.2669
+NFHS6,odisha|kandhamal,odisha,23,0.158811,1.44685,0.841189,-0.446853,1.28804
+NFHS6,gujarat|dahod,gujarat,23,0.187549,1.45379,0.812451,-0.453794,1.26625
+NFHS6,chhattisgarh|surajpur,chhattisgarh,23,0.189733,1.46006,0.810267,-0.460056,1.27032
+NFHS6,chhattisgarh|bijapur,chhattisgarh,23,0.188813,1.46208,0.811187,-0.462078,1.27326
+NFHS6,west bengal|north twenty four parganas,west bengal,23,0.215948,1.46769,0.784052,-0.467688,1.25174
+NFHS6,rajasthan|jhalawar,rajasthan,23,0.156472,1.46884,0.843528,-0.468843,1.31237
+NFHS6,meghalaya|west jaintia hills,meghalaya,23,0.176331,1.4707,0.823669,-0.470696,1.29437
+NFHS6,uttar pradesh|kheri,uttar pradesh,23,0.193063,1.48114,0.806937,-0.481142,1.28808
+NFHS6,jammu and kashmir|shopian,jammu and kashmir,23,0.0921781,1.48254,0.907822,-0.48254,1.39036
+NFHS6,rajasthan|jalore,rajasthan,23,0.156664,1.48448,0.843336,-0.484477,1.32781
+NFHS6,odisha|malkangiri,odisha,23,0.188411,1.48544,0.811589,-0.48544,1.29703
+NFHS6,uttar pradesh|bahraich,uttar pradesh,23,0.208739,1.4857,0.791261,-0.485696,1.27696
+NFHS6,karnataka|mandya,karnataka,21,0.128845,1.48768,0.871155,-0.487678,1.35883
+NFHS6,odisha|khordha,odisha,23,0.1943,1.48993,0.8057,-0.489927,1.29563
+NFHS6,chhattisgarh|kondagaon,chhattisgarh,23,0.156357,1.49081,0.843643,-0.490812,1.33446
+NFHS6,gujarat|panch mahals,gujarat,23,0.137685,1.49523,0.862315,-0.49523,1.35754
+NFHS6,uttar pradesh|fatehpur,uttar pradesh,23,0.146355,1.49924,0.853645,-0.499238,1.35288
+NFHS6,tamil nadu|madurai,tamil nadu,23,0.176655,1.50099,0.823345,-0.500995,1.32434
+NFHS6,himachal pradesh|chamba,himachal pradesh,23,0.130204,1.51667,0.869796,-0.516674,1.38647
+NFHS6,rajasthan|rajsamand,rajasthan,23,0.159966,1.5172,0.840034,-0.517197,1.35723
+NFHS6,meghalaya|south west khasi hills,meghalaya,23,0.147042,1.54112,0.852958,-0.541123,1.39408
+NFHS6,madhya pradesh|dindori,madhya pradesh,23,0.171533,1.54296,0.828467,-0.542959,1.37143
+NFHS6,arunachal pradesh|kra daadi,arunachal pradesh,23,0.153,1.55463,0.847,-0.554625,1.40163
+NFHS6,uttar pradesh|gautam buddha nagar,uttar pradesh,23,0.154909,1.5547,0.845091,-0.554702,1.39979
+NFHS6,assam|south salmara mancachar,assam,23,0.212954,1.55773,0.787046,-0.557731,1.34478
+NFHS6,chhattisgarh|bastar,chhattisgarh,23,0.20928,1.55998,0.79072,-0.559982,1.3507
+NFHS6,andaman and nicobar islands|nicobar,andaman and nicobar islands,23,0.179239,1.58199,0.820761,-0.58199,1.40275
+NFHS6,madhya pradesh|panna,madhya pradesh,23,0.195823,1.5827,0.804177,-0.582701,1.38688
+NFHS6,chhattisgarh|korea,chhattisgarh,23,0.17546,1.58432,0.82454,-0.584316,1.40886
+NFHS6,nagaland|wokha,nagaland,23,0.124984,1.59123,0.875016,-0.591225,1.46624
+NFHS6,assam|cachar,assam,23,0.183521,1.59259,0.816479,-0.592586,1.40906
+NFHS6,uttar pradesh|shrawasti,uttar pradesh,23,0.209011,1.59677,0.790989,-0.596769,1.38776
+NFHS6,uttar pradesh|siddharth nagar,uttar pradesh,23,0.170399,1.59922,0.829601,-0.59922,1.42882
+NFHS6,chhattisgarh|narayanpur,chhattisgarh,23,0.175724,1.61006,0.824276,-0.610058,1.43433
+NFHS6,jharkhand|khunti,jharkhand,23,0.200667,1.61079,0.799333,-0.610793,1.41013
+NFHS6,arunachal pradesh|tirap,arunachal pradesh,21,0.144073,1.62118,0.855927,-0.62118,1.47711
+NFHS6,uttar pradesh|hamirpur,uttar pradesh,23,0.149036,1.62615,0.850964,-0.626149,1.47711
+NFHS6,uttar pradesh|auraiya,uttar pradesh,23,0.166476,1.64054,0.833524,-0.640539,1.47406
+NFHS6,rajasthan|barmer,rajasthan,23,0.176467,1.6443,0.823533,-0.644298,1.46783
+NFHS6,jharkhand|pashchimi singhbhum,jharkhand,23,0.200341,1.64594,0.799659,-0.645938,1.4456
+NFHS6,chhattisgarh|dantewada,chhattisgarh,23,0.178583,1.65149,0.821417,-0.651495,1.47291
+NFHS6,nagaland|kohima,nagaland,23,0.134298,1.6561,0.865702,-0.656104,1.52181
+NFHS6,meghalaya|south west garo hills,meghalaya,23,0.135248,1.66188,0.864752,-0.661883,1.52664
+NFHS6,gujarat|the dangs,gujarat,23,0.20106,1.66227,0.79894,-0.66227,1.46121
+NFHS6,karnataka|gadag,karnataka,23,0.15792,1.66438,0.84208,-0.664378,1.50646
+NFHS6,uttar pradesh|kaushambi,uttar pradesh,23,0.171783,1.7042,0.828217,-0.704204,1.53242
+NFHS6,madhya pradesh|agar malwa,madhya pradesh,23,0.187508,1.70776,0.812492,-0.707757,1.52025
+NFHS6,jharkhand|pakur,jharkhand,23,0.254033,1.73134,0.745967,-0.731339,1.47731
+NFHS6,uttar pradesh|kanpur dehat,uttar pradesh,23,0.182298,1.73741,0.817702,-0.737407,1.55511
+NFHS6,uttar pradesh|sambhal,uttar pradesh,23,0.178483,1.73998,0.821517,-0.739978,1.5615
+NFHS6,jharkhand|jamtara,jharkhand,23,0.248067,1.74944,0.751933,-0.749445,1.50138
+NFHS6,madhya pradesh|khargone west nimar,madhya pradesh,23,0.176764,1.74961,0.823236,-0.749606,1.57284
+NFHS6,odisha|nabarangpur,odisha,23,0.165882,1.76373,0.834118,-0.763728,1.59785
+NFHS6,uttar pradesh|gonda,uttar pradesh,23,0.185584,1.76788,0.814416,-0.767875,1.58229
+NFHS6,madhya pradesh|guna,madhya pradesh,23,0.18081,1.7894,0.81919,-0.789397,1.60859
+NFHS6,meghalaya|east jaintia hills,meghalaya,23,0.152278,1.80946,0.847722,-0.809461,1.65718
+NFHS6,tripura|khowai,tripura,23,0.218459,1.83088,0.781541,-0.830877,1.61242
+NFHS6,tripura|north tripura,tripura,23,0.242817,1.83944,0.757183,-0.839444,1.59663
+NFHS6,uttar pradesh|sitapur,uttar pradesh,23,0.188362,1.85266,0.811638,-0.852658,1.6643
+NFHS6,tripura|west tripura,tripura,23,0.170116,1.86026,0.829884,-0.86026,1.69014
+NFHS6,arunachal pradesh|lower dibang valley,arunachal pradesh,23,0.209654,1.87487,0.790346,-0.874868,1.66521
+NFHS6,uttar pradesh|sonbhadra,uttar pradesh,23,0.220381,1.88391,0.779619,-0.883912,1.66353
+NFHS6,uttar pradesh|hardoi,uttar pradesh,23,0.169244,1.8872,0.830756,-0.887203,1.71796
+NFHS6,rajasthan|sirohi,rajasthan,23,0.175275,1.91645,0.824725,-0.916446,1.74117
+NFHS6,madhya pradesh|dhar,madhya pradesh,23,0.18605,1.96929,0.81395,-0.969293,1.78324
+NFHS6,haryana|nuh,haryana,23,0.222866,2.00084,0.777134,-1.00084,1.77798
+NFHS6,uttar pradesh|kannauj,uttar pradesh,23,0.198958,2.0552,0.801042,-1.0552,1.85624
+NFHS6,arunachal pradesh|longding,arunachal pradesh,23,0.152508,2.07016,0.847492,-1.07016,1.91765
+NFHS6,arunachal pradesh|east kameng,arunachal pradesh,23,0.375791,2.08572,0.624209,-1.08572,1.70993
+NFHS6,rajasthan|dungarpur,rajasthan,23,0.164647,2.12872,0.835353,-1.12872,1.96407
+NFHS6,meghalaya|east garo hills,meghalaya,23,0.20725,2.18327,0.79275,-1.18327,1.97602
+NFHS6,assam|west karbi anglong,assam,23,0.229099,2.19126,0.770901,-1.19126,1.96216
+NFHS6,nagaland|phek,nagaland,23,0.178431,2.26366,0.821569,-1.26366,2.08523
+NFHS6,tripura|dhalai,tripura,23,0.291289,2.30773,0.708711,-1.30773,2.01644
+NFHS6,arunachal pradesh|shi yomi,arunachal pradesh,23,0.461,2.34194,0.539,-1.34194,1.88094
+NFHS6,uttar pradesh|balrampur,uttar pradesh,23,0.194234,2.35542,0.805766,-1.35542,2.16118
+NFHS6,chhattisgarh|balrampur,chhattisgarh,23,0.227538,2.37499,0.772462,-1.37499,2.14745
+NFHS6,assam|karbi anglong,assam,23,0.266427,2.44673,0.733573,-1.44673,2.1803
+NFHS6,jharkhand|gumla,jharkhand,23,0.175522,2.45422,0.824478,-1.45422,2.2787
+NFHS6,rajasthan|jaisalmer,rajasthan,23,0.198223,2.47875,0.801777,-1.47875,2.28053
+NFHS6,rajasthan|udaipur,rajasthan,23,0.181812,2.49497,0.818188,-1.49497,2.31316
+NFHS6,nagaland|zunheboto,nagaland,23,0.18355,2.56826,0.81645,-1.56826,2.38471
+NFHS6,chhattisgarh|sukma,chhattisgarh,23,0.206106,2.80907,0.793894,-1.80907,2.60296
+NFHS6,nagaland|mokokchung,nagaland,23,0.139253,2.88652,0.860747,-1.88652,2.74726
+NFHS6,rajasthan|banswara,rajasthan,23,0.18446,3.05648,0.81554,-2.05648,2.87202
+NFHS6,nagaland|longleng,nagaland,23,0.13918,3.09245,0.86082,-2.09245,2.95327
+NFHS6,rajasthan|pratapgarh,rajasthan,23,0.197191,3.10324,0.802809,-2.10324,2.90605
+NFHS6,madhya pradesh|singrauli,madhya pradesh,23,0.239158,3.4059,0.760842,-2.4059,3.16675
+NFHS6,madhya pradesh|jhabua,madhya pradesh,23,0.239331,3.47026,0.760669,-2.47026,3.23093
+NFHS6,madhya pradesh|barwani,madhya pradesh,23,0.234213,3.53323,0.765787,-2.53323,3.29901
+NFHS6,madhya pradesh|alirajpur,madhya pradesh,23,0.254295,5.6269,0.745705,-4.6269,5.37261
