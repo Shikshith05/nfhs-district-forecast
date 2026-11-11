@@ -260,6 +260,48 @@ significant change in at least one of: the mean change ({{breaks_shift}}), the R
 
 {{fig56_break}}
 
+### 9.7 Discussion (post-hoc)
+
+*This subsection was written after the NFHS-6 results were seen. It interprets them and changes no
+analysis. Every number in it comes from the pre-registered or exploratory outputs above.*
+
+**The pre-registered primary comparison failed.** Cross-validation favoured the elastic net over RTM. On
+the one-shot NFHS-6 test the elastic net had {{v56_en_rtm}} RTM, and its pooled skill fell to
+{{s56_primary}} against {{s56_rtm}} for RTM. Every method lost skill out of time. The two trend baselines
+did worst: national trend scored {{s56_nat}} and state trend {{s56_st}}, below simple persistence.
+
+**The likely cause is a change in the national shift, not in mean reversion.** The structural-break
+check above finds a significant change in the mean change for {{breaks_shift}} of the
+{{n_ind}} indicators, but in the RTM slope for only {{breaks_slope}}. Several programme indicators rose steeply
+between NFHS-4 and NFHS-5 and much more slowly afterwards: modern contraception, full vaccination,
+postnatal care, institutional births and menstrual hygiene. A model that learns the size of the
+2015-16 → 2019-21 gain carries it forward and overshoots. Pulling extreme districts back towards the
+mean, which is what RTM mostly does, kept working, because the slope of that pull hardly changed.
+
+**State effects did not transfer over time, and our validation could not have detected this.** The
+primary model includes state dummy variables. Out of time, the same model without them was not
+significantly worse than RTM, while the full model was significantly worse, and state trend was the
+weakest method. State-level changes between NFHS-4 and NFHS-5 did not persist into NFHS-6. Leave-one-state-out
+cross-validation never scores a state whose effect was estimated, so it could not reveal this (section
+11, "Validation design"). The cross-validation gain of the elastic net over RTM rested on exactly this
+untested component.
+
+**Cross-validation was a weak guide to the test.** The rank correlation of methods' skill between the two
+periods is {{cmp_spearman_methods}}. The best method was {{cmp_best45}} in
+cross-validation and the {{cmp_best56}} variant on NFHS-6, and across
+indicators the primary method's skill in the two periods correlates at {{cmp_spearman_ind}}. The best
+NFHS-6 variant was one of several exploratory variants and is not claimed as a finding.
+
+**Uncertainty was understated.** Intervals calibrated on NFHS-4 → NFHS-5 residuals covered {{cov_normalised}}
+of NFHS-6 values against a nominal 0.90. This is consistent with a shift that the calibration period did
+not contain. Errors are mostly idiosyncratic: indicator and district together explain only R² = {{r2_add}}
+of the normalised error.
+
+**What this means for use.** For a one-round-ahead district forecast, RTM (or its Fay–Herriot variant) is
+the safer default. Machine-learning gains measured within one transition did not survive a change of
+period. With NFHS-6 published there are now two transitions, so a model can learn how the national shift
+itself changes. That is the main item of future work.
+
 ## 10. Uncertainty, surprise and forecastability on NFHS-6
 
 ### 10.1 Conformal coverage
