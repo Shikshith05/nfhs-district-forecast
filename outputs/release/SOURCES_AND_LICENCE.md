@@ -17,9 +17,7 @@
 
 The tables are derived by Team CodeFlow (cleaning, matching, harmonisation, assumed standard errors).
 The NFHS estimates remain the work of IIPS and the Ministry of Health and Family Welfare, Government of
-India, and are subject to their terms of use. The project repository has no licence file of its own: the
-team must choose one for its code and derived tables before publishing them, and must cite IIPS and both
-community sources when this release is reused.
+India, and are subject to their terms of use. The project code is released under the MIT licence (see `LICENSE`); that licence does not extend to the NFHS data, which remain subject to IIPS and MoHFW terms of use. Cite IIPS and both community sources when this release is reused.
 
 **NFHS-6 values are provisional** and were parsed from PDFs by a third party; check them against the
 official fact sheets before relying on any single value.

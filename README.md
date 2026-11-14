@@ -1,7 +1,7 @@
 # nfhs-district-forecast
 
 **Forecasting district health outcomes in India: a noise-aware out-of-time test on NFHS-6.**
-Team CodeFlow (Saurav S, Shikshith V, Thijl Thejaswi MN, Vishwas V Angadi).
+Team CodeFlow (Saurav S, Shikshith V, Thijil Thejaswi MN, Vishwas V Angadi).
 
 India's National Family Health Survey (NFHS) reports district-level health
 indicators every 3–4 years: NFHS-4 (2015-16), NFHS-5 (2019-21) and NFHS-6
@@ -19,11 +19,29 @@ Fay–Herriot, FH + RTM, elastic net and LightGBM (with ablations), all compared
 with paired state-clustered bootstrap tests. See `docs/CodeFlow_Jackfruit_OnePager.docx`
 for the proposal and `docs/report.md` for the report.
 
-> **Status (2026-10-23): ready for Gate B.** Models are trained on NFHS-4 → NFHS-5 and
-> frozen (training-data hash `d3f06bee428deeef`). **NFHS-6 has not been scored yet.**
-> Everything after the one-shot test is automated: one command produces all tables,
-> figures and the filled-in report. Read `docs/HUMAN_CHECKLIST.md` before Gate B.
-> Results so far: `outputs/SUMMARY.md`. Report (NFHS-6 slots pending): `docs/report.md`.
+## Results
+
+The one-shot NFHS-6 test has been run (tag `freeze-v1`; outputs in `outputs/` and `outputs/post_run/`).
+Skill is 1 − MSE(method) / MSE(persistence); higher is better.
+
+| Method | Cross-validation (NFHS-4→5) | NFHS-6 test (NFHS-5→6) |
+|---|---|---|
+| Regression to the mean (RTM) | 0.613 | 0.293 |
+| FH + RTM | 0.624 | 0.296 |
+| Elastic net (primary) | 0.637 | 0.169 |
+| LightGBM | 0.630 | 0.252 |
+| National trend | 0.422 | −0.041 |
+
+- The elastic net won in cross-validation but had significantly higher error than RTM on NFHS-6
+  (ΔMSE +13.36, 95% CI [7.22, 19.45]; worse on 10 of 23 indicators, better on none).
+- The likely cause is a structural break in the national shift: the mean change differs between the two
+  transitions for 12 of 23 indicators (exploratory).
+- 90% conformal intervals covered 84–88% of NFHS-6 values; 138 of 15,712 district–indicator pairs were
+  surprises at a 10% false-discovery rate.
+- Data: 571 training units, 686 NFHS-6 test units, 547-district stable subset, 23 indicators.
+
+Read next: `outputs/SUMMARY.md`, `docs/report.md`, `docs/DEFENCE_NOTES.md`.
+A notebook that walks through the whole project is in `notebooks/` (it also runs on Google Colab).
 
 ## Setup (Windows, PowerShell)
 
@@ -48,7 +66,7 @@ macOS use `.venv/bin/python` and forward slashes.
 | 1 | `.venv\Scripts\python scripts\run_pipeline.py --data-only` | rebuilds `data/processed/` (git-ignored) and the harmonisation outputs from `data/raw/`, and prints the training-data hash, which must equal `outputs/models/manifest.json`. **No training, no re-freeze.** |
 | 2 | `.venv\Scripts\python -m pytest -q` | the test suite (about 90 s), including a full stand-in run of the post-run pipeline |
 | 3 | `.venv\Scripts\python scripts\preflight.py` | PASS / WARN / FAIL: clean tree, tests, leakage tests, hash reproduces, crosswalk vs test districts, pre-registration order |
-| 4 | `powershell -ExecutionPolicy Bypass -File scripts\gate_b.ps1` | **Gate B, humans only, once.** Pre-flight → type YES → tag `freeze-v1` → the one-shot NFHS-6 evaluation → commit its outputs. Stops on any error and never retries. |
+| 4 | `powershell -ExecutionPolicy Bypass -File scripts\gate_b.ps1` | **Gate B, humans only, once. Already run; do not run it again.** Pre-flight → type YES → tag `freeze-v1` → the one-shot NFHS-6 evaluation → commit its outputs. Stops on any error and never retries. |
 | 5 | `.venv\Scripts\python scripts\post_run.py` | after Gate B: every post-run table and figure (`outputs/post_run/`), `docs/report.md` filled in and number-checked, release with NFHS-6 |
 
 Other commands:
@@ -86,18 +104,18 @@ loading, cleaning, the data report and the NFHS-5 audit. Training code calls
 `models.assert_no_round6()` and fails if a round-6 row reaches it; tests enforce this.
 Indicator and district selection use NFHS-4/5 values and NFHS-6 *metadata* (which
 districts and indicators exist, boundary flags) only. The release holds NFHS-4/5 only
-until the one-shot test has run.
+until the one-shot test had run; the final release now includes NFHS-6.
 
 ## Assumptions you should know about
 
 - **Standard errors are assumptions.** The fact sheets do not publish sample sizes:
   SE = sqrt(p(1−p)/n · deff), with assumed per-district n by population group and design
   effect 2.0 (sensitivity 1.5–3). See `config.yaml` → `noise` and DECISIONS D16.
-- **Harmonisation is partial.** It uses only lineage the repository supports (D27–D31):
-  571 training units, 684 NFHS-6 test units, and a 547-district stable-boundary subset on
-  which every result is also reported. Inherited values carry an assumed extra variance.
-  Official lineage, populations and NFHS-4 Census-2011 values can be supplied in
-  `data/lineage/`.
+- **Harmonisation is partial.** Boundary changes are resolved with the official 5→6 lineage and Census-2011
+  populations in `data/lineage/` (D41): 571 training units, 686 NFHS-6 test units, and a 547-district
+  stable-boundary subset on which every result is also reported. The 132 districts that changed between
+  NFHS-4 and NFHS-5 cannot be used for training and are not a random sample. Inherited values carry an
+  assumed extra variance.
 - **NFHS-6 data are provisional** and parsed from PDFs by a third party. The PDF
   spot-check is built but needs the official PDFs (`docs/NFHS6_PDF_CHECK.md`).
 

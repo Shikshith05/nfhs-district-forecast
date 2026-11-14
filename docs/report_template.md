@@ -1,6 +1,6 @@
 # How Predictable Are District Health Outcomes? A Noise-Aware, Out-of-Time Test of Forecasting and Programme Surprise on India's NFHS-6
 
-Team CodeFlow: Saurav S, Shikshith V, Thijl Thejaswi MN, Vishwas V Angadi.
+Team CodeFlow: Saurav S, Shikshith V, Thijil Thejaswi MN, Vishwas V Angadi.
 
 {{run_status}}
 
